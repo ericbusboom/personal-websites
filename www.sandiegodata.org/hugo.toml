@@ -1,0 +1,43 @@
+baseURL = "https://www.sandiegodata.org/"
+languageCode = "en-us"
+title = "San Diego Regional Data Library"
+theme = "wp-static"
+paginate = 10
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[markup.highlight]
+style = "friendly"
+
+[params]
+description = "Providing Data For Civic and Social Development"
+blogHomepage = true
+sidebar = true
+showCategories = true
+logo = "/header-logo.png"
+
+[[menu.main]]
+name = "About"
+url = "/about/"
+weight = 1
+
+[[menu.main]]
+name = "Data Repository"
+url = "/dataset/"
+weight = 2
+
+[[menu.main]]
+name = "Meetings and Events"
+url = "/meetings-and-events/"
+weight = 3
+
+[[menu.main]]
+name = "Data and Services"
+url = "/data-and-services/"
+weight = 4
+
+[[menu.main]]
+name = "Blog"
+url = "/blog/"
+weight = 5

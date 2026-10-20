@@ -1,0 +1,27 @@
+baseURL = "https://max.busboom.org/"
+languageCode = "en-us"
+title = "Max Busboom"
+theme = "wp-static"
+paginate = 10
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[markup.highlight]
+style = "friendly"
+
+[params]
+description = "Hey Grumpy, Get Your Feet off the Internet"
+blogHomepage = true
+sidebar = false
+accentColor = "#555"
+
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "About"
+url = "/about/"
+weight = 2

@@ -1,0 +1,100 @@
+{
+	debug
+	log {
+		output file /var/log/caddy/root
+	}
+
+	cert_issuer zerossl 0b16cb8a67446ee26caf5d23076ced5d
+}
+
+proxy.do.cnshost.net {
+	respond "hello"
+}
+
+wordpress.busboom.org {
+	reverse_proxy 137.184.39.244:80
+}
+
+phpmyadmin.busboom.org {
+	reverse_proxy 161.35.239.192:80
+}
+
+www.busboom.org {
+	reverse_proxy 137.184.39.244:80
+}
+
+busboom.org {
+	redir https://www.{host}{uri}
+}
+
+eric.busboom.org {
+	reverse_proxy 137.184.39.244:80
+}
+
+max.busboom.org {
+	reverse_proxy 137.184.39.244:80
+}
+
+jenni.busboom.org {
+	reverse_proxy 137.184.39.244:80
+}
+
+ericbusboom.com {
+	reverse_proxy 137.184.39.244:80
+}
+
+www.civicknowledge.com {
+	reverse_proxy 137.184.39.244:80
+}
+
+civicknowledge.com {
+	redir https://www.{host}{uri}
+}
+
+www.metatab.org {
+	reverse_proxy 137.184.39.244:80
+}
+
+www.sandiegodata.org {
+	reverse_proxy 137.184.39.244:80
+}
+
+sandiegodata.org {
+	redir https://www.{host}{uri}
+}
+
+data.sandiegodata.org {
+	reverse_proxy 137.184.39.244:80
+}
+
+insights.sandiegodata.org {
+	reverse_proxy 137.184.39.244:80
+}
+
+tablecloth.civicknowledge.com {
+	reverse_proxy 137.184.39.244:80
+}
+
+http://www.lajollatroop506.com {
+	reverse_proxy 137.184.39.244:80
+}
+
+www.lajollatroop506.com {
+	reverse_proxy 137.184.39.244:80
+}
+
+lajollatroop506.com {
+	redir https://www.{host}{uri}
+}
+
+sdcta.civicknowledge.com {
+	reverse_proxy 137.184.39.244:80
+}
+
+http://www.surfpiper.com {
+	reverse_proxy 137.184.39.244:80
+}
+
+garage.busboom.org {
+    reverse_proxy 146.190.130.5:80
+}

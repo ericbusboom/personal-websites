@@ -1,0 +1,9 @@
+---
+title: "When Will Data.gov be Useful?"
+date: 2014-10-27T10:17:40+00:00
+draft: false
+categories: ["News"]
+author: "qaadmin"
+---
+
+[Data.gov](<http://data.gov>) is the top level data search system for the US, with references to over 130,000 datasets from federal and state agencies. And yet, I've never successfully used it for finding data. Here is an example search for "Diabetes Rates": [![](/uploads/12/2014/10/Screen-Shot-2014-10-26-at-10.19.34-AM.png)](</uploads/12/2014/10/Screen-Shot-2014-10-26-at-10.19.34-AM.png>) Search for "Diabetes Rates" on Data.gov   So, we look for diabetes, and get births, 22 year old mortality data from the US Geological Survey, and quality of service data as the first three hits. The first link at least points to the right agency, but you still have to click three times to get there. Here is the same search on Google:   [![Search for Diabetes Rates on Google. ](/uploads/12/2014/10/Screen-Shot-2014-10-26-at-10.22.41-AM.png)](</uploads/12/2014/10/Screen-Shot-2014-10-26-at-10.22.41-AM.png>) Search for Diabetes Rates on Google.   Not only do I get links to real primary organizations, the fourth hit is the original source of the data, and Google helpfully gives us quick stats before the hits. Even better, if you search for "diabetes rates data" you are one click away from the primary data source for US diabetes rates. The really poor quality of search results on Data.gov has been a problem for its entire existence; I've never done a data search on Data.gov that returned what I wanted. I've always had better results with Google or browsing the website of the agency that produces the data. Data.gov has been around for about 5 years, and despite human curation is still isn't as useful as Google's automatic index. At some point, I'd like to stop being excited by its possibilities, and start being excited by it utility.

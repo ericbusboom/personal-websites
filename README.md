@@ -6,20 +6,20 @@ Content and config for personal websites. One directory per website.
 
 ```
 personal-websites/
-├── eric.busboom.org/          # Hugo static site (submodule → github.com/ericbusboom/eric.busboom.org)
-├── max.busboom.org/           # Hugo static site (submodule → github.com/ericbusboom/max.busboom.org)
-├── www.metatab.org/           # Hugo static site (submodule → github.com/ericbusboom/www.metatab.org)
-├── www.civicknowledge.com/    # Hugo static site (submodule → github.com/ericbusboom/www.civicknowledge.com)
-├── www.sandiegodata.org/      # Hugo static site (submodule → github.com/ericbusboom/www.sandiegodata.org)
-├── explainers/                # Hugo static site (submodule → github.com/ericbusboom/explainers)
+├── eric.busboom.org/          # Hugo static site
+├── max.busboom.org/           # Hugo static site
+├── www.metatab.org/           # Hugo static site
+├── www.civicknowledge.com/    # Hugo static site
+├── www.sandiegodata.org/      # Hugo static site
+├── explainers/                # Hugo static site
 ├── lajollatroop506.com/       # WordPress site (not yet converted)
-│   ├── www.lajollatroop506.com/  # Docker/WordPress config (submodule → github.com/troop506/www.lajollatroop506.com)
-│   ├── troop506-theme/           # WordPress theme (submodule → github.com/troop506/troop506-theme)
-│   └── google-connector/         # G Suite integration scripts (submodule → github.com/troop506/google-connector)
+│   ├── www.lajollatroop506.com/  # Docker/WordPress config
+│   ├── troop506-theme/           # WordPress theme
+│   └── google-connector/         # G Suite integration scripts
 ├── localhost/                 # Local dev stack: Caddy proxy + every site in its own container (`just up`)
 ├── _infra/
-│   ├── proxy.do.cnshost.net/ # Caddy reverse proxy config (submodule → github.com/ericbusboom/proxy-do-cnshost-net)
-│   └── docker-do/             # Docker hosting config (submodule → github.com/ericbusboom/docker-do)
+│   ├── proxy.do.cnshost.net/ # Caddy reverse proxy config
+│   └── docker-do/             # Docker hosting config
 ├── _tools/
 │   ├── wp2hugo.py             # WordPress WXR → Hugo Markdown converter
 │   └── wp-static-theme/       # Custom Hugo theme approximating original WordPress designs
@@ -64,20 +64,9 @@ just wp                        # also run Troop 506 WordPress at http://troop506
 Each site gets its own `*.localhost` hostname (no /etc/hosts edits needed) and runs
 `hugo server` with live reload in its own container. Port and domain are set in `localhost/.env`.
 
-## Working with submodules
+## Monorepo
 
-```bash
-# Clone with all submodules
-git clone --recurse-submodules https://github.com/ericbusboom/personal-websites.git
-
-# Update all submodules to latest
-git submodule update --remote --merge
-
-# Make changes inside a submodule directory, then:
-cd eric.busboom.org/
-# ... make changes ...
-git add -A && git commit -m "change description" && git push
-cd ..
-git add eric.busboom.org
-git commit -m "Update eric.busboom.org submodule"
-```
+Everything lives in this one repository. The sites and infra directories used to be
+separate git submodules; they were folded in as plain directories on 2026-10-19.
+The old repos, with their final commits, are listed in [FORMER_REPOS.md](FORMER_REPOS.md)
+and are to be archived on GitHub.

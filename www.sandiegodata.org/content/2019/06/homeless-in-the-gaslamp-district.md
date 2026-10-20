@@ -1,0 +1,11 @@
+---
+title: "Homeless in the Gaslamp District"
+date: 2019-06-12T10:00:58+00:00
+draft: false
+categories: ["News"]
+tags: ["homeless"]
+author: "eric"
+description: "Explore a critical social issue with this unique homelessness dataset for the Gaslamp district."
+---
+
+[![](/uploads/12/2019/06/gaslamp-homeless.png)](</uploads/12/2019/06/gaslamp-homeless.png>) Homeless person count locations and heat map in the Gaslamp district One of the most powerful uses of data is to give people deeper, more specific knowledge about important social issues. Many social problems can be abstract to people who don't experience them, so making specific links to more common experiences can make the problems more concrete. Grounding the problem of homelessness is why I was so excited to discover that the [Downtown San Diego Partnership](<https://downtownsandiego.org/>) had more than 5 years of monthly homeless person counts for Downtown San Diego on paper maps. We just needed to digitize the maps to make them useful. With several hundred maps in PDFs, this was going to be a big task. Fortunately, Corri-Anne Burgess, who teaches AP computer science and runs the School of Science, Connections & Technology at Kearney Senior High, was very enthusiastic about involving her students in the project. So, for the last two weeks of the year, her students digitized all of the maps for the Gaslamp district, and then did data analysis projects and presentations. This image is the points and heat map of counts for the data the students digitized. It shows two major clusters of homeless persons in the area. The cluster at C street between 5th and 6th is the south side of the Gaslamp 15 theater, which was closed in February 2016. The Theater is boarded up and has an awning, so it serves as much welcome shelter from the elements. The much more active cluster at 6th and K is a 24 hour public bathroom, one of the few in the Downtown area. Over the Summer, I'll be working with another student team to build a web application for digitizing the rest of the maps, so hopefully, we'll have the full dataset in about 6 months. If you'd like to explore this subset, you can [download the dataset from the Library's data repository. ](<http://data.sandiegodata.org/dataset/downtownsandiego-org-homeless-count-gaslamp/>)
