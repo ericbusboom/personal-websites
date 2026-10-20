@@ -16,6 +16,7 @@ personal-websites/
 │   ├── www.lajollatroop506.com/  # Docker/WordPress config (submodule → github.com/troop506/www.lajollatroop506.com)
 │   ├── troop506-theme/           # WordPress theme (submodule → github.com/troop506/troop506-theme)
 │   └── google-connector/         # G Suite integration scripts (submodule → github.com/troop506/google-connector)
+├── localhost/                 # Local dev stack: Caddy proxy + every site in its own container (`just up`)
 ├── _infra/
 │   ├── proxy.do.cnshost.net/ # Caddy reverse proxy config (submodule → github.com/ericbusboom/proxy-do-cnshost-net)
 │   └── docker-do/             # Docker hosting config (submodule → github.com/ericbusboom/docker-do)
@@ -52,6 +53,16 @@ These sites were originally a WordPress multisite on DigitalOcean droplet `wp2.d
 ## WordPress Server
 
 The original WordPress multisite is still running at `wp2.do.cnshost.net` (137.184.39.244), proxied through `proxy.do.cnshost.net` (137.184.225.100) via Caddy.
+
+## Running everything locally
+
+```bash
+cd localhost && just up        # http://localhost:8000/ — index of all sites
+just wp                        # also run Troop 506 WordPress at http://troop506.localhost:8000/
+```
+
+Each site gets its own `*.localhost` hostname (no /etc/hosts edits needed) and runs
+`hugo server` with live reload in its own container. Port and domain are set in `localhost/.env`.
 
 ## Working with submodules
 

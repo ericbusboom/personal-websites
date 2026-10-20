@@ -1,0 +1,29 @@
+# Local dev stack: Caddy proxy + every site in its own container.
+# Index page: http://localhost:8000/
+
+set dotenv-load
+
+wp_dir := "../lajollatroop506.com/www.lajollatroop506.com"
+
+# Start the proxy and all Hugo sites.
+up:
+    docker compose up -d
+    @echo "→ http://${DOMAIN}:${PORT}/"
+
+# Also (re)start Troop 506 WordPress with its URL pointed at the local proxy.
+wp:
+    SITE_URL=http://troop506.${DOMAIN}:${PORT} WP_PORT=${WP_PORT} WP_ENVIRONMENT_TYPE=local \
+        docker compose --project-directory {{wp_dir}} up -d
+
+# Put WordPress back on its production URL.
+wp-prod:
+    docker compose --project-directory {{wp_dir}} up -d
+
+down:
+    docker compose down
+
+logs *SERVICES:
+    docker compose logs -f {{SERVICES}}
+
+ps:
+    docker compose ps

@@ -1,0 +1,40 @@
+# Local dev proxy. Plain HTTP; routes by hostname to each site's container.
+# DOMAIN and WP_PORT come from compose.yaml / .env.
+{
+	auto_https off
+	admin off
+}
+
+http://{$DOMAIN} {
+	root * /srv
+	file_server
+}
+
+http://eric.{$DOMAIN} {
+	reverse_proxy eric:1313
+}
+
+http://max.{$DOMAIN} {
+	reverse_proxy max:1313
+}
+
+http://metatab.{$DOMAIN} {
+	reverse_proxy metatab:1313
+}
+
+http://civicknowledge.{$DOMAIN} {
+	reverse_proxy civicknowledge:1313
+}
+
+http://sandiegodata.{$DOMAIN} {
+	reverse_proxy sandiegodata:1313
+}
+
+http://explainers.{$DOMAIN} {
+	reverse_proxy explainers:1313
+}
+
+# Troop 506 WordPress runs in its own compose project on the host.
+http://troop506.{$DOMAIN} {
+	reverse_proxy host.docker.internal:{$WP_PORT}
+}

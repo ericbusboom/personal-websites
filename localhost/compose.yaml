@@ -1,0 +1,68 @@
+# Local dev stack: one Caddy proxy in front of every site in this repo.
+#
+#   http://localhost:8000/              index page with links to all sites
+#   http://eric.localhost:8000/         eric.busboom.org (hugo server, live reload)
+#   ...
+#
+# Each Hugo site runs `hugo server` in its own container, with baseURL set to
+# its local hostname so links stay inside the local stack. Troop 506 WordPress
+# runs from its own compose project (see justfile `wp`); Caddy reaches it on
+# the host.
+
+x-hugo: &hugo
+  image: ghcr.io/gohugoio/hugo:v0.157.0
+  restart: unless-stopped
+  # SITE (the subdomain) and EXTRA_FLAGS come from each service's environment.
+  entrypoint: [ "/bin/sh", "-c" ]
+  command:
+    - >-
+      exec hugo server --bind=0.0.0.0 --port=1313 --appendPort=false
+      --liveReloadPort=${PORT:-8000} --buildDrafts
+      --baseURL=http://$${SITE}.${DOMAIN:-localhost}:${PORT:-8000}/
+      $${EXTRA_FLAGS:-}
+
+services:
+
+  proxy:
+    image: caddy:2.10-alpine
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:${PORT:-8000}:80"
+    environment:
+      DOMAIN: ${DOMAIN:-localhost}
+      WP_PORT: ${WP_PORT:-8080}
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - ./www:/srv:ro
+
+  eric:
+    <<: *hugo
+    volumes: [ "../eric.busboom.org:/project" ]
+    environment: { SITE: eric }
+
+  max:
+    <<: *hugo
+    volumes: [ "../max.busboom.org:/project" ]
+    environment: { SITE: max }
+
+  metatab:
+    <<: *hugo
+    volumes: [ "../www.metatab.org:/project" ]
+    environment: { SITE: metatab }
+
+  civicknowledge:
+    <<: *hugo
+    volumes: [ "../www.civicknowledge.com:/project" ]
+    environment: { SITE: civicknowledge }
+
+  sandiegodata:
+    <<: *hugo
+    volumes: [ "../www.sandiegodata.org:/project" ]
+    environment: { SITE: sandiegodata }
+
+  explainers:
+    <<: *hugo
+    volumes: [ "../explainers:/project" ]
+    environment: { SITE: explainers, EXTRA_FLAGS: "--disableFastRender" }
