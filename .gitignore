@@ -1,0 +1,3 @@
+# Export data is too large for git (423MB of WXR XML + media)
+# It's kept locally as reference for the conversion work
+_export/
