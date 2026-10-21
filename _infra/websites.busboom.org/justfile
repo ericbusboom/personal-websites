@@ -1,0 +1,68 @@
+# websites.busboom.org — build, run and deploy every site in this repo.
+#   just local    run the whole stack on this machine: http://websites.localhost:8090/
+#   just deploy   push code to the droplet and rebuild there
+# Settings and secrets: .env (create with `just new-env`).
+
+set dotenv-load
+
+remote := env("DEPLOY_HOST", "")
+remote_dir := "/opt/personal-websites"
+troop506_data := "lajollatroop506.com/www.lajollatroop506.com/data"
+
+# Build and start everything (on the droplet, or wherever .env is set up for).
+up:
+    docker compose up -d --build --wait
+
+# Same stack on this machine, on test URLs under websites.localhost:8090.
+local:
+    TEST_SCHEME=http TEST_HOST=websites.localhost TEST_PORT=:8090 \
+    BIND=127.0.0.1 HTTP_PORT=8090 HTTPS_PORT=8453 \
+        docker compose -p websites-local up -d --build --wait
+    @echo "→ http://websites.localhost:8090/"
+
+local-down:
+    docker compose -p websites-local down
+
+down:
+    docker compose down
+
+logs *SERVICES:
+    docker compose logs -f {{SERVICES}}
+
+ps:
+    docker compose ps
+
+# Write .env with fresh database passwords and WordPress salts.
+new-env:
+    #!/usr/bin/env bash
+    set -euo pipefail
+    if [ -e .env ]; then echo ".env already exists; remove it first" >&2; exit 1; fi
+    rnd() { openssl rand -base64 48 | tr -d '\n/+='; }
+    umask 077
+    {
+        echo "# websites.busboom.org settings and secrets. Not committed."
+        echo "DEPLOY_HOST=root@CHANGE-ME"
+        echo "TEST_HOST=websites.busboom.org"
+        echo "DB_ROOT_PASSWORD=$(rnd)"
+        echo "TROOP506_DB_PASSWORD=$(rnd)"
+        for k in AUTH_KEY SECURE_AUTH_KEY LOGGED_IN_KEY NONCE_KEY AUTH_SALT SECURE_AUTH_SALT LOGGED_IN_SALT NONCE_SALT; do
+            echo "TROOP506_$k=$(rnd)"
+        done
+    } > .env
+    echo "Wrote .env; set DEPLOY_HOST"
+
+# Copy the repo and .env to the droplet, then build and start there.
+deploy: _check-remote
+    rsync -az --delete --include '/_infra/websites.busboom.org/.env' --exclude '.env' --exclude '.env.*' \
+        --exclude .git --exclude _export --exclude public --exclude resources/_gen \
+        --exclude .hugo_build.lock --exclude '/{{troop506_data}}' --exclude .DS_Store \
+        ../../ {{remote}}:{{remote_dir}}/
+    ssh {{remote}} 'cd {{remote_dir}}/_infra/websites.busboom.org && docker compose up -d --build --wait --remove-orphans'
+
+# One-time: copy troop506 uploads and its clean DB dump. Never overwrites
+# files already on the droplet (WordPress adds uploads there).
+seed: _check-remote
+    rsync -az --ignore-existing ../../{{troop506_data}}/ {{remote}}:{{remote_dir}}/{{troop506_data}}/
+
+_check-remote:
+    @[ -n "{{remote}}" ] && [ "{{remote}}" != "root@CHANGE-ME" ] || { echo "Set DEPLOY_HOST in .env" >&2; exit 1; }

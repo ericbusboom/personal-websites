@@ -1,0 +1,14 @@
+# Context is the repo root; send only the Hugo sites and this directory.
+*
+!eric.busboom.org
+!max.busboom.org
+!www.metatab.org
+!www.civicknowledge.com
+!www.sandiegodata.org
+!explainers
+!_infra/websites.busboom.org
+**/public
+**/resources/_gen
+**/.hugo_build.lock
+**/.git
+_infra/websites.busboom.org/.env

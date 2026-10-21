@@ -1,0 +1,99 @@
+# websites.busboom.org — every site in this repo on one Docker host.
+#
+#   web        Caddy front door: index page, all Hugo sites (built into the
+#              image), and routing to WordPress. See Caddyfile.
+#   troop506   www.lajollatroop506.com (WordPress)
+#   db         MariaDB shared by every WordPress site; db-init/ creates one
+#              database and user per site on first start.
+#
+# Settings and secrets live in .env (just new-env). `just up` builds and starts
+# everything; see README.md.
+
+services:
+
+  web:
+    build:
+      context: ../..
+      dockerfile: _infra/websites.busboom.org/sites.Dockerfile
+      args:
+        TEST_SCHEME: ${TEST_SCHEME:-https}
+        TEST_HOST: ${TEST_HOST:-websites.busboom.org}
+        TEST_PORT: ${TEST_PORT:-}
+    image: websites-web:latest
+    restart: unless-stopped
+    ports:
+      - "${BIND:-0.0.0.0}:${HTTP_PORT:-80}:80"
+      - "${BIND:-0.0.0.0}:${HTTPS_PORT:-443}:443"
+    environment:
+      TEST_HOST: ${TEST_HOST:-websites.busboom.org}
+      PROXY_IP: ${PROXY_IP:-137.184.225.100}
+    volumes:
+      - caddy:/data   # keeps the self-signed CA stable across restarts
+
+  troop506:
+    build:
+      context: ../../lajollatroop506.com/www.lajollatroop506.com/wordpress
+      additional_contexts:
+        theme: ../../lajollatroop506.com/troop506-theme
+    image: troop506-wordpress:latest
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_NAME: troop506
+      WORDPRESS_DB_USER: troop506
+      WORDPRESS_DB_PASSWORD: ${TROOP506_DB_PASSWORD:?set in .env}
+      WORDPRESS_TABLE_PREFIX: wp_
+      WORDPRESS_AUTH_KEY: ${TROOP506_AUTH_KEY:?}
+      WORDPRESS_SECURE_AUTH_KEY: ${TROOP506_SECURE_AUTH_KEY:?}
+      WORDPRESS_LOGGED_IN_KEY: ${TROOP506_LOGGED_IN_KEY:?}
+      WORDPRESS_NONCE_KEY: ${TROOP506_NONCE_KEY:?}
+      WORDPRESS_AUTH_SALT: ${TROOP506_AUTH_SALT:?}
+      WORDPRESS_SECURE_AUTH_SALT: ${TROOP506_SECURE_AUTH_SALT:?}
+      WORDPRESS_LOGGED_IN_SALT: ${TROOP506_LOGGED_IN_SALT:?}
+      WORDPRESS_NONCE_SALT: ${TROOP506_NONCE_SALT:?}
+      # Answer to the real domain and the test URL. The database stores the
+      # canonical URL; the alt-host mu-plugin rewrites it for other hosts.
+      WORDPRESS_CONFIG_EXTRA: |
+        $$canonical = 'https://www.lajollatroop506.com';
+        $$host = $$_SERVER['HTTP_HOST'] ?? '';
+        $$name = strtolower(preg_replace('/:\d+$$/', '', $$host));
+        $$home = in_array($$name, ['www.lajollatroop506.com', 'troop506.${TEST_HOST:-websites.busboom.org}'], true)
+            ? (empty($$_SERVER['HTTPS']) ? 'http' : 'https') . '://' . $$host
+            : $$canonical;
+        define('WP_CANONICAL_URL', $$canonical);
+        define('WP_HOME', $$home);
+        define('WP_SITEURL', $$home);
+        define('DISALLOW_FILE_MODS', true);
+        define('DISALLOW_FILE_EDIT', true);
+        define('WP_AUTO_UPDATE_CORE', false);
+        define('WP_ENVIRONMENT_TYPE', '${WP_ENVIRONMENT_TYPE:-production}');
+    healthcheck:
+      test: ["CMD", "test", "-f", "/var/www/html/wp-config.php"]
+      interval: 3s
+      timeout: 3s
+      retries: 20
+    volumes:
+      - ../../lajollatroop506.com/www.lajollatroop506.com/data/uploads:/var/www/html/wp-content/uploads
+
+  db:
+    image: mariadb:11.4
+    restart: unless-stopped
+    environment:
+      MARIADB_ROOT_PASSWORD: ${DB_ROOT_PASSWORD:?set in .env}
+      TROOP506_DB_PASSWORD: ${TROOP506_DB_PASSWORD:?}
+    healthcheck:
+      test: ["CMD", "healthcheck.sh", "--connect", "--innodb_initialized"]
+      interval: 5s
+      timeout: 5s
+      retries: 30
+    volumes:
+      - db:/var/lib/mysql
+      - ./db-init:/docker-entrypoint-initdb.d:ro
+      - ../../lajollatroop506.com/www.lajollatroop506.com/data:/seed/troop506:ro
+
+volumes:
+  caddy:
+  db:

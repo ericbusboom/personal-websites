@@ -50,6 +50,7 @@ RUN rm -rf /usr/src/wordpress/wp-content/themes/troop506-theme/.git \
            /usr/src/wordpress/wp-content/themes/troop506-theme/README.md \
     && chown -R www-data:www-data /usr/src/wordpress/wp-content
 
+COPY --chown=www-data:www-data mu-plugins /usr/src/wordpress/wp-content/mu-plugins
 COPY uploads.ini /usr/local/etc/php/conf.d/uploads.ini
 COPY apache-hardening.conf /etc/apache2/conf-enabled/hardening.conf
 
