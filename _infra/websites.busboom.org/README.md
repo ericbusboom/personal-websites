@@ -25,6 +25,7 @@ and its **real domain**, which is the name of its directory in this repo.
 | www.sandiegodata.org | https://sandiegodata.websites.busboom.org/ | www.sandiegodata.org, sandiegodata.org → www |
 | explainers | https://explainers.websites.busboom.org/ | none (production is GitHub Pages) |
 | www.lajollatroop506.com | https://troop506.websites.busboom.org/ | www.lajollatroop506.com, lajollatroop506.com → www |
+| static.lajollatroop506.com | https://static.websites.busboom.org/ | none — Hugo rebuild of the troop site, from the separate `www.lajollatroop506.com` repo next to this one; production will be GitHub Pages |
 
 Hugo sites are built twice into the image (see [sites.Dockerfile](sites.Dockerfile)),
 once per name, so links stay on the name you are viewing. WordPress stores

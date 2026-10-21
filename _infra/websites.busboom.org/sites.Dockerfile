@@ -30,6 +30,11 @@ sandiegodata    www.sandiegodata.org    https://www.sandiegodata.org/
 explainers      explainers              -
 EOF
 
+# The Hugo rebuild of www.lajollatroop506.com lives in its own repo (build
+# context "troop506static"). Test URL only; production is GitHub Pages.
+COPY --from=troop506static . /src-static
+RUN hugo --quiet -s /src-static -d /out/static/test -b "$TEST_SCHEME://static.$TEST_HOST$TEST_PORT/"
+
 FROM caddy:2.10-alpine
 COPY --from=hugo /out /srv/sites
 COPY _infra/websites.busboom.org/www /srv/index

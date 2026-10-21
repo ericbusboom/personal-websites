@@ -68,6 +68,11 @@ http://troop506.{$TEST_HOST} {
 	reverse_proxy troop506:80
 }
 
+# Hugo rebuild of www.lajollatroop506.com (static.lajollatroop506.com in the index).
+http://static.{$TEST_HOST} {
+	import hugo static test
+}
+
 # --- Production names -------------------------------------------------------
 
 http://eric.busboom.org, https://eric.busboom.org {

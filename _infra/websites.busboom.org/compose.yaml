@@ -15,6 +15,9 @@ services:
     build:
       context: ../..
       dockerfile: _infra/websites.busboom.org/sites.Dockerfile
+      additional_contexts:
+        # Hugo rebuild of www.lajollatroop506.com (separate repo).
+        troop506static: ../../../www.lajollatroop506.com
       args:
         TEST_SCHEME: ${TEST_SCHEME:-https}
         TEST_HOST: ${TEST_HOST:-websites.busboom.org}
