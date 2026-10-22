@@ -64,9 +64,31 @@ just wp                        # also run Troop 506 WordPress at http://troop506
 Each site gets its own `*.localhost` hostname (no /etc/hosts edits needed) and runs
 `hugo server` with live reload in its own container. Port and domain are set in `localhost/.env`.
 
-## Monorepo
+## Submodules
 
-Everything lives in this one repository. The sites and infra directories used to be
-separate git submodules; they were folded in as plain directories on 2026-10-19.
-The old repos, with their final commits, are listed in [FORMER_REPOS.md](FORMER_REPOS.md)
-and are to be archived on GitHub.
+Each site and infra directory is a git submodule with its own repo; that repo
+is where the site's content lives. Clone with `git clone --recursive`, or run
+`git submodule update --init` after cloning.
+
+| Directory | Repo |
+|---|---|
+| `_infra/docker-do` | [ericbusboom/docker-do](https://github.com/ericbusboom/docker-do) |
+| `_infra/proxy.do.cnshost.net` | [ericbusboom/proxy-do-cnshost-net](https://github.com/ericbusboom/proxy-do-cnshost-net) |
+| `eric.busboom.org` | [ericbusboom/eric.busboom.org](https://github.com/ericbusboom/eric.busboom.org) |
+| `explainers` | [ericbusboom/explainers](https://github.com/ericbusboom/explainers) |
+| `lajollatroop506.com/google-connector` | [troop506/google-connector](https://github.com/troop506/google-connector) |
+| `lajollatroop506.com/troop506-theme` | [troop506/troop506-theme](https://github.com/troop506/troop506-theme) |
+| `max.busboom.org` | [ericbusboom/max.busboom.org](https://github.com/ericbusboom/max.busboom.org) |
+| `www.civicknowledge.com` | [ericbusboom/www.civicknowledge.com](https://github.com/ericbusboom/www.civicknowledge.com) |
+| `www.metatab.org` | [ericbusboom/www.metatab.org](https://github.com/ericbusboom/www.metatab.org) |
+| `www.sandiegodata.org` | [ericbusboom/www.sandiegodata.org](https://github.com/ericbusboom/www.sandiegodata.org) |
+
+To change a site: commit and push inside its directory, then commit the new
+submodule pointer here.
+
+From 2026-10-19 to 2026-10-21 these were plain directories in this repo; the
+changes made then were pushed to each repo before it became a submodule again.
+
+`lajollatroop506.com/www.lajollatroop506.com` (the troop WordPress Docker
+setup) stays a plain directory. Its old repo, troop506/www.lajollatroop506.com,
+is now the Hugo rebuild of the troop site, checked out next to this repo.

@@ -1,0 +1,40 @@
+[submodule "_infra/docker-do"]
+	path = _infra/docker-do
+	url = https://github.com/ericbusboom/docker-do
+	branch = main
+[submodule "_infra/proxy.do.cnshost.net"]
+	path = _infra/proxy.do.cnshost.net
+	url = https://github.com/ericbusboom/proxy-do-cnshost-net
+	branch = master
+[submodule "eric.busboom.org"]
+	path = eric.busboom.org
+	url = https://github.com/ericbusboom/eric.busboom.org
+	branch = main
+[submodule "explainers"]
+	path = explainers
+	url = https://github.com/ericbusboom/explainers
+	branch = master
+[submodule "lajollatroop506.com/google-connector"]
+	path = lajollatroop506.com/google-connector
+	url = https://github.com/troop506/google-connector
+	branch = master
+[submodule "lajollatroop506.com/troop506-theme"]
+	path = lajollatroop506.com/troop506-theme
+	url = https://github.com/troop506/troop506-theme
+	branch = master
+[submodule "max.busboom.org"]
+	path = max.busboom.org
+	url = https://github.com/ericbusboom/max.busboom.org
+	branch = main
+[submodule "www.civicknowledge.com"]
+	path = www.civicknowledge.com
+	url = https://github.com/ericbusboom/www.civicknowledge.com
+	branch = main
+[submodule "www.metatab.org"]
+	path = www.metatab.org
+	url = https://github.com/ericbusboom/www.metatab.org
+	branch = main
+[submodule "www.sandiegodata.org"]
+	path = www.sandiegodata.org
+	url = https://github.com/ericbusboom/www.sandiegodata.org
+	branch = main
