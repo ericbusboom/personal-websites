@@ -16,7 +16,7 @@ Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
-  * **[chronic_absenteeism](<http://library.metatab.org/cde.ca.gov-absenteeism-2/data/chronic_absenteeism.csv>)**. Combined Chronic Absenteeism files
+  * **[chronic_absenteeism](<https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-absenteeism-2/data/chronic_absenteeism.csv>)**. Combined Chronic Absenteeism files
 
 
 ## Documentation
@@ -35,8 +35,8 @@ Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Packages
 
-  * **zip** <http://library.metatab.org/cde.ca.gov-absenteeism-2.zip>
-  * **csv** <http://library.metatab.org/cde.ca.gov-absenteeism-2.csv>
+  * **zip** <https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-absenteeism-2.zip>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-absenteeism-2.csv>
   * **source** <https://github.com/Metatab/metatab-packages.git>
 
 
@@ -44,9 +44,9 @@ Resources | Packages | Documentation| Contacts| References| Data Dictionary
 [code] 
     import metapack as mp
     # ZIP Package
-    pkg = mp.open_package('http://library.metatab.org/cde.ca.gov-absenteeism-2.zip')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-absenteeism-2.zip')
     # CSV Package
-    pkg = mp.open_package('http://library.metatab.org/cde.ca.gov-absenteeism-2.csv') 
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-absenteeism-2.csv') 
     
     resource = pkg.resource('resource_name') # Get a resource
     df = resource.dataframe() # Create a pandas Dataframe

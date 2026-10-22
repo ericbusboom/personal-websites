@@ -16,7 +16,7 @@ Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
-  * **[hic](<http://library.metatab.org/hudexchange.info-hic-project-1/data/hic.csv>)**. Combined HIC, 2012 to 2018
+  * **[hic](<https://library-metatab-org.s3.amazonaws.com/hudexchange.info-hic-project-1/data/hic.csv>)**. Combined HIC, 2012 to 2018
 
 
 ## Documentation
@@ -38,15 +38,15 @@ There is no formal data dictionary, so the dataset is lighly documented; the mea
 
 ## Packages
 
-  * **zip** <http://library.metatab.org/hudexchange.info-hic-project-1.zip>
-  * **csv** <http://library.metatab.org/hudexchange.info-hic-project-1.csv>
+  * **zip** <https://library-metatab-org.s3.amazonaws.com/hudexchange.info-hic-project-1.zip>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/hudexchange.info-hic-project-1.csv>
   * **source** <https://github.com/sandiegodata-projects/homelessness.git>
 
 
 ### Accessing Packages in Metapack
 [code] 
     import metapack as mp
-    pkg = mp.open_package('http://library.metatab.org/hudexchange.info-hic-project-1.zip')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/hudexchange.info-hic-project-1.zip')
     
     # Create Dataframes
     
@@ -189,15 +189,15 @@ Last Modified 2019-07-12T05:03:50
 
 ## Packages
 
-  * **zip** <http://library.metatab.org/hudexchange.info-hic-project-1.zip>
-  * **csv** <http://library.metatab.org/hudexchange.info-hic-project-1.csv>
+  * **zip** <https://library-metatab-org.s3.amazonaws.com/hudexchange.info-hic-project-1.zip>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/hudexchange.info-hic-project-1.csv>
   * **source** <https://github.com/sandiegodata-projects/homelessness.git>
 
 
 ### Accessing Packages in Metapack
 [code] 
     import metapack as mp
-    pkg = mp.open_package('http://library.metatab.org/hudexchange.info-hic-project-1.zip')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/hudexchange.info-hic-project-1.zip')
     
     # Create Dataframes
     

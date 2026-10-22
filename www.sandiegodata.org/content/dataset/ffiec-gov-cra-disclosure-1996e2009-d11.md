@@ -16,7 +16,7 @@ Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
-  * **[sb_loan_orig](<http://library.metatab.org/ffiec.gov-cra_disclosure-1996e2009-d11-3.1.1/data/sb_loan_orig.csv>)**. Table D1-1, small business disclosure records, for years 1996 through 2009
+  * **[sb_loan_orig](<https://library-metatab-org.s3.amazonaws.com/ffiec.gov-cra_disclosure-1996e2009-d11-3.1.1/data/sb_loan_orig.csv>)**. Table D1-1, small business disclosure records, for years 1996 through 2009
 
 
 ## Documentation
@@ -37,7 +37,7 @@ This data package includes years 1996 through 2009. Another data package include
 ### Documentation Links
 
   * [Disclosure File Specifications](<https://www.ffiec.gov/cra/pdf/17FlatDiscSpecs.pdf>) File specifications for the 2017 Disclosure Flat File
-  * [Documentation Page](<http://library.metatab.org/ffiec.gov-cra_disclosure-1996e2009-d11-3.1.1/index.html>)
+  * [Documentation Page](<https://library-metatab-org.s3.amazonaws.com/ffiec.gov-cra_disclosure-1996e2009-d11-3.1.1/index.html>)
   * [CRA Data Products](<https://www.ffiec.gov/cra/craproducts.htm>)
   * [Aggregate & Disclosure Flat Files](<https://www.ffiec.gov/cra/craflatfiles.htm>) Links to download the files.
 
@@ -107,7 +107,7 @@ Urls used in the creation of this data package.
 ## Packages
 
   * **s3** s3://library.metatab.org/ffiec.gov-cra_disclosure-1996e2009-d11-3.1.1.csv
-  * **csv** <http://library.metatab.org/ffiec.gov-cra_disclosure-1996e2009-d11-3.1.1.csv>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/ffiec.gov-cra_disclosure-1996e2009-d11-3.1.1.csv>
   * **source** <https://github.com/sandiegodata/data-projects.git>
 
 
@@ -116,13 +116,13 @@ Urls used in the creation of this data package.
     import pandas as pd
     
     
-    sb_loan_orig_df =  pd.read_csv('http://library.metatab.org/ffiec.gov-cra_disclosure-1996e2009-d11-3.1.1/data/sb_loan_orig.csv')
+    sb_loan_orig_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/ffiec.gov-cra_disclosure-1996e2009-d11-3.1.1/data/sb_loan_orig.csv')
 [/code]
 
 ### Accessing Package in Metapack
 [code] 
     import metapack as mp
-    pkg = mp.open_package('http://library.metatab.org/ffiec.gov-cra_disclosure-1996e2009-d11-3.1.1.csv')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/ffiec.gov-cra_disclosure-1996e2009-d11-3.1.1.csv')
     
     # Create Dataframes
     sb_loan_orig_df = pkg.resource('sb_loan_orig').dataframe()

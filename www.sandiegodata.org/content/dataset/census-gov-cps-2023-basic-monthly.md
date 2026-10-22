@@ -16,9 +16,9 @@ Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
-  * **[variable_descriptions](<https://library.metatab.org/census.gov-cps-2023-basic_monthly-1.1.2/data/variable_descriptions.csv>)**. All of the variables and their cleaned text descriptions
-  * **[variable_values](<https://library.metatab.org/census.gov-cps-2023-basic_monthly-1.1.2/data/variable_values.csv>)**. Text descriptions of the integer values of categorical variables.
-  * **[cps202301](<https://library.metatab.org/census.gov-cps-2023-basic_monthly-1.1.2/data/cps202301.csv>)**. 
+  * **[variable_descriptions](<https://library-metatab-org.s3.amazonaws.com/census.gov-cps-2023-basic_monthly-1.1.2/data/variable_descriptions.csv>)**. All of the variables and their cleaned text descriptions
+  * **[variable_values](<https://library-metatab-org.s3.amazonaws.com/census.gov-cps-2023-basic_monthly-1.1.2/data/variable_values.csv>)**. Text descriptions of the integer values of categorical variables.
+  * **[cps202301](<https://library-metatab-org.s3.amazonaws.com/census.gov-cps-2023-basic_monthly-1.1.2/data/cps202301.csv>)**. 
 
 
 ## Documentation
@@ -27,7 +27,7 @@ Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
   * [Subject Definitions](<https://www.census.gov/programs-surveys/cps/technical-documentation/subject-definitions.html>) Descriptions of major concepts.
   * [User Notes](<https://www.census.gov/programs-surveys/cps/technical-documentation/user-notes.html>) Various technical documentation.
-  * [Documentation Page](<https://library.metatab.org/census.gov-cps-2023-basic_monthly-1.1.2/index.html>)
+  * [Documentation Page](<https://library-metatab-org.s3.amazonaws.com/census.gov-cps-2023-basic_monthly-1.1.2/index.html>)
   * [Homepage](<https://www.census.gov/programs-surveys/cps.html>)
 
 
@@ -464,7 +464,7 @@ Urls used in the creation of this data package.
 ## Packages
 
   * **s3** s3://library.metatab.org/census.gov-cps-2023-basic_monthly-1.1.2.csv
-  * **csv** <https://library.metatab.org/census.gov-cps-2023-basic_monthly-1.1.2.csv>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/census.gov-cps-2023-basic_monthly-1.1.2.csv>
   * **source** <https://github.com/metatab-packages/census.gov-cps-2023-basic_monthly.git>
 
 
@@ -473,15 +473,15 @@ Urls used in the creation of this data package.
     import pandas as pd
     
     
-    variable_descriptions_df =  pd.read_csv('https://library.metatab.org/census.gov-cps-2023-basic_monthly-1.1.2/data/variable_descriptions.csv')
-    variable_values_df =  pd.read_csv('https://library.metatab.org/census.gov-cps-2023-basic_monthly-1.1.2/data/variable_values.csv')
-    cps202301_df =  pd.read_csv('https://library.metatab.org/census.gov-cps-2023-basic_monthly-1.1.2/data/cps202301.csv')
+    variable_descriptions_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/census.gov-cps-2023-basic_monthly-1.1.2/data/variable_descriptions.csv')
+    variable_values_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/census.gov-cps-2023-basic_monthly-1.1.2/data/variable_values.csv')
+    cps202301_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/census.gov-cps-2023-basic_monthly-1.1.2/data/cps202301.csv')
 [/code]
 
 ### Accessing Package in Metapack
 [code] 
     import metapack as mp
-    pkg = mp.open_package('https://library.metatab.org/census.gov-cps-2023-basic_monthly-1.1.2.csv')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/census.gov-cps-2023-basic_monthly-1.1.2.csv')
     
     # Create Dataframes
     variable_descriptions_df = pkg.resource('variable_descriptions').dataframe()

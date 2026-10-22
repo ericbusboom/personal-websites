@@ -16,20 +16,20 @@ Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
-  * **[cacfpreimburse](<http://library.metatab.org/sandiegohungercoalition.org-meal_programs-1/data/cacfpreimburse.csv>)**. Child and Adult Care Food Program
-  * **[nslpreimburse](<http://library.metatab.org/sandiegohungercoalition.org-meal_programs-1/data/nslpreimburse.csv>)**. National School Lunch Program
-  * **[sbpreimburse](<http://library.metatab.org/sandiegohungercoalition.org-meal_programs-1/data/sbpreimburse.csv>)**. School Breakfast Program
-  * **[snackreimburse](<http://library.metatab.org/sandiegohungercoalition.org-meal_programs-1/data/snackreimburse.csv>)**. Meal Supplements (After-School Snacks) in the National School Lunch Program
-  * **[summerreimburse](<http://library.metatab.org/sandiegohungercoalition.org-meal_programs-1/data/summerreimburse.csv>)**. Summer Food Service Program
-  * **[subgroup_ids](<http://library.metatab.org/sandiegohungercoalition.org-meal_programs-1/data/subgroup_ids.csv>)**. CAASPP aggreation groups
-  * **[test_ids](<http://library.metatab.org/sandiegohungercoalition.org-meal_programs-1/data/test_ids.csv>)**. CAASPP test id numbers
-  * **[subgroups](<http://library.metatab.org/sandiegohungercoalition.org-meal_programs-1/data/subgroups.csv>)**. CAASPP scores, aggregated by subgroup
-  * **[entities](<http://library.metatab.org/sandiegohungercoalition.org-meal_programs-1/data/entities.csv>)**. CAASPP schools and districts
-  * **[chronic_absenteeism](<http://library.metatab.org/sandiegohungercoalition.org-meal_programs-1/data/chronic_absenteeism.csv>)**. Chronic Absenteeism 2016-2017a
-  * **[frpm](<http://library.metatab.org/sandiegohungercoalition.org-meal_programs-1/data/frpm.csv>)**. Free and Reduced Price Meals 2004 – 2018
-  * **[upc_lea](<http://library.metatab.org/sandiegohungercoalition.org-meal_programs-1/data/upc_lea.csv>)**. Unduplicated pupil counts by LEA, 2013 to 2017
-  * **[upc_school](<http://library.metatab.org/sandiegohungercoalition.org-meal_programs-1/data/upc_school.csv>)**. Unduplicated pupil counts by school, 2013 to 2017
-  * **[current_expense](<http://library.metatab.org/sandiegohungercoalition.org-meal_programs-1/data/current_expense.csv>)**. Current Expense file, 1998 to 2017
+  * **[cacfpreimburse](<https://library-metatab-org.s3.amazonaws.com/sandiegohungercoalition.org-meal_programs-1/data/cacfpreimburse.csv>)**. Child and Adult Care Food Program
+  * **[nslpreimburse](<https://library-metatab-org.s3.amazonaws.com/sandiegohungercoalition.org-meal_programs-1/data/nslpreimburse.csv>)**. National School Lunch Program
+  * **[sbpreimburse](<https://library-metatab-org.s3.amazonaws.com/sandiegohungercoalition.org-meal_programs-1/data/sbpreimburse.csv>)**. School Breakfast Program
+  * **[snackreimburse](<https://library-metatab-org.s3.amazonaws.com/sandiegohungercoalition.org-meal_programs-1/data/snackreimburse.csv>)**. Meal Supplements (After-School Snacks) in the National School Lunch Program
+  * **[summerreimburse](<https://library-metatab-org.s3.amazonaws.com/sandiegohungercoalition.org-meal_programs-1/data/summerreimburse.csv>)**. Summer Food Service Program
+  * **[subgroup_ids](<https://library-metatab-org.s3.amazonaws.com/sandiegohungercoalition.org-meal_programs-1/data/subgroup_ids.csv>)**. CAASPP aggreation groups
+  * **[test_ids](<https://library-metatab-org.s3.amazonaws.com/sandiegohungercoalition.org-meal_programs-1/data/test_ids.csv>)**. CAASPP test id numbers
+  * **[subgroups](<https://library-metatab-org.s3.amazonaws.com/sandiegohungercoalition.org-meal_programs-1/data/subgroups.csv>)**. CAASPP scores, aggregated by subgroup
+  * **[entities](<https://library-metatab-org.s3.amazonaws.com/sandiegohungercoalition.org-meal_programs-1/data/entities.csv>)**. CAASPP schools and districts
+  * **[chronic_absenteeism](<https://library-metatab-org.s3.amazonaws.com/sandiegohungercoalition.org-meal_programs-1/data/chronic_absenteeism.csv>)**. Chronic Absenteeism 2016-2017a
+  * **[frpm](<https://library-metatab-org.s3.amazonaws.com/sandiegohungercoalition.org-meal_programs-1/data/frpm.csv>)**. Free and Reduced Price Meals 2004 – 2018
+  * **[upc_lea](<https://library-metatab-org.s3.amazonaws.com/sandiegohungercoalition.org-meal_programs-1/data/upc_lea.csv>)**. Unduplicated pupil counts by LEA, 2013 to 2017
+  * **[upc_school](<https://library-metatab-org.s3.amazonaws.com/sandiegohungercoalition.org-meal_programs-1/data/upc_school.csv>)**. Unduplicated pupil counts by school, 2013 to 2017
+  * **[current_expense](<https://library-metatab-org.s3.amazonaws.com/sandiegohungercoalition.org-meal_programs-1/data/current_expense.csv>)**. Current Expense file, 1998 to 2017
 
 
 ## Documentation
@@ -53,8 +53,8 @@ Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Packages
 
-  * **zip** <http://library.metatab.org/sandiegohungercoalition.org-meal_programs-1.zip>
-  * **csv** <http://library.metatab.org/sandiegohungercoalition.org-meal_programs-1.csv>
+  * **zip** <https://library-metatab-org.s3.amazonaws.com/sandiegohungercoalition.org-meal_programs-1.zip>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/sandiegohungercoalition.org-meal_programs-1.csv>
   * **source** <https://github.com/sandiegodata-projects/sandiegohungercoalition.org.git>
 
 
@@ -62,9 +62,9 @@ Resources | Packages | Documentation| Contacts| References| Data Dictionary
 [code] 
     import metapack as mp
     # ZIP Package
-    pkg = mp.open_package('http://library.metatab.org/sandiegohungercoalition.org-meal_programs-1.zip')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegohungercoalition.org-meal_programs-1.zip')
     # CSV Package
-    pkg = mp.open_package('http://library.metatab.org/sandiegohungercoalition.org-meal_programs-1.csv') 
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegohungercoalition.org-meal_programs-1.csv') 
     
     resource = pkg.resource('resource_name') # Get a resource
     df = resource.dataframe() # Create a pandas Dataframe
@@ -360,12 +360,12 @@ lea_type| string| Type of district: High school Elementary or Unified
 
 Urls used in the creation of this data package.
 
-  * **metapack+http://library.metatab.org/cde.ca.gov-reimbursements-1.csv**. Reimbursements package
-  * **metapack+http://library.metatab.org/cde.ca.gov-caaspp-2015e-1.csv**. CAASPP Test Scores package
-  * **metapack+http://library.metatab.org/cde.ca.gov-absenteeism-1.csv**. Absenteeism package
-  * **metapack+http://library.metatab.org/cde.ca.gov-frpm-1.csv**. Free/Reduced Price Meals package
-  * **metapack+http://library.metatab.org/cde.ca.gov-calpads_upc-1.csv**. Unduplicated pupil counts
-  * **metapack+http://library.metatab.org/cde.ca.gov-current_expense-1.csv**. Current expenses
+  * **metapack+https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-reimbursements-1.csv**. Reimbursements package
+  * **metapack+https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-caaspp-2015e-1.csv**. CAASPP Test Scores package
+  * **metapack+https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-absenteeism-1.csv**. Absenteeism package
+  * **metapack+https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-frpm-1.csv**. Free/Reduced Price Meals package
+  * **metapack+https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-calpads_upc-1.csv**. Unduplicated pupil counts
+  * **metapack+https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-current_expense-1.csv**. Current expenses
 
 
 Last Modified 2019-05-23T04:15:19

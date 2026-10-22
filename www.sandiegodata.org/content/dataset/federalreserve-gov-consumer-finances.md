@@ -33,7 +33,7 @@ Feiveson and Sabelhaus calculate that 26% of welath is due to transfers, because
   * [2013 Extract SAS Macro](<https://www.federalreserve.gov/econres/files/bulletin.macro.txt>)
   * [2010 Codebook](<https://www.federalreserve.gov/econres/files/codebk2010.txt>)
   * [2010 Extract SAS Macro](<https://www.federalreserve.gov/econres/files/bulletin.macro.txt>)
-  * [Documentation Page](<http://library.metatab.org/federalreserve.gov-consumer_finances-1.2.4/index.html>)
+  * [Documentation Page](<https://library-metatab-org.s3.amazonaws.com/federalreserve.gov-consumer_finances-1.2.4/index.html>)
   * [Homepage](<https://www.federalreserve.gov/econres/scfindex.htm>)
   * [2016 Homepage](<https://www.federalreserve.gov/econres/scf_2016.htm>)
   * [2013 Home Page](<https://www.federalreserve.gov/econres/scf_2013.htm>)
@@ -73,7 +73,7 @@ Urls used in the creation of this data package.
 ## Packages
 
   * **s3** s3://library.metatab.org/federalreserve.gov-consumer_finances-1.2.4.csv
-  * **csv** <http://library.metatab.org/federalreserve.gov-consumer_finances-1.2.4.csv>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/federalreserve.gov-consumer_finances-1.2.4.csv>
   * **source** <https://github.com/CivicKnowledge/insights.civicknowledge.com.git>
 
 
@@ -87,7 +87,7 @@ Urls used in the creation of this data package.
 ### Accessing Package in Metapack
 [code] 
     import metapack as mp
-    pkg = mp.open_package('http://library.metatab.org/federalreserve.gov-consumer_finances-1.2.4.csv')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/federalreserve.gov-consumer_finances-1.2.4.csv')
     
     # Create Dataframes
     

@@ -16,15 +16,15 @@ Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
-  * **[homicides](<http://library.metatab.org/openjustice.doj.ca.gov-homicide-1.1.1/data/homicides.csv>)**. California homicides
-  * **[homicide_justifiable](<http://library.metatab.org/openjustice.doj.ca.gov-homicide-1.1.1/data/homicide_justifiable.csv>)**. California justifiable homicides
-  * **[homicide_manslaughter](<http://library.metatab.org/openjustice.doj.ca.gov-homicide-1.1.1/data/homicide_manslaughter.csv>)**. California manslaughter homicides
-  * **[precipitating_event_labels](<http://library.metatab.org/openjustice.doj.ca.gov-homicide-1.1.1/data/precipitating_event_labels.csv>)**. Value labels for the Precipitating Event column
-  * **[means_of_death_labels](<http://library.metatab.org/openjustice.doj.ca.gov-homicide-1.1.1/data/means_of_death_labels.csv>)**. Value labels for the means_of_death column
-  * **[location_labels](<http://library.metatab.org/openjustice.doj.ca.gov-homicide-1.1.1/data/location_labels.csv>)**. Value labels for the location column
-  * **[gender_labels](<http://library.metatab.org/openjustice.doj.ca.gov-homicide-1.1.1/data/gender_labels.csv>)**. Value labels for the gender column
-  * **[relationship_labels](<http://library.metatab.org/openjustice.doj.ca.gov-homicide-1.1.1/data/relationship_labels.csv>)**. Value labels for the relationship column
-  * **[race_ethnicity_labels](<http://library.metatab.org/openjustice.doj.ca.gov-homicide-1.1.1/data/race_ethnicity_labels.csv>)**. Value labels for the race_ethnicity column
+  * **[homicides](<https://library-metatab-org.s3.amazonaws.com/openjustice.doj.ca.gov-homicide-1.1.1/data/homicides.csv>)**. California homicides
+  * **[homicide_justifiable](<https://library-metatab-org.s3.amazonaws.com/openjustice.doj.ca.gov-homicide-1.1.1/data/homicide_justifiable.csv>)**. California justifiable homicides
+  * **[homicide_manslaughter](<https://library-metatab-org.s3.amazonaws.com/openjustice.doj.ca.gov-homicide-1.1.1/data/homicide_manslaughter.csv>)**. California manslaughter homicides
+  * **[precipitating_event_labels](<https://library-metatab-org.s3.amazonaws.com/openjustice.doj.ca.gov-homicide-1.1.1/data/precipitating_event_labels.csv>)**. Value labels for the Precipitating Event column
+  * **[means_of_death_labels](<https://library-metatab-org.s3.amazonaws.com/openjustice.doj.ca.gov-homicide-1.1.1/data/means_of_death_labels.csv>)**. Value labels for the means_of_death column
+  * **[location_labels](<https://library-metatab-org.s3.amazonaws.com/openjustice.doj.ca.gov-homicide-1.1.1/data/location_labels.csv>)**. Value labels for the location column
+  * **[gender_labels](<https://library-metatab-org.s3.amazonaws.com/openjustice.doj.ca.gov-homicide-1.1.1/data/gender_labels.csv>)**. Value labels for the gender column
+  * **[relationship_labels](<https://library-metatab-org.s3.amazonaws.com/openjustice.doj.ca.gov-homicide-1.1.1/data/relationship_labels.csv>)**. Value labels for the relationship column
+  * **[race_ethnicity_labels](<https://library-metatab-org.s3.amazonaws.com/openjustice.doj.ca.gov-homicide-1.1.1/data/race_ethnicity_labels.csv>)**. Value labels for the race_ethnicity column
 
 
 ## Documentation
@@ -153,14 +153,14 @@ Urls used in the creation of this data package.
 ## Packages
 
   * **s3** s3://library.metatab.org/openjustice.doj.ca.gov-homicide-1.1.1.csv
-  * **csv** <http://library.metatab.org/openjustice.doj.ca.gov-homicide-1.1.1.csv>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/openjustice.doj.ca.gov-homicide-1.1.1.csv>
   * **source** <https://github.com/metatab-packages/policedata-collection.git>
 
 
 ### Accessing Packages in Metapack
 [code] 
     import metapack as mp
-    pkg = mp.open_package('http://library.metatab.org/openjustice.doj.ca.gov-homicide-1.1.1.csv')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/openjustice.doj.ca.gov-homicide-1.1.1.csv')
     
     # Create Dataframes
     homicides_df = pkg.resource('homicides').dataframe()

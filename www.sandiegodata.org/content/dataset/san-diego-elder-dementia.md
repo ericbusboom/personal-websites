@@ -16,11 +16,11 @@ Resources | Packages | Documentation| Contacts
 
 ## Resources
 
-  * **[adod-prevalence](<http://s3.amazonaws.com/library.metatab.org/sdcounty.ca.gov-adod-2012-san-diego-county-1/data/adod-prevalence.csv>)**. Table 1. Estimates of Prevalence of Alzheimer's Disease and Other Dementias by Subregional Area, 55 Years and Over, San Diego County, 2012 - 2030
-  * **[hospital-discharge](<http://s3.amazonaws.com/library.metatab.org/sdcounty.ca.gov-adod-2012-san-diego-county-1/data/hospital-discharge.csv>)**. Table 2. Number of Emergency Department or Hospital Discharged Patients with Any Mention of Alzheimer's Disease and Other Dementias by Subregional Area, 55 Years and Over, San Diego County, 2012 - 2030
-  * **[elder-population-2012](<http://s3.amazonaws.com/library.metatab.org/sdcounty.ca.gov-adod-2012-san-diego-county-1/data/elder-population-2012.csv>)**. Table 3. 2012 Population by Age Group and Subregional Area, 55 Years and Over, San Diego County
-  * **[elder-population-2020](<http://s3.amazonaws.com/library.metatab.org/sdcounty.ca.gov-adod-2012-san-diego-county-1/data/elder-population-2020.csv>)**. Table 4. 2020 Population Projections by Age Group and Subregional Area, 55 Years and Over, San Diego County
-  * **[elder-population-2030](<http://s3.amazonaws.com/library.metatab.org/sdcounty.ca.gov-adod-2012-san-diego-county-1/data/elder-population-2030.csv>)**. Table 5. 2030 Population Projections by Age Group and Subregional Area, 55 Years and Over, San Diego County
+  * **[adod-prevalence](<https://library-metatab-org.s3.amazonaws.com/sdcounty.ca.gov-adod-2012-san-diego-county-1/data/adod-prevalence.csv>)**. Table 1. Estimates of Prevalence of Alzheimer's Disease and Other Dementias by Subregional Area, 55 Years and Over, San Diego County, 2012 - 2030
+  * **[hospital-discharge](<https://library-metatab-org.s3.amazonaws.com/sdcounty.ca.gov-adod-2012-san-diego-county-1/data/hospital-discharge.csv>)**. Table 2. Number of Emergency Department or Hospital Discharged Patients with Any Mention of Alzheimer's Disease and Other Dementias by Subregional Area, 55 Years and Over, San Diego County, 2012 - 2030
+  * **[elder-population-2012](<https://library-metatab-org.s3.amazonaws.com/sdcounty.ca.gov-adod-2012-san-diego-county-1/data/elder-population-2012.csv>)**. Table 3. 2012 Population by Age Group and Subregional Area, 55 Years and Over, San Diego County
+  * **[elder-population-2020](<https://library-metatab-org.s3.amazonaws.com/sdcounty.ca.gov-adod-2012-san-diego-county-1/data/elder-population-2020.csv>)**. Table 4. 2020 Population Projections by Age Group and Subregional Area, 55 Years and Over, San Diego County
+  * **[elder-population-2030](<https://library-metatab-org.s3.amazonaws.com/sdcounty.ca.gov-adod-2012-san-diego-county-1/data/elder-population-2030.csv>)**. Table 5. 2030 Population Projections by Age Group and Subregional Area, 55 Years and Over, San Diego County
 
 
 ## Documentation
@@ -52,18 +52,18 @@ sdcounty.ca.gov, [County of San Diego Health and Human Services Agency](<http://
 
 ## Packages
 
-  * **xlsx** <http://s3.amazonaws.com/library.metatab.org/sdcounty.ca.gov-adod-2012-san-diego-county-1.xlsx>
-  * **zip** <http://s3.amazonaws.com/library.metatab.org/sdcounty.ca.gov-adod-2012-san-diego-county-1.zip>
-  * **csv** <http://s3.amazonaws.com/library.metatab.org/sdcounty.ca.gov-adod-2012-san-diego-county-1.csv>
+  * **xlsx** <https://library-metatab-org.s3.amazonaws.com/sdcounty.ca.gov-adod-2012-san-diego-county-1.xlsx>
+  * **zip** <https://library-metatab-org.s3.amazonaws.com/sdcounty.ca.gov-adod-2012-san-diego-county-1.zip>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/sdcounty.ca.gov-adod-2012-san-diego-county-1.csv>
 
 
 ### Accessing Packages in Metapack
 [code] 
     import metapack as mp
     # ZIP Package
-    pkg = mp.open_package('http://s3.amazonaws.com/library.metatab.org/sdcounty.ca.gov-adod-2012-san-diego-county-1.zip')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sdcounty.ca.gov-adod-2012-san-diego-county-1.zip')
     # CSV Package
-    pkg = mp.open_package('http://s3.amazonaws.com/library.metatab.org/sdcounty.ca.gov-adod-2012-san-diego-county-1.csv') 
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sdcounty.ca.gov-adod-2012-san-diego-county-1.csv') 
     
     resource = pkg.resource('resource_name') # Get a resource
     df = resource.dataframe() # Create a pandas Dataframe

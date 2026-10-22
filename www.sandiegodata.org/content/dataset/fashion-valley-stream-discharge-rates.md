@@ -16,7 +16,7 @@ Resources | Packages | Documentation| Contacts
 
 ## Resources
 
-  * **[fashion_valley](<http://library.metatab.org/waterservices.usgs.gov-stream_discharge-fashion_valley_sd-2/data/fashion_valley.csv>)**. Stream discharge rates for the San Diego River, Fashion Valley Station.
+  * **[fashion_valley](<https://library-metatab-org.s3.amazonaws.com/waterservices.usgs.gov-stream_discharge-fashion_valley_sd-2/data/fashion_valley.csv>)**. Stream discharge rates for the San Diego River, Fashion Valley Station.
 
 
 ## Documentation
@@ -72,8 +72,8 @@ The data file includes this comment header:
 
 ## Packages
 
-  * **zip** <http://library.metatab.org/waterservices.usgs.gov-stream_discharge-fashion_valley_sd-2.zip>
-  * **csv** <http://library.metatab.org/waterservices.usgs.gov-stream_discharge-fashion_valley_sd-2.csv>
+  * **zip** <https://library-metatab-org.s3.amazonaws.com/waterservices.usgs.gov-stream_discharge-fashion_valley_sd-2.zip>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/waterservices.usgs.gov-stream_discharge-fashion_valley_sd-2.csv>
   * **source** <https://github.com/san-diego-water-quality/water-datasets.git>
 
 
@@ -81,9 +81,9 @@ The data file includes this comment header:
 [code] 
     import metapack as mp
     # ZIP Package
-    pkg = mp.open_package('http://library.metatab.org/waterservices.usgs.gov-stream_discharge-fashion_valley_sd-2.zip')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/waterservices.usgs.gov-stream_discharge-fashion_valley_sd-2.zip')
     # CSV Package
-    pkg = mp.open_package('http://library.metatab.org/waterservices.usgs.gov-stream_discharge-fashion_valley_sd-2.csv') 
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/waterservices.usgs.gov-stream_discharge-fashion_valley_sd-2.csv') 
     
     resource = pkg.resource('resource_name') # Get a resource
     df = resource.dataframe() # Create a pandas Dataframe

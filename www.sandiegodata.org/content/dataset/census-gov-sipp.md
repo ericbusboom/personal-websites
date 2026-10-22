@@ -22,7 +22,7 @@ Theis data package collects links to the SIP website and main data files. It doe
 
 ### Documentation Links
 
-  * [Documentation Page](<http://library.metatab.org/census.gov-sipp-1.1.1/index.html>)
+  * [Documentation Page](<https://library-metatab-org.s3.amazonaws.com/census.gov-sipp-1.1.1/index.html>)
   * [Program home page](<https://www.census.gov/programs-surveys/sipp.html>)
   * [2018 data page](<https://www.census.gov/programs-surveys/sipp/data/datasets/2018-data/2018.html>)
 
@@ -54,7 +54,7 @@ Urls used in the creation of this data package.
 ## Packages
 
   * **s3** s3://library.metatab.org/census.gov-sipp-1.1.1.csv
-  * **csv** <http://library.metatab.org/census.gov-sipp-1.1.1.csv>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/census.gov-sipp-1.1.1.csv>
   * **source** <https://github.com/metatab-packages/inequality-collection.git>
 
 
@@ -68,7 +68,7 @@ Urls used in the creation of this data package.
 ### Accessing Package in Metapack
 [code] 
     import metapack as mp
-    pkg = mp.open_package('http://library.metatab.org/census.gov-sipp-1.1.1.csv')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/census.gov-sipp-1.1.1.csv')
     
     # Create Dataframes
     

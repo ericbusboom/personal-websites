@@ -16,8 +16,8 @@ Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
-  * **[annotations](<http://library.metatab.org/sdcta.org-hl_contracts-1.1.1/data/annotations.csv>)**. Extracted and processed annotations.
-  * **[contexts](<http://library.metatab.org/sdcta.org-hl_contracts-1.1.1/data/contexts.csv>)**. Surrounding paragraphs for the annotations, linked by 'part'
+  * **[annotations](<https://library-metatab-org.s3.amazonaws.com/sdcta.org-hl_contracts-1.1.1/data/annotations.csv>)**. Extracted and processed annotations.
+  * **[contexts](<https://library-metatab-org.s3.amazonaws.com/sdcta.org-hl_contracts-1.1.1/data/contexts.csv>)**. Surrounding paragraphs for the annotations, linked by 'part'
 
 
 ## Documentation
@@ -26,7 +26,7 @@ Processed TagTog annotations for homelessness contracts collected by the San Die
 
 ### Documentation Links
 
-  * [Documentation Page](<http://library.metatab.org/sdcta.org-hl_contracts-1.1.1/index.html>)
+  * [Documentation Page](<https://library-metatab-org.s3.amazonaws.com/sdcta.org-hl_contracts-1.1.1/index.html>)
 
 
 ## Contacts
@@ -80,9 +80,9 @@ Urls used in the creation of this data package.
 
 ## Packages
 
-  * **zip** <http://library.metatab.org/sdcta.org-hl_contracts-1.1.1.zip>
+  * **zip** <https://library-metatab-org.s3.amazonaws.com/sdcta.org-hl_contracts-1.1.1.zip>
   * **s3** s3://library.metatab.org/sdcta.org-hl_contracts-1.1.1.csv
-  * **csv** <http://library.metatab.org/sdcta.org-hl_contracts-1.1.1.csv>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/sdcta.org-hl_contracts-1.1.1.csv>
   * **source** <https://github.com/metatab-packages/sdcta.org-hl_contracts.git>
 
 
@@ -91,14 +91,14 @@ Urls used in the creation of this data package.
     import pandas as pd
     
     
-    annotations_df =  pd.read_csv('http://library.metatab.org/sdcta.org-hl_contracts-1.1.1/data/annotations.csv')
-    contexts_df =  pd.read_csv('http://library.metatab.org/sdcta.org-hl_contracts-1.1.1/data/contexts.csv')
+    annotations_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sdcta.org-hl_contracts-1.1.1/data/annotations.csv')
+    contexts_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sdcta.org-hl_contracts-1.1.1/data/contexts.csv')
 [/code]
 
 ### Accessing Package in Metapack
 [code] 
     import metapack as mp
-    pkg = mp.open_package('http://library.metatab.org/sdcta.org-hl_contracts-1.1.1.zip')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sdcta.org-hl_contracts-1.1.1.zip')
     
     # Create Dataframes
     annotations_df = pkg.resource('annotations').dataframe()

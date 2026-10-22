@@ -16,12 +16,12 @@ Resources | Packages | Documentation| Contacts
 
 ## Resources
 
-  * **[arjis-180-day-incidents-2013-08-22](<http://ds.civicknowledge.org/sandag.org/arjis 180 days 20130822.zip>)**. ARJIS 180 Day Incidents, 2013-08-22
-  * **[arjis-180-day-incidents-2013-09-16](<http://ds.civicknowledge.org.s3.amazonaws.com/sandag.org/arjis%20180%20days%2020130916.zip>)**. ARJIS 180 Day Incidents, 2013-09-16
-  * **[arjis-180-day-incidents-2013-12-08](<http://ds.civicknowledge.org.s3.amazonaws.com/sandag.org/arjis%20180%20days%2020131208.zip>)**. ARJIS 180 Day Incidents, 2013-12-08
-  * **[arjis-180-day-incidents-2014-01-21](<http://ds.civicknowledge.org.s3.amazonaws.com/sandag.org/arjis%20180%20days%2020140121.zip>)**. ARJIS 180 Day Incidents, 2014-01-21
-  * **[arjis-180-day-incidents-2014-04-17](<http://ds.civicknowledge.org.s3.amazonaws.com/sandag.org/arjis%20180%20days%2020140417.zip>)**. ARJIS 180 Day Incidents, 2014-04-17
-  * **[arjis-180-day-incidents-2014-07-20](<http://ds.civicknowledge.org.s3.amazonaws.com/sandag.org/arjis%20180%20days%2020140720.zip>)**. ARJIS 180 Day Incidents, 2014-07-20
+  * **[arjis-180-day-incidents-2013-08-22](<https://library-metatab-org.s3.amazonaws.com/ds.civicknowledge.org/sandag.org/arjis 180 days 20130822.zip>)**. ARJIS 180 Day Incidents, 2013-08-22
+  * **[arjis-180-day-incidents-2013-09-16](<https://library-metatab-org.s3.amazonaws.com/ds.civicknowledge.org/sandag.org/arjis%20180%20days%2020130916.zip>)**. ARJIS 180 Day Incidents, 2013-09-16
+  * **[arjis-180-day-incidents-2013-12-08](<https://library-metatab-org.s3.amazonaws.com/ds.civicknowledge.org/sandag.org/arjis%20180%20days%2020131208.zip>)**. ARJIS 180 Day Incidents, 2013-12-08
+  * **[arjis-180-day-incidents-2014-01-21](<https://library-metatab-org.s3.amazonaws.com/ds.civicknowledge.org/sandag.org/arjis%20180%20days%2020140121.zip>)**. ARJIS 180 Day Incidents, 2014-01-21
+  * **[arjis-180-day-incidents-2014-04-17](<https://library-metatab-org.s3.amazonaws.com/ds.civicknowledge.org/sandag.org/arjis%20180%20days%2020140417.zip>)**. ARJIS 180 Day Incidents, 2014-04-17
+  * **[arjis-180-day-incidents-2014-07-20](<https://library-metatab-org.s3.amazonaws.com/ds.civicknowledge.org/sandag.org/arjis%20180%20days%2020140720.zip>)**. ARJIS 180 Day Incidents, 2014-07-20
 
 
 ## Documentation

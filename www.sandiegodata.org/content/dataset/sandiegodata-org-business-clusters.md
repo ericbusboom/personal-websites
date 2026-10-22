@@ -16,11 +16,11 @@ Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
-  * **[sb_mbl](<http://library.metatab.org/sandiegodata.org-business_clusters-1.1.5/data/sb_mbl.csv>)**. Businesses registered in San DIego, from the Master BusinessList
-  * **[sd_business_clusters](<http://library.metatab.org/sandiegodata.org-business_clusters-1.1.5/data/sd_business_clusters.csv>)**. Geographic boundaries of business clusters
-  * **[sd_businesses](<http://library.metatab.org/sandiegodata.org-business_clusters-1.1.5/data/sd_businesses.csv>)**. San Diego Businesses, geocoded
-  * **[sd_custered_businesses](<http://library.metatab.org/sandiegodata.org-business_clusters-1.1.5/data/sd_custered_businesses.csv>)**. San Diego Businesses, geocodes and linked to clusters.
-  * **[naics](<http://library.metatab.org/sandiegodata.org-business_clusters-1.1.5/data/naics.csv>)**. Naics codes for San Diego businesses
+  * **[sb_mbl](<https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-business_clusters-1.1.5/data/sb_mbl.csv>)**. Businesses registered in San DIego, from the Master BusinessList
+  * **[sd_business_clusters](<https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-business_clusters-1.1.5/data/sd_business_clusters.csv>)**. Geographic boundaries of business clusters
+  * **[sd_businesses](<https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-business_clusters-1.1.5/data/sd_businesses.csv>)**. San Diego Businesses, geocoded
+  * **[sd_custered_businesses](<https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-business_clusters-1.1.5/data/sd_custered_businesses.csv>)**. San Diego Businesses, geocodes and linked to clusters.
+  * **[naics](<https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-business_clusters-1.1.5/data/naics.csv>)**. Naics codes for San Diego businesses
 
 
 ## Documentation
@@ -47,7 +47,7 @@ The geocoding was performed with a local installation of Pelias. There are some 
 
 ### Documentation Links
 
-  * [Documentation Page](<http://library.metatab.org/sandiegodata.org-business_clusters-1.1.5/index.html>)
+  * [Documentation Page](<https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-business_clusters-1.1.5/index.html>)
 
 
 ## Contacts
@@ -158,8 +158,8 @@ Urls used in the creation of this data package.
   * **index:civicknowledge.com-osm-demosearch-2.1.1#business_clusters**. US business clusters
   * **[sd_businesses_ak](<https://www.sandiego.gov/sites/default/files/tr_active1.csv>)**. San Diego Businesses A-K
   * **[sd_businesses_lz](<https://www.sandiego.gov/sites/default/files/tr_active2.csv>)**. San Diego Businesses L-Z
-  * **metapack+http://library.metatab.org/sangis.org-business_sites.csv#business_sites**. San DIego Business locations, from SANGIS
-  * **metapack+http://library.metatab.org/sandiegodata.org-geography-2018-13.csv#sd_county_boundary**. San Diego County Geo boundry
+  * **metapack+https://library-metatab-org.s3.amazonaws.com/sangis.org-business_sites.csv#business_sites**. San DIego Business locations, from SANGIS
+  * **metapack+https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-geography-2018-13.csv#sd_county_boundary**. San Diego County Geo boundry
   * **[naics_index_2007](<https://www.census.gov/naics/2007NAICS/2007_NAICS_Index_File.xls>)**. NAICS index file, 2007.
   * **[naics_index_2007_26](<https://www.census.gov/naics/2017NAICS/2-6%20digit_2017_Codes.xlsx>)**. NAICS index file, 2007, 2 to 6 digit codes
   * **censusgeo://2019/5/CA/blockgroup**. CA Census Blocks
@@ -169,7 +169,7 @@ Urls used in the creation of this data package.
 ## Packages
 
   * **s3** s3://library.metatab.org/sandiegodata.org-business_clusters-1.1.5.csv
-  * **csv** <http://library.metatab.org/sandiegodata.org-business_clusters-1.1.5.csv>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-business_clusters-1.1.5.csv>
   * **source** <https://github.com/CivicKnowledge/radius-search.git>
 
 
@@ -178,17 +178,17 @@ Urls used in the creation of this data package.
     import pandas as pd
     
     
-    sb_mbl_df =  pd.read_csv('http://library.metatab.org/sandiegodata.org-business_clusters-1.1.5/data/sb_mbl.csv')
-    sd_business_clusters_df =  pd.read_csv('http://library.metatab.org/sandiegodata.org-business_clusters-1.1.5/data/sd_business_clusters.csv')
-    sd_businesses_df =  pd.read_csv('http://library.metatab.org/sandiegodata.org-business_clusters-1.1.5/data/sd_businesses.csv')
-    sd_custered_businesses_df =  pd.read_csv('http://library.metatab.org/sandiegodata.org-business_clusters-1.1.5/data/sd_custered_businesses.csv')
-    naics_df =  pd.read_csv('http://library.metatab.org/sandiegodata.org-business_clusters-1.1.5/data/naics.csv')
+    sb_mbl_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-business_clusters-1.1.5/data/sb_mbl.csv')
+    sd_business_clusters_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-business_clusters-1.1.5/data/sd_business_clusters.csv')
+    sd_businesses_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-business_clusters-1.1.5/data/sd_businesses.csv')
+    sd_custered_businesses_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-business_clusters-1.1.5/data/sd_custered_businesses.csv')
+    naics_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-business_clusters-1.1.5/data/naics.csv')
 [/code]
 
 ### Accessing Package in Metapack
 [code] 
     import metapack as mp
-    pkg = mp.open_package('http://library.metatab.org/sandiegodata.org-business_clusters-1.1.5.csv')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-business_clusters-1.1.5.csv')
     
     # Create Dataframes
     sb_mbl_df = pkg.resource('sb_mbl').dataframe()

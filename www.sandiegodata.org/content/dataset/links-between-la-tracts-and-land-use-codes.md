@@ -16,8 +16,8 @@ Resources | Packages | Documentation| Contacts| References
 
 ## Resources
 
-  * **[la-planning-code](<http://library.metatab.org/sandiegodata.org-la_parcels-2/data/la-planning-code.csv>)**. 
-  * **[tract_to_parcels](<http://library.metatab.org/sandiegodata.org-la_parcels-2/data/tract_to_parcels.csv>)**. 
+  * **[la-planning-code](<https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-la_parcels-2/data/la-planning-code.csv>)**. 
+  * **[tract_to_parcels](<https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-la_parcels-2/data/tract_to_parcels.csv>)**. 
 
 
 ## Documentation
@@ -35,8 +35,8 @@ See the notebooks directory for the code bits thatgenerated the files. They are 
 
 ## Packages
 
-  * **zip** <http://library.metatab.org/sandiegodata.org-la_parcels-2.zip>
-  * **csv** <http://library.metatab.org/sandiegodata.org-la_parcels-2.csv>
+  * **zip** <https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-la_parcels-2.zip>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-la_parcels-2.csv>
   * **source** <https://github.com/SDRDLAnalysts/data-projects.git>
 
 
@@ -44,9 +44,9 @@ See the notebooks directory for the code bits thatgenerated the files. They are 
 [code] 
     import metapack as mp
     # ZIP Package
-    pkg = mp.open_package('http://library.metatab.org/sandiegodata.org-la_parcels-2.zip')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-la_parcels-2.zip')
     # CSV Package
-    pkg = mp.open_package('http://library.metatab.org/sandiegodata.org-la_parcels-2.csv') 
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-la_parcels-2.csv') 
     
     resource = pkg.resource('resource_name') # Get a resource
     df = resource.dataframe() # Create a pandas Dataframe

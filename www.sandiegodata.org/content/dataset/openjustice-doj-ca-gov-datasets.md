@@ -16,14 +16,14 @@ Resources | Packages | Documentation| Contacts| Data Dictionary
 
 ## Resources
 
-  * **[arrests](<http://library.metatab.org/openjustice.doj.ca.gov-datasets-1.1.1/data/arrests.csv>)**. Arrests counts aggregated to year, race, agency and other factors
-  * **[arrest_dispositions](<http://library.metatab.org/openjustice.doj.ca.gov-datasets-1.1.1/data/arrest_dispositions.csv>)**. Arrests counts aggregated to year, race, agency and other factors, but disaggregated on disposition.
-  * **[complaints](<http://library.metatab.org/openjustice.doj.ca.gov-datasets-1.1.1/data/complaints.csv>)**. Summary of civilian complaints by agency
-  * **[crimes_clearances](<http://library.metatab.org/openjustice.doj.ca.gov-datasets-1.1.1/data/crimes_clearances.csv>)**. Counts of reported cimes and clearances, by year and agency
-  * **[ripa_stop](<http://library.metatab.org/openjustice.doj.ca.gov-datasets-1.1.1/data/ripa_stop.csv>)**. RIPA Stop Data
-  * **[lea_cjp](<http://library.metatab.org/openjustice.doj.ca.gov-datasets-1.1.1/data/lea_cjp.csv>)**. Law Enforcement and Criminal Justice Personnel
-  * **[leap](<http://library.metatab.org/openjustice.doj.ca.gov-datasets-1.1.1/data/leap.csv>)**. Law Enforcement Personnel
-  * **[leoka](<http://library.metatab.org/openjustice.doj.ca.gov-datasets-1.1.1/data/leoka.csv>)**. Law Enforcement Officers Killed or Assaulted
+  * **[arrests](<https://library-metatab-org.s3.amazonaws.com/openjustice.doj.ca.gov-datasets-1.1.1/data/arrests.csv>)**. Arrests counts aggregated to year, race, agency and other factors
+  * **[arrest_dispositions](<https://library-metatab-org.s3.amazonaws.com/openjustice.doj.ca.gov-datasets-1.1.1/data/arrest_dispositions.csv>)**. Arrests counts aggregated to year, race, agency and other factors, but disaggregated on disposition.
+  * **[complaints](<https://library-metatab-org.s3.amazonaws.com/openjustice.doj.ca.gov-datasets-1.1.1/data/complaints.csv>)**. Summary of civilian complaints by agency
+  * **[crimes_clearances](<https://library-metatab-org.s3.amazonaws.com/openjustice.doj.ca.gov-datasets-1.1.1/data/crimes_clearances.csv>)**. Counts of reported cimes and clearances, by year and agency
+  * **[ripa_stop](<https://library-metatab-org.s3.amazonaws.com/openjustice.doj.ca.gov-datasets-1.1.1/data/ripa_stop.csv>)**. RIPA Stop Data
+  * **[lea_cjp](<https://library-metatab-org.s3.amazonaws.com/openjustice.doj.ca.gov-datasets-1.1.1/data/lea_cjp.csv>)**. Law Enforcement and Criminal Justice Personnel
+  * **[leap](<https://library-metatab-org.s3.amazonaws.com/openjustice.doj.ca.gov-datasets-1.1.1/data/leap.csv>)**. Law Enforcement Personnel
+  * **[leoka](<https://library-metatab-org.s3.amazonaws.com/openjustice.doj.ca.gov-datasets-1.1.1/data/leoka.csv>)**. Law Enforcement Officers Killed or Assaulted
 
 
 ## Documentation
@@ -676,14 +676,14 @@ c15pm_f| integer|
 ## Packages
 
   * **s3** s3://library.metatab.org/openjustice.doj.ca.gov-datasets-1.1.1.csv
-  * **csv** <http://library.metatab.org/openjustice.doj.ca.gov-datasets-1.1.1.csv>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/openjustice.doj.ca.gov-datasets-1.1.1.csv>
   * **source** <https://github.com/metatab-packages/policedata-collection.git>
 
 
 ### Accessing Packages in Metapack
 [code] 
     import metapack as mp
-    pkg = mp.open_package('http://library.metatab.org/openjustice.doj.ca.gov-datasets-1.1.1.csv')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/openjustice.doj.ca.gov-datasets-1.1.1.csv')
     
     # Create Dataframes
     arrests_df = pkg.resource('arrests').dataframe()

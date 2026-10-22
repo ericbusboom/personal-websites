@@ -16,11 +16,11 @@ Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
-  * **[sdpd_calls_dispositions](<http://library.metatab.org/sandiego.gov-police_calls_for_service-1.1.1/data/sdpd_calls_dispositions.csv>)**. San Diego Police Calls for Service, 2015 to 2020
-  * **[sdpd_beats](<http://library.metatab.org/sandiego.gov-police_calls_for_service-1.1.1/data/sdpd_beats.csv>)**. San Diego Police beats
-  * **[sdpd_call_type](<http://library.metatab.org/sandiego.gov-police_calls_for_service-1.1.1/data/sdpd_call_type.csv>)**. San Diego Police call type codes
-  * **[sdpd_calls_for_service](<http://library.metatab.org/sandiego.gov-police_calls_for_service-1.1.1/data/sdpd_calls_for_service.csv>)**. San Diego Police Calls for Service, 2015 to 2020
-  * **[ct_map](<http://library.metatab.org/sandiego.gov-police_calls_for_service-1.1.1/data/ct_map.csv>)**. Map from call type descriptions to simpler call types.
+  * **[sdpd_calls_dispositions](<https://library-metatab-org.s3.amazonaws.com/sandiego.gov-police_calls_for_service-1.1.1/data/sdpd_calls_dispositions.csv>)**. San Diego Police Calls for Service, 2015 to 2020
+  * **[sdpd_beats](<https://library-metatab-org.s3.amazonaws.com/sandiego.gov-police_calls_for_service-1.1.1/data/sdpd_beats.csv>)**. San Diego Police beats
+  * **[sdpd_call_type](<https://library-metatab-org.s3.amazonaws.com/sandiego.gov-police_calls_for_service-1.1.1/data/sdpd_call_type.csv>)**. San Diego Police call type codes
+  * **[sdpd_calls_for_service](<https://library-metatab-org.s3.amazonaws.com/sandiego.gov-police_calls_for_service-1.1.1/data/sdpd_calls_for_service.csv>)**. San Diego Police Calls for Service, 2015 to 2020
+  * **[ct_map](<https://library-metatab-org.s3.amazonaws.com/sandiego.gov-police_calls_for_service-1.1.1/data/ct_map.csv>)**. Map from call type descriptions to simpler call types.
 
 
 ## Documentation
@@ -114,14 +114,14 @@ Urls used in the creation of this data package.
 ## Packages
 
   * **s3** s3://library.metatab.org/sandiego.gov-police_calls_for_service-1.1.1.csv
-  * **csv** <http://library.metatab.org/sandiego.gov-police_calls_for_service-1.1.1.csv>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/sandiego.gov-police_calls_for_service-1.1.1.csv>
   * **source** <https://github.com/metatab-packages/policedata-collection.git>
 
 
 ### Accessing Packages in Metapack
 [code] 
     import metapack as mp
-    pkg = mp.open_package('http://library.metatab.org/sandiego.gov-police_calls_for_service-1.1.1.csv')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiego.gov-police_calls_for_service-1.1.1.csv')
     
     # Create Dataframes
     sdpd_calls_dispositions_df = pkg.resource('sdpd_calls_dispositions').dataframe()

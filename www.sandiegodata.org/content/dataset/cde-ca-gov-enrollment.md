@@ -16,8 +16,8 @@ Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
-  * **[enrollment](<http://library.metatab.org/cde.ca.gov-enrollment-1.2.2/data/enrollment.csv>)**. School enrollment, 2007 to 2021
-  * **[race_eth](<http://library.metatab.org/cde.ca.gov-enrollment-1.2.2/data/race_eth.csv>)**. Simplified structure for race/ethnicity
+  * **[enrollment](<https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-enrollment-1.2.2/data/enrollment.csv>)**. School enrollment, 2007 to 2021
+  * **[race_eth](<https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-enrollment-1.2.2/data/race_eth.csv>)**. Simplified structure for race/ethnicity
 
 
 ## Documentation
@@ -50,7 +50,7 @@ Programs used for data transformation (contained in the `notebooks` directory), 
 ### Documentation Links
 
   * [data_dictionary](<https://www.cde.ca.gov/ds/ad/fsenr.asp>) Table columns and descriptions.
-  * [Documentation Page](<http://library.metatab.org/cde.ca.gov-enrollment-1.2.2/index.html>)
+  * [Documentation Page](<https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-enrollment-1.2.2/index.html>)
   * [download_page](<https://www.cde.ca.gov/ds/ad/enrolldowndata.asp>) Enrollment by School download page
 
 
@@ -155,7 +155,7 @@ Urls used in the creation of this data package.
 ## Packages
 
   * **s3** s3://library.metatab.org/cde.ca.gov-enrollment-1.2.2.csv
-  * **csv** <http://library.metatab.org/cde.ca.gov-enrollment-1.2.2.csv>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-enrollment-1.2.2.csv>
   * **source** <https://github.com/metatab-packages/cde.ca.gov-enrollment.git>
 
 
@@ -164,14 +164,14 @@ Urls used in the creation of this data package.
     import pandas as pd
     
     
-    enrollment_df =  pd.read_csv('http://library.metatab.org/cde.ca.gov-enrollment-1.2.2/data/enrollment.csv')
-    race_eth_df =  pd.read_csv('http://library.metatab.org/cde.ca.gov-enrollment-1.2.2/data/race_eth.csv')
+    enrollment_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-enrollment-1.2.2/data/enrollment.csv')
+    race_eth_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-enrollment-1.2.2/data/race_eth.csv')
 [/code]
 
 ### Accessing Package in Metapack
 [code] 
     import metapack as mp
-    pkg = mp.open_package('http://library.metatab.org/cde.ca.gov-enrollment-1.2.2.csv')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-enrollment-1.2.2.csv')
     
     # Create Dataframes
     enrollment_df = pkg.resource('enrollment').dataframe()

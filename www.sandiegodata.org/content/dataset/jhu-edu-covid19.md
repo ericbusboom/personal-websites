@@ -16,11 +16,11 @@ Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
-  * **[confirmed](<http://library.metatab.org/jhu.edu-covid19-2.4.38/data/confirmed.csv>)**. Confirmed Non-US cases by date and country
-  * **[deaths](<http://library.metatab.org/jhu.edu-covid19-2.4.38/data/deaths.csv>)**. Non-US Death cases by date and country
-  * **[recovered](<http://library.metatab.org/jhu.edu-covid19-2.4.38/data/recovered.csv>)**. Non-US recoveries cases by date and country
-  * **[confirmed_us](<http://library.metatab.org/jhu.edu-covid19-2.4.38/data/confirmed_us.csv>)**. Confirmed US cases by date and country
-  * **[deaths_us](<http://library.metatab.org/jhu.edu-covid19-2.4.38/data/deaths_us.csv>)**. US Death cases by date and country
+  * **[confirmed](<https://library-metatab-org.s3.amazonaws.com/jhu.edu-covid19-2.4.38/data/confirmed.csv>)**. Confirmed Non-US cases by date and country
+  * **[deaths](<https://library-metatab-org.s3.amazonaws.com/jhu.edu-covid19-2.4.38/data/deaths.csv>)**. Non-US Death cases by date and country
+  * **[recovered](<https://library-metatab-org.s3.amazonaws.com/jhu.edu-covid19-2.4.38/data/recovered.csv>)**. Non-US recoveries cases by date and country
+  * **[confirmed_us](<https://library-metatab-org.s3.amazonaws.com/jhu.edu-covid19-2.4.38/data/confirmed_us.csv>)**. Confirmed US cases by date and country
+  * **[deaths_us](<https://library-metatab-org.s3.amazonaws.com/jhu.edu-covid19-2.4.38/data/deaths_us.csv>)**. US Death cases by date and country
 
 
 ## Documentation
@@ -40,7 +40,7 @@ The 'rate_t5d' column is the growth date from 5 days before the observation to t
 ### Documentation Links
 
   * [John Hopkins Project Homepage](<https://systems.jhu.edu/research/public-health/ncov/>)
-  * [Documentation Page](<http://library.metatab.org/jhu.edu-covid19-2.4.38/index.html>)
+  * [Documentation Page](<https://library-metatab-org.s3.amazonaws.com/jhu.edu-covid19-2.4.38/index.html>)
 
 
 ## Contacts
@@ -172,7 +172,7 @@ Urls used in the creation of this data package.
 ## Packages
 
   * **s3** s3://library.metatab.org/jhu.edu-covid19-2.4.38.csv
-  * **csv** <http://library.metatab.org/jhu.edu-covid19-2.4.38.csv>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/jhu.edu-covid19-2.4.38.csv>
   * **source** <https://github.com/metatab-packages/metatab-packages.git>
 
 
@@ -181,17 +181,17 @@ Urls used in the creation of this data package.
     import pandas as pd
     
     
-    confirmed_df =  pd.read_csv('http://library.metatab.org/jhu.edu-covid19-2.4.38/data/confirmed.csv')
-    deaths_df =  pd.read_csv('http://library.metatab.org/jhu.edu-covid19-2.4.38/data/deaths.csv')
-    recovered_df =  pd.read_csv('http://library.metatab.org/jhu.edu-covid19-2.4.38/data/recovered.csv')
-    confirmed_us_df =  pd.read_csv('http://library.metatab.org/jhu.edu-covid19-2.4.38/data/confirmed_us.csv')
-    deaths_us_df =  pd.read_csv('http://library.metatab.org/jhu.edu-covid19-2.4.38/data/deaths_us.csv')
+    confirmed_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/jhu.edu-covid19-2.4.38/data/confirmed.csv')
+    deaths_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/jhu.edu-covid19-2.4.38/data/deaths.csv')
+    recovered_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/jhu.edu-covid19-2.4.38/data/recovered.csv')
+    confirmed_us_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/jhu.edu-covid19-2.4.38/data/confirmed_us.csv')
+    deaths_us_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/jhu.edu-covid19-2.4.38/data/deaths_us.csv')
 [/code]
 
 ### Accessing Package in Metapack
 [code] 
     import metapack as mp
-    pkg = mp.open_package('http://library.metatab.org/jhu.edu-covid19-2.4.38.csv')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/jhu.edu-covid19-2.4.38.csv')
     
     # Create Dataframes
     confirmed_df = pkg.resource('confirmed').dataframe()

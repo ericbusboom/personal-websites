@@ -16,7 +16,7 @@ Resources | Packages | Documentation| Contacts| Data Dictionary
 
 ## Resources
 
-  * **[hpi](<http://library.metatab.org/healthyplacesindex.org-healthy_places_index-san_diego-4/data/hpi.csv>)**. Healthy Places Index master file
+  * **[hpi](<https://library-metatab-org.s3.amazonaws.com/healthyplacesindex.org-healthy_places_index-san_diego-4/data/hpi.csv>)**. Healthy Places Index master file
 
 
 ## Documentation
@@ -44,8 +44,8 @@ This version of the HPI presents the original file with only one modification: t
 
 ## Packages
 
-  * **zip** <http://library.metatab.org/healthyplacesindex.org-healthy_places_index-san_diego-4.zip>
-  * **csv** <http://library.metatab.org/healthyplacesindex.org-healthy_places_index-san_diego-4.csv>
+  * **zip** <https://library-metatab-org.s3.amazonaws.com/healthyplacesindex.org-healthy_places_index-san_diego-4.zip>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/healthyplacesindex.org-healthy_places_index-san_diego-4.csv>
   * **source** <https://github.com/sandiegodata/planning-database.git>
 
 
@@ -53,9 +53,9 @@ This version of the HPI presents the original file with only one modification: t
 [code] 
     import metapack as mp
     # ZIP Package
-    pkg = mp.open_package('http://library.metatab.org/healthyplacesindex.org-healthy_places_index-san_diego-4.zip')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/healthyplacesindex.org-healthy_places_index-san_diego-4.zip')
     # CSV Package
-    pkg = mp.open_package('http://library.metatab.org/healthyplacesindex.org-healthy_places_index-san_diego-4.csv') 
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/healthyplacesindex.org-healthy_places_index-san_diego-4.csv') 
     
     resource = pkg.resource('resource_name') # Get a resource
     df = resource.dataframe() # Create a pandas Dataframe

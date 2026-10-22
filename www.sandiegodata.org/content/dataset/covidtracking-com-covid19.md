@@ -16,7 +16,7 @@ Resources | Packages | Documentation| Contacts| Data Dictionary
 
 ## Resources
 
-  * **[states](<http://library.metatab.org/covidtracking.com-covid19-3.1.51/data/states.csv>)**. Cumulative cases, deaths, hospitalizations, etc for US states
+  * **[states](<https://library-metatab-org.s3.amazonaws.com/covidtracking.com-covid19-3.1.51/data/states.csv>)**. Cumulative cases, deaths, hospitalizations, etc for US states
 
 
 ## Documentation
@@ -25,7 +25,7 @@ The COVID Tracking Project collects information from 50 US states, the District 
 
 ### Documentation Links
 
-  * [Documentation Page](<http://library.metatab.org/covidtracking.com-covid19-3.1.51/index.html>)
+  * [Documentation Page](<https://library-metatab-org.s3.amazonaws.com/covidtracking.com-covid19-3.1.51/index.html>)
   * [Homepage](<https://covidtracking.com/>)
 
 
@@ -86,7 +86,7 @@ totaltestresultsincrease| integer|
 ## Packages
 
   * **s3** s3://library.metatab.org/covidtracking.com-covid19-3.1.51.csv
-  * **csv** <http://library.metatab.org/covidtracking.com-covid19-3.1.51.csv>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/covidtracking.com-covid19-3.1.51.csv>
   * **source** <https://github.com/sandiegodata/covid19.git>
 
 
@@ -95,13 +95,13 @@ totaltestresultsincrease| integer|
     import pandas as pd
     
     
-    states_df =  pd.read_csv('http://library.metatab.org/covidtracking.com-covid19-3.1.51/data/states.csv')
+    states_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/covidtracking.com-covid19-3.1.51/data/states.csv')
 [/code]
 
 ### Accessing Package in Metapack
 [code] 
     import metapack as mp
-    pkg = mp.open_package('http://library.metatab.org/covidtracking.com-covid19-3.1.51.csv')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/covidtracking.com-covid19-3.1.51.csv')
     
     # Create Dataframes
     states_df = pkg.resource('states').dataframe()

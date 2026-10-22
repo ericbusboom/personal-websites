@@ -16,8 +16,8 @@ Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
-  * **[incidents](<http://library.metatab.org/sandag.gov-crime-2007e2013-2.1.4/data/incidents.csv>)**. San Diego county crime incidents, 2007 to 2013
-  * **[i5y_sample](<http://library.metatab.org/sandag.gov-crime-2007e2013-2.1.4/data/i5y_sample.csv>)**. A sample of 10,000 incidents, from years 2008 to 2012
+  * **[incidents](<https://library-metatab-org.s3.amazonaws.com/sandag.gov-crime-2007e2013-2.1.4/data/incidents.csv>)**. San Diego county crime incidents, 2007 to 2013
+  * **[i5y_sample](<https://library-metatab-org.s3.amazonaws.com/sandag.gov-crime-2007e2013-2.1.4/data/i5y_sample.csv>)**. A sample of 10,000 incidents, from years 2008 to 2012
 
 
 ## Documentation
@@ -172,7 +172,7 @@ This data is based on data from SANDAG, which is subject to its own terms and co
 
 ### Documentation Links
 
-  * [Documentation Page](<http://library.metatab.org/sandag.gov-crime-2007e2013-2.1.4/index.html>)
+  * [Documentation Page](<https://library-metatab-org.s3.amazonaws.com/sandag.gov-crime-2007e2013-2.1.4/index.html>)
 
 
 ## Contacts
@@ -230,13 +230,13 @@ Urls used in the creation of this data package.
   * **file:data/incidents-2008.csv.zip# &encoding=ascii**. San Diego crime incidents 2008
   * **file:data/incidents-2009.csv.zip# &encoding=ascii**. San Diego crime incidents 2009
   * **file:data/incidents-2010.csv.zip# &encoding=ascii**. San Diego crime incidents 2010
-  * **metapack+http://library.metatab.org/sandiegodata.org-demographics-tract-1.1.1.csv**. Demographics data package
+  * **metapack+https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-demographics-tract-1.1.1.csv**. Demographics data package
 
 
 ## Packages
 
   * **s3** s3://library.metatab.org/sandag.gov-crime-2007e2013-2.1.4.csv
-  * **csv** <http://library.metatab.org/sandag.gov-crime-2007e2013-2.1.4.csv>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/sandag.gov-crime-2007e2013-2.1.4.csv>
   * **source** <https://github.com/metatab-packages/sandag.gov-crime-2007e2013.git>
 
 
@@ -245,14 +245,14 @@ Urls used in the creation of this data package.
     import pandas as pd
     
     
-    incidents_df =  pd.read_csv('http://library.metatab.org/sandag.gov-crime-2007e2013-2.1.4/data/incidents.csv')
-    i5y_sample_df =  pd.read_csv('http://library.metatab.org/sandag.gov-crime-2007e2013-2.1.4/data/i5y_sample.csv')
+    incidents_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandag.gov-crime-2007e2013-2.1.4/data/incidents.csv')
+    i5y_sample_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandag.gov-crime-2007e2013-2.1.4/data/i5y_sample.csv')
 [/code]
 
 ### Accessing Package in Metapack
 [code] 
     import metapack as mp
-    pkg = mp.open_package('http://library.metatab.org/sandag.gov-crime-2007e2013-2.1.4.csv')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandag.gov-crime-2007e2013-2.1.4.csv')
     
     # Create Dataframes
     incidents_gdf = pkg.resource('incidents').geoframe()

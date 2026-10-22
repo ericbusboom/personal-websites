@@ -16,12 +16,12 @@ Resources | Packages | Documentation| Contacts
 
 ## Resources
 
-  * **[columns_by_year_growth.csv](<http://ds.civicknowledge.org.s3.amazonaws.com/sandiegodata.org/cde.ca.gov-api-combined-429e/cal-api-growth-99-13.csv>)**. Report of the column names and descriptions in all growth files, and what year of file each column and description appears in.
-  * **[documentation.html](<http://ds.civicknowledge.org.s3.amazonaws.com/sandiegodata.org/cde.ca.gov-api-combined-429e/California%20Academic%20Performance%20Index%2C%201999%20-%202012.htm>)**. Dataset documentation
-  * **[cal-api-base-99-12.csv](<http://ds.civicknowledge.org.s3.amazonaws.com/sandiegodata.org/cde.ca.gov-api-combined-429e/cal-api-base-99-12.csv>)**. API Base in CSV Format
-  * **[cal-api-growth-99-13.csv](<http://ds.civicknowledge.org.s3.amazonaws.com/sandiegodata.org/cde.ca.gov-api-combined-429e/cal-api-growth-99-13.csv>)**. API Growth in CSV Format
-  * **[columns_by_year_base.csv](<http://ds.civicknowledge.org.s3.amazonaws.com/sandiegodata.org/cde.ca.gov-api-combined-429e/columns_by_year_base.csv>)**. Report of the column names and descriptions in all base files, and what year of file each column and description appears in.
-  * **[schema.csv](<http://ds.civicknowledge.org.s3.amazonaws.com/sandiegodata.org/cde.ca.gov-api-combined-429e/schema.csv>)**. The schema for all tables, as a CSV file.
+  * **[columns_by_year_growth.csv](<https://library-metatab-org.s3.amazonaws.com/ds.civicknowledge.org/sandiegodata.org/cde.ca.gov-api-combined-429e/cal-api-growth-99-13.csv>)**. Report of the column names and descriptions in all growth files, and what year of file each column and description appears in.
+  * **[documentation.html](<https://library-metatab-org.s3.amazonaws.com/ds.civicknowledge.org/sandiegodata.org/cde.ca.gov-api-combined-429e/California%20Academic%20Performance%20Index%2C%201999%20-%202012.htm>)**. Dataset documentation
+  * **[cal-api-base-99-12.csv](<https://library-metatab-org.s3.amazonaws.com/ds.civicknowledge.org/sandiegodata.org/cde.ca.gov-api-combined-429e/cal-api-base-99-12.csv>)**. API Base in CSV Format
+  * **[cal-api-growth-99-13.csv](<https://library-metatab-org.s3.amazonaws.com/ds.civicknowledge.org/sandiegodata.org/cde.ca.gov-api-combined-429e/cal-api-growth-99-13.csv>)**. API Growth in CSV Format
+  * **[columns_by_year_base.csv](<https://library-metatab-org.s3.amazonaws.com/ds.civicknowledge.org/sandiegodata.org/cde.ca.gov-api-combined-429e/columns_by_year_base.csv>)**. Report of the column names and descriptions in all base files, and what year of file each column and description appears in.
+  * **[schema.csv](<https://library-metatab-org.s3.amazonaws.com/ds.civicknowledge.org/sandiegodata.org/cde.ca.gov-api-combined-429e/schema.csv>)**. The schema for all tables, as a CSV file.
 
 
 ## Documentation

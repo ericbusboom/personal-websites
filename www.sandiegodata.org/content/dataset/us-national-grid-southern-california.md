@@ -16,7 +16,7 @@ Resources | Packages | Documentation| Contacts
 
 ## Resources
 
-  * **[ca11_usng](<http://library.metatab.org/usngcenter.org-usng-ca11-1/data/ca11_usng.csv>)**. US National Grid for California, Zone 11
+  * **[ca11_usng](<https://library-metatab-org.s3.amazonaws.com/usngcenter.org-usng-ca11-1/data/ca11_usng.csv>)**. US National Grid for California, Zone 11
 
 
 ## Documentation
@@ -30,8 +30,8 @@ Resources | Packages | Documentation| Contacts
 
 ## Packages
 
-  * **csv** <http://library.metatab.org/usngcenter.org-usng-ca11-1.csv>
-  * **zip** <http://library.metatab.org/usngcenter.org-usng-ca11-1.zip>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/usngcenter.org-usng-ca11-1.csv>
+  * **zip** <https://library-metatab-org.s3.amazonaws.com/usngcenter.org-usng-ca11-1.zip>
   * **source** <https://github.com/san-diego-water-quality/water-datasets.git>
 
 
@@ -39,9 +39,9 @@ Resources | Packages | Documentation| Contacts
 [code] 
     import metapack as mp
     # ZIP Package
-    pkg = mp.open_package('http://library.metatab.org/usngcenter.org-usng-ca11-1.zip')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/usngcenter.org-usng-ca11-1.zip')
     # CSV Package
-    pkg = mp.open_package('http://library.metatab.org/usngcenter.org-usng-ca11-1.csv') 
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/usngcenter.org-usng-ca11-1.csv') 
     
     resource = pkg.resource('resource_name') # Get a resource
     df = resource.dataframe() # Create a pandas Dataframe

@@ -16,8 +16,8 @@ Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
-  * **[gid_requests](<http://library.metatab.org/sandiego.gov-get_it_done-1.1.2/data/gid_requests.csv>)**. Get It Done requests
-  * **[gid_rast](<http://library.metatab.org/sandiego.gov-get_it_done-1.1.2/data/gid_rast.csv>)**. Get It Done requests, in a format for rasterization
+  * **[gid_requests](<https://library-metatab-org.s3.amazonaws.com/sandiego.gov-get_it_done-1.1.2/data/gid_requests.csv>)**. Get It Done requests
+  * **[gid_rast](<https://library-metatab-org.s3.amazonaws.com/sandiego.gov-get_it_done-1.1.2/data/gid_rast.csv>)**. Get It Done requests, in a format for rasterization
 
 
 ## Documentation
@@ -29,7 +29,7 @@ This data package combines multiple years of the source data into a single file 
 ### Documentation Links
 
   * [Download Page](<https://data.sandiego.gov/datasets/get-it-done-311/>) Reports of non-emergency problems submitted by users of Get It Done
-  * [Documentation Page](<http://library.metatab.org/sandiego.gov-get_it_done-1.1.2/index.html>)
+  * [Documentation Page](<https://library-metatab-org.s3.amazonaws.com/sandiego.gov-get_it_done-1.1.2/index.html>)
 
 
 ## Contacts
@@ -98,9 +98,9 @@ Urls used in the creation of this data package.
 
 ## Packages
 
-  * **zip** <http://library.metatab.org/sandiego.gov-get_it_done-1.1.2.zip>
+  * **zip** <https://library-metatab-org.s3.amazonaws.com/sandiego.gov-get_it_done-1.1.2.zip>
   * **s3** s3://library.metatab.org/sandiego.gov-get_it_done-1.1.2.csv
-  * **csv** <http://library.metatab.org/sandiego.gov-get_it_done-1.1.2.csv>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/sandiego.gov-get_it_done-1.1.2.csv>
   * **source** <https://github.com/metatab-packages/sandiego.gov-get_it_done.git>
 
 
@@ -109,14 +109,14 @@ Urls used in the creation of this data package.
     import pandas as pd
     
     
-    gid_requests_df =  pd.read_csv('http://library.metatab.org/sandiego.gov-get_it_done-1.1.2/data/gid_requests.csv')
-    gid_rast_df =  pd.read_csv('http://library.metatab.org/sandiego.gov-get_it_done-1.1.2/data/gid_rast.csv')
+    gid_requests_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiego.gov-get_it_done-1.1.2/data/gid_requests.csv')
+    gid_rast_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiego.gov-get_it_done-1.1.2/data/gid_rast.csv')
 [/code]
 
 ### Accessing Package in Metapack
 [code] 
     import metapack as mp
-    pkg = mp.open_package('http://library.metatab.org/sandiego.gov-get_it_done-1.1.2.zip')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiego.gov-get_it_done-1.1.2.zip')
     
     # Create Dataframes
     gid_requests_gdf = pkg.resource('gid_requests').geoframe()

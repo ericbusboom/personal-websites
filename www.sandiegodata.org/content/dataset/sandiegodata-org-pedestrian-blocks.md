@@ -16,8 +16,8 @@ Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
-  * **[ped_blocks](<http://library.metatab.org/sandiegodata.org-pedestrian-blocks-1/data/ped_blocks.csv>)**. Pedestrian density per time by walkway, time of day and day of week
-  * **[blocks](<http://library.metatab.org/sandiegodata.org-pedestrian-blocks-1/data/blocks.csv>)**. Geographic data for San Diego city census blocks
+  * **[ped_blocks](<https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-pedestrian-blocks-1/data/ped_blocks.csv>)**. Pedestrian density per time by walkway, time of day and day of week
+  * **[blocks](<https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-pedestrian-blocks-1/data/blocks.csv>)**. Geographic data for San Diego city census blocks
 
 
 ## Documentation
@@ -42,15 +42,15 @@ Pedestrian densities are in terms of the average of the pedestrians per hour for
 
 ## Packages
 
-  * **zip** <http://library.metatab.org/sandiegodata.org-pedestrian-blocks-1.zip>
-  * **csv** <http://library.metatab.org/sandiegodata.org-pedestrian-blocks-1.csv>
+  * **zip** <https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-pedestrian-blocks-1.zip>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-pedestrian-blocks-1.csv>
   * **source** <https://github.com/sandiegodata-projects/downtown-partnership.git>
 
 
 ### Accessing Packages in Metapack
 [code] 
     import metapack as mp
-    pkg = mp.open_package('http://library.metatab.org/sandiegodata.org-pedestrian-blocks-1.zip')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-pedestrian-blocks-1.zip')
     
     # Create Dataframes
     
@@ -85,8 +85,8 @@ rank| number| Density percentile / rank
 
 Urls used in the creation of this data package.
 
-  * **metapack+http://library.metatab.org/cityiq.io-pedestrians-san_diego-1.zip#pedestrians**. 
-  * **metapack+http://library.metatab.org/cityiq.io-objects-san_diego-5.zip#walkways**. 
+  * **metapack+https://library-metatab-org.s3.amazonaws.com/cityiq.io-pedestrians-san_diego-1.zip#pedestrians**. 
+  * **metapack+https://library-metatab-org.s3.amazonaws.com/cityiq.io-objects-san_diego-5.zip#walkways**. 
   * **shape+https://www2.census.gov/geo/pvs/tiger2010st/06_California/06073/tl_2010_06073_tabblock10.zip**. 2010 Census blocks for San Diego County
 
 
@@ -94,15 +94,15 @@ Last Modified 2019-10-08T23:05:23
 
 ## Packages
 
-  * **zip** <http://library.metatab.org/sandiegodata.org-pedestrian-blocks-1.zip>
-  * **csv** <http://library.metatab.org/sandiegodata.org-pedestrian-blocks-1.csv>
+  * **zip** <https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-pedestrian-blocks-1.zip>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-pedestrian-blocks-1.csv>
   * **source** <https://github.com/sandiegodata-projects/downtown-partnership.git>
 
 
 ### Accessing Packages in Metapack
 [code] 
     import metapack as mp
-    pkg = mp.open_package('http://library.metatab.org/sandiegodata.org-pedestrian-blocks-1.zip')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-pedestrian-blocks-1.zip')
     
     # Create Dataframes
     

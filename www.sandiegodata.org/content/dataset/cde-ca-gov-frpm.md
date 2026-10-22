@@ -16,14 +16,14 @@ Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
-  * **[frp_meals](<http://cde.metatab.org/cde.ca.gov-frpm-1.2.1/data/frp_meals.csv>)**. Combined data, 2004 to 2018
+  * **[frp_meals](<https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-frpm-1.2.1/data/frp_meals.csv>)**. Combined data, 2004 to 2018
 
 
 ## Documentation
 
 ### Documentation Links
 
-  * [Documentation Page](<http://cde.metatab.org/cde.ca.gov-frpm-1.2.1/index.html>)
+  * [Documentation Page](<https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-frpm-1.2.1/index.html>)
   * [Homepage](<https://www.cde.ca.gov/ds/sd/sd/filessp.asp>) Dataset home page
 
 
@@ -146,7 +146,7 @@ Urls used in the creation of this data package.
 ## Packages
 
   * **s3** s3://cde.metatab.org/cde.ca.gov-frpm-1.2.1.csv
-  * **csv** <http://cde.metatab.org/cde.ca.gov-frpm-1.2.1.csv>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-frpm-1.2.1.csv>
   * **source** <https://github.com/Metatab/metatab-packages.git>
 
 
@@ -155,13 +155,13 @@ Urls used in the creation of this data package.
     import pandas as pd
     
     
-    frp_meals_df =  pd.read_csv('http://cde.metatab.org/cde.ca.gov-frpm-1.2.1/data/frp_meals.csv')
+    frp_meals_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-frpm-1.2.1/data/frp_meals.csv')
 [/code]
 
 ### Accessing Package in Metapack
 [code] 
     import metapack as mp
-    pkg = mp.open_package('http://cde.metatab.org/cde.ca.gov-frpm-1.2.1.csv')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-frpm-1.2.1.csv')
     
     # Create Dataframes
     frp_meals_df = pkg.resource('frp_meals').dataframe()

@@ -16,9 +16,9 @@ Resources | Packages | Documentation| Contacts| Data Dictionary
 
 ## Resources
 
-  * **[codebook](<http://library.metatab.org/lahsa.org-homeless_count-2018-los_angeles-1/data/codebook.csv>)**. 
-  * **[tracts](<http://library.metatab.org/lahsa.org-homeless_count-2018-los_angeles-1/data/tracts.csv>)**. 
-  * **[communities](<http://library.metatab.org/lahsa.org-homeless_count-2018-los_angeles-1/data/communities.csv>)**. 
+  * **[codebook](<https://library-metatab-org.s3.amazonaws.com/lahsa.org-homeless_count-2018-los_angeles-1/data/codebook.csv>)**. 
+  * **[tracts](<https://library-metatab-org.s3.amazonaws.com/lahsa.org-homeless_count-2018-los_angeles-1/data/tracts.csv>)**. 
+  * **[communities](<https://library-metatab-org.s3.amazonaws.com/lahsa.org-homeless_count-2018-los_angeles-1/data/communities.csv>)**. 
 
 
 ## Documentation
@@ -91,15 +91,15 @@ Los Angeles Homeless Services Authority, <https://www.lahsa.org/>
 
 ## Packages
 
-  * **zip** <http://library.metatab.org/lahsa.org-homeless_count-2018-los_angeles-1.zip>
-  * **csv** <http://library.metatab.org/lahsa.org-homeless_count-2018-los_angeles-1.csv>
+  * **zip** <https://library-metatab-org.s3.amazonaws.com/lahsa.org-homeless_count-2018-los_angeles-1.zip>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/lahsa.org-homeless_count-2018-los_angeles-1.csv>
   * **source** <https://github.com/SDRDLAnalysts/data-projects.git>
 
 
 ### Accessing Packages in Metapack
 [code] 
     import metapack as mp
-    pkg = mp.open_package('http://library.metatab.org/lahsa.org-homeless_count-2018-los_angeles-1.zip')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/lahsa.org-homeless_count-2018-los_angeles-1.zip')
     
     # Create Dataframes
     
@@ -270,15 +270,15 @@ Last Modified 2019-07-04T23:08:29
 
 ## Packages
 
-  * **zip** <http://library.metatab.org/lahsa.org-homeless_count-2018-los_angeles-1.zip>
-  * **csv** <http://library.metatab.org/lahsa.org-homeless_count-2018-los_angeles-1.csv>
+  * **zip** <https://library-metatab-org.s3.amazonaws.com/lahsa.org-homeless_count-2018-los_angeles-1.zip>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/lahsa.org-homeless_count-2018-los_angeles-1.csv>
   * **source** <https://github.com/SDRDLAnalysts/data-projects.git>
 
 
 ### Accessing Packages in Metapack
 [code] 
     import metapack as mp
-    pkg = mp.open_package('http://library.metatab.org/lahsa.org-homeless_count-2018-los_angeles-1.zip')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/lahsa.org-homeless_count-2018-los_angeles-1.zip')
     
     # Create Dataframes
     

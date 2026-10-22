@@ -16,22 +16,22 @@ Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
-  * **[state_500k](<http://library.metatab.org/census.gov-boundaries-2018-1.2.8/data/state_500k.csv>)**. State boundaries, scale 500K:1
-  * **[state_5m](<http://library.metatab.org/census.gov-boundaries-2018-1.2.8/data/state_5m.csv>)**. State boundaries, scale 5M:1
-  * **[state_20m](<http://library.metatab.org/census.gov-boundaries-2018-1.2.8/data/state_20m.csv>)**. State boundaries, scale 20M:1
-  * **[county_500k](<http://library.metatab.org/census.gov-boundaries-2018-1.2.8/data/county_500k.csv>)**. County boundaries, scale 500K:1
-  * **[county_5m](<http://library.metatab.org/census.gov-boundaries-2018-1.2.8/data/county_5m.csv>)**. County boundaries, scale 5M:1
-  * **[county_20m](<http://library.metatab.org/census.gov-boundaries-2018-1.2.8/data/county_20m.csv>)**. County boundaries, scale 20M:1
-  * **[nation_5m](<http://library.metatab.org/census.gov-boundaries-2018-1.2.8/data/nation_5m.csv>)**. National boundary, 5M:1
-  * **[nation_20m](<http://library.metatab.org/census.gov-boundaries-2018-1.2.8/data/nation_20m.csv>)**. National boundary 20M:1
-  * **[zcta_500k](<http://library.metatab.org/census.gov-boundaries-2018-1.2.8/data/zcta_500k.csv>)**. ZCTA (Zip Codes), scale 500K:1
+  * **[state_500k](<https://library-metatab-org.s3.amazonaws.com/census.gov-boundaries-2018-1.2.8/data/state_500k.csv>)**. State boundaries, scale 500K:1
+  * **[state_5m](<https://library-metatab-org.s3.amazonaws.com/census.gov-boundaries-2018-1.2.8/data/state_5m.csv>)**. State boundaries, scale 5M:1
+  * **[state_20m](<https://library-metatab-org.s3.amazonaws.com/census.gov-boundaries-2018-1.2.8/data/state_20m.csv>)**. State boundaries, scale 20M:1
+  * **[county_500k](<https://library-metatab-org.s3.amazonaws.com/census.gov-boundaries-2018-1.2.8/data/county_500k.csv>)**. County boundaries, scale 500K:1
+  * **[county_5m](<https://library-metatab-org.s3.amazonaws.com/census.gov-boundaries-2018-1.2.8/data/county_5m.csv>)**. County boundaries, scale 5M:1
+  * **[county_20m](<https://library-metatab-org.s3.amazonaws.com/census.gov-boundaries-2018-1.2.8/data/county_20m.csv>)**. County boundaries, scale 20M:1
+  * **[nation_5m](<https://library-metatab-org.s3.amazonaws.com/census.gov-boundaries-2018-1.2.8/data/nation_5m.csv>)**. National boundary, 5M:1
+  * **[nation_20m](<https://library-metatab-org.s3.amazonaws.com/census.gov-boundaries-2018-1.2.8/data/nation_20m.csv>)**. National boundary 20M:1
+  * **[zcta_500k](<https://library-metatab-org.s3.amazonaws.com/census.gov-boundaries-2018-1.2.8/data/zcta_500k.csv>)**. ZCTA (Zip Codes), scale 500K:1
 
 
 ## Documentation
 
 This data package collects a selection of the US Census cartographic shape files, which are designed to be used in creating maps. For each type of region, they come in a varity of resolutions, so they are more suitable for creating web maps than the much larger TIGER files.
 
-![](http://library.metatab.org/census.gov-boundaries-2018-1.2.4/notebooks/continental.png)
+![](https://library-metatab-org.s3.amazonaws.com/census.gov-boundaries-2018-1.2.4/notebooks/continental.png)
 
 These files have been processed to all have the same schema and use ACS style Geoids. The original files have AFF style geoids, which have extra '00' characters in them.
 
@@ -39,7 +39,7 @@ The use of a single schema means that in some files, some columns are consistent
 
 ### Documentation Links
 
-  * [Documentation Page](<http://library.metatab.org/census.gov-boundaries-2018-1.2.8/index.html>)
+  * [Documentation Page](<https://library-metatab-org.s3.amazonaws.com/census.gov-boundaries-2018-1.2.8/index.html>)
   * [Homepage](<https://www.census.gov/geographies/mapping-files/time-series/geo/carto-boundary-file.html>) Page with links to all of the files
 
 
@@ -86,7 +86,7 @@ Urls used in the creation of this data package.
 ## Packages
 
   * **s3** s3://library.metatab.org/census.gov-boundaries-2018-1.2.8.csv
-  * **csv** <http://library.metatab.org/census.gov-boundaries-2018-1.2.8.csv>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/census.gov-boundaries-2018-1.2.8.csv>
   * **source** <https://github.com/CivicKnowledge/tablecloth.io.git>
 
 
@@ -95,21 +95,21 @@ Urls used in the creation of this data package.
     import pandas as pd
     
     
-    state_500k_df =  pd.read_csv('http://library.metatab.org/census.gov-boundaries-2018-1.2.8/data/state_500k.csv')
-    state_5m_df =  pd.read_csv('http://library.metatab.org/census.gov-boundaries-2018-1.2.8/data/state_5m.csv')
-    state_20m_df =  pd.read_csv('http://library.metatab.org/census.gov-boundaries-2018-1.2.8/data/state_20m.csv')
-    county_500k_df =  pd.read_csv('http://library.metatab.org/census.gov-boundaries-2018-1.2.8/data/county_500k.csv')
-    county_5m_df =  pd.read_csv('http://library.metatab.org/census.gov-boundaries-2018-1.2.8/data/county_5m.csv')
-    county_20m_df =  pd.read_csv('http://library.metatab.org/census.gov-boundaries-2018-1.2.8/data/county_20m.csv')
-    nation_5m_df =  pd.read_csv('http://library.metatab.org/census.gov-boundaries-2018-1.2.8/data/nation_5m.csv')
-    nation_20m_df =  pd.read_csv('http://library.metatab.org/census.gov-boundaries-2018-1.2.8/data/nation_20m.csv')
-    zcta_500k_df =  pd.read_csv('http://library.metatab.org/census.gov-boundaries-2018-1.2.8/data/zcta_500k.csv')
+    state_500k_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/census.gov-boundaries-2018-1.2.8/data/state_500k.csv')
+    state_5m_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/census.gov-boundaries-2018-1.2.8/data/state_5m.csv')
+    state_20m_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/census.gov-boundaries-2018-1.2.8/data/state_20m.csv')
+    county_500k_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/census.gov-boundaries-2018-1.2.8/data/county_500k.csv')
+    county_5m_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/census.gov-boundaries-2018-1.2.8/data/county_5m.csv')
+    county_20m_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/census.gov-boundaries-2018-1.2.8/data/county_20m.csv')
+    nation_5m_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/census.gov-boundaries-2018-1.2.8/data/nation_5m.csv')
+    nation_20m_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/census.gov-boundaries-2018-1.2.8/data/nation_20m.csv')
+    zcta_500k_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/census.gov-boundaries-2018-1.2.8/data/zcta_500k.csv')
 [/code]
 
 ### Accessing Package in Metapack
 [code] 
     import metapack as mp
-    pkg = mp.open_package('http://library.metatab.org/census.gov-boundaries-2018-1.2.8.csv')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/census.gov-boundaries-2018-1.2.8.csv')
     
     # Create Dataframes
     state_500k_gdf = pkg.resource('state_500k').geoframe()

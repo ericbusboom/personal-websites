@@ -16,11 +16,11 @@ Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
-  * **[resources](<http://library.metatab.org/arcgis.com-risk-3/data/resources.csv>)**. Homeless population, crime, and 311 calls by tract and community.
-  * **[county_outline](<http://library.metatab.org/arcgis.com-risk-3/data/county_outline.csv>)**. County bountry outline
-  * **[shelters_services](<http://library.metatab.org/arcgis.com-risk-3/data/shelters_services.csv>)**. Locations and basic information for shelters and other services
-  * **[homeless_population](<http://library.metatab.org/arcgis.com-risk-3/data/homeless_population.csv>)**. Detailed homeless population data per tract.
-  * **[risk_factors](<http://library.metatab.org/arcgis.com-risk-3/data/risk_factors.csv>)**. Tract level neighborhood risk factors, probably from teh American Community Survey
+  * **[resources](<https://library-metatab-org.s3.amazonaws.com/arcgis.com-risk-3/data/resources.csv>)**. Homeless population, crime, and 311 calls by tract and community.
+  * **[county_outline](<https://library-metatab-org.s3.amazonaws.com/arcgis.com-risk-3/data/county_outline.csv>)**. County bountry outline
+  * **[shelters_services](<https://library-metatab-org.s3.amazonaws.com/arcgis.com-risk-3/data/shelters_services.csv>)**. Locations and basic information for shelters and other services
+  * **[homeless_population](<https://library-metatab-org.s3.amazonaws.com/arcgis.com-risk-3/data/homeless_population.csv>)**. Detailed homeless population data per tract.
+  * **[risk_factors](<https://library-metatab-org.s3.amazonaws.com/arcgis.com-risk-3/data/risk_factors.csv>)**. Tract level neighborhood risk factors, probably from teh American Community Survey
 
 
 ## Documentation
@@ -47,15 +47,15 @@ The files are interesting, but poorly documented and of unknown provenance, so p
 
 ## Packages
 
-  * **zip** <http://library.metatab.org/arcgis.com-risk-3.zip>
-  * **csv** <http://library.metatab.org/arcgis.com-risk-3.csv>
+  * **zip** <https://library-metatab-org.s3.amazonaws.com/arcgis.com-risk-3.zip>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/arcgis.com-risk-3.csv>
   * **source** <https://github.com/SDRDLAnalysts/data-projects.git>
 
 
 ### Accessing Packages in Metapack
 [code] 
     import metapack as mp
-    pkg = mp.open_package('http://library.metatab.org/arcgis.com-risk-3.zip')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/arcgis.com-risk-3.zip')
     
     # Create Dataframes
     resources_gdf = pkg.resource('resources').geoframe()
@@ -229,15 +229,15 @@ Last Modified 2019-07-17T00:49:01
 
 ## Packages
 
-  * **zip** <http://library.metatab.org/arcgis.com-risk-3.zip>
-  * **csv** <http://library.metatab.org/arcgis.com-risk-3.csv>
+  * **zip** <https://library-metatab-org.s3.amazonaws.com/arcgis.com-risk-3.zip>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/arcgis.com-risk-3.csv>
   * **source** <https://github.com/SDRDLAnalysts/data-projects.git>
 
 
 ### Accessing Packages in Metapack
 [code] 
     import metapack as mp
-    pkg = mp.open_package('http://library.metatab.org/arcgis.com-risk-3.zip')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/arcgis.com-risk-3.zip')
     
     # Create Dataframes
     resources_gdf = pkg.resource('resources').geoframe()

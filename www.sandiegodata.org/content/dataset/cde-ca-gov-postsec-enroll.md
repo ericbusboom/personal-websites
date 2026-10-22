@@ -16,7 +16,7 @@ Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
-  * **[cgr](<http://library.metatab.org/cde.ca.gov-postsec_enroll-1.2.3/data/cgr.csv>)**. College Going Rate
+  * **[cgr](<https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-postsec_enroll-1.2.3/data/cgr.csv>)**. College Going Rate
 
 
 ## Documentation
@@ -33,7 +33,7 @@ Programs used for data transformation (contained in the `notebooks` directory), 
 
   * [College-Going Rate](<https://www.cde.ca.gov/ds/ad/cgrinfo.asp>) High-level overview of the CGR data sources, DataQuest reports, downloadable files, definitions, and rules helpful to understanding the CGR data reports and downloadable data files.
   * [Using the CGR Data File](<https://www.cde.ca.gov/ds/ad/usingcgr.asp>) This page explains how to effectively use the sub-setting variables included in this CGR data file to obtain the desired counts.
-  * [Documentation Page](<http://library.metatab.org/cde.ca.gov-postsec_enroll-1.2.3/index.html>)
+  * [Documentation Page](<https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-postsec_enroll-1.2.3/index.html>)
   * [Home Page](<https://www.cde.ca.gov/ds/ad/pse.asp>)
   * [Data Dictionary](<https://www.cde.ca.gov/ds/ad/fscgr16.asp>) Field descriptions for the 16 month file
 
@@ -110,7 +110,7 @@ Urls used in the creation of this data package.
 ## Packages
 
   * **s3** s3://library.metatab.org/cde.ca.gov-postsec_enroll-1.2.3.csv
-  * **csv** <http://library.metatab.org/cde.ca.gov-postsec_enroll-1.2.3.csv>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-postsec_enroll-1.2.3.csv>
   * **source** <https://github.com/metatab-packages/cde.ca.gov-collection.git>
 
 
@@ -119,13 +119,13 @@ Urls used in the creation of this data package.
     import pandas as pd
     
     
-    cgr_df =  pd.read_csv('http://library.metatab.org/cde.ca.gov-postsec_enroll-1.2.3/data/cgr.csv')
+    cgr_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-postsec_enroll-1.2.3/data/cgr.csv')
 [/code]
 
 ### Accessing Package in Metapack
 [code] 
     import metapack as mp
-    pkg = mp.open_package('http://library.metatab.org/cde.ca.gov-postsec_enroll-1.2.3.csv')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-postsec_enroll-1.2.3.csv')
     
     # Create Dataframes
     cgr_df = pkg.resource('cgr').dataframe()

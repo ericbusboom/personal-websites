@@ -16,11 +16,11 @@ Resources | Packages | Documentation| Contacts
 
 ## Resources
 
-  * **[tracts](<http://s3.amazonaws.com/library.metatab.org/sangis.org-census_regions-2010-sandiego-4/data/tracts.csv>)**. 2010 Census Tract boundaries
-  * **[msa](<http://s3.amazonaws.com/library.metatab.org/sangis.org-census_regions-2010-sandiego-4/data/msa.csv>)**. 2010 Metro Statistical Area boundaries
-  * **[sra](<http://s3.amazonaws.com/library.metatab.org/sangis.org-census_regions-2010-sandiego-4/data/sra.csv>)**. San Diego County Sub-Regional Areas boundaries
-  * **[zip](<http://s3.amazonaws.com/library.metatab.org/sangis.org-census_regions-2010-sandiego-4/data/zip.csv>)**. ZIP Code boundaries
-  * **[tract-sra-msa-xwalk](<http://s3.amazonaws.com/library.metatab.org/sangis.org-census_regions-2010-sandiego-4/data/tract-sra-msa-xwalk.csv>)**. Crosswalk between crosswalks, tracts, zip codes and SRAs.
+  * **[tracts](<https://library-metatab-org.s3.amazonaws.com/sangis.org-census_regions-2010-sandiego-4/data/tracts.csv>)**. 2010 Census Tract boundaries
+  * **[msa](<https://library-metatab-org.s3.amazonaws.com/sangis.org-census_regions-2010-sandiego-4/data/msa.csv>)**. 2010 Metro Statistical Area boundaries
+  * **[sra](<https://library-metatab-org.s3.amazonaws.com/sangis.org-census_regions-2010-sandiego-4/data/sra.csv>)**. San Diego County Sub-Regional Areas boundaries
+  * **[zip](<https://library-metatab-org.s3.amazonaws.com/sangis.org-census_regions-2010-sandiego-4/data/zip.csv>)**. ZIP Code boundaries
+  * **[tract-sra-msa-xwalk](<https://library-metatab-org.s3.amazonaws.com/sangis.org-census_regions-2010-sandiego-4/data/tract-sra-msa-xwalk.csv>)**. Crosswalk between crosswalks, tracts, zip codes and SRAs.
 
 
 ## Documentation
@@ -43,18 +43,18 @@ Resources | Packages | Documentation| Contacts
 
 ## Packages
 
-  * **xlsx** <http://s3.amazonaws.com/library.metatab.org/sangis.org-census_regions-2010-sandiego-4.xlsx>
-  * **zip** <http://s3.amazonaws.com/library.metatab.org/sangis.org-census_regions-2010-sandiego-4.zip>
-  * **csv** <http://s3.amazonaws.com/library.metatab.org/sangis.org-census_regions-2010-sandiego-4.csv>
+  * **xlsx** <https://library-metatab-org.s3.amazonaws.com/sangis.org-census_regions-2010-sandiego-4.xlsx>
+  * **zip** <https://library-metatab-org.s3.amazonaws.com/sangis.org-census_regions-2010-sandiego-4.zip>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/sangis.org-census_regions-2010-sandiego-4.csv>
 
 
 ### Accessing Packages in Metapack
 [code] 
     import metapack as mp
     # ZIP Package
-    pkg = mp.open_package('http://s3.amazonaws.com/library.metatab.org/sangis.org-census_regions-2010-sandiego-4.zip')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sangis.org-census_regions-2010-sandiego-4.zip')
     # CSV Package
-    pkg = mp.open_package('http://s3.amazonaws.com/library.metatab.org/sangis.org-census_regions-2010-sandiego-4.csv') 
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sangis.org-census_regions-2010-sandiego-4.csv') 
     
     resource = pkg.resource('resource_name') # Get a resource
     df = resource.dataframe() # Create a pandas Dataframe

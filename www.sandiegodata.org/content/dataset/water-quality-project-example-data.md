@@ -16,10 +16,10 @@ Resources | Packages | Documentation| Contacts
 
 ## Resources
 
-  * **[noaa-local-climate-data-for-san-airport](<http://ds.civicknowledge.org.s3.amazonaws.com/noaa.gov/local-climate-san.csv>)**. NOAA Local Climate Data For SAN Airport
+  * **[noaa-local-climate-data-for-san-airport](<https://library-metatab-org.s3.amazonaws.com/ds.civicknowledge.org/noaa.gov/local-climate-san.csv>)**. NOAA Local Climate Data For SAN Airport
   * **[noaa-local-climate-data-documentation](<https://www1.ncdc.noaa.gov/pub/data/cdo/documentation/LCD_documentation.pdf>)**. NOAA Local Climate Data Documentation
-  * **[ceden-chollas-creek-tdml](<http://ds.civicknowledge.org.s3.amazonaws.com/ceden.waterboards.ca.gov/CEDEN%20TDML.csv>)**. See the [Program Overview Page](https://www.waterboards.ca.gov/sandiego/water_issues/programs/tmdls/bacteria.html) for more details.
-  * **[regional-harbor-monitoring-report-and-data](<http://ds.civicknowledge.org.s3.amazonaws.com/woodplc.com/Regional%20Harbor%20Monitoring%20Program.zip>)**. Analysis of toxicity and acquitic life survival in San Diego harbor
+  * **[ceden-chollas-creek-tdml](<https://library-metatab-org.s3.amazonaws.com/ds.civicknowledge.org/ceden.waterboards.ca.gov/CEDEN%20TDML.csv>)**. See the [Program Overview Page](https://www.waterboards.ca.gov/sandiego/water_issues/programs/tmdls/bacteria.html) for more details.
+  * **[regional-harbor-monitoring-report-and-data](<https://library-metatab-org.s3.amazonaws.com/ds.civicknowledge.org/woodplc.com/Regional%20Harbor%20Monitoring%20Program.zip>)**. Analysis of toxicity and acquitic life survival in San Diego harbor
 
 
 ## Documentation

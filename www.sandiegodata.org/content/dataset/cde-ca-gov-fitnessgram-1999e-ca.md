@@ -16,57 +16,57 @@ Resources | Packages | Documentation| Contacts| Data Dictionary
 
 ## Resources
 
-  * **[entities99](<http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/entities99.csv>)**. 1999 PFT Entities
-  * **[entities01](<http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/entities01.csv>)**. 2001 PFT Entities
-  * **[entities02](<http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/entities02.csv>)**. 2002 PFT Entities
-  * **[entities03](<http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/entities03.csv>)**. 2003 PFT Entities
-  * **[entities04](<http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/entities04.csv>)**. 2004 PFT Entities
-  * **[entities05](<http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/entities05.csv>)**. 2005 PFT Entities
-  * **[entities06](<http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/entities06.csv>)**. 2006 PFT Entities
-  * **[entities07](<http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/entities07.csv>)**. 2007 PFT Entities
-  * **[entities08](<http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/entities08.csv>)**. 2008 PFT Entities
-  * **[entities09](<http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/entities09.csv>)**. 2009 PFT Entities
-  * **[entities10](<http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/entities10.csv>)**. 2010 PFT Entities
-  * **[entities11](<http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/entities11.csv>)**. 2011 PFT Entities
-  * **[entities12](<http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/entities12.csv>)**. 2011-12 Physical Fitness Entities
-  * **[entities13](<http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/entities13.csv>)**. 2012-13 Physical Fitness Entities
-  * **[entities14](<http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/entities14.csv>)**. 2013-14 Physical Fitness Entities
-  * **[entities15](<http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/entities15.csv>)**. 2014-15 Physical Fitness Entities
-  * **[entities16](<http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/entities16.csv>)**. 2015-16 Physical Fitness Entities
-  * **[physfit99](<http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/physfit99.csv>)**. 1999 PFT Fitness Results
-  * **[physfit01](<http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/physfit01.csv>)**. 2001 PFT Fitness Results
-  * **[physfit02](<http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/physfit02.csv>)**. 2002 PFT Fitness Results
-  * **[physfit03](<http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/physfit03.csv>)**. 2003 PFT Fitness Results
-  * **[physfit04](<http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/physfit04.csv>)**. 2004 PFT Fitness Results
-  * **[physfit05](<http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/physfit05.csv>)**. 2005 PFT Fitness Results
-  * **[physfit06](<http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/physfit06.csv>)**. 2006 PFT Fitness Results
-  * **[physfit07](<http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/physfit07.csv>)**. 2007 PFT Fitness Results
-  * **[physfit08](<http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/physfit08.csv>)**. 2008 PFT Fitness Results
-  * **[physfit09](<http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/physfit09.csv>)**. 2009 PFT Fitness Results
-  * **[physfit10](<http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/physfit10.csv>)**. 2010 PFT Fitness Results
-  * **[physfit11](<http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/physfit11.csv>)**. 2011 PFT Fitness Results
-  * **[physfit12](<http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/physfit12.csv>)**. 2011-12 Physical Fitness Research
-  * **[physfit13](<http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/physfit13.csv>)**. 2012-13 Physical Fitness Research
-  * **[physfit14](<http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/physfit14.csv>)**. 2013-14 Physical Fitness Research
-  * **[physfit15](<http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/physfit15.csv>)**. 2014-15 Physical Fitness Research
-  * **[physfit16](<http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/physfit16.csv>)**. 2015-16 Physical Fitness Research
-  * **[subgroup99](<http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/subgroup99.csv>)**. 1999 PFT Subgroup
-  * **[subgroup01](<http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/subgroup01.csv>)**. 2001 PFT Subgroup
-  * **[subgroup02](<http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/subgroup02.csv>)**. 2002 PFT Subgroup
-  * **[subgroup03](<http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/subgroup03.csv>)**. 2003 PFT Subgroup
-  * **[subgroup04](<http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/subgroup04.csv>)**. 2004 PFT Subgroup
-  * **[subgroup05](<http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/subgroup05.csv>)**. 2005 PFT Subgroup
-  * **[subgroup06](<http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/subgroup06.csv>)**. 2006 PFT Subgroup
-  * **[subgroup07](<http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/subgroup07.csv>)**. 2007 PFT Subgroup
-  * **[subgroup08](<http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/subgroup08.csv>)**. 2008 PFT Subgroup
-  * **[subgroup09](<http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/subgroup09.csv>)**. 2009 PFT Subgroup
-  * **[subgroup10](<http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/subgroup10.csv>)**. 2010 PFT Subgroup
-  * **[subgroup11](<http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/subgroup11.csv>)**. 2011 PFT Subgroup
-  * **[subgroup12](<http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/subgroup12.csv>)**. 2011-12 Physical Fitness Subgroups
-  * **[subgroup13](<http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/subgroup13.csv>)**. 2012-13 Physical Fitness Subgroups
-  * **[subgroup14](<http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/subgroup14.csv>)**. 2013-14 Physical Fitness Subgroups
-  * **[subgroup15](<http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/subgroup15.csv>)**. 2014-15 Physical Fitness Subgroups
-  * **[subgroup16](<http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/subgroup16.csv>)**. 2015-16 Physical Fitness Subgroups
+  * **[entities99](<https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/entities99.csv>)**. 1999 PFT Entities
+  * **[entities01](<https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/entities01.csv>)**. 2001 PFT Entities
+  * **[entities02](<https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/entities02.csv>)**. 2002 PFT Entities
+  * **[entities03](<https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/entities03.csv>)**. 2003 PFT Entities
+  * **[entities04](<https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/entities04.csv>)**. 2004 PFT Entities
+  * **[entities05](<https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/entities05.csv>)**. 2005 PFT Entities
+  * **[entities06](<https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/entities06.csv>)**. 2006 PFT Entities
+  * **[entities07](<https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/entities07.csv>)**. 2007 PFT Entities
+  * **[entities08](<https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/entities08.csv>)**. 2008 PFT Entities
+  * **[entities09](<https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/entities09.csv>)**. 2009 PFT Entities
+  * **[entities10](<https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/entities10.csv>)**. 2010 PFT Entities
+  * **[entities11](<https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/entities11.csv>)**. 2011 PFT Entities
+  * **[entities12](<https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/entities12.csv>)**. 2011-12 Physical Fitness Entities
+  * **[entities13](<https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/entities13.csv>)**. 2012-13 Physical Fitness Entities
+  * **[entities14](<https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/entities14.csv>)**. 2013-14 Physical Fitness Entities
+  * **[entities15](<https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/entities15.csv>)**. 2014-15 Physical Fitness Entities
+  * **[entities16](<https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/entities16.csv>)**. 2015-16 Physical Fitness Entities
+  * **[physfit99](<https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/physfit99.csv>)**. 1999 PFT Fitness Results
+  * **[physfit01](<https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/physfit01.csv>)**. 2001 PFT Fitness Results
+  * **[physfit02](<https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/physfit02.csv>)**. 2002 PFT Fitness Results
+  * **[physfit03](<https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/physfit03.csv>)**. 2003 PFT Fitness Results
+  * **[physfit04](<https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/physfit04.csv>)**. 2004 PFT Fitness Results
+  * **[physfit05](<https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/physfit05.csv>)**. 2005 PFT Fitness Results
+  * **[physfit06](<https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/physfit06.csv>)**. 2006 PFT Fitness Results
+  * **[physfit07](<https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/physfit07.csv>)**. 2007 PFT Fitness Results
+  * **[physfit08](<https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/physfit08.csv>)**. 2008 PFT Fitness Results
+  * **[physfit09](<https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/physfit09.csv>)**. 2009 PFT Fitness Results
+  * **[physfit10](<https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/physfit10.csv>)**. 2010 PFT Fitness Results
+  * **[physfit11](<https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/physfit11.csv>)**. 2011 PFT Fitness Results
+  * **[physfit12](<https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/physfit12.csv>)**. 2011-12 Physical Fitness Research
+  * **[physfit13](<https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/physfit13.csv>)**. 2012-13 Physical Fitness Research
+  * **[physfit14](<https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/physfit14.csv>)**. 2013-14 Physical Fitness Research
+  * **[physfit15](<https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/physfit15.csv>)**. 2014-15 Physical Fitness Research
+  * **[physfit16](<https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/physfit16.csv>)**. 2015-16 Physical Fitness Research
+  * **[subgroup99](<https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/subgroup99.csv>)**. 1999 PFT Subgroup
+  * **[subgroup01](<https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/subgroup01.csv>)**. 2001 PFT Subgroup
+  * **[subgroup02](<https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/subgroup02.csv>)**. 2002 PFT Subgroup
+  * **[subgroup03](<https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/subgroup03.csv>)**. 2003 PFT Subgroup
+  * **[subgroup04](<https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/subgroup04.csv>)**. 2004 PFT Subgroup
+  * **[subgroup05](<https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/subgroup05.csv>)**. 2005 PFT Subgroup
+  * **[subgroup06](<https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/subgroup06.csv>)**. 2006 PFT Subgroup
+  * **[subgroup07](<https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/subgroup07.csv>)**. 2007 PFT Subgroup
+  * **[subgroup08](<https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/subgroup08.csv>)**. 2008 PFT Subgroup
+  * **[subgroup09](<https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/subgroup09.csv>)**. 2009 PFT Subgroup
+  * **[subgroup10](<https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/subgroup10.csv>)**. 2010 PFT Subgroup
+  * **[subgroup11](<https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/subgroup11.csv>)**. 2011 PFT Subgroup
+  * **[subgroup12](<https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/subgroup12.csv>)**. 2011-12 Physical Fitness Subgroups
+  * **[subgroup13](<https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/subgroup13.csv>)**. 2012-13 Physical Fitness Subgroups
+  * **[subgroup14](<https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/subgroup14.csv>)**. 2013-14 Physical Fitness Subgroups
+  * **[subgroup15](<https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/subgroup15.csv>)**. 2014-15 Physical Fitness Subgroups
+  * **[subgroup16](<https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/subgroup16.csv>)**. 2015-16 Physical Fitness Subgroups
 
 
 ## Documentation
@@ -93,7 +93,7 @@ Resources | Packages | Documentation| Contacts| Data Dictionary
   * [File Layout 2015](<http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles15.zip#PFT+Research+File+Layouts+2015.pdf>) Text form data dictionary, including common code values
   * [File Layout 2016](<http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles16.zip#PFT+Research+File+Layouts+2016.pdf>) Text form data dictionary, including common code values
   * [File Layout 1999](<http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles99.zip#PFT+File+Layouts.pdf>) Text form data dictionary, including common code values
-  * [Documentation Page](<http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/index.html>)
+  * [Documentation Page](<https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/index.html>)
 
 
 ## Contacts
@@ -280,7 +280,7 @@ chrtnum| str| ChrtNum
 ## Packages
 
   * **s3** s3://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1.csv
-  * **csv** <http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1.csv>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1.csv>
   * **source** <https://github.com/metatab-packages/cde.ca.gov-fitnessgram-1999e-ca.git>
 
 
@@ -289,63 +289,63 @@ chrtnum| str| ChrtNum
     import pandas as pd
     
     
-    entities99_df =  pd.read_csv('http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/entities99.csv')
-    entities01_df =  pd.read_csv('http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/entities01.csv')
-    entities02_df =  pd.read_csv('http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/entities02.csv')
-    entities03_df =  pd.read_csv('http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/entities03.csv')
-    entities04_df =  pd.read_csv('http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/entities04.csv')
-    entities05_df =  pd.read_csv('http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/entities05.csv')
-    entities06_df =  pd.read_csv('http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/entities06.csv')
-    entities07_df =  pd.read_csv('http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/entities07.csv')
-    entities08_df =  pd.read_csv('http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/entities08.csv')
-    entities09_df =  pd.read_csv('http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/entities09.csv')
-    entities10_df =  pd.read_csv('http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/entities10.csv')
-    entities11_df =  pd.read_csv('http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/entities11.csv')
-    entities12_df =  pd.read_csv('http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/entities12.csv')
-    entities13_df =  pd.read_csv('http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/entities13.csv')
-    entities14_df =  pd.read_csv('http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/entities14.csv')
-    entities15_df =  pd.read_csv('http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/entities15.csv')
-    entities16_df =  pd.read_csv('http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/entities16.csv')
-    physfit99_df =  pd.read_csv('http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/physfit99.csv')
-    physfit01_df =  pd.read_csv('http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/physfit01.csv')
-    physfit02_df =  pd.read_csv('http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/physfit02.csv')
-    physfit03_df =  pd.read_csv('http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/physfit03.csv')
-    physfit04_df =  pd.read_csv('http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/physfit04.csv')
-    physfit05_df =  pd.read_csv('http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/physfit05.csv')
-    physfit06_df =  pd.read_csv('http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/physfit06.csv')
-    physfit07_df =  pd.read_csv('http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/physfit07.csv')
-    physfit08_df =  pd.read_csv('http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/physfit08.csv')
-    physfit09_df =  pd.read_csv('http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/physfit09.csv')
-    physfit10_df =  pd.read_csv('http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/physfit10.csv')
-    physfit11_df =  pd.read_csv('http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/physfit11.csv')
-    physfit12_df =  pd.read_csv('http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/physfit12.csv')
-    physfit13_df =  pd.read_csv('http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/physfit13.csv')
-    physfit14_df =  pd.read_csv('http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/physfit14.csv')
-    physfit15_df =  pd.read_csv('http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/physfit15.csv')
-    physfit16_df =  pd.read_csv('http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/physfit16.csv')
-    subgroup99_df =  pd.read_csv('http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/subgroup99.csv')
-    subgroup01_df =  pd.read_csv('http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/subgroup01.csv')
-    subgroup02_df =  pd.read_csv('http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/subgroup02.csv')
-    subgroup03_df =  pd.read_csv('http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/subgroup03.csv')
-    subgroup04_df =  pd.read_csv('http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/subgroup04.csv')
-    subgroup05_df =  pd.read_csv('http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/subgroup05.csv')
-    subgroup06_df =  pd.read_csv('http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/subgroup06.csv')
-    subgroup07_df =  pd.read_csv('http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/subgroup07.csv')
-    subgroup08_df =  pd.read_csv('http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/subgroup08.csv')
-    subgroup09_df =  pd.read_csv('http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/subgroup09.csv')
-    subgroup10_df =  pd.read_csv('http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/subgroup10.csv')
-    subgroup11_df =  pd.read_csv('http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/subgroup11.csv')
-    subgroup12_df =  pd.read_csv('http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/subgroup12.csv')
-    subgroup13_df =  pd.read_csv('http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/subgroup13.csv')
-    subgroup14_df =  pd.read_csv('http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/subgroup14.csv')
-    subgroup15_df =  pd.read_csv('http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/subgroup15.csv')
-    subgroup16_df =  pd.read_csv('http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/subgroup16.csv')
+    entities99_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/entities99.csv')
+    entities01_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/entities01.csv')
+    entities02_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/entities02.csv')
+    entities03_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/entities03.csv')
+    entities04_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/entities04.csv')
+    entities05_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/entities05.csv')
+    entities06_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/entities06.csv')
+    entities07_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/entities07.csv')
+    entities08_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/entities08.csv')
+    entities09_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/entities09.csv')
+    entities10_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/entities10.csv')
+    entities11_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/entities11.csv')
+    entities12_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/entities12.csv')
+    entities13_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/entities13.csv')
+    entities14_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/entities14.csv')
+    entities15_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/entities15.csv')
+    entities16_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/entities16.csv')
+    physfit99_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/physfit99.csv')
+    physfit01_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/physfit01.csv')
+    physfit02_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/physfit02.csv')
+    physfit03_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/physfit03.csv')
+    physfit04_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/physfit04.csv')
+    physfit05_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/physfit05.csv')
+    physfit06_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/physfit06.csv')
+    physfit07_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/physfit07.csv')
+    physfit08_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/physfit08.csv')
+    physfit09_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/physfit09.csv')
+    physfit10_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/physfit10.csv')
+    physfit11_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/physfit11.csv')
+    physfit12_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/physfit12.csv')
+    physfit13_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/physfit13.csv')
+    physfit14_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/physfit14.csv')
+    physfit15_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/physfit15.csv')
+    physfit16_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/physfit16.csv')
+    subgroup99_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/subgroup99.csv')
+    subgroup01_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/subgroup01.csv')
+    subgroup02_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/subgroup02.csv')
+    subgroup03_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/subgroup03.csv')
+    subgroup04_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/subgroup04.csv')
+    subgroup05_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/subgroup05.csv')
+    subgroup06_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/subgroup06.csv')
+    subgroup07_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/subgroup07.csv')
+    subgroup08_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/subgroup08.csv')
+    subgroup09_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/subgroup09.csv')
+    subgroup10_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/subgroup10.csv')
+    subgroup11_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/subgroup11.csv')
+    subgroup12_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/subgroup12.csv')
+    subgroup13_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/subgroup13.csv')
+    subgroup14_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/subgroup14.csv')
+    subgroup15_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/subgroup15.csv')
+    subgroup16_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1/data/subgroup16.csv')
 [/code]
 
 ### Accessing Package in Metapack
 [code] 
     import metapack as mp
-    pkg = mp.open_package('http://cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1.csv')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-fitnessgram-1999e-ca-1.3.1.csv')
     
     # Create Dataframes
     entities99_df = pkg.resource('entities99').dataframe()

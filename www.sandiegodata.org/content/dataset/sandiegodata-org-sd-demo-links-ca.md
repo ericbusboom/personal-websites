@@ -16,7 +16,7 @@ Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
-  * **[ca_sd_links](<http://library.metatab.org/sandiegodata.org-sd_demo_links-ca-4/data/ca_sd_links.csv>)**. Links between NCES, CDS and Geoids for California school districts
+  * **[ca_sd_links](<https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-sd_demo_links-ca-4/data/ca_sd_links.csv>)**. Links between NCES, CDS and Geoids for California school districts
 
 
 ## Documentation
@@ -47,16 +47,16 @@ This linkage file can be used to connect data fiels from the California Departme
 
 ## Packages
 
-  * **zip** <http://library.metatab.org/sandiegodata.org-sd_demo_links-ca-4.zip>
+  * **zip** <https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-sd_demo_links-ca-4.zip>
   * **s3** s3://library.metatab.org/sandiegodata.org-sd_demo_links-ca-4.csv
-  * **csv** <http://library.metatab.org/sandiegodata.org-sd_demo_links-ca-4.csv>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-sd_demo_links-ca-4.csv>
   * **source** <https://github.com/metatab-packages/cde.ca.gov.git>
 
 
 ### Accessing Packages in Metapack
 [code] 
     import metapack as mp
-    pkg = mp.open_package('http://library.metatab.org/sandiegodata.org-sd_demo_links-ca-4.zip')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-sd_demo_links-ca-4.zip')
     
     # Create Dataframes
     
@@ -87,25 +87,25 @@ Urls used in the creation of this data package.
   * **census://2015/5/CA/sdelm/B01003**. Census elementary school districts for California
   * **census://2015/5/CA/sdsec/B01003**. Census secondary school districts for California
   * **census://2015/5/CA/sduni/B01003**. Census unified school districts for California
-  * **metapack+http://library.metatab.org/sandiegodata.org-county_codes-ca.csv#ca_county_codes**. Noarty and Census county codes for California
-  * **metapack+http://library.metatab.org/cde.ca.gov-schools-1.zip#public_schools**. California public schools
-  * **metapack+http://library.metatab.org/cde.ca.gov-schools-1.zip#school_districts**. California school districts
+  * **metapack+https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-county_codes-ca.csv#ca_county_codes**. Noarty and Census county codes for California
+  * **metapack+https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-schools-1.zip#public_schools**. California public schools
+  * **metapack+https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-schools-1.zip#school_districts**. California school districts
 
 
 Last Modified 2019-08-08T20:18:28
 
 ## Packages
 
-  * **zip** <http://library.metatab.org/sandiegodata.org-sd_demo_links-ca-4.zip>
+  * **zip** <https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-sd_demo_links-ca-4.zip>
   * **s3** s3://library.metatab.org/sandiegodata.org-sd_demo_links-ca-4.csv
-  * **csv** <http://library.metatab.org/sandiegodata.org-sd_demo_links-ca-4.csv>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-sd_demo_links-ca-4.csv>
   * **source** <https://github.com/metatab-packages/cde.ca.gov.git>
 
 
 ### Accessing Packages in Metapack
 [code] 
     import metapack as mp
-    pkg = mp.open_package('http://library.metatab.org/sandiegodata.org-sd_demo_links-ca-4.zip')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-sd_demo_links-ca-4.zip')
     
     # Create Dataframes
     

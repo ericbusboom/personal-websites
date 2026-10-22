@@ -16,10 +16,10 @@ Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
-  * **[sdcrime_16_20_allyears](<http://library.metatab.org/arjis.org-crime_victims-pra-1.1.1/data/sdcrime_16_20_allyears.csv>)**. San Diego crime suspects and victims, 2016 though July 2020,all records
-  * **[sdcrime_16_20_nosusp](<http://library.metatab.org/arjis.org-crime_victims-pra-1.1.1/data/sdcrime_16_20_nosusp.csv>)**. San Diego crime victims, 2016 though July 2020, no suspects
-  * **[sdcrime_16_20_uniquecase](<http://library.metatab.org/arjis.org-crime_victims-pra-1.1.1/data/sdcrime_16_20_uniquecase.csv>)**. San Diego crime victims, 2016 though July 2020, unique case numbers
-  * **[ucrcodes](<http://library.metatab.org/arjis.org-crime_victims-pra-1.1.1/data/ucrcodes.csv>)**. UCR codes and detailed descriptions
+  * **[sdcrime_16_20_allyears](<https://library-metatab-org.s3.amazonaws.com/arjis.org-crime_victims-pra-1.1.1/data/sdcrime_16_20_allyears.csv>)**. San Diego crime suspects and victims, 2016 though July 2020,all records
+  * **[sdcrime_16_20_nosusp](<https://library-metatab-org.s3.amazonaws.com/arjis.org-crime_victims-pra-1.1.1/data/sdcrime_16_20_nosusp.csv>)**. San Diego crime victims, 2016 though July 2020, no suspects
+  * **[sdcrime_16_20_uniquecase](<https://library-metatab-org.s3.amazonaws.com/arjis.org-crime_victims-pra-1.1.1/data/sdcrime_16_20_uniquecase.csv>)**. San Diego crime victims, 2016 though July 2020, unique case numbers
+  * **[ucrcodes](<https://library-metatab-org.s3.amazonaws.com/arjis.org-crime_victims-pra-1.1.1/data/ucrcodes.csv>)**. UCR codes and detailed descriptions
 
 
 ## Documentation
@@ -30,8 +30,8 @@ The file has multiple rows per incident, one for each suspect or victim. The pri
 
 This package provides the datasets as CSV files. You can also get the Excel source files for these CSVs, and the Excel file originally returned by ARJIS:
 
-  * [Processed Dataset](<http://ds.civicknowledge.org.s3.amazonaws.com/sandag.org/OPCrimeVictims/Omar%20Passons%20-%20SDCounty_CrimeData_Jan16_Jul20.xlsx>). Excel. This is the dataset used to generate this data package
-  * [Original Source Dataset](<http://ds.civicknowledge.org.s3.amazonaws.com/sandag.org/OPCrimeVictims/Omar%20Passons%20-%20second_DataExtract_Omar_Passons.xlsx>). Excel. Original, unprocessed dataset, ARJIS’ response to the PRA. This dataset is an Excel file with one tab per year.
+  * [Processed Dataset](<https://library-metatab-org.s3.amazonaws.com/ds.civicknowledge.org/sandag.org/OPCrimeVictims/Omar%20Passons%20-%20SDCounty_CrimeData_Jan16_Jul20.xlsx>). Excel. This is the dataset used to generate this data package
+  * [Original Source Dataset](<https://library-metatab-org.s3.amazonaws.com/ds.civicknowledge.org/sandag.org/OPCrimeVictims/Omar%20Passons%20-%20second_DataExtract_Omar_Passons.xlsx>). Excel. Original, unprocessed dataset, ARJIS’ response to the PRA. This dataset is an Excel file with one tab per year.
 
 
 ## Processing
@@ -55,16 +55,16 @@ Of the 312,089 cases, 5% (16,765) don't have a block number and 2% (5,025) don't
 
 ### Documentation Links
 
-  * [PRA Request](<http://ds.civicknowledge.org.s3.amazonaws.com/sandag.org/OPCrimeVictims/PRA%20Request%20-%20Crime%20Victims%20San%20Diego%20County.pdf>) PRA request issued for the data.
-  * [Data Dictionary](<http://ds.civicknowledge.org.s3.amazonaws.com/sandag.org/OPCrimeVictims/Omar%20Passons%20-%20Data%20Dictionary%20for%20Omar%20Passons%20Request%209.4.20.docx>) Original data dictionary provided with the response, describing the original, unmodified dataset.
-  * [Documentation Page](<http://library.metatab.org/arjis.org-crime_victims-pra-1.1.1/index.html>)
+  * [PRA Request](<https://library-metatab-org.s3.amazonaws.com/ds.civicknowledge.org/sandag.org/OPCrimeVictims/PRA%20Request%20-%20Crime%20Victims%20San%20Diego%20County.pdf>) PRA request issued for the data.
+  * [Data Dictionary](<https://library-metatab-org.s3.amazonaws.com/ds.civicknowledge.org/sandag.org/OPCrimeVictims/Omar%20Passons%20-%20Data%20Dictionary%20for%20Omar%20Passons%20Request%209.4.20.docx>) Original data dictionary provided with the response, describing the original, unmodified dataset.
+  * [Documentation Page](<https://library-metatab-org.s3.amazonaws.com/arjis.org-crime_victims-pra-1.1.1/index.html>)
 
 
 ## Images
 
-  * [![](http://library.metatab.org/arjis.org-crime_victims-pra-1.1.1/doc/Figure1_HomicideVictimsFinal.png)](<http://library.metatab.org/arjis.org-crime_victims-pra-1.1.1/doc/Figure1_HomicideVictimsFinal.png> "Figure 1") Homicide Victims by Race, San Diego County
-  * [![](http://library.metatab.org/arjis.org-crime_victims-pra-1.1.1/doc/Figure2_VictimsbyRaceFinal.jpg)](<http://library.metatab.org/arjis.org-crime_victims-pra-1.1.1/doc/Figure2_VictimsbyRaceFinal.jpg> "Figure 2") Violent Crime Victims, Jan 2016 to July 2020, South Central San Diego County. Neighborhoods with large proportions of Black/Latino crime victims.
-  * [![](http://library.metatab.org/arjis.org-crime_victims-pra-1.1.1/doc/Figure3_VictimsbyAreaFinal.jpg)](<http://library.metatab.org/arjis.org-crime_victims-pra-1.1.1/doc/Figure3_VictimsbyAreaFinal.jpg> "Figure 3") Violent Crime Victims, Jan 2016 to July 2020, South Central San Diego County. Higher and lower crime rate neighborhoods
+  * [![](https://library-metatab-org.s3.amazonaws.com/arjis.org-crime_victims-pra-1.1.1/doc/Figure1_HomicideVictimsFinal.png)](<https://library-metatab-org.s3.amazonaws.com/arjis.org-crime_victims-pra-1.1.1/doc/Figure1_HomicideVictimsFinal.png> "Figure 1") Homicide Victims by Race, San Diego County
+  * [![](https://library-metatab-org.s3.amazonaws.com/arjis.org-crime_victims-pra-1.1.1/doc/Figure2_VictimsbyRaceFinal.jpg)](<https://library-metatab-org.s3.amazonaws.com/arjis.org-crime_victims-pra-1.1.1/doc/Figure2_VictimsbyRaceFinal.jpg> "Figure 2") Violent Crime Victims, Jan 2016 to July 2020, South Central San Diego County. Neighborhoods with large proportions of Black/Latino crime victims.
+  * [![](https://library-metatab-org.s3.amazonaws.com/arjis.org-crime_victims-pra-1.1.1/doc/Figure3_VictimsbyAreaFinal.jpg)](<https://library-metatab-org.s3.amazonaws.com/arjis.org-crime_victims-pra-1.1.1/doc/Figure3_VictimsbyAreaFinal.jpg> "Figure 3") Violent Crime Victims, Jan 2016 to July 2020, South Central San Diego County. Higher and lower crime rate neighborhoods
 
 
 ## Contacts
@@ -171,14 +171,14 @@ city| string|
 
 Urls used in the creation of this data package.
 
-  * **[Processed Source Dataset](<http://ds.civicknowledge.org.s3.amazonaws.com/sandag.org/OPCrimeVictims/Omar%20Passons%20-%20SDCounty_CrimeData_Jan16_Jul20.xlsx>)**. Source dataset, as received by SDRDL, and processed by Julie Wartell. This is the dataset used to generate this data package
-  * **[Original Source Dataset](<http://ds.civicknowledge.org.s3.amazonaws.com/sandag.org/OPCrimeVictims/Omar%20Passons%20-%20second_DataExtract_Omar_Passons.xlsx>)**. Original, unprocessed dataset, ARJIS' response to the PRA. This dataset is an Excel file with one tab per year.
+  * **[Processed Source Dataset](<https://library-metatab-org.s3.amazonaws.com/ds.civicknowledge.org/sandag.org/OPCrimeVictims/Omar%20Passons%20-%20SDCounty_CrimeData_Jan16_Jul20.xlsx>)**. Source dataset, as received by SDRDL, and processed by Julie Wartell. This is the dataset used to generate this data package
+  * **[Original Source Dataset](<https://library-metatab-org.s3.amazonaws.com/ds.civicknowledge.org/sandag.org/OPCrimeVictims/Omar%20Passons%20-%20second_DataExtract_Omar_Passons.xlsx>)**. Original, unprocessed dataset, ARJIS' response to the PRA. This dataset is an Excel file with one tab per year.
 
 
 ## Packages
 
   * **s3** s3://library.metatab.org/arjis.org-crime_victims-pra-1.1.1.csv
-  * **csv** <http://library.metatab.org/arjis.org-crime_victims-pra-1.1.1.csv>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/arjis.org-crime_victims-pra-1.1.1.csv>
   * **source** <https://github.com/metatab-packages/arjis.org-crime_victims-pra.git>
 
 
@@ -187,16 +187,16 @@ Urls used in the creation of this data package.
     import pandas as pd
     
     
-    sdcrime_16_20_allyears_df =  pd.read_csv('http://library.metatab.org/arjis.org-crime_victims-pra-1.1.1/data/sdcrime_16_20_allyears.csv')
-    sdcrime_16_20_nosusp_df =  pd.read_csv('http://library.metatab.org/arjis.org-crime_victims-pra-1.1.1/data/sdcrime_16_20_nosusp.csv')
-    sdcrime_16_20_uniquecase_df =  pd.read_csv('http://library.metatab.org/arjis.org-crime_victims-pra-1.1.1/data/sdcrime_16_20_uniquecase.csv')
-    ucrcodes_df =  pd.read_csv('http://library.metatab.org/arjis.org-crime_victims-pra-1.1.1/data/ucrcodes.csv')
+    sdcrime_16_20_allyears_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/arjis.org-crime_victims-pra-1.1.1/data/sdcrime_16_20_allyears.csv')
+    sdcrime_16_20_nosusp_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/arjis.org-crime_victims-pra-1.1.1/data/sdcrime_16_20_nosusp.csv')
+    sdcrime_16_20_uniquecase_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/arjis.org-crime_victims-pra-1.1.1/data/sdcrime_16_20_uniquecase.csv')
+    ucrcodes_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/arjis.org-crime_victims-pra-1.1.1/data/ucrcodes.csv')
 [/code]
 
 ### Accessing Package in Metapack
 [code] 
     import metapack as mp
-    pkg = mp.open_package('http://library.metatab.org/arjis.org-crime_victims-pra-1.1.1.csv')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/arjis.org-crime_victims-pra-1.1.1.csv')
     
     # Create Dataframes
     sdcrime_16_20_allyears_df = pkg.resource('sdcrime_16_20_allyears').dataframe()

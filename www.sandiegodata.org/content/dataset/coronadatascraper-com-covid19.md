@@ -16,9 +16,9 @@ Resources | Packages | Documentation| Contacts| Data Dictionary
 
 ## Resources
 
-  * **[source_tidy](<http://library.metatab.org/coronadatascraper.com-covid19-1.2.24/data/source_tidy.csv>)**. Scraped coronavirus data, with one row for each type of observation.
-  * **[source_jhu](<http://library.metatab.org/coronadatascraper.com-covid19-1.2.24/data/source_jhu.csv>)**. Scraped coronavirus data, in format similar to JHU
-  * **[source](<http://library.metatab.org/coronadatascraper.com-covid19-1.2.24/data/source.csv>)**. Scraped coronavirus data, with one row per region per day and one type of observation per column.
+  * **[source_tidy](<https://library-metatab-org.s3.amazonaws.com/coronadatascraper.com-covid19-1.2.24/data/source_tidy.csv>)**. Scraped coronavirus data, with one row for each type of observation.
+  * **[source_jhu](<https://library-metatab-org.s3.amazonaws.com/coronadatascraper.com-covid19-1.2.24/data/source_jhu.csv>)**. Scraped coronavirus data, in format similar to JHU
+  * **[source](<https://library-metatab-org.s3.amazonaws.com/coronadatascraper.com-covid19-1.2.24/data/source.csv>)**. Scraped coronavirus data, with one row per region per day and one type of observation per column.
 
 
 ## Documentation
@@ -28,7 +28,7 @@ The [Corona Data Scraper](<https://coronadatascraper.com/#home>) scrapes data fr
 ### Documentation Links
 
   * [homepage](<https://coronadatascraper.com/#home>) Project homepage, sith links to files and documentation
-  * [Documentation Page](<http://library.metatab.org/coronadatascraper.com-covid19-1.2.24/index.html>)
+  * [Documentation Page](<https://library-metatab-org.s3.amazonaws.com/coronadatascraper.com-covid19-1.2.24/index.html>)
 
 
 ## Contacts
@@ -200,7 +200,7 @@ tz| string|
 ## Packages
 
   * **s3** s3://library.metatab.org/coronadatascraper.com-covid19-1.2.24.csv
-  * **csv** <http://library.metatab.org/coronadatascraper.com-covid19-1.2.24.csv>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/coronadatascraper.com-covid19-1.2.24.csv>
   * **source** <https://github.com/sandiegodata/covid19.git>
 
 
@@ -209,15 +209,15 @@ tz| string|
     import pandas as pd
     
     
-    source_tidy_df =  pd.read_csv('http://library.metatab.org/coronadatascraper.com-covid19-1.2.24/data/source_tidy.csv')
-    source_jhu_df =  pd.read_csv('http://library.metatab.org/coronadatascraper.com-covid19-1.2.24/data/source_jhu.csv')
-    source_df =  pd.read_csv('http://library.metatab.org/coronadatascraper.com-covid19-1.2.24/data/source.csv')
+    source_tidy_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/coronadatascraper.com-covid19-1.2.24/data/source_tidy.csv')
+    source_jhu_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/coronadatascraper.com-covid19-1.2.24/data/source_jhu.csv')
+    source_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/coronadatascraper.com-covid19-1.2.24/data/source.csv')
 [/code]
 
 ### Accessing Package in Metapack
 [code] 
     import metapack as mp
-    pkg = mp.open_package('http://library.metatab.org/coronadatascraper.com-covid19-1.2.24.csv')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/coronadatascraper.com-covid19-1.2.24.csv')
     
     # Create Dataframes
     source_tidy_df = pkg.resource('source_tidy').dataframe()

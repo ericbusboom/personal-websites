@@ -16,7 +16,7 @@ Resources | Packages | Documentation| Contacts
 
 ## Resources
 
-  * **[20140310-cip-projects](<http://ds.civicknowledge.org.s3.amazonaws.com/sandiego.gov/20140310%20CIP%20Projects.csv>)**. 20140310 CIP Projects
+  * **[20140310-cip-projects](<https://library-metatab-org.s3.amazonaws.com/ds.civicknowledge.org/sandiego.gov/20140310%20CIP%20Projects.csv>)**. 20140310 CIP Projects
 
 
 ## Documentation

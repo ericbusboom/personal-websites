@@ -16,9 +16,9 @@ Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
-  * **[mrts_adjusted](<http://library.metatab.org/census.gov-monthly_retail-1.2.1/data/mrts_adjusted.csv>)**. Monthly retail sales, adjusted
-  * **[mrts_non_adjusted](<http://library.metatab.org/census.gov-monthly_retail-1.2.1/data/mrts_non_adjusted.csv>)**. Monthly retail sales, non adjusted
-  * **[mrts_combined](<http://library.metatab.org/census.gov-monthly_retail-1.2.1/data/mrts_combined.csv>)**. Monthly retail sales, adjusted and non adjusted combined
+  * **[mrts_adjusted](<https://library-metatab-org.s3.amazonaws.com/census.gov-monthly_retail-1.2.1/data/mrts_adjusted.csv>)**. Monthly retail sales, adjusted
+  * **[mrts_non_adjusted](<https://library-metatab-org.s3.amazonaws.com/census.gov-monthly_retail-1.2.1/data/mrts_non_adjusted.csv>)**. Monthly retail sales, non adjusted
+  * **[mrts_combined](<https://library-metatab-org.s3.amazonaws.com/census.gov-monthly_retail-1.2.1/data/mrts_combined.csv>)**. Monthly retail sales, adjusted and non adjusted combined
 
 
 ## Documentation
@@ -65,14 +65,14 @@ Other notes from the bottom of the Excel file worksheets:
 ## Packages
 
   * **s3** s3://library.metatab.org/census.gov-monthly_retail-1.2.1.csv
-  * **csv** <http://library.metatab.org/census.gov-monthly_retail-1.2.1.csv>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/census.gov-monthly_retail-1.2.1.csv>
   * **source** <https://github.com/metatab-packages/census.gov-monthly_retail.git>
 
 
 ### Accessing Packages in Metapack
 [code] 
     import metapack as mp
-    pkg = mp.open_package('http://library.metatab.org/census.gov-monthly_retail-1.2.1.csv')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/census.gov-monthly_retail-1.2.1.csv')
     
     # Create Dataframes
     mrts_adjusted_df = pkg.resource('mrts_adjusted').dataframe()
@@ -133,14 +133,14 @@ Urls used in the creation of this data package.
 ## Packages
 
   * **s3** s3://library.metatab.org/census.gov-monthly_retail-1.2.1.csv
-  * **csv** <http://library.metatab.org/census.gov-monthly_retail-1.2.1.csv>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/census.gov-monthly_retail-1.2.1.csv>
   * **source** <https://github.com/metatab-packages/census.gov-monthly_retail.git>
 
 
 ### Accessing Packages in Metapack
 [code] 
     import metapack as mp
-    pkg = mp.open_package('http://library.metatab.org/census.gov-monthly_retail-1.2.1.csv')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/census.gov-monthly_retail-1.2.1.csv')
     
     # Create Dataframes
     mrts_adjusted_df = pkg.resource('mrts_adjusted').dataframe()

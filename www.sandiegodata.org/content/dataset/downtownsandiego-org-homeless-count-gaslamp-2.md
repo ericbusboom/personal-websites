@@ -16,7 +16,7 @@ Resources | Packages | Documentation| Contacts| Data Dictionary
 
 ## Resources
 
-  * **[gaslamp](<http://library.metatab.org/downtownsandiego.org-homeless_count-gaslamp-2/data/gaslamp.csv>)**. 
+  * **[gaslamp](<https://library-metatab-org.s3.amazonaws.com/downtownsandiego.org-homeless_count-gaslamp-2/data/gaslamp.csv>)**. 
 
 
 ## Documentation
@@ -45,8 +45,8 @@ Corrections made during wranging include:
 
 ## Packages
 
-  * **zip** <http://library.metatab.org/downtownsandiego.org-homeless_count-gaslamp-2.zip>
-  * **csv** <http://library.metatab.org/downtownsandiego.org-homeless_count-gaslamp-2.csv>
+  * **zip** <https://library-metatab-org.s3.amazonaws.com/downtownsandiego.org-homeless_count-gaslamp-2.zip>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/downtownsandiego.org-homeless_count-gaslamp-2.csv>
   * **source** <https://github.com/sandiegodata-projects/downtown-partnership.git>
 
 
@@ -54,9 +54,9 @@ Corrections made during wranging include:
 [code] 
     import metapack as mp
     # ZIP Package
-    pkg = mp.open_package('http://library.metatab.org/downtownsandiego.org-homeless_count-gaslamp-2.zip')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/downtownsandiego.org-homeless_count-gaslamp-2.zip')
     # CSV Package
-    pkg = mp.open_package('http://library.metatab.org/downtownsandiego.org-homeless_count-gaslamp-2.csv') 
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/downtownsandiego.org-homeless_count-gaslamp-2.csv') 
     
     resource = pkg.resource('resource_name') # Get a resource
     df = resource.dataframe() # Create a pandas Dataframe

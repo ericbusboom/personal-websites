@@ -16,15 +16,15 @@ Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
-  * **[act94](<https://library.metatab.org/isr.umich.edu-psid-89_94-actsav-1.1.1/data/act94.csv>)**. Active savings, 1994
-  * **[act89](<https://library.metatab.org/isr.umich.edu-psid-89_94-actsav-1.1.1/data/act89.csv>)**. Active savings, 1989
+  * **[act94](<https://library-metatab-org.s3.amazonaws.com/isr.umich.edu-psid-89_94-actsav-1.1.1/data/act94.csv>)**. Active savings, 1994
+  * **[act89](<https://library-metatab-org.s3.amazonaws.com/isr.umich.edu-psid-89_94-actsav-1.1.1/data/act89.csv>)**. Active savings, 1989
 
 
 ## Documentation
 
 ### Documentation Links
 
-  * [Documentation Page](<https://library.metatab.org/isr.umich.edu-psid-89_94-actsav-1.1.1/index.html>)
+  * [Documentation Page](<https://library-metatab-org.s3.amazonaws.com/isr.umich.edu-psid-89_94-actsav-1.1.1/index.html>)
   * [Home Page](<https://psidonline.isr.umich.edu/default.aspx>) PSID home page
 
 
@@ -94,7 +94,7 @@ Urls used in the creation of this data package.
 ## Packages
 
   * **s3** s3://library.metatab.org/isr.umich.edu-psid-89_94-actsav-1.1.1.csv
-  * **csv** <https://library.metatab.org/isr.umich.edu-psid-89_94-actsav-1.1.1.csv>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/isr.umich.edu-psid-89_94-actsav-1.1.1.csv>
 
 
 ### Accessing Data in Vanilla Pandas
@@ -102,14 +102,14 @@ Urls used in the creation of this data package.
     import pandas as pd
     
     
-    act94_df =  pd.read_csv('https://library.metatab.org/isr.umich.edu-psid-89_94-actsav-1.1.1/data/act94.csv')
-    act89_df =  pd.read_csv('https://library.metatab.org/isr.umich.edu-psid-89_94-actsav-1.1.1/data/act89.csv')
+    act94_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/isr.umich.edu-psid-89_94-actsav-1.1.1/data/act94.csv')
+    act89_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/isr.umich.edu-psid-89_94-actsav-1.1.1/data/act89.csv')
 [/code]
 
 ### Accessing Package in Metapack
 [code] 
     import metapack as mp
-    pkg = mp.open_package('https://library.metatab.org/isr.umich.edu-psid-89_94-actsav-1.1.1.csv')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/isr.umich.edu-psid-89_94-actsav-1.1.1.csv')
     
     # Create Dataframes
     act94_df = pkg.resource('act94').dataframe()

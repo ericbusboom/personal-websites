@@ -16,7 +16,7 @@ Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
-  * **[hic_geocode](<http://library.metatab.org/sandiegodata.org-hic_geocode-1/data/hic_geocode.csv>)**. Geocoded addresses from the HIC facility inventory
+  * **[hic_geocode](<https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-hic_geocode-1/data/hic_geocode.csv>)**. Geocoded addresses from the HIC facility inventory
 
 
 ## Documentation
@@ -37,15 +37,15 @@ Fairly few of the facilities in the inventory dataset have addresses, about 14K 
 
 ## Packages
 
-  * **zip** <http://library.metatab.org/sandiegodata.org-hic_geocode-1.zip>
-  * **csv** <http://library.metatab.org/sandiegodata.org-hic_geocode-1.csv>
+  * **zip** <https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-hic_geocode-1.zip>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-hic_geocode-1.csv>
   * **source** <https://github.com/sandiegodata-projects/homelessness.git>
 
 
 ### Accessing Packages in Metapack
 [code] 
     import metapack as mp
-    pkg = mp.open_package('http://library.metatab.org/sandiegodata.org-hic_geocode-1.zip')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-hic_geocode-1.zip')
     
     # Create Dataframes
     hic_geocode_gdf = pkg.resource('hic_geocode').geoframe()
@@ -81,22 +81,22 @@ geometry| string| Position in WKT format
 
 Urls used in the creation of this data package.
 
-  * **metapack+http://library.metatab.org/hudexchange.info-hic-project-1.zip#hic**. 
+  * **metapack+https://library-metatab-org.s3.amazonaws.com/hudexchange.info-hic-project-1.zip#hic**. 
 
 
 Last Modified 2019-07-17T00:49:19
 
 ## Packages
 
-  * **zip** <http://library.metatab.org/sandiegodata.org-hic_geocode-1.zip>
-  * **csv** <http://library.metatab.org/sandiegodata.org-hic_geocode-1.csv>
+  * **zip** <https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-hic_geocode-1.zip>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-hic_geocode-1.csv>
   * **source** <https://github.com/sandiegodata-projects/homelessness.git>
 
 
 ### Accessing Packages in Metapack
 [code] 
     import metapack as mp
-    pkg = mp.open_package('http://library.metatab.org/sandiegodata.org-hic_geocode-1.zip')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-hic_geocode-1.zip')
     
     # Create Dataframes
     hic_geocode_gdf = pkg.resource('hic_geocode').geoframe()

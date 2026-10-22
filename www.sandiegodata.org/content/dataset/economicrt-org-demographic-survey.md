@@ -16,8 +16,8 @@ Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
-  * **[combined_survey](<http://library.metatab.org/economicrt.org-demographic_survey-1/data/combined_survey.csv>)**. Combined survey data from 2011 to 2017, with all columns, naievely combined
-  * **[multiyear_survey](<http://library.metatab.org/economicrt.org-demographic_survey-1/data/multiyear_survey.csv>)**. Data from Demographic Surveys and HMIS Records 2011 to 2017, with a normalized subset of common columns
+  * **[combined_survey](<https://library-metatab-org.s3.amazonaws.com/economicrt.org-demographic_survey-1/data/combined_survey.csv>)**. Combined survey data from 2011 to 2017, with all columns, naievely combined
+  * **[multiyear_survey](<https://library-metatab-org.s3.amazonaws.com/economicrt.org-demographic_survey-1/data/multiyear_survey.csv>)**. Data from Demographic Surveys and HMIS Records 2011 to 2017, with a normalized subset of common columns
 
 
 ## Documentation
@@ -75,15 +75,15 @@ Both files have some additional processing
 
 ## Packages
 
-  * **zip** <http://library.metatab.org/economicrt.org-demographic_survey-1.zip>
-  * **csv** <http://library.metatab.org/economicrt.org-demographic_survey-1.csv>
+  * **zip** <https://library-metatab-org.s3.amazonaws.com/economicrt.org-demographic_survey-1.zip>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/economicrt.org-demographic_survey-1.csv>
   * **source** <https://github.com/metatab-packages/metatab-packages.git>
 
 
 ### Accessing Packages in Metapack
 [code] 
     import metapack as mp
-    pkg = mp.open_package('http://library.metatab.org/economicrt.org-demographic_survey-1.zip')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/economicrt.org-demographic_survey-1.zip')
     
     # Create Dataframes
     
@@ -321,15 +321,15 @@ Last Modified 2019-07-17T00:48:21
 
 ## Packages
 
-  * **zip** <http://library.metatab.org/economicrt.org-demographic_survey-1.zip>
-  * **csv** <http://library.metatab.org/economicrt.org-demographic_survey-1.csv>
+  * **zip** <https://library-metatab-org.s3.amazonaws.com/economicrt.org-demographic_survey-1.zip>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/economicrt.org-demographic_survey-1.csv>
   * **source** <https://github.com/metatab-packages/metatab-packages.git>
 
 
 ### Accessing Packages in Metapack
 [code] 
     import metapack as mp
-    pkg = mp.open_package('http://library.metatab.org/economicrt.org-demographic_survey-1.zip')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/economicrt.org-demographic_survey-1.zip')
     
     # Create Dataframes
     

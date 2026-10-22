@@ -16,11 +16,11 @@ Resources | Packages | Documentation| Contacts| Data Dictionary
 
 ## Resources
 
-  * **[gcp](<http://library.metatab.org/sandiegodata.org-downtown_cv-5/data/gcp.csv>)**. Ground control points
-  * **[intersection_regions](<http://library.metatab.org/sandiegodata.org-downtown_cv-5/data/intersection_regions.csv>)**. Polygon transformations for each the intersections of each map
-  * **[intersections](<http://library.metatab.org/sandiegodata.org-downtown_cv-5/data/intersections.csv>)**. List of intersections.
-  * **[file_annotations](<http://library.metatab.org/sandiegodata.org-downtown_cv-5/data/file_annotations.csv>)**. File annotations on count files
-  * **[counts](<http://library.metatab.org/sandiegodata.org-downtown_cv-5/data/counts.csv>)**. Annotation position, types and counts of handwritten marks
+  * **[gcp](<https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-downtown_cv-5/data/gcp.csv>)**. Ground control points
+  * **[intersection_regions](<https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-downtown_cv-5/data/intersection_regions.csv>)**. Polygon transformations for each the intersections of each map
+  * **[intersections](<https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-downtown_cv-5/data/intersections.csv>)**. List of intersections.
+  * **[file_annotations](<https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-downtown_cv-5/data/file_annotations.csv>)**. File annotations on count files
+  * **[counts](<https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-downtown_cv-5/data/counts.csv>)**. Annotation position, types and counts of handwritten marks
 
 
 ## Documentation
@@ -58,16 +58,16 @@ After anotation JSON files are copied into S#, the list of S# urls must be updat
 
 ## Packages
 
-  * **zip** <http://library.metatab.org/sandiegodata.org-downtown_cv-5.zip>
+  * **zip** <https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-downtown_cv-5.zip>
   * **s3** s3://library.metatab.org/sandiegodata.org-downtown_cv-5.csv
-  * **csv** <http://library.metatab.org/sandiegodata.org-downtown_cv-5.csv>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-downtown_cv-5.csv>
   * **source** <https://github.com/sandiegodata-projects/homelessness.git>
 
 
 ### Accessing Packages in Metapack
 [code] 
     import metapack as mp
-    pkg = mp.open_package('http://library.metatab.org/sandiegodata.org-downtown_cv-5.zip')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-downtown_cv-5.zip')
     
     # Create Dataframes
     
@@ -151,16 +151,16 @@ Last Modified 2019-09-13T04:52:40
 
 ## Packages
 
-  * **zip** <http://library.metatab.org/sandiegodata.org-downtown_cv-5.zip>
+  * **zip** <https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-downtown_cv-5.zip>
   * **s3** s3://library.metatab.org/sandiegodata.org-downtown_cv-5.csv
-  * **csv** <http://library.metatab.org/sandiegodata.org-downtown_cv-5.csv>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-downtown_cv-5.csv>
   * **source** <https://github.com/sandiegodata-projects/homelessness.git>
 
 
 ### Accessing Packages in Metapack
 [code] 
     import metapack as mp
-    pkg = mp.open_package('http://library.metatab.org/sandiegodata.org-downtown_cv-5.zip')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-downtown_cv-5.zip')
     
     # Create Dataframes
     

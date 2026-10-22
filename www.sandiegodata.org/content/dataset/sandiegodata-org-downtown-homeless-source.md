@@ -16,14 +16,14 @@ Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
-  * **[intersections_2019](<https://library.metatab.org/sandiegodata.org-downtown_homeless-source-7.2.3/data/intersections_2019.csv>)**. Street intersections used for Ground Control Points, 2019
-  * **[intersections_2023](<https://library.metatab.org/sandiegodata.org-downtown_homeless-source-7.2.3/data/intersections_2023.csv>)**. Street intersections used for Ground Control Points, 2023 update
-  * **[counts](<https://library.metatab.org/sandiegodata.org-downtown_homeless-source-7.2.3/data/counts.csv>)**. Final homeless sleeper counts
-  * **[files](<https://library.metatab.org/sandiegodata.org-downtown_homeless-source-7.2.3/data/files.csv>)**. Final file annotations, including total counts, temperature and weather.
-  * **[gcp_transforms](<https://library.metatab.org/sandiegodata.org-downtown_homeless-source-7.2.3/data/gcp_transforms.csv>)**. Final ground control points and affine transformation matrices
-  * **[raw_count_annotations](<https://library.metatab.org/sandiegodata.org-downtown_homeless-source-7.2.3/data/raw_count_annotations.csv>)**. Lightly processed count annotations
-  * **[raw_file_annotations](<https://library.metatab.org/sandiegodata.org-downtown_homeless-source-7.2.3/data/raw_file_annotations.csv>)**. Lightly processed file annotations
-  * **[raw_gcp](<https://library.metatab.org/sandiegodata.org-downtown_homeless-source-7.2.3/data/raw_gcp.csv>)**. Lightly processed Ground Control Points
+  * **[intersections_2019](<https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-downtown_homeless-source-7.2.3/data/intersections_2019.csv>)**. Street intersections used for Ground Control Points, 2019
+  * **[intersections_2023](<https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-downtown_homeless-source-7.2.3/data/intersections_2023.csv>)**. Street intersections used for Ground Control Points, 2023 update
+  * **[counts](<https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-downtown_homeless-source-7.2.3/data/counts.csv>)**. Final homeless sleeper counts
+  * **[files](<https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-downtown_homeless-source-7.2.3/data/files.csv>)**. Final file annotations, including total counts, temperature and weather.
+  * **[gcp_transforms](<https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-downtown_homeless-source-7.2.3/data/gcp_transforms.csv>)**. Final ground control points and affine transformation matrices
+  * **[raw_count_annotations](<https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-downtown_homeless-source-7.2.3/data/raw_count_annotations.csv>)**. Lightly processed count annotations
+  * **[raw_file_annotations](<https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-downtown_homeless-source-7.2.3/data/raw_file_annotations.csv>)**. Lightly processed file annotations
+  * **[raw_gcp](<https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-downtown_homeless-source-7.2.3/data/raw_gcp.csv>)**. Lightly processed Ground Control Points
 
 
 ## Documentation
@@ -114,7 +114,7 @@ The 2024 update was performed by:
 
 ### Documentation Links
 
-  * [Documentation Page](<https://library.metatab.org/sandiegodata.org-downtown_homeless-source-7.2.3/index.html>)
+  * [Documentation Page](<https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-downtown_homeless-source-7.2.3/index.html>)
 
 
 ## Contacts
@@ -224,7 +224,7 @@ Urls used in the creation of this data package.
 ## Packages
 
   * **s3** s3://library.metatab.org/sandiegodata.org-downtown_homeless-source-7.2.3.csv
-  * **csv** <https://library.metatab.org/sandiegodata.org-downtown_homeless-source-7.2.3.csv>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-downtown_homeless-source-7.2.3.csv>
   * **source** <https://github.com/metatab-packages/sandiegodata.org-downtown_homeless-source.git>
 
 
@@ -233,20 +233,20 @@ Urls used in the creation of this data package.
     import pandas as pd
     
     
-    intersections_2019_df =  pd.read_csv('https://library.metatab.org/sandiegodata.org-downtown_homeless-source-7.2.3/data/intersections_2019.csv')
-    intersections_2023_df =  pd.read_csv('https://library.metatab.org/sandiegodata.org-downtown_homeless-source-7.2.3/data/intersections_2023.csv')
-    counts_df =  pd.read_csv('https://library.metatab.org/sandiegodata.org-downtown_homeless-source-7.2.3/data/counts.csv')
-    files_df =  pd.read_csv('https://library.metatab.org/sandiegodata.org-downtown_homeless-source-7.2.3/data/files.csv')
-    gcp_transforms_df =  pd.read_csv('https://library.metatab.org/sandiegodata.org-downtown_homeless-source-7.2.3/data/gcp_transforms.csv')
-    raw_count_annotations_df =  pd.read_csv('https://library.metatab.org/sandiegodata.org-downtown_homeless-source-7.2.3/data/raw_count_annotations.csv')
-    raw_file_annotations_df =  pd.read_csv('https://library.metatab.org/sandiegodata.org-downtown_homeless-source-7.2.3/data/raw_file_annotations.csv')
-    raw_gcp_df =  pd.read_csv('https://library.metatab.org/sandiegodata.org-downtown_homeless-source-7.2.3/data/raw_gcp.csv')
+    intersections_2019_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-downtown_homeless-source-7.2.3/data/intersections_2019.csv')
+    intersections_2023_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-downtown_homeless-source-7.2.3/data/intersections_2023.csv')
+    counts_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-downtown_homeless-source-7.2.3/data/counts.csv')
+    files_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-downtown_homeless-source-7.2.3/data/files.csv')
+    gcp_transforms_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-downtown_homeless-source-7.2.3/data/gcp_transforms.csv')
+    raw_count_annotations_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-downtown_homeless-source-7.2.3/data/raw_count_annotations.csv')
+    raw_file_annotations_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-downtown_homeless-source-7.2.3/data/raw_file_annotations.csv')
+    raw_gcp_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-downtown_homeless-source-7.2.3/data/raw_gcp.csv')
 [/code]
 
 ### Accessing Package in Metapack
 [code] 
     import metapack as mp
-    pkg = mp.open_package('https://library.metatab.org/sandiegodata.org-downtown_homeless-source-7.2.3.csv')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-downtown_homeless-source-7.2.3.csv')
     
     # Create Dataframes
     intersections_2019_gdf = pkg.resource('intersections_2019').geoframe()

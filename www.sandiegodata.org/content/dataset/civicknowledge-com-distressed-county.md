@@ -16,7 +16,7 @@ Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
-  * **[distressed_counties](<http://library.metatab.org/civicknowledge.com-distressed-county-1.1.5/data/distressed_counties.csv>)**. Aggregation of FFEIC distressed tracts into counties
+  * **[distressed_counties](<https://library-metatab-org.s3.amazonaws.com/civicknowledge.com-distressed-county-1.1.5/data/distressed_counties.csv>)**. Aggregation of FFEIC distressed tracts into counties
 
 
 ## Documentation
@@ -25,12 +25,12 @@ The [FFEIC publishes a very large dataset of Census variables](<https://www.ffie
 
 ### Documentation Links
 
-  * [Documentation Page](<http://library.metatab.org/civicknowledge.com-distressed-county-1.1.5/index.html>)
+  * [Documentation Page](<https://library-metatab-org.s3.amazonaws.com/civicknowledge.com-distressed-county-1.1.5/index.html>)
 
 
 ## Images
 
-  * [![](http://library.metatab.org/civicknowledge.com-distressed-county-1.1.5/doc/sample.png)](<http://library.metatab.org/civicknowledge.com-distressed-county-1.1.5/doc/sample.png> "Distressed Population") Percentage of Poverty Distressed Population Per County
+  * [![](https://library-metatab-org.s3.amazonaws.com/civicknowledge.com-distressed-county-1.1.5/doc/sample.png)](<https://library-metatab-org.s3.amazonaws.com/civicknowledge.com-distressed-county-1.1.5/doc/sample.png> "Distressed Population") Percentage of Poverty Distressed Population Per County
 
 
 ## Contacts
@@ -87,14 +87,14 @@ unemployment_distressed_pop_pct| number| Percentage of population in county in t
 
 Urls used in the creation of this data package.
 
-  * **metapack+http://library.metatab.org/ffeic.gov-census-tract.csv#ffeic_distressed**. Flags indicating FFEIC "distressed" designations, per tract.
-  * **metapack+http://library.metatab.org/census.gov-boundaries-2018.csv#county_500k**. County Boundaries
+  * **metapack+https://library-metatab-org.s3.amazonaws.com/ffeic.gov-census-tract.csv#ffeic_distressed**. Flags indicating FFEIC "distressed" designations, per tract.
+  * **metapack+https://library-metatab-org.s3.amazonaws.com/census.gov-boundaries-2018.csv#county_500k**. County Boundaries
 
 
 ## Packages
 
   * **s3** s3://library.metatab.org/civicknowledge.com-distressed-county-1.1.5.csv
-  * **csv** <http://library.metatab.org/civicknowledge.com-distressed-county-1.1.5.csv>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/civicknowledge.com-distressed-county-1.1.5.csv>
   * **source** <https://github.com/CivicKnowledge/tablecloth.io-collection.git>
 
 
@@ -103,13 +103,13 @@ Urls used in the creation of this data package.
     import pandas as pd
     
     
-    distressed_counties_df =  pd.read_csv('http://library.metatab.org/civicknowledge.com-distressed-county-1.1.5/data/distressed_counties.csv')
+    distressed_counties_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/civicknowledge.com-distressed-county-1.1.5/data/distressed_counties.csv')
 [/code]
 
 ### Accessing Package in Metapack
 [code] 
     import metapack as mp
-    pkg = mp.open_package('http://library.metatab.org/civicknowledge.com-distressed-county-1.1.5.csv')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/civicknowledge.com-distressed-county-1.1.5.csv')
     
     # Create Dataframes
     distressed_counties_df = pkg.resource('distressed_counties').dataframe()

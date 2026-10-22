@@ -16,10 +16,10 @@ Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
-  * **[pd_beats](<http://library.metatab.org/sandiego.gov-police_regions-2.1.2/data/pd_beats.csv>)**. Police beats
-  * **[pd_divisions](<http://library.metatab.org/sandiego.gov-police_regions-2.1.2/data/pd_divisions.csv>)**. Police Divisions
-  * **[pd_neighborhoods](<http://library.metatab.org/sandiego.gov-police_regions-2.1.2/data/pd_neighborhoods.csv>)**. Police Neighborhoods
-  * **[beat_demographics](<http://library.metatab.org/sandiego.gov-police_regions-2.1.2/data/beat_demographics.csv>)**. Counts of people in the beat, by race.
+  * **[pd_beats](<https://library-metatab-org.s3.amazonaws.com/sandiego.gov-police_regions-2.1.2/data/pd_beats.csv>)**. Police beats
+  * **[pd_divisions](<https://library-metatab-org.s3.amazonaws.com/sandiego.gov-police_regions-2.1.2/data/pd_divisions.csv>)**. Police Divisions
+  * **[pd_neighborhoods](<https://library-metatab-org.s3.amazonaws.com/sandiego.gov-police_regions-2.1.2/data/pd_neighborhoods.csv>)**. Police Neighborhoods
+  * **[beat_demographics](<https://library-metatab-org.s3.amazonaws.com/sandiego.gov-police_regions-2.1.2/data/beat_demographics.csv>)**. Counts of people in the beat, by race.
 
 
 ## Documentation
@@ -30,7 +30,7 @@ For the race/ethicty statistics, Hispanic ('hisp') refers to Hispanics of any ra
 
 ### Documentation Links
 
-  * [Documentation Page](<http://library.metatab.org/sandiego.gov-police_regions-2.1.2/index.html>)
+  * [Documentation Page](<https://library-metatab-org.s3.amazonaws.com/sandiego.gov-police_regions-2.1.2/index.html>)
   * [Police Divisions Repository Page](<https://data.sandiego.gov/datasets/pd-divisions/>) Data repository page that links to original files.
 
 
@@ -102,7 +102,7 @@ Urls used in the creation of this data package.
 ## Packages
 
   * **s3** s3://library.metatab.org/sandiego.gov-police_regions-2.1.2.csv
-  * **csv** <http://library.metatab.org/sandiego.gov-police_regions-2.1.2.csv>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/sandiego.gov-police_regions-2.1.2.csv>
   * **source** <https://github.com/metatab-packages/sandiego.gov-police_regions.git>
 
 
@@ -111,16 +111,16 @@ Urls used in the creation of this data package.
     import pandas as pd
     
     
-    pd_beats_df =  pd.read_csv('http://library.metatab.org/sandiego.gov-police_regions-2.1.2/data/pd_beats.csv')
-    pd_divisions_df =  pd.read_csv('http://library.metatab.org/sandiego.gov-police_regions-2.1.2/data/pd_divisions.csv')
-    pd_neighborhoods_df =  pd.read_csv('http://library.metatab.org/sandiego.gov-police_regions-2.1.2/data/pd_neighborhoods.csv')
-    beat_demographics_df =  pd.read_csv('http://library.metatab.org/sandiego.gov-police_regions-2.1.2/data/beat_demographics.csv')
+    pd_beats_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiego.gov-police_regions-2.1.2/data/pd_beats.csv')
+    pd_divisions_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiego.gov-police_regions-2.1.2/data/pd_divisions.csv')
+    pd_neighborhoods_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiego.gov-police_regions-2.1.2/data/pd_neighborhoods.csv')
+    beat_demographics_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiego.gov-police_regions-2.1.2/data/beat_demographics.csv')
 [/code]
 
 ### Accessing Package in Metapack
 [code] 
     import metapack as mp
-    pkg = mp.open_package('http://library.metatab.org/sandiego.gov-police_regions-2.1.2.csv')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiego.gov-police_regions-2.1.2.csv')
     
     # Create Dataframes
     pd_beats_gdf = pkg.resource('pd_beats').geoframe()

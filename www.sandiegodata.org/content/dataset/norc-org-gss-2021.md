@@ -16,7 +16,7 @@ Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
-  * **[gss_2021](<https://library.metatab.org/norc.org-gss-2021-1.1.1/data/gss_2021.csv>)**. General Social Survey 2021
+  * **[gss_2021](<https://library-metatab-org.s3.amazonaws.com/norc.org-gss-2021-1.1.1/data/gss_2021.csv>)**. General Social Survey 2021
 
 
 ## Documentation
@@ -37,7 +37,7 @@ Because the default is `True` this should happen automatically when using `.data
 
 ### Documentation Links
 
-  * [Documentation Page](<https://library.metatab.org/norc.org-gss-2021-1.1.1/index.html>)
+  * [Documentation Page](<https://library-metatab-org.s3.amazonaws.com/norc.org-gss-2021-1.1.1/index.html>)
   * [General Social Survey](<https://gss.norc.org/>) GSS Homepage at NORC
   * [Download page](<https://gss.norc.org/get-the-data/stata>)
 
@@ -807,7 +807,7 @@ Urls used in the creation of this data package.
 ## Packages
 
   * **s3** s3://library.metatab.org/norc.org-gss-2021-1.1.1.csv
-  * **csv** <https://library.metatab.org/norc.org-gss-2021-1.1.1.csv>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/norc.org-gss-2021-1.1.1.csv>
 
 
 ### Accessing Data in Vanilla Pandas
@@ -815,13 +815,13 @@ Urls used in the creation of this data package.
     import pandas as pd
     
     
-    gss_2021_df =  pd.read_csv('https://library.metatab.org/norc.org-gss-2021-1.1.1/data/gss_2021.csv')
+    gss_2021_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/norc.org-gss-2021-1.1.1/data/gss_2021.csv')
 [/code]
 
 ### Accessing Package in Metapack
 [code] 
     import metapack as mp
-    pkg = mp.open_package('https://library.metatab.org/norc.org-gss-2021-1.1.1.csv')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/norc.org-gss-2021-1.1.1.csv')
     
     # Create Dataframes
     gss_2021_df = pkg.resource('gss_2021').dataframe()

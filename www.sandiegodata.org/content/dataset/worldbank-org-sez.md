@@ -16,14 +16,14 @@ Resources | Packages | Documentation| Contacts| Data Dictionary
 
 ## Resources
 
-  * **[sez](<http://library.metatab.org/worldbank.org-sez-1.1.1/data/sez.csv>)**. Special Economic Zones
+  * **[sez](<https://library-metatab-org.s3.amazonaws.com/worldbank.org-sez-1.1.1/data/sez.csv>)**. Special Economic Zones
 
 
 ## Documentation
 
 ### Documentation Links
 
-  * [Documentation Page](<http://library.metatab.org/worldbank.org-sez-1.1.1/index.html>)
+  * [Documentation Page](<https://library-metatab-org.s3.amazonaws.com/worldbank.org-sez-1.1.1/index.html>)
   * [Dataset webpage](<https://datacatalog.worldbank.org/dataset/special-economic-zones-sez>)
   * [Dataset viewer web application](<http://devseed.com/sez-viewer/#/BGD6>)
 
@@ -110,7 +110,7 @@ geometry| string|
 ## Packages
 
   * **s3** s3://library.metatab.org/worldbank.org-sez-1.1.1.csv
-  * **csv** <http://library.metatab.org/worldbank.org-sez-1.1.1.csv>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/worldbank.org-sez-1.1.1.csv>
   * **source** <https://github.com/sandiegodata-projects/chartercitiesinstitute.org-sez>
 
 
@@ -119,13 +119,13 @@ geometry| string|
     import pandas as pd
     
     
-    sez_df =  pd.read_csv('http://library.metatab.org/worldbank.org-sez-1.1.1/data/sez.csv')
+    sez_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/worldbank.org-sez-1.1.1/data/sez.csv')
 [/code]
 
 ### Accessing Package in Metapack
 [code] 
     import metapack as mp
-    pkg = mp.open_package('http://library.metatab.org/worldbank.org-sez-1.1.1.csv')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/worldbank.org-sez-1.1.1.csv')
     
     # Create Dataframes
     sez_gdf = pkg.resource('sez').geoframe()

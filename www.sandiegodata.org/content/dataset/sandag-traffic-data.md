@@ -16,7 +16,7 @@ Resources | Packages | Documentation| Contacts
 
 ## Resources
 
-  * **[traffic-volume-shapefiles](<http://ds.civicknowledge.org.s3.amazonaws.com/sandag.org/SANDAG%20Traffic%20Data.zip>)**. A collection of shapefiles use as inputs to the SANDAG traffic model, for a variety of years.
+  * **[traffic-volume-shapefiles](<https://library-metatab-org.s3.amazonaws.com/ds.civicknowledge.org/sandag.org/SANDAG%20Traffic%20Data.zip>)**. A collection of shapefiles use as inputs to the SANDAG traffic model, for a variety of years.
 
 
 ## Documentation

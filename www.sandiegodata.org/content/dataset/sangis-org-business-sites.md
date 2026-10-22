@@ -16,9 +16,9 @@ Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
-  * **[business_sites](<http://library.metatab.org/sangis.org-business_sites-2/data/business_sites.csv>)**. Business sites, geographic file
-  * **[tract_counts_rows](<http://library.metatab.org/sangis.org-business_sites-2/data/tract_counts_rows.csv>)**. Business counts per tract, by type of business, oriented by rows
-  * **[tract_counts_columns](<http://library.metatab.org/sangis.org-business_sites-2/data/tract_counts_columns.csv>)**. Business counts per tract, by type of business, oriented by columns
+  * **[business_sites](<https://library-metatab-org.s3.amazonaws.com/sangis.org-business_sites-2/data/business_sites.csv>)**. Business sites, geographic file
+  * **[tract_counts_rows](<https://library-metatab-org.s3.amazonaws.com/sangis.org-business_sites-2/data/tract_counts_rows.csv>)**. Business counts per tract, by type of business, oriented by rows
+  * **[tract_counts_columns](<https://library-metatab-org.s3.amazonaws.com/sangis.org-business_sites-2/data/tract_counts_columns.csv>)**. Business counts per tract, by type of business, oriented by columns
 
 
 ## Documentation
@@ -41,7 +41,7 @@ Data should be used with caution as not all addresses and/or APN numbers are cor
 
 ### Documentation Links
 
-  * [Primary Documentation](<http://library.metatab.org/sangis.org-business_sites-2/doc/BUSINESS_SITES.pdf>)
+  * [Primary Documentation](<https://library-metatab-org.s3.amazonaws.com/sangis.org-business_sites-2/doc/BUSINESS_SITES.pdf>)
 
 
 ## Contacts
@@ -53,8 +53,8 @@ Data should be used with caution as not all addresses and/or APN numbers are cor
 
 ## Packages
 
-  * **zip** <http://library.metatab.org/sangis.org-business_sites-2.zip>
-  * **csv** <http://library.metatab.org/sangis.org-business_sites-2.csv>
+  * **zip** <https://library-metatab-org.s3.amazonaws.com/sangis.org-business_sites-2.zip>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/sangis.org-business_sites-2.csv>
   * **source** <https://github.com/sandiegodata/planning-database.git>
 
 
@@ -62,9 +62,9 @@ Data should be used with caution as not all addresses and/or APN numbers are cor
 [code] 
     import metapack as mp
     # ZIP Package
-    pkg = mp.open_package('http://library.metatab.org/sangis.org-business_sites-2.zip')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sangis.org-business_sites-2.zip')
     # CSV Package
-    pkg = mp.open_package('http://library.metatab.org/sangis.org-business_sites-2.csv') 
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sangis.org-business_sites-2.csv') 
     
     resource = pkg.resource('resource_name') # Get a resource
     df = resource.dataframe() # Create a pandas Dataframe
@@ -437,8 +437,8 @@ wreckers| integer|
 Urls used in the creation of this data package.
 
   * **[business_sites_source](<http://rdw.sandag.org/Account/GetFSFile.aspx?dir=Business&Name=BUSINESS_SITES.zip>)**. Source URL for BUSINESS_SITES file. You must be logged into Sangis to download it.
-  * **metapack+http://library.metatab.org/sandiegodata.org-geography-2018-1.csv#tract_communities**. San Diego tracts
-  * **metapack+http://library.metatab.org/sandiegodata.org-geography-2018-1.csv#tract_boundaries**. Tracts linked to community names
+  * **metapack+https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-geography-2018-1.csv#tract_communities**. San Diego tracts
+  * **metapack+https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-geography-2018-1.csv#tract_boundaries**. Tracts linked to community names
 
 
 Last Modified 2019-06-13T04:38:22

@@ -16,7 +16,7 @@ Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
-  * **[school_finance](<http://library.metatab.org/census.gov-school_finance-1.1.3/data/school_finance.csv>)**. Combined school finance
+  * **[school_finance](<https://library-metatab-org.s3.amazonaws.com/census.gov-school_finance-1.1.3/data/school_finance.csv>)**. Combined school finance
 
 
 ## Documentation
@@ -25,7 +25,7 @@ Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
   * [Annual Survey of School System Finances Tables](<https://www.census.gov/programs-surveys/school-finances/data/tables.html>) Program homepage
   * [Documentation, 2020](<https://www2.census.gov/programs-surveys/school-finances/technical-documentation/complete-technical-documentation/2020/school20doc.doc>) Dataset documentation, including data dictionary
-  * [Documentation Page](<http://library.metatab.org/census.gov-school_finance-1.1.3/index.html>)
+  * [Documentation Page](<https://library-metatab-org.s3.amazonaws.com/census.gov-school_finance-1.1.3/index.html>)
 
 
 ## Contacts
@@ -216,7 +216,7 @@ Urls used in the creation of this data package.
 ## Packages
 
   * **s3** s3://library.metatab.org/census.gov-school_finance-1.1.3.csv
-  * **csv** <http://library.metatab.org/census.gov-school_finance-1.1.3.csv>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/census.gov-school_finance-1.1.3.csv>
   * **source** <https://github.com/metatab-packages/cde.ca.gov-collection.git>
 
 
@@ -225,13 +225,13 @@ Urls used in the creation of this data package.
     import pandas as pd
     
     
-    school_finance_df =  pd.read_csv('http://library.metatab.org/census.gov-school_finance-1.1.3/data/school_finance.csv')
+    school_finance_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/census.gov-school_finance-1.1.3/data/school_finance.csv')
 [/code]
 
 ### Accessing Package in Metapack
 [code] 
     import metapack as mp
-    pkg = mp.open_package('http://library.metatab.org/census.gov-school_finance-1.1.3.csv')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/census.gov-school_finance-1.1.3.csv')
     
     # Create Dataframes
     school_finance_df = pkg.resource('school_finance').dataframe()

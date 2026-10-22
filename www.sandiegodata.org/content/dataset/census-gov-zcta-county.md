@@ -16,7 +16,7 @@ Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
-  * **[county_zcta](<http://library.metatab.org/census.gov-zcta_county-2.1.2/data/county_zcta.csv>)**. County to Zcta Crosswalk
+  * **[county_zcta](<https://library-metatab-org.s3.amazonaws.com/census.gov-zcta_county-2.1.2/data/county_zcta.csv>)**. County to Zcta Crosswalk
 
 
 ## Documentation
@@ -31,7 +31,7 @@ Note that the ZCTA regions are joined to counties after converting the geometrie
 
 ### Documentation Links
 
-  * [Documentation Page](<http://library.metatab.org/census.gov-zcta_county-2.1.2/index.html>)
+  * [Documentation Page](<https://library-metatab-org.s3.amazonaws.com/census.gov-zcta_county-2.1.2/index.html>)
 
 
 ## Contacts
@@ -66,9 +66,9 @@ Urls used in the creation of this data package.
 
 ## Packages
 
-  * **zip** <http://library.metatab.org/census.gov-zcta_county-2.1.2.zip>
+  * **zip** <https://library-metatab-org.s3.amazonaws.com/census.gov-zcta_county-2.1.2.zip>
   * **s3** s3://library.metatab.org/census.gov-zcta_county-2.1.2.csv
-  * **csv** <http://library.metatab.org/census.gov-zcta_county-2.1.2.csv>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/census.gov-zcta_county-2.1.2.csv>
   * **source** <https://github.com/metatab-packages/census.gov-zcta_county.git>
 
 
@@ -77,13 +77,13 @@ Urls used in the creation of this data package.
     import pandas as pd
     
     
-    county_zcta_df =  pd.read_csv('http://library.metatab.org/census.gov-zcta_county-2.1.2/data/county_zcta.csv')
+    county_zcta_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/census.gov-zcta_county-2.1.2/data/county_zcta.csv')
 [/code]
 
 ### Accessing Package in Metapack
 [code] 
     import metapack as mp
-    pkg = mp.open_package('http://library.metatab.org/census.gov-zcta_county-2.1.2.zip')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/census.gov-zcta_county-2.1.2.zip')
     
     # Create Dataframes
     county_zcta_df = pkg.resource('county_zcta').dataframe()

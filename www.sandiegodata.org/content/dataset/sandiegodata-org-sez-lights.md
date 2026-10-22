@@ -16,7 +16,7 @@ Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
-  * **[mean_lights](<http://library.metatab.org/sandiegodata.org-sez_lights-1.1.2/data/mean_lights.csv>)**. Pixel light sums for buffers and rings around the SEZ.
+  * **[mean_lights](<https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-sez_lights-1.1.2/data/mean_lights.csv>)**. Pixel light sums for buffers and rings around the SEZ.
 
 
 ## Documentation
@@ -25,7 +25,7 @@ This dataset provides sums of the pixel values in the [nighttime lights data](<h
 
 Here is an example of the buffer and ring for an SEZ in South Korea:
 
-![](http://library.metatab.org/sandiegodata.org-sez_lights-1.1.2/doc/ring_raster.png)
+![](https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-sez_lights-1.1.2/doc/ring_raster.png)
 
 This file can be joined to the SEZ data on the `unique_id` column. For each SEZ and year of the NTL data, this file includes the sum of the pixel values from the NTL rasters for both the ring and the buffer, and the radius specified in the `radius` column. The `*_count` column is the number of non-null pixels in each region.
 
@@ -35,12 +35,12 @@ See this [Jupyter notebook](<https://github.com/sandiegodata-projects/chartercit
 
 ### Documentation Links
 
-  * [Documentation Page](<http://library.metatab.org/sandiegodata.org-sez_lights-1.1.2/index.html>)
+  * [Documentation Page](<https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-sez_lights-1.1.2/index.html>)
 
 
 ## Images
 
-  * [![](http://library.metatab.org/sandiegodata.org-sez_lights-1.1.2/doc/ring_raster.png)](<http://library.metatab.org/sandiegodata.org-sez_lights-1.1.2/doc/ring_raster.png> "Rings & Rasters") Example of a 5km buffer and the ring around it.
+  * [![](https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-sez_lights-1.1.2/doc/ring_raster.png)](<https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-sez_lights-1.1.2/doc/ring_raster.png> "Rings & Rasters") Example of a 5km buffer and the ring around it.
 
 
 ## Contacts
@@ -73,14 +73,14 @@ radius| integer| Radius of buffer circle, and inner radius of ring.
 
 Urls used in the creation of this data package.
 
-  * **metapack+http://library.metatab.org/worldbank.org-sez-1.1.1.csv#sez**. SEZ Locations and data
-  * **metapack+http://library.metatab.org/figshare.com-harmonized_ntl-1.1.1.csv**. Harmonized Nighttime lights
+  * **metapack+https://library-metatab-org.s3.amazonaws.com/worldbank.org-sez-1.1.1.csv#sez**. SEZ Locations and data
+  * **metapack+https://library-metatab-org.s3.amazonaws.com/figshare.com-harmonized_ntl-1.1.1.csv**. Harmonized Nighttime lights
 
 
 ## Packages
 
   * **s3** s3://library.metatab.org/sandiegodata.org-sez_lights-1.1.2.csv
-  * **csv** <http://library.metatab.org/sandiegodata.org-sez_lights-1.1.2.csv>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-sez_lights-1.1.2.csv>
   * **source** <https://github.com/metatab-packages/sandiegodata.org-sez_lights.git>
 
 
@@ -89,13 +89,13 @@ Urls used in the creation of this data package.
     import pandas as pd
     
     
-    mean_lights_df =  pd.read_csv('http://library.metatab.org/sandiegodata.org-sez_lights-1.1.2/data/mean_lights.csv')
+    mean_lights_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-sez_lights-1.1.2/data/mean_lights.csv')
 [/code]
 
 ### Accessing Package in Metapack
 [code] 
     import metapack as mp
-    pkg = mp.open_package('http://library.metatab.org/sandiegodata.org-sez_lights-1.1.2.csv')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-sez_lights-1.1.2.csv')
     
     # Create Dataframes
     mean_lights_df = pkg.resource('mean_lights').dataframe()

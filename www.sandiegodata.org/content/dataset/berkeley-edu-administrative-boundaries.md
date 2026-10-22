@@ -16,15 +16,15 @@ Resources | Packages | Documentation| Contacts| Data Dictionary
 
 ## Resources
 
-  * **[vietnam_political](<http://library.metatab.org/berkeley.edu-administrative_boundaries-1.1.1/data/vietnam_political.csv>)**. Adminstrative boundaries of Vietnam, 2007
-  * **[china_city](<http://library.metatab.org/berkeley.edu-administrative_boundaries-1.1.1/data/china_city.csv>)**. City Boundaries of China, 2012
-  * **[skorea_admin2](<http://library.metatab.org/berkeley.edu-administrative_boundaries-1.1.1/data/skorea_admin2.csv>)**. Second-level Administrative Divisions, South Korea, 2015
-  * **[china_admin2](<http://library.metatab.org/berkeley.edu-administrative_boundaries-1.1.1/data/china_admin2.csv>)**. Second-level Administrative Divisions, China, 2015
-  * **[vietnam_admin2](<http://library.metatab.org/berkeley.edu-administrative_boundaries-1.1.1/data/vietnam_admin2.csv>)**. Second-level Administrative Divisions, Vietnam, 2015
-  * **[turkey_admin2](<http://library.metatab.org/berkeley.edu-administrative_boundaries-1.1.1/data/turkey_admin2.csv>)**. Second-level Administrative Divisions, Turkey, 2015
-  * **[philippines_admin2](<http://library.metatab.org/berkeley.edu-administrative_boundaries-1.1.1/data/philippines_admin2.csv>)**. Second-level Administrative Divisions, Philippines, 2015
-  * **[indonesia_admin2](<http://library.metatab.org/berkeley.edu-administrative_boundaries-1.1.1/data/indonesia_admin2.csv>)**. Second-level Administrative Divisions, Indonesia, 2015
-  * **[colombia_admin2](<http://library.metatab.org/berkeley.edu-administrative_boundaries-1.1.1/data/colombia_admin2.csv>)**. Second-level Administrative Divisions, Colombia, 2015
+  * **[vietnam_political](<https://library-metatab-org.s3.amazonaws.com/berkeley.edu-administrative_boundaries-1.1.1/data/vietnam_political.csv>)**. Adminstrative boundaries of Vietnam, 2007
+  * **[china_city](<https://library-metatab-org.s3.amazonaws.com/berkeley.edu-administrative_boundaries-1.1.1/data/china_city.csv>)**. City Boundaries of China, 2012
+  * **[skorea_admin2](<https://library-metatab-org.s3.amazonaws.com/berkeley.edu-administrative_boundaries-1.1.1/data/skorea_admin2.csv>)**. Second-level Administrative Divisions, South Korea, 2015
+  * **[china_admin2](<https://library-metatab-org.s3.amazonaws.com/berkeley.edu-administrative_boundaries-1.1.1/data/china_admin2.csv>)**. Second-level Administrative Divisions, China, 2015
+  * **[vietnam_admin2](<https://library-metatab-org.s3.amazonaws.com/berkeley.edu-administrative_boundaries-1.1.1/data/vietnam_admin2.csv>)**. Second-level Administrative Divisions, Vietnam, 2015
+  * **[turkey_admin2](<https://library-metatab-org.s3.amazonaws.com/berkeley.edu-administrative_boundaries-1.1.1/data/turkey_admin2.csv>)**. Second-level Administrative Divisions, Turkey, 2015
+  * **[philippines_admin2](<https://library-metatab-org.s3.amazonaws.com/berkeley.edu-administrative_boundaries-1.1.1/data/philippines_admin2.csv>)**. Second-level Administrative Divisions, Philippines, 2015
+  * **[indonesia_admin2](<https://library-metatab-org.s3.amazonaws.com/berkeley.edu-administrative_boundaries-1.1.1/data/indonesia_admin2.csv>)**. Second-level Administrative Divisions, Indonesia, 2015
+  * **[colombia_admin2](<https://library-metatab-org.s3.amazonaws.com/berkeley.edu-administrative_boundaries-1.1.1/data/colombia_admin2.csv>)**. Second-level Administrative Divisions, Colombia, 2015
 
 
 ## Documentation
@@ -43,7 +43,7 @@ Author(s): All China Marketing Research Co., Ltd. Description: This polygon data
 
 ### Documentation Links
 
-  * [Documentation Page](<http://library.metatab.org/berkeley.edu-administrative_boundaries-1.1.1/index.html>)
+  * [Documentation Page](<https://library-metatab-org.s3.amazonaws.com/berkeley.edu-administrative_boundaries-1.1.1/index.html>)
   * [China city Boundaries](<https://geodata.lib.berkeley.edu/catalog/berkeley-s7b12n>) Data repository page for China Boundaries, 2012
   * [Vietnam Political Boundaries](<https://geodata.lib.berkeley.edu/catalog/sde-columbia-iscgm_vietnam_2007_polbndl>) Data repository page for Vietnam Boundaries, 2008
   * [Vietnam administrative divisions](<https://geodata.lib.berkeley.edu/catalog/stanford-zq121fy4008>) Second-level Administrative Divisions, Vietnam, 2015
@@ -244,7 +244,7 @@ geometry| string|
 ## Packages
 
   * **s3** s3://library.metatab.org/berkeley.edu-administrative_boundaries-1.1.1.csv
-  * **csv** <http://library.metatab.org/berkeley.edu-administrative_boundaries-1.1.1.csv>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/berkeley.edu-administrative_boundaries-1.1.1.csv>
   * **source** <https://github.com/sandiegodata-projects/chartercitiesinstitute.org-sez>
 
 
@@ -253,21 +253,21 @@ geometry| string|
     import pandas as pd
     
     
-    vietnam_political_df =  pd.read_csv('http://library.metatab.org/berkeley.edu-administrative_boundaries-1.1.1/data/vietnam_political.csv')
-    china_city_df =  pd.read_csv('http://library.metatab.org/berkeley.edu-administrative_boundaries-1.1.1/data/china_city.csv')
-    skorea_admin2_df =  pd.read_csv('http://library.metatab.org/berkeley.edu-administrative_boundaries-1.1.1/data/skorea_admin2.csv')
-    china_admin2_df =  pd.read_csv('http://library.metatab.org/berkeley.edu-administrative_boundaries-1.1.1/data/china_admin2.csv')
-    vietnam_admin2_df =  pd.read_csv('http://library.metatab.org/berkeley.edu-administrative_boundaries-1.1.1/data/vietnam_admin2.csv')
-    turkey_admin2_df =  pd.read_csv('http://library.metatab.org/berkeley.edu-administrative_boundaries-1.1.1/data/turkey_admin2.csv')
-    philippines_admin2_df =  pd.read_csv('http://library.metatab.org/berkeley.edu-administrative_boundaries-1.1.1/data/philippines_admin2.csv')
-    indonesia_admin2_df =  pd.read_csv('http://library.metatab.org/berkeley.edu-administrative_boundaries-1.1.1/data/indonesia_admin2.csv')
-    colombia_admin2_df =  pd.read_csv('http://library.metatab.org/berkeley.edu-administrative_boundaries-1.1.1/data/colombia_admin2.csv')
+    vietnam_political_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/berkeley.edu-administrative_boundaries-1.1.1/data/vietnam_political.csv')
+    china_city_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/berkeley.edu-administrative_boundaries-1.1.1/data/china_city.csv')
+    skorea_admin2_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/berkeley.edu-administrative_boundaries-1.1.1/data/skorea_admin2.csv')
+    china_admin2_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/berkeley.edu-administrative_boundaries-1.1.1/data/china_admin2.csv')
+    vietnam_admin2_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/berkeley.edu-administrative_boundaries-1.1.1/data/vietnam_admin2.csv')
+    turkey_admin2_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/berkeley.edu-administrative_boundaries-1.1.1/data/turkey_admin2.csv')
+    philippines_admin2_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/berkeley.edu-administrative_boundaries-1.1.1/data/philippines_admin2.csv')
+    indonesia_admin2_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/berkeley.edu-administrative_boundaries-1.1.1/data/indonesia_admin2.csv')
+    colombia_admin2_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/berkeley.edu-administrative_boundaries-1.1.1/data/colombia_admin2.csv')
 [/code]
 
 ### Accessing Package in Metapack
 [code] 
     import metapack as mp
-    pkg = mp.open_package('http://library.metatab.org/berkeley.edu-administrative_boundaries-1.1.1.csv')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/berkeley.edu-administrative_boundaries-1.1.1.csv')
     
     # Create Dataframes
     vietnam_political_gdf = pkg.resource('vietnam_political').geoframe()

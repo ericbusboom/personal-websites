@@ -16,8 +16,8 @@ Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
-  * **[sdcrime_16_20](<http://library.metatab.org/sandiegodata.org-crime_victims-1.1.3/data/sdcrime_16_20.csv>)**. San Diego crime suspects and victims, 2016 to 2020
-  * **[ucrcodes](<http://library.metatab.org/sandiegodata.org-crime_victims-1.1.3/data/ucrcodes.csv>)**. UCR codes and detailed descriptions
+  * **[sdcrime_16_20](<https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-crime_victims-1.1.3/data/sdcrime_16_20.csv>)**. San Diego crime suspects and victims, 2016 to 2020
+  * **[ucrcodes](<https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-crime_victims-1.1.3/data/ucrcodes.csv>)**. UCR codes and detailed descriptions
 
 
 ## Documentation
@@ -89,7 +89,7 @@ For the 2020 census, Filipinos may be classified as Pacific Islanders, rather th
 
 ### Documentation Links
 
-  * [Documentation Page](<http://library.metatab.org/sandiegodata.org-crime_victims-1.1.3/index.html>)
+  * [Documentation Page](<https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-crime_victims-1.1.3/index.html>)
 
 
 ## Contacts
@@ -147,14 +147,14 @@ geometry| string| Centroid of census block
 Urls used in the creation of this data package.
 
   * **data/census_blocks.csv**. Census 2010 blocks, converted to ACS geoids, with centroid position
-  * **[op_sd_crime_xls](<http://ds.civicknowledge.org.s3.amazonaws.com/sandag.org/OPCrimeVictims/Omar%20Passons%20-%20SDCounty_CrimeData_Jan16_Jul20.xlsx>)**. Response from PRA request
-  * **[op_sd_crime_csv](<http://ds.civicknowledge.org.s3.amazonaws.com/sandag.org/OPCrimeVictims/sd_crime_data.csv>)**. Conversion of main tab of response data to CSV
+  * **[op_sd_crime_xls](<https://library-metatab-org.s3.amazonaws.com/ds.civicknowledge.org/sandag.org/OPCrimeVictims/Omar%20Passons%20-%20SDCounty_CrimeData_Jan16_Jul20.xlsx>)**. Response from PRA request
+  * **[op_sd_crime_csv](<https://library-metatab-org.s3.amazonaws.com/ds.civicknowledge.org/sandag.org/OPCrimeVictims/sd_crime_data.csv>)**. Conversion of main tab of response data to CSV
 
 
 ## Packages
 
   * **s3** s3://library.metatab.org/sandiegodata.org-crime_victims-1.1.3.csv
-  * **csv** <http://library.metatab.org/sandiegodata.org-crime_victims-1.1.3.csv>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-crime_victims-1.1.3.csv>
   * **source** <https://github.com/metatab-packages/sandiegodata.org-crime_victims.git>
 
 
@@ -163,14 +163,14 @@ Urls used in the creation of this data package.
     import pandas as pd
     
     
-    sdcrime_16_20_df =  pd.read_csv('http://library.metatab.org/sandiegodata.org-crime_victims-1.1.3/data/sdcrime_16_20.csv')
-    ucrcodes_df =  pd.read_csv('http://library.metatab.org/sandiegodata.org-crime_victims-1.1.3/data/ucrcodes.csv')
+    sdcrime_16_20_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-crime_victims-1.1.3/data/sdcrime_16_20.csv')
+    ucrcodes_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-crime_victims-1.1.3/data/ucrcodes.csv')
 [/code]
 
 ### Accessing Package in Metapack
 [code] 
     import metapack as mp
-    pkg = mp.open_package('http://library.metatab.org/sandiegodata.org-crime_victims-1.1.3.csv')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-crime_victims-1.1.3.csv')
     
     # Create Dataframes
     sdcrime_16_20_gdf = pkg.resource('sdcrime_16_20').geoframe()

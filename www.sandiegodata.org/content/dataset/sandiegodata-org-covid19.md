@@ -16,7 +16,7 @@ Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
-  * **[sd_covid_cases](<http://library.metatab.org/sandiegodata.org-covid19-1.2.43/data/sd_covid_cases.csv>)**. Notebook for creating dataset.
+  * **[sd_covid_cases](<https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-covid19-1.2.43/data/sd_covid_cases.csv>)**. Notebook for creating dataset.
 
 
 ## Documentation
@@ -41,14 +41,14 @@ im3fNd9yrfM1-0Ys/edit?usp=sharing>), and this dataset extracts the Summary tab o
 ## Packages
 
   * **s3** s3://library.metatab.org/sandiegodata.org-covid19-1.2.43.csv
-  * **csv** <http://library.metatab.org/sandiegodata.org-covid19-1.2.43.csv>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-covid19-1.2.43.csv>
   * **source** <https://github.com/sandiegodata/covid19.git>
 
 
 ### Accessing Packages in Metapack
 [code] 
     import metapack as mp
-    pkg = mp.open_package('http://library.metatab.org/sandiegodata.org-covid19-1.2.43.csv')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-covid19-1.2.43.csv')
     
     # Create Dataframes
     
@@ -84,14 +84,14 @@ Urls used in the creation of this data package.
 ## Packages
 
   * **s3** s3://library.metatab.org/sandiegodata.org-covid19-1.2.43.csv
-  * **csv** <http://library.metatab.org/sandiegodata.org-covid19-1.2.43.csv>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-covid19-1.2.43.csv>
   * **source** <https://github.com/sandiegodata/covid19.git>
 
 
 ### Accessing Packages in Metapack
 [code] 
     import metapack as mp
-    pkg = mp.open_package('http://library.metatab.org/sandiegodata.org-covid19-1.2.43.csv')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-covid19-1.2.43.csv')
     
     # Create Dataframes
     

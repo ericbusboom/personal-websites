@@ -16,11 +16,11 @@ Resources | Packages | Documentation| Contacts| Data Dictionary
 
 ## Resources
 
-  * **[r2r_2015](<http://library.metatab.org/austintexas.gov-response_to_resistance-1.1.4/data/r2r_2015.csv>)**. Response to Resistance, 2015
-  * **[r2r_2016](<http://library.metatab.org/austintexas.gov-response_to_resistance-1.1.4/data/r2r_2016.csv>)**. Response to Resistance, 2016
-  * **[r2r_2017](<http://library.metatab.org/austintexas.gov-response_to_resistance-1.1.4/data/r2r_2017.csv>)**. Response to Resistance, 2017
-  * **[r2r_2018](<http://library.metatab.org/austintexas.gov-response_to_resistance-1.1.4/data/r2r_2018.csv>)**. Response to Resistance, 2018
-  * **[r2r_2015_2018](<http://library.metatab.org/austintexas.gov-response_to_resistance-1.1.4/data/r2r_2015_2018.csv>)**. Combined R2R files, 2015 to 2018
+  * **[r2r_2015](<https://library-metatab-org.s3.amazonaws.com/austintexas.gov-response_to_resistance-1.1.4/data/r2r_2015.csv>)**. Response to Resistance, 2015
+  * **[r2r_2016](<https://library-metatab-org.s3.amazonaws.com/austintexas.gov-response_to_resistance-1.1.4/data/r2r_2016.csv>)**. Response to Resistance, 2016
+  * **[r2r_2017](<https://library-metatab-org.s3.amazonaws.com/austintexas.gov-response_to_resistance-1.1.4/data/r2r_2017.csv>)**. Response to Resistance, 2017
+  * **[r2r_2018](<https://library-metatab-org.s3.amazonaws.com/austintexas.gov-response_to_resistance-1.1.4/data/r2r_2018.csv>)**. Response to Resistance, 2018
+  * **[r2r_2015_2018](<https://library-metatab-org.s3.amazonaws.com/austintexas.gov-response_to_resistance-1.1.4/data/r2r_2015_2018.csv>)**. Combined R2R files, 2015 to 2018
 
 
 ## Documentation
@@ -42,7 +42,7 @@ The combined file also has a set of dummy variables for each of the values of th
 
 It appears that the earlier two years used a wide range of detailed codes, such as "firearm" or "edged weapon" which the later years have collapsed into "agressive_resistance", "defensive resistance" and "passive resistance", with out a definite cutoffdate for the transition. The image below shows True values for the dummy variables in yellow. 
 
-![](http://library.metatab.org/austintexas.gov-response_to_resistance-1.1.2/docs/sr_dummy_coverage.png)
+![](https://library-metatab-org.s3.amazonaws.com/austintexas.gov-response_to_resistance-1.1.2/docs/sr_dummy_coverage.png)
 
 ## Police Data Collection
 
@@ -56,7 +56,7 @@ This package is part of the [San Diego Data Library's Police Data Collection](<h
 
 ## Images
 
-  * [![](http://library.metatab.org/austintexas.gov-response_to_resistance-1.1.4/docs/sr_dummy_coverage.png)](<http://library.metatab.org/austintexas.gov-response_to_resistance-1.1.4/docs/sr_dummy_coverage.png> "Dummy Variable Coverage") True Values for Subject Resistance Dummy Variables by Date
+  * [![](https://library-metatab-org.s3.amazonaws.com/austintexas.gov-response_to_resistance-1.1.4/docs/sr_dummy_coverage.png)](<https://library-metatab-org.s3.amazonaws.com/austintexas.gov-response_to_resistance-1.1.4/docs/sr_dummy_coverage.png> "Dummy Variable Coverage") True Values for Subject Resistance Dummy Variables by Date
 
 
 ## Contacts
@@ -269,14 +269,14 @@ sr_empty_hand_active_aggression| string|
 ## Packages
 
   * **s3** s3://library.metatab.org/austintexas.gov-response_to_resistance-1.1.4.csv
-  * **csv** <http://library.metatab.org/austintexas.gov-response_to_resistance-1.1.4.csv>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/austintexas.gov-response_to_resistance-1.1.4.csv>
   * **source** <https://github.com/metatab-packages/policedata-collection.git>
 
 
 ### Accessing Packages in Metapack
 [code] 
     import metapack as mp
-    pkg = mp.open_package('http://library.metatab.org/austintexas.gov-response_to_resistance-1.1.4.csv')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/austintexas.gov-response_to_resistance-1.1.4.csv')
     
     # Create Dataframes
     r2r_2015_df = pkg.resource('r2r_2015').dataframe()

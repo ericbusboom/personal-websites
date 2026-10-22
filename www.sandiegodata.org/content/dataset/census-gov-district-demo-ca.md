@@ -16,7 +16,7 @@ Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
-  * **[ca_sd_demo](<http://library.metatab.org/census.gov-district_demo-ca-1.2.2/data/ca_sd_demo.csv>)**. California school district demographics
+  * **[ca_sd_demo](<https://library-metatab-org.s3.amazonaws.com/census.gov-district_demo-ca-1.2.2/data/ca_sd_demo.csv>)**. California school district demographics
 
 
 ## Documentation
@@ -37,7 +37,7 @@ This dataset collects the following Census tables for the sdelm ( Elementary dis
 
 ### Documentation Links
 
-  * [Documentation Page](<http://library.metatab.org/census.gov-district_demo-ca-1.2.2/index.html>)
+  * [Documentation Page](<https://library-metatab-org.s3.amazonaws.com/census.gov-district_demo-ca-1.2.2/index.html>)
 
 
 ## Contacts
@@ -468,7 +468,7 @@ b03001_031_m90| integer| B03001_031_m90
 
 Urls used in the creation of this data package.
 
-  * **metapack+http://library.metatab.org/sandiegodata.org-sd_demo_links-ca.csv#ca_sd_links**. Links between California data files and Census records
+  * **metapack+https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-sd_demo_links-ca.csv#ca_sd_links**. Links between California data files and Census records
   * **census://2020/5/CA/sdelm/B01003**. Total Population, elementary
   * **census://2020/5/CA/sdsec/B01003**. Total Population, secondary
   * **census://2020/5/CA/sduni/B01003**. Total Population, unified
@@ -504,7 +504,7 @@ Urls used in the creation of this data package.
 ## Packages
 
   * **s3** s3://library.metatab.org/census.gov-district_demo-ca-1.2.2.csv
-  * **csv** <http://library.metatab.org/census.gov-district_demo-ca-1.2.2.csv>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/census.gov-district_demo-ca-1.2.2.csv>
   * **source** <https://github.com/metatab-packages/census.gov-district_demo-ca.git>
 
 
@@ -513,13 +513,13 @@ Urls used in the creation of this data package.
     import pandas as pd
     
     
-    ca_sd_demo_df =  pd.read_csv('http://library.metatab.org/census.gov-district_demo-ca-1.2.2/data/ca_sd_demo.csv')
+    ca_sd_demo_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/census.gov-district_demo-ca-1.2.2/data/ca_sd_demo.csv')
 [/code]
 
 ### Accessing Package in Metapack
 [code] 
     import metapack as mp
-    pkg = mp.open_package('http://library.metatab.org/census.gov-district_demo-ca-1.2.2.csv')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/census.gov-district_demo-ca-1.2.2.csv')
     
     # Create Dataframes
     ca_sd_demo_df = pkg.resource('ca_sd_demo').dataframe()

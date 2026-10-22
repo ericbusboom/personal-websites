@@ -16,7 +16,7 @@ Resources | Packages | Documentation| Contacts| References
 
 ## Resources
 
-  * **[sd_food_atlas](<http://library.metatab.org/usda.gov-food_access-1/data/sd_food_atlas.csv>)**. Food atlas, San Diego county tracts only
+  * **[sd_food_atlas](<https://library-metatab-org.s3.amazonaws.com/usda.gov-food_access-1/data/sd_food_atlas.csv>)**. Food atlas, San Diego county tracts only
 
 
 ## Documentation
@@ -69,7 +69,7 @@ While the URL for the source file is available online, this data package is prod
 
 ## Packages
 
-  * **zip** <http://library.metatab.org/usda.gov-food_access-1.zip>
+  * **zip** <https://library-metatab-org.s3.amazonaws.com/usda.gov-food_access-1.zip>
   * **source** <https://github.com/Metatab/metatab-packages.git>
 
 
@@ -77,7 +77,7 @@ While the URL for the source file is available online, this data package is prod
 [code] 
     import metapack as mp
     # ZIP Package
-    pkg = mp.open_package('http://library.metatab.org/usda.gov-food_access-1.zip')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/usda.gov-food_access-1.zip')
     
     
     resource = pkg.resource('resource_name') # Get a resource

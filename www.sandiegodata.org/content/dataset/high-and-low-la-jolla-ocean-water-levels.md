@@ -16,7 +16,7 @@ Resources | Packages | Documentation| Contacts| References
 
 ## Resources
 
-  * **[water_levels](<http://library.metatab.org/tidesandcurrents.noaa.gov-water_levels-la_jolla-1/data/water_levels.csv>)**. High and Low Ocean water levels for the La Jolla station.
+  * **[water_levels](<https://library-metatab-org.s3.amazonaws.com/tidesandcurrents.noaa.gov-water_levels-la_jolla-1/data/water_levels.csv>)**. High and Low Ocean water levels for the La Jolla station.
 
 
 ## Documentation
@@ -32,7 +32,7 @@ To get the access URLs, visit the [web tool page](<https://tidesandcurrents.noaa
 
 ## Images
 
-  * <http://library.metatab.org/tidesandcurrents.noaa.gov-water_levels-la_jolla-1/docs/water_levels.png>
+  * <https://library-metatab-org.s3.amazonaws.com/tidesandcurrents.noaa.gov-water_levels-la_jolla-1/docs/water_levels.png>
 
 ## Contacts
 
@@ -42,16 +42,16 @@ To get the access URLs, visit the [web tool page](<https://tidesandcurrents.noaa
 
 ## Packages
 
-    * **zip** <http://library.metatab.org/tidesandcurrents.noaa.gov-water_levels-la_jolla-1.zip>
-    * **csv** <http://library.metatab.org/tidesandcurrents.noaa.gov-water_levels-la_jolla-1.csv>
+    * **zip** <https://library-metatab-org.s3.amazonaws.com/tidesandcurrents.noaa.gov-water_levels-la_jolla-1.zip>
+    * **csv** <https://library-metatab-org.s3.amazonaws.com/tidesandcurrents.noaa.gov-water_levels-la_jolla-1.csv>
     * **source** <https://github.com/san-diego-water-quality/water-datasets.git>
 
 ### Accessing Packages in Metapack
 [code] import metapack as mp
     # ZIP Package
-    pkg = mp.open_package('http://library.metatab.org/tidesandcurrents.noaa.gov-water_levels-la_jolla-1.zip')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/tidesandcurrents.noaa.gov-water_levels-la_jolla-1.zip')
     # CSV Package
-    pkg = mp.open_package('http://library.metatab.org/tidesandcurrents.noaa.gov-water_levels-la_jolla-1.csv') 
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/tidesandcurrents.noaa.gov-water_levels-la_jolla-1.csv') 
     
     resource = pkg.resource('resource_name') # Get a resource
     df = resource.dataframe() # Create a pandas Dataframe

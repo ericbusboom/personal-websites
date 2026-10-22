@@ -17,7 +17,7 @@ Resources | Packages | Documentation| Contacts
 ## Resources
 
   * **[hourly-precipitation-documentation](<https://www1.ncdc.noaa.gov/pub/data/cdo/documentation/PRECIP_HLY_documentation.pdf>)**. Hourly Precipitation Documentation
-  * **[san-diego-hourly-precipitation-2004-2014](<http://ds.civicknowledge.org.s3.amazonaws.com/noaa.gov/sandiego%20hourly%20preciptation%202004-2014.csv>)**. San Diego Hourly Precipitation 2004-2014
+  * **[san-diego-hourly-precipitation-2004-2014](<https://library-metatab-org.s3.amazonaws.com/ds.civicknowledge.org/noaa.gov/sandiego%20hourly%20preciptation%202004-2014.csv>)**. San Diego Hourly Precipitation 2004-2014
 
 
 ## Documentation

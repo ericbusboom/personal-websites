@@ -16,7 +16,7 @@ Resources | Packages | Documentation| Contacts
 
 ## Resources
 
-  * **[tmdl-sd](<http://library.metatab.org/ceden.waterboards.ca.gov-tmdl-sandiego-2/data/tmdl-sd.csv>)**. San Diego Total Maximum Daily Load data
+  * **[tmdl-sd](<https://library-metatab-org.s3.amazonaws.com/ceden.waterboards.ca.gov-tmdl-sandiego-2/data/tmdl-sd.csv>)**. San Diego Total Maximum Daily Load data
 
 
 ## Documentation
@@ -36,8 +36,8 @@ Resources | Packages | Documentation| Contacts
 
 ## Packages
 
-  * **csv** <http://library.metatab.org/ceden.waterboards.ca.gov-tmdl-sandiego-1.csv>
-  * **zip** <http://library.metatab.org/ceden.waterboards.ca.gov-tmdl-sandiego-2.zip>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/ceden.waterboards.ca.gov-tmdl-sandiego-1.csv>
+  * **zip** <https://library-metatab-org.s3.amazonaws.com/ceden.waterboards.ca.gov-tmdl-sandiego-2.zip>
   * **source** <https://github.com/san-diego-water-quality/water-datasets.git>
 
 
@@ -45,9 +45,9 @@ Resources | Packages | Documentation| Contacts
 [code] 
     import metapack as mp
     # ZIP Package
-    pkg = mp.open_package('http://library.metatab.org/ceden.waterboards.ca.gov-tmdl-sandiego-2.zip')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/ceden.waterboards.ca.gov-tmdl-sandiego-2.zip')
     # CSV Package
-    pkg = mp.open_package('http://library.metatab.org/ceden.waterboards.ca.gov-tmdl-sandiego-1.csv') 
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/ceden.waterboards.ca.gov-tmdl-sandiego-1.csv') 
     
     resource = pkg.resource('resource_name') # Get a resource
     df = resource.dataframe() # Create a pandas Dataframe

@@ -16,8 +16,8 @@ Resources | Packages | Documentation| Contacts| Data Dictionary
 
 ## Resources
 
-  * **[ca_lea_demo](<http://library.metatab.org/openjustice.doj.ca.gov-agencies-1.1.1/data/ca_lea_demo.csv>)**. California Law Enforcement Agencies and demographic statistics for their service areas.
-  * **[ca_lea_ncic](<http://library.metatab.org/openjustice.doj.ca.gov-agencies-1.1.1/data/ca_lea_ncic.csv>)**. California LEA NCIC codes, names, and years they actively reported.
+  * **[ca_lea_demo](<https://library-metatab-org.s3.amazonaws.com/openjustice.doj.ca.gov-agencies-1.1.1/data/ca_lea_demo.csv>)**. California Law Enforcement Agencies and demographic statistics for their service areas.
+  * **[ca_lea_ncic](<https://library-metatab-org.s3.amazonaws.com/openjustice.doj.ca.gov-agencies-1.1.1/data/ca_lea_ncic.csv>)**. California LEA NCIC codes, names, and years they actively reported.
 
 
 ## Documentation
@@ -65,14 +65,14 @@ end| date|
 ## Packages
 
   * **s3** s3://library.metatab.org/openjustice.doj.ca.gov-agencies-1.1.1.csv
-  * **csv** <http://library.metatab.org/openjustice.doj.ca.gov-agencies-1.1.1.csv>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/openjustice.doj.ca.gov-agencies-1.1.1.csv>
   * **source** <https://github.com/metatab-packages/policedata-collection.git>
 
 
 ### Accessing Packages in Metapack
 [code] 
     import metapack as mp
-    pkg = mp.open_package('http://library.metatab.org/openjustice.doj.ca.gov-agencies-1.1.1.csv')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/openjustice.doj.ca.gov-agencies-1.1.1.csv')
     
     # Create Dataframes
     ca_lea_demo_df = pkg.resource('ca_lea_demo').dataframe()

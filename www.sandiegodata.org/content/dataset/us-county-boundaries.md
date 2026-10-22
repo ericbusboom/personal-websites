@@ -16,7 +16,7 @@ Resources | Packages | Documentation| Contacts
 
 ## Resources
 
-  * **[counties](<http://library.metatab.org/census.gov-counties-2017-2/data/counties.csv>)**. 
+  * **[counties](<https://library-metatab-org.s3.amazonaws.com/census.gov-counties-2017-2/data/counties.csv>)**. 
 
 
 ## Documentation
@@ -30,8 +30,8 @@ Resources | Packages | Documentation| Contacts
 
 ## Packages
 
-  * **csv** <http://library.metatab.org/census.gov-counties-2017-2.csv>
-  * **zip** <http://library.metatab.org/census.gov-counties-2017-2.zip>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/census.gov-counties-2017-2.csv>
+  * **zip** <https://library-metatab-org.s3.amazonaws.com/census.gov-counties-2017-2.zip>
   * **source** <https://github.com/san-diego-water-quality/water-datasets.git>
 
 
@@ -39,9 +39,9 @@ Resources | Packages | Documentation| Contacts
 [code] 
     import metapack as mp
     # ZIP Package
-    pkg = mp.open_package('http://library.metatab.org/census.gov-counties-2017-2.zip')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/census.gov-counties-2017-2.zip')
     # CSV Package
-    pkg = mp.open_package('http://library.metatab.org/census.gov-counties-2017-2.csv') 
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/census.gov-counties-2017-2.csv') 
     
     resource = pkg.resource('resource_name') # Get a resource
     df = resource.dataframe() # Create a pandas Dataframe

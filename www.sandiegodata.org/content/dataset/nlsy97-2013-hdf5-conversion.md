@@ -22,7 +22,7 @@ Because the HDF file is very large and complex to produce, this package links to
 
 This is much more complicated to use than other files. The `publicdata` python package must be installed to get the Nlsy classes that can read the HDF5 file. Typical useage is: 
 [code] 
-    pkg = mp.open_package('http://library.metatab.org.s3.amazonaws.com/nlsinfo.org-nlsy97-2013.csv')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/nlsinfo.org-nlsy97-2013.csv')
     nlsy = pkg.reference('nlsy97').resolved_url.get_resource().get_target().nlsy
     homeless = nlsy.question_dataframe('YHEA-2600A',  replacena=True, rmeta=True)
     homeless.head()
@@ -38,7 +38,7 @@ This is much more complicated to use than other files. The `publicdata` python p
 
 ## Packages
 
-  * **csv** <http://library.metatab.org/nlsinfo.org-nlsy97-2013-1.csv>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/nlsinfo.org-nlsy97-2013-1.csv>
   * **source** <https://github.com/SDRDLAnalysts/data-projects.git>
 
 
@@ -47,7 +47,7 @@ This is much more complicated to use than other files. The `publicdata` python p
     import metapack as mp
     
     # CSV Package
-    pkg = mp.open_package('http://library.metatab.org/nlsinfo.org-nlsy97-2013-1.csv') 
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/nlsinfo.org-nlsy97-2013-1.csv') 
     
     resource = pkg.resource('resource_name') # Get a resource
     df = resource.dataframe() # Create a pandas Dataframe
@@ -59,7 +59,7 @@ This is much more complicated to use than other files. The `publicdata` python p
 
 Urls used in the creation of this data package.
 
-  * **nlsy+http://library.metatab.org/nlsinfo.org-nlsy97-2013/data/nlsy97_all_1997-2013.h5.zip**. NLSY 97 HDF5 file
+  * **nlsy+https://library-metatab-org.s3.amazonaws.com/nlsinfo.org-nlsy97-2013/data/nlsy97_all_1997-2013.h5.zip**. NLSY 97 HDF5 file
 
 
 Last Modified 2019-04-18T18:41:54

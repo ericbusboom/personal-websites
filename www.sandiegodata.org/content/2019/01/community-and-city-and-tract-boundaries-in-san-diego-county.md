@@ -18,26 +18,26 @@ Resources | Packages | Documentation| Contacts| References
 
 Direct access to individual CSV files.
 
-  * **[tracts](<http://library.metatab.org/sandiegodata.org-geography-2018-12/data/tracts.csv>)**. Tract census information
-  * **[places](<http://library.metatab.org/sandiegodata.org-geography-2018-12/data/places.csv>)**. Census place information, which includes incorporated cities and unincorporated towns like Julian and Romona
-  * **[places_boundaries](<http://library.metatab.org/sandiegodata.org-geography-2018-12/data/places_boundaries.csv>)**. Census place boundaries, which includes incorporated cities and unincorporated towns like Julian and Romona
-  * **[city_boundaries](<http://library.metatab.org/sandiegodata.org-geography-2018-12/data/city_boundaries.csv>)**. Boundary shapes for cities
-  * **[sd_community_boundaries](<http://library.metatab.org/sandiegodata.org-geography-2018-12/data/sd_community_boundaries.csv>)**. Boundary shapes for SD City communities
-  * **[county_boundaries](<http://library.metatab.org/sandiegodata.org-geography-2018-12/data/county_boundaries.csv>)**. Boundary shapes for unincorporated County areas
-  * **[district_boundaries](<http://library.metatab.org/sandiegodata.org-geography-2018-12/data/district_boundaries.csv>)**. Boundaries for special districts, such as the Promize Zone
-  * **[county_communities_boundaries](<http://library.metatab.org/sandiegodata.org-geography-2018-12/data/county_communities_boundaries.csv>)**. Boundaries for county communities
-  * **[combined_boundaries](<http://library.metatab.org/sandiegodata.org-geography-2018-12/data/combined_boundaries.csv>)**. Boundary shapes for all communities, county regions and cities combined
-  * **[tract_boundaries](<http://library.metatab.org/sandiegodata.org-geography-2018-12/data/tract_boundaries.csv>)**. Tract boundary shapes
-  * **[tract_communities](<http://library.metatab.org/sandiegodata.org-geography-2018-12/data/tract_communities.csv>)**. Link between tracts and cities, communities and county regions, with one record per tract. No geometry.
-  * **[sd_county_boundary](<http://library.metatab.org/sandiegodata.org-geography-2018-12/data/sd_county_boundary.csv>)**. Boundary shape for SD County
+  * **[tracts](<https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-geography-2018-12/data/tracts.csv>)**. Tract census information
+  * **[places](<https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-geography-2018-12/data/places.csv>)**. Census place information, which includes incorporated cities and unincorporated towns like Julian and Romona
+  * **[places_boundaries](<https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-geography-2018-12/data/places_boundaries.csv>)**. Census place boundaries, which includes incorporated cities and unincorporated towns like Julian and Romona
+  * **[city_boundaries](<https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-geography-2018-12/data/city_boundaries.csv>)**. Boundary shapes for cities
+  * **[sd_community_boundaries](<https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-geography-2018-12/data/sd_community_boundaries.csv>)**. Boundary shapes for SD City communities
+  * **[county_boundaries](<https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-geography-2018-12/data/county_boundaries.csv>)**. Boundary shapes for unincorporated County areas
+  * **[district_boundaries](<https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-geography-2018-12/data/district_boundaries.csv>)**. Boundaries for special districts, such as the Promize Zone
+  * **[county_communities_boundaries](<https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-geography-2018-12/data/county_communities_boundaries.csv>)**. Boundaries for county communities
+  * **[combined_boundaries](<https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-geography-2018-12/data/combined_boundaries.csv>)**. Boundary shapes for all communities, county regions and cities combined
+  * **[tract_boundaries](<https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-geography-2018-12/data/tract_boundaries.csv>)**. Tract boundary shapes
+  * **[tract_communities](<https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-geography-2018-12/data/tract_communities.csv>)**. Link between tracts and cities, communities and county regions, with one record per tract. No geometry.
+  * **[sd_county_boundary](<https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-geography-2018-12/data/sd_county_boundary.csv>)**. Boundary shape for SD County
 
 
 ## Packages
 
 Collections of all files in the dataset. ZIP packages have all files and documentation in a ZIP file and are compressed to load faster. Excel files have all data in worksheet tabs. CSV packages reference files stored on the net, and are best for use with analysis tools like Metapack. 
 
-  * **zip** <http://library.metatab.org/sandiegodata.org-geography-2018-12.zip>
-  * **csv** <http://library.metatab.org/sandiegodata.org-geography-2018-12.csv>
+  * **zip** <https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-geography-2018-12.zip>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-geography-2018-12.csv>
   * **source** <https://github.com/sandiegodata/planning-database.git>
 
 
@@ -45,9 +45,9 @@ Collections of all files in the dataset. ZIP packages have all files and documen
 [code] 
     import metapack as mp
     # ZIP Package
-    pkg = mp.open_package('http://library.metatab.org/sandiegodata.org-geography-2018-12.zip')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-geography-2018-12.zip')
     # CSV Package
-    pkg = mp.open_package('http://library.metatab.org/sandiegodata.org-geography-2018-12.csv')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-geography-2018-12.csv')
     
     resource = pkg.resource('resource_name') # Get a resource
     df = resource.dataframe() # Create a pandas Dataframe
@@ -88,9 +88,9 @@ The `tracts_all_regions` dataset may have more than one row for each tract; the 
 
 ### Documentation Links
 
-  * [San Diego City Community Shapefile Documentation](<http://library.metatab.org/sandiegodata.org-geography-2018-12/doc/Community_Plan_SD.pdf>)
-  * [San Diego County Community Shapefile Documentation](<http://library.metatab.org/sandiegodata.org-geography-2018-12/doc/Community_Plan_CN.pdf>)
-  * [City Boundary Shapefile Documentation](<http://library.metatab.org/sandiegodata.org-geography-2018-12/doc/Municipal_Boundaries.pdf>)
+  * [San Diego City Community Shapefile Documentation](<https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-geography-2018-12/doc/Community_Plan_SD.pdf>)
+  * [San Diego County Community Shapefile Documentation](<https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-geography-2018-12/doc/Community_Plan_CN.pdf>)
+  * [City Boundary Shapefile Documentation](<https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-geography-2018-12/doc/Municipal_Boundaries.pdf>)
 
 
 ## Contacts
@@ -109,7 +109,7 @@ Urls used in the creation of this data package.
   * **shape+file:data/Municipal_Boundaries.zip**. Converted source of boundaries for cities in San Diego county
   * **shape+file:data/Community_Plan_CN.ZIP**. Converted source of boundaries for communities in unincorporated San Diego county
   * **shape+file:data/Community_Plan_SD.zip**. Converted source of boundaries for communities in the city of San Diego.
-  * **metapack+http://library.metatab.org/census.gov-counties-2017-2.csv#counties**. County boundaries shapes
+  * **metapack+https://library-metatab-org.s3.amazonaws.com/census.gov-counties-2017-2.csv#counties**. County boundaries shapes
   * **censusgeo://CA/place**. Census Defined Places
 
 

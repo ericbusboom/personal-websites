@@ -16,15 +16,15 @@ Resources | Packages | Documentation| Contacts
 
 ## Resources
 
-  * **[47th-street-canyon](<http://ds.civicknowledge.org.s3.amazonaws.com/sdcanyonlands.org/47thSt_GIS.gdb.zip>)**. 47th Street Canyon
-  * **[bell-canyon](<http://ds.civicknowledge.org.s3.amazonaws.com/sdcanyonlands.org/Bell_GIS.gdb.zip>)**. Bell Canyon
-  * **[chollas-creek](<http://ds.civicknowledge.org.s3.amazonaws.com/sdcanyonlands.org/ChollasCH_GIS.gdb.zip>)**. Chollas Creek
-  * **[hollywood-canyon](<http://ds.civicknowledge.org.s3.amazonaws.com/sdcanyonlands.org/Hollywood_GIS.gdb.zip>)**. Hollywood Canyon
-  * **[juniper-canyon](<http://ds.civicknowledge.org.s3.amazonaws.com/sdcanyonlands.org/Juniper_GIS.gdb.zip>)**. Juniper Canyon
-  * **[manzanita-canyon](<http://ds.civicknowledge.org.s3.amazonaws.com/sdcanyonlands.org/Manzanita_GIS.gdb.zip>)**. Manzanita Canyon
-  * **[ruffin-canyon](<http://ds.civicknowledge.org.s3.amazonaws.com/sdcanyonlands.org/Ruffin_GIS.gdb.zip>)**. Ruffin Canyon
-  * **[shepherd-canyon](<http://ds.civicknowledge.org.s3.amazonaws.com/sdcanyonlands.org/Shepherd_GIS.gdb.zip>)**. Shepherd Canyon
-  * **[swan-canyon](<http://ds.civicknowledge.org.s3.amazonaws.com/sdcanyonlands.org/Swan_GIS.gdb.zip>)**. Swan Canyon
+  * **[47th-street-canyon](<https://library-metatab-org.s3.amazonaws.com/ds.civicknowledge.org/sdcanyonlands.org/47thSt_GIS.gdb.zip>)**. 47th Street Canyon
+  * **[bell-canyon](<https://library-metatab-org.s3.amazonaws.com/ds.civicknowledge.org/sdcanyonlands.org/Bell_GIS.gdb.zip>)**. Bell Canyon
+  * **[chollas-creek](<https://library-metatab-org.s3.amazonaws.com/ds.civicknowledge.org/sdcanyonlands.org/ChollasCH_GIS.gdb.zip>)**. Chollas Creek
+  * **[hollywood-canyon](<https://library-metatab-org.s3.amazonaws.com/ds.civicknowledge.org/sdcanyonlands.org/Hollywood_GIS.gdb.zip>)**. Hollywood Canyon
+  * **[juniper-canyon](<https://library-metatab-org.s3.amazonaws.com/ds.civicknowledge.org/sdcanyonlands.org/Juniper_GIS.gdb.zip>)**. Juniper Canyon
+  * **[manzanita-canyon](<https://library-metatab-org.s3.amazonaws.com/ds.civicknowledge.org/sdcanyonlands.org/Manzanita_GIS.gdb.zip>)**. Manzanita Canyon
+  * **[ruffin-canyon](<https://library-metatab-org.s3.amazonaws.com/ds.civicknowledge.org/sdcanyonlands.org/Ruffin_GIS.gdb.zip>)**. Ruffin Canyon
+  * **[shepherd-canyon](<https://library-metatab-org.s3.amazonaws.com/ds.civicknowledge.org/sdcanyonlands.org/Shepherd_GIS.gdb.zip>)**. Shepherd Canyon
+  * **[swan-canyon](<https://library-metatab-org.s3.amazonaws.com/ds.civicknowledge.org/sdcanyonlands.org/Swan_GIS.gdb.zip>)**. Swan Canyon
 
 
 ## Documentation

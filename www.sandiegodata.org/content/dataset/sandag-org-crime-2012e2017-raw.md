@@ -16,12 +16,12 @@ Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
-  * **[crime-incidents-2012](<http://library.metatab.org/sandag.org-crime-2012e2017-raw-2.1.1/data/crime-incidents-2012.csv>)**. Crime Incidents 2012
-  * **[crime-incidents-2013](<http://library.metatab.org/sandag.org-crime-2012e2017-raw-2.1.1/data/crime-incidents-2013.csv>)**. Crime Incidents, 2013
-  * **[crime-incidents-2014](<http://library.metatab.org/sandag.org-crime-2012e2017-raw-2.1.1/data/crime-incidents-2014.csv>)**. Crime Incidents, 2014
-  * **[crime-incidents-2015](<http://library.metatab.org/sandag.org-crime-2012e2017-raw-2.1.1/data/crime-incidents-2015.csv>)**. Crime Incidents, 2015
-  * **[crime-incidents-2016](<http://library.metatab.org/sandag.org-crime-2012e2017-raw-2.1.1/data/crime-incidents-2016.csv>)**. Crime Incidents, 2016
-  * **[crime-incidents-2017](<http://library.metatab.org/sandag.org-crime-2012e2017-raw-2.1.1/data/crime-incidents-2017.csv>)**. Crime Incidents, 2017
+  * **[crime-incidents-2012](<https://library-metatab-org.s3.amazonaws.com/sandag.org-crime-2012e2017-raw-2.1.1/data/crime-incidents-2012.csv>)**. Crime Incidents 2012
+  * **[crime-incidents-2013](<https://library-metatab-org.s3.amazonaws.com/sandag.org-crime-2012e2017-raw-2.1.1/data/crime-incidents-2013.csv>)**. Crime Incidents, 2013
+  * **[crime-incidents-2014](<https://library-metatab-org.s3.amazonaws.com/sandag.org-crime-2012e2017-raw-2.1.1/data/crime-incidents-2014.csv>)**. Crime Incidents, 2014
+  * **[crime-incidents-2015](<https://library-metatab-org.s3.amazonaws.com/sandag.org-crime-2012e2017-raw-2.1.1/data/crime-incidents-2015.csv>)**. Crime Incidents, 2015
+  * **[crime-incidents-2016](<https://library-metatab-org.s3.amazonaws.com/sandag.org-crime-2012e2017-raw-2.1.1/data/crime-incidents-2016.csv>)**. Crime Incidents, 2016
+  * **[crime-incidents-2017](<https://library-metatab-org.s3.amazonaws.com/sandag.org-crime-2012e2017-raw-2.1.1/data/crime-incidents-2017.csv>)**. Crime Incidents, 2017
 
 
 ## Documentation
@@ -36,7 +36,7 @@ We don't know why the earlier request has more records.
 
 ### Documentation Links
 
-  * [Documentation Page](<http://library.metatab.org/sandag.org-crime-2012e2017-raw-2.1.1/index.html>)
+  * [Documentation Page](<https://library-metatab-org.s3.amazonaws.com/sandag.org-crime-2012e2017-raw-2.1.1/index.html>)
 
 
 ## Contacts
@@ -73,13 +73,13 @@ CrimeDescription| string|
 
 Urls used in the creation of this data package.
 
-  * **[crime-incidents-2015-2019](<http://ds.civicknowledge.org.s3.amazonaws.com/sandag.org/2015-2019-request.xlsx>)**. A difference version of the 2015 data, from a reuestion in 2019
+  * **[crime-incidents-2015-2019](<https://library-metatab-org.s3.amazonaws.com/ds.civicknowledge.org/sandag.org/2015-2019-request.xlsx>)**. A difference version of the 2015 data, from a reuestion in 2019
 
 
 ## Packages
 
   * **s3** s3://library.metatab.org/sandag.org-crime-2012e2017-raw-2.1.1.csv
-  * **csv** <http://library.metatab.org/sandag.org-crime-2012e2017-raw-2.1.1.csv>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/sandag.org-crime-2012e2017-raw-2.1.1.csv>
   * **source** <https://github.com/metatab-packages/sandag.org-crime-2012e2017-raw.git>
 
 
@@ -88,18 +88,18 @@ Urls used in the creation of this data package.
     import pandas as pd
     
     
-    crime-incidents-2012_df =  pd.read_csv('http://library.metatab.org/sandag.org-crime-2012e2017-raw-2.1.1/data/crime-incidents-2012.csv')
-    crime-incidents-2013_df =  pd.read_csv('http://library.metatab.org/sandag.org-crime-2012e2017-raw-2.1.1/data/crime-incidents-2013.csv')
-    crime-incidents-2014_df =  pd.read_csv('http://library.metatab.org/sandag.org-crime-2012e2017-raw-2.1.1/data/crime-incidents-2014.csv')
-    crime-incidents-2015_df =  pd.read_csv('http://library.metatab.org/sandag.org-crime-2012e2017-raw-2.1.1/data/crime-incidents-2015.csv')
-    crime-incidents-2016_df =  pd.read_csv('http://library.metatab.org/sandag.org-crime-2012e2017-raw-2.1.1/data/crime-incidents-2016.csv')
-    crime-incidents-2017_df =  pd.read_csv('http://library.metatab.org/sandag.org-crime-2012e2017-raw-2.1.1/data/crime-incidents-2017.csv')
+    crime-incidents-2012_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandag.org-crime-2012e2017-raw-2.1.1/data/crime-incidents-2012.csv')
+    crime-incidents-2013_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandag.org-crime-2012e2017-raw-2.1.1/data/crime-incidents-2013.csv')
+    crime-incidents-2014_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandag.org-crime-2012e2017-raw-2.1.1/data/crime-incidents-2014.csv')
+    crime-incidents-2015_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandag.org-crime-2012e2017-raw-2.1.1/data/crime-incidents-2015.csv')
+    crime-incidents-2016_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandag.org-crime-2012e2017-raw-2.1.1/data/crime-incidents-2016.csv')
+    crime-incidents-2017_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandag.org-crime-2012e2017-raw-2.1.1/data/crime-incidents-2017.csv')
 [/code]
 
 ### Accessing Package in Metapack
 [code] 
     import metapack as mp
-    pkg = mp.open_package('http://library.metatab.org/sandag.org-crime-2012e2017-raw-2.1.1.csv')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandag.org-crime-2012e2017-raw-2.1.1.csv')
     
     # Create Dataframes
     crime-incidents-2012_df = pkg.resource('crime-incidents-2012').dataframe()

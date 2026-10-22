@@ -16,7 +16,7 @@ Resources | Packages | Documentation| Contacts| Data Dictionary
 
 ## Resources
 
-  * **[pedestrians](<http://library.metatab.org/cityiq.io-pedestrians-san_diego-1/data/pedestrians.csv>)**. Pedestrians
+  * **[pedestrians](<https://library-metatab-org.s3.amazonaws.com/cityiq.io-pedestrians-san_diego-1/data/pedestrians.csv>)**. Pedestrians
 
 
 ## Documentation
@@ -43,8 +43,8 @@ The first process `ciq_events` may run for several days and consume up to 300G o
 
 ## Packages
 
-  * **zip** <http://library.metatab.org/cityiq.io-pedestrians-san_diego-1.zip>
-  * **csv** <http://library.metatab.org/cityiq.io-pedestrians-san_diego-1.csv>
+  * **zip** <https://library-metatab-org.s3.amazonaws.com/cityiq.io-pedestrians-san_diego-1.zip>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/cityiq.io-pedestrians-san_diego-1.csv>
   * **source** <https://github.com/sandiegodata-projects/cityiq.io.git>
 
 
@@ -52,9 +52,9 @@ The first process `ciq_events` may run for several days and consume up to 300G o
 [code] 
     import metapack as mp
     # ZIP Package
-    pkg = mp.open_package('http://library.metatab.org/cityiq.io-pedestrians-san_diego-1.zip')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/cityiq.io-pedestrians-san_diego-1.zip')
     # CSV Package
-    pkg = mp.open_package('http://library.metatab.org/cityiq.io-pedestrians-san_diego-1.csv') 
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/cityiq.io-pedestrians-san_diego-1.csv') 
     
     resource = pkg.resource('resource_name') # Get a resource
     df = resource.dataframe() # Create a pandas Dataframe

@@ -16,10 +16,10 @@ Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
-  * **[tracts](<http://library.metatab.org/sandiegodata.org-demographics-tract-1.1.1/data/tracts.csv>)**. San Diego county tract boundaries
-  * **[age_sex](<http://library.metatab.org/sandiegodata.org-demographics-tract-1.1.1/data/age_sex.csv>)**. Age and sex per San Diego tract
-  * **[total_populaltion](<http://library.metatab.org/sandiegodata.org-demographics-tract-1.1.1/data/total_populaltion.csv>)**. Total population of San Diego tracts
-  * **[raceeth](<http://library.metatab.org/sandiegodata.org-demographics-tract-1.1.1/data/raceeth.csv>)**. Race and Ethnicity for SaN Diego tracts
+  * **[tracts](<https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-demographics-tract-1.1.1/data/tracts.csv>)**. San Diego county tract boundaries
+  * **[age_sex](<https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-demographics-tract-1.1.1/data/age_sex.csv>)**. Age and sex per San Diego tract
+  * **[total_populaltion](<https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-demographics-tract-1.1.1/data/total_populaltion.csv>)**. Total population of San Diego tracts
+  * **[raceeth](<https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-demographics-tract-1.1.1/data/raceeth.csv>)**. Race and Ethnicity for SaN Diego tracts
 
 
 ## Documentation
@@ -76,7 +76,7 @@ For the most part you will use the `nh_*` for all races, `hisp_white` for hispan
 
 ### Documentation Links
 
-  * [Documentation Page](<http://library.metatab.org/sandiegodata.org-demographics-tract-1.1.1/index.html>)
+  * [Documentation Page](<https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-demographics-tract-1.1.1/index.html>)
 
 
 ## Contacts
@@ -152,7 +152,7 @@ Urls used in the creation of this data package.
 ## Packages
 
   * **s3** s3://library.metatab.org/sandiegodata.org-demographics-tract-1.1.1.csv
-  * **csv** <http://library.metatab.org/sandiegodata.org-demographics-tract-1.1.1.csv>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-demographics-tract-1.1.1.csv>
 
 
 ### Accessing Data in Vanilla Pandas
@@ -160,16 +160,16 @@ Urls used in the creation of this data package.
     import pandas as pd
     
     
-    tracts_df =  pd.read_csv('http://library.metatab.org/sandiegodata.org-demographics-tract-1.1.1/data/tracts.csv')
-    age_sex_df =  pd.read_csv('http://library.metatab.org/sandiegodata.org-demographics-tract-1.1.1/data/age_sex.csv')
-    total_populaltion_df =  pd.read_csv('http://library.metatab.org/sandiegodata.org-demographics-tract-1.1.1/data/total_populaltion.csv')
-    raceeth_df =  pd.read_csv('http://library.metatab.org/sandiegodata.org-demographics-tract-1.1.1/data/raceeth.csv')
+    tracts_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-demographics-tract-1.1.1/data/tracts.csv')
+    age_sex_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-demographics-tract-1.1.1/data/age_sex.csv')
+    total_populaltion_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-demographics-tract-1.1.1/data/total_populaltion.csv')
+    raceeth_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-demographics-tract-1.1.1/data/raceeth.csv')
 [/code]
 
 ### Accessing Package in Metapack
 [code] 
     import metapack as mp
-    pkg = mp.open_package('http://library.metatab.org/sandiegodata.org-demographics-tract-1.1.1.csv')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-demographics-tract-1.1.1.csv')
     
     # Create Dataframes
     tracts_gdf = pkg.resource('tracts').geoframe()

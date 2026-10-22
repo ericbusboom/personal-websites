@@ -16,7 +16,7 @@ Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
-  * **[cacfp_sites](<http://library.metatab.org/cde.ca.gov-cacfp_sites-1.2.1/data/cacfp_sites.csv>)**. CACFP sites, with location geocode and program type dummy variables
+  * **[cacfp_sites](<https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-cacfp_sites-1.2.1/data/cacfp_sites.csv>)**. CACFP sites, with location geocode and program type dummy variables
 
 
 ## Documentation
@@ -66,7 +66,7 @@ Programs used for data transformation (contained in the `notebooks` directory), 
 
 ### Documentation Links
 
-  * [Documentation Page](<http://library.metatab.org/cde.ca.gov-cacfp_sites-1.2.1/index.html>)
+  * [Documentation Page](<https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-cacfp_sites-1.2.1/index.html>)
   * [Program home page](<https://www.cde.ca.gov/ls/nu/cc/index.asp>)
   * [Download page](<https://www.cde.ca.gov/ds/sh/sn/cacfpcentermap.asp>)
 
@@ -120,14 +120,14 @@ Urls used in the creation of this data package.
 
   * **data/geocodes.csv**. Externally geocoded site locations. Geocoded with Geocodio.io
   * **[cacfp_sites_source](<https://www.cde.ca.gov/ds/sh/sn/documents/apcacfpcentersites2020.xlsx#&headers=5&start=6>)**. List of Child and Adult Care Food Program (CACFP) sites
-  * **metapack+http://library.metatab.org/cde.ca.gov-schools-1.csv#public_schools**. California schools and districts
-  * **metapack+http://library.metatab.org/sandiegodata.org-county_codes-ca-1.csv#ca_county_codes**. California government codes for counties, used in CDS codes
+  * **metapack+https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-schools-1.csv#public_schools**. California schools and districts
+  * **metapack+https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-county_codes-ca-1.csv#ca_county_codes**. California government codes for counties, used in CDS codes
 
 
 ## Packages
 
   * **s3** s3://library.metatab.org/cde.ca.gov-cacfp_sites-1.2.1.csv
-  * **csv** <http://library.metatab.org/cde.ca.gov-cacfp_sites-1.2.1.csv>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-cacfp_sites-1.2.1.csv>
   * **source** <https://github.com/metatab-packages/cde.ca.gov.git>
 
 
@@ -136,13 +136,13 @@ Urls used in the creation of this data package.
     import pandas as pd
     
     
-    cacfp_sites_df =  pd.read_csv('http://library.metatab.org/cde.ca.gov-cacfp_sites-1.2.1/data/cacfp_sites.csv')
+    cacfp_sites_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-cacfp_sites-1.2.1/data/cacfp_sites.csv')
 [/code]
 
 ### Accessing Package in Metapack
 [code] 
     import metapack as mp
-    pkg = mp.open_package('http://library.metatab.org/cde.ca.gov-cacfp_sites-1.2.1.csv')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-cacfp_sites-1.2.1.csv')
     
     # Create Dataframes
     cacfp_sites_df = pkg.resource('cacfp_sites').dataframe()

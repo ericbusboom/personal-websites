@@ -16,7 +16,7 @@ Resources | Packages | Documentation| Contacts
 
 ## Resources
 
-  * **[average-traffic-volumes.csv](<http://ds.civicknowledge.org.s3.amazonaws.com/sandag.org/Average%20Daily%20Traffic%202006-2010.csv>)**. Average Traffic Volumes.csv
+  * **[average-traffic-volumes.csv](<https://library-metatab-org.s3.amazonaws.com/ds.civicknowledge.org/sandag.org/Average%20Daily%20Traffic%202006-2010.csv>)**. Average Traffic Volumes.csv
 
 
 ## Documentation

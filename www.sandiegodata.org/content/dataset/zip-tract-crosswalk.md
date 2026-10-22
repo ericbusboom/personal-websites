@@ -16,8 +16,8 @@ Resources | Packages | Documentation| Contacts
 
 ## Resources
 
-  * **[zip-tract](<http://s3.amazonaws.com/library.metatab.org/huduser.gov-zip_tract-2016-2/data/zip-tract.csv>)**. ZIP to Tract crosswalk
-  * **[tract-zip](<http://s3.amazonaws.com/library.metatab.org/huduser.gov-zip_tract-2016-2/data/tract-zip.csv>)**. Tract to ZIP crosswalk
+  * **[zip-tract](<https://library-metatab-org.s3.amazonaws.com/huduser.gov-zip_tract-2016-2/data/zip-tract.csv>)**. ZIP to Tract crosswalk
+  * **[tract-zip](<https://library-metatab-org.s3.amazonaws.com/huduser.gov-zip_tract-2016-2/data/tract-zip.csv>)**. Tract to ZIP crosswalk
 
 
 ## Documentation
@@ -45,18 +45,18 @@ Resources | Packages | Documentation| Contacts
 
 ## Packages
 
-  * **xlsx** <http://s3.amazonaws.com/library.metatab.org/huduser.gov-zip_tract-2016-2.xlsx>
-  * **zip** <http://s3.amazonaws.com/library.metatab.org/huduser.gov-zip_tract-2016-2.zip>
-  * **csv** <http://s3.amazonaws.com/library.metatab.org/huduser.gov-zip_tract-2016-2.csv>
+  * **xlsx** <https://library-metatab-org.s3.amazonaws.com/huduser.gov-zip_tract-2016-2.xlsx>
+  * **zip** <https://library-metatab-org.s3.amazonaws.com/huduser.gov-zip_tract-2016-2.zip>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/huduser.gov-zip_tract-2016-2.csv>
 
 
 ### Accessing Packages in Metapack
 [code] 
     import metapack as mp
     # ZIP Package
-    pkg = mp.open_package('http://s3.amazonaws.com/library.metatab.org/huduser.gov-zip_tract-2016-2.zip')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/huduser.gov-zip_tract-2016-2.zip')
     # CSV Package
-    pkg = mp.open_package('http://s3.amazonaws.com/library.metatab.org/huduser.gov-zip_tract-2016-2.csv') 
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/huduser.gov-zip_tract-2016-2.csv') 
     
     resource = pkg.resource('resource_name') # Get a resource
     df = resource.dataframe() # Create a pandas Dataframe

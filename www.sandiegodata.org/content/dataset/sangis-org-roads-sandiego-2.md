@@ -16,7 +16,7 @@ Resources | Packages | Documentation| Contacts| Data Dictionary
 
 ## Resources
 
-  * **[all_roads](<http://library.metatab.org/sangis.org-roads-sandiego-1/data/all_roads.csv>)**. Original all roads file
+  * **[all_roads](<https://library-metatab-org.s3.amazonaws.com/sangis.org-roads-sandiego-1/data/all_roads.csv>)**. Original all roads file
 
 
 ## Documentation
@@ -30,8 +30,8 @@ Resources | Packages | Documentation| Contacts| Data Dictionary
 
 ## Packages
 
-  * **zip** <http://library.metatab.org/sangis.org-roads-sandiego-1.zip>
-  * **csv** <http://library.metatab.org/sangis.org-roads-sandiego-1.csv>
+  * **zip** <https://library-metatab-org.s3.amazonaws.com/sangis.org-roads-sandiego-1.zip>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/sangis.org-roads-sandiego-1.csv>
   * **source** <https://github.com/SDRDLAnalysts/data-projects.git>
 
 
@@ -39,9 +39,9 @@ Resources | Packages | Documentation| Contacts| Data Dictionary
 [code] 
     import metapack as mp
     # ZIP Package
-    pkg = mp.open_package('http://library.metatab.org/sangis.org-roads-sandiego-1.zip')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sangis.org-roads-sandiego-1.zip')
     # CSV Package
-    pkg = mp.open_package('http://library.metatab.org/sangis.org-roads-sandiego-1.csv') 
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sangis.org-roads-sandiego-1.csv') 
     
     resource = pkg.resource('resource_name') # Get a resource
     df = resource.dataframe() # Create a pandas Dataframe

@@ -16,8 +16,8 @@ Resources | Packages | Documentation| Contacts| References
 
 ## Resources
 
-  * **[la_areas](<http://library.metatab.org/bls.gov-laus-ca-1/data/la_areas.csv>)**. Area Codes
-  * **[laus_ca](<http://library.metatab.org/bls.gov-laus-ca-1/data/laus_ca.csv>)**. Local Area Unemployment
+  * **[la_areas](<https://library-metatab-org.s3.amazonaws.com/bls.gov-laus-ca-1/data/la_areas.csv>)**. Area Codes
+  * **[laus_ca](<https://library-metatab-org.s3.amazonaws.com/bls.gov-laus-ca-1/data/laus_ca.csv>)**. Local Area Unemployment
 
 
 ## Documentation
@@ -65,8 +65,8 @@ The following is a sample format description of the Local Area Unemployment Stat
 
 ## Packages
 
-  * **zip** <http://library.metatab.org/bls.gov-laus-ca-1.zip>
-  * **csv** <http://library.metatab.org/bls.gov-laus-ca-1.csv>
+  * **zip** <https://library-metatab-org.s3.amazonaws.com/bls.gov-laus-ca-1.zip>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/bls.gov-laus-ca-1.csv>
   * **source** <https://github.com/sandiegodata/planning-database.git>
 
 
@@ -74,9 +74,9 @@ The following is a sample format description of the Local Area Unemployment Stat
 [code] 
     import metapack as mp
     # ZIP Package
-    pkg = mp.open_package('http://library.metatab.org/bls.gov-laus-ca-1.zip')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/bls.gov-laus-ca-1.zip')
     # CSV Package
-    pkg = mp.open_package('http://library.metatab.org/bls.gov-laus-ca-1.csv') 
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/bls.gov-laus-ca-1.csv') 
     
     resource = pkg.resource('resource_name') # Get a resource
     df = resource.dataframe() # Create a pandas Dataframe
@@ -89,7 +89,7 @@ The following is a sample format description of the Local Area Unemployment Stat
 Urls used in the creation of this data package.
 
   * **[laus_ca_source](<https://download.bls.gov/pub/time.series/la/la.data.11.California#target_format=tsv>)**. Link to source file
-  * **metapack+http://library.metatab.org/sandiegodata.org-geography-2018.csv#sd_county_boundary**. San Diego County Boundary
+  * **metapack+https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-geography-2018.csv#sd_county_boundary**. San Diego County Boundary
   * **censusgeo://US/cbsa**. Census Core-Based Statistical Areas
   * **censusgeo://US/csa**. Census Combined Statistical Areas
   * **censusgeo://CA/place**. Census Defined Places

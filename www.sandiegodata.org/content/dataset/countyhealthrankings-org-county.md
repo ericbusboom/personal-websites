@@ -16,7 +16,7 @@ Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
-  * **[county_health_rankings](<http://library.metatab.org/countyhealthrankings.org-county-1.1.3/data/county_health_rankings.csv>)**. Complete datafile with all measures and supporting values. Over 800 columns.
+  * **[county_health_rankings](<https://library-metatab-org.s3.amazonaws.com/countyhealthrankings.org-county-1.1.3/data/county_health_rankings.csv>)**. Complete datafile with all measures and supporting values. Over 800 columns.
 
 
 ## Documentation
@@ -24,7 +24,7 @@ Resources | Packages | Documentation| Contacts| References| Data Dictionary
 ### Documentation Links
 
   * [documentation](<https://www.countyhealthrankings.org/sites/default/files/media/document/2020%20Analytic%20Documentation_0.pdf>) Primary documentation
-  * [Documentation Page](<http://library.metatab.org/countyhealthrankings.org-county-1.1.3/index.html>)
+  * [Documentation Page](<https://library-metatab-org.s3.amazonaws.com/countyhealthrankings.org-county-1.1.3/index.html>)
   * [homepage](<https://www.countyhealthrankings.org/>) Project homepage
   * [data_download](<https://www.countyhealthrankings.org/explore-health-rankings/rankings-data-documentation>) Page with links to data files and documentation
 
@@ -838,13 +838,13 @@ v097_rawvalue| number| Population growth raw value
 Urls used in the creation of this data package.
 
   * **[source](<https://www.countyhealthrankings.org/sites/default/files/media/document/analytic_data2020.csv>)**. County-level statistics for a variety of health measures
-  * **metapack+http://library.metatab.org/census.gov-boundaries-2018.csv#county_20m**. County grographic boundary shapes.
+  * **metapack+https://library-metatab-org.s3.amazonaws.com/census.gov-boundaries-2018.csv#county_20m**. County grographic boundary shapes.
 
 
 ## Packages
 
   * **s3** s3://library.metatab.org/countyhealthrankings.org-county-1.1.3.csv
-  * **csv** <http://library.metatab.org/countyhealthrankings.org-county-1.1.3.csv>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/countyhealthrankings.org-county-1.1.3.csv>
   * **source** <https://github.com/CivicKnowledge/tablecloth.io.git>
 
 
@@ -853,13 +853,13 @@ Urls used in the creation of this data package.
     import pandas as pd
     
     
-    county_health_rankings_df =  pd.read_csv('http://library.metatab.org/countyhealthrankings.org-county-1.1.3/data/county_health_rankings.csv')
+    county_health_rankings_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/countyhealthrankings.org-county-1.1.3/data/county_health_rankings.csv')
 [/code]
 
 ### Accessing Package in Metapack
 [code] 
     import metapack as mp
-    pkg = mp.open_package('http://library.metatab.org/countyhealthrankings.org-county-1.1.3.csv')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/countyhealthrankings.org-county-1.1.3.csv')
     
     # Create Dataframes
     county_health_rankings_df = pkg.resource('county_health_rankings').dataframe()

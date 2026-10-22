@@ -16,8 +16,8 @@ Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
-  * **[ca_abc_licenses](<http://library.metatab.org/abc.ca.gov-licenses-2.1.2/data/ca_abc_licenses.csv>)**. California Alcohol Beverage Control Licenses
-  * **[sd_abc_density](<http://library.metatab.org/abc.ca.gov-licenses-2.1.2/data/sd_abc_density.csv>)**. Areal density of on-sale and off-sale licenses in San Diego county
+  * **[ca_abc_licenses](<https://library-metatab-org.s3.amazonaws.com/abc.ca.gov-licenses-2.1.2/data/ca_abc_licenses.csv>)**. California Alcohol Beverage Control Licenses
+  * **[sd_abc_density](<https://library-metatab-org.s3.amazonaws.com/abc.ca.gov-licenses-2.1.2/data/sd_abc_density.csv>)**. Areal density of on-sale and off-sale licenses in San Diego county
 
 
 ## Documentation
@@ -49,12 +49,12 @@ The most common types are:
 
 ### Documentation Links
 
-  * [Documentation Page](<http://library.metatab.org/abc.ca.gov-licenses-2.1.2/index.html>)
+  * [Documentation Page](<https://library-metatab-org.s3.amazonaws.com/abc.ca.gov-licenses-2.1.2/index.html>)
 
 
 ## Images
 
-  * [![](http://library.metatab.org/abc.ca.gov-licenses-2.1.2/doc/OnsaleDensity.png)](<http://library.metatab.org/abc.ca.gov-licenses-2.1.2/doc/OnsaleDensity.png> "On-Sale Density") Density of On-Sale permits in permits per square kilometer.
+  * [![](https://library-metatab-org.s3.amazonaws.com/abc.ca.gov-licenses-2.1.2/doc/OnsaleDensity.png)](<https://library-metatab-org.s3.amazonaws.com/abc.ca.gov-licenses-2.1.2/doc/OnsaleDensity.png> "On-Sale Density") Density of On-Sale permits in permits per square kilometer.
 
 
 ## Contacts
@@ -120,14 +120,14 @@ community_name| string| Community name in San Diego, Cityname otherwise.
 Urls used in the creation of this data package.
 
   * **[abc_licenses_source](</uploads/WeeklyExport_CSV.zip#*.csv&start=2&headers=1>)**. Raw ABC data
-  * **metapack+http://library.metatab.org/sandiegodata.org-geography-2018-13.csv**. San Diego geography
-  * **metapack+http://s3.amazonaws.com/library.metatab.org/huduser.gov-zip_tract-2016-2.csv**. Zip to Tract mapping
+  * **metapack+https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-geography-2018-13.csv**. San Diego geography
+  * **metapack+https://library-metatab-org.s3.amazonaws.com/huduser.gov-zip_tract-2016-2.csv**. Zip to Tract mapping
 
 
 ## Packages
 
   * **s3** s3://library.metatab.org/abc.ca.gov-licenses-2.1.2.csv
-  * **csv** <http://library.metatab.org/abc.ca.gov-licenses-2.1.2.csv>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/abc.ca.gov-licenses-2.1.2.csv>
   * **source** <https://github.com/metatab-packages/crime-sandiego-collection.git>
 
 
@@ -136,14 +136,14 @@ Urls used in the creation of this data package.
     import pandas as pd
     
     
-    ca_abc_licenses_df =  pd.read_csv('http://library.metatab.org/abc.ca.gov-licenses-2.1.2/data/ca_abc_licenses.csv')
-    sd_abc_density_df =  pd.read_csv('http://library.metatab.org/abc.ca.gov-licenses-2.1.2/data/sd_abc_density.csv')
+    ca_abc_licenses_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/abc.ca.gov-licenses-2.1.2/data/ca_abc_licenses.csv')
+    sd_abc_density_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/abc.ca.gov-licenses-2.1.2/data/sd_abc_density.csv')
 [/code]
 
 ### Accessing Package in Metapack
 [code] 
     import metapack as mp
-    pkg = mp.open_package('http://library.metatab.org/abc.ca.gov-licenses-2.1.2.csv')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/abc.ca.gov-licenses-2.1.2.csv')
     
     # Create Dataframes
     ca_abc_licenses_df = pkg.resource('ca_abc_licenses').dataframe()

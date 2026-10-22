@@ -16,11 +16,11 @@ Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
-  * **[neighborhood_totals](<http://library.metatab.org/sandiegodata.org-dowtown_homeless-2.1.1/data/neighborhood_totals.csv>)**. Totals for each of the neighborhoods for 2018 and 2019, from the published Downtown San Diego Partnership statistics
-  * **[monthly_totals](<http://library.metatab.org/sandiegodata.org-dowtown_homeless-2.1.1/data/monthly_totals.csv>)**. Monthly totals since 2012, from the published Downtown San Diego Partnership statistics
-  * **[homeless_counts](<http://library.metatab.org/sandiegodata.org-dowtown_homeless-2.1.1/data/homeless_counts.csv>)**. Counts of homeless sleepers in Downtown San Diego, 2014 to mid 2018.
-  * **[imputed_counts](<http://library.metatab.org/sandiegodata.org-dowtown_homeless-2.1.1/data/imputed_counts.csv>)**. The homeless_counts file with missing months probablistically imputed
-  * **[downtown_blocks](<http://library.metatab.org/sandiegodata.org-dowtown_homeless-2.1.1/data/downtown_blocks.csv>)**. Census TIGER geographic regions for the blocks that have one or more homeless sleepers in this dataset.
+  * **[neighborhood_totals](<https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-dowtown_homeless-2.1.1/data/neighborhood_totals.csv>)**. Totals for each of the neighborhoods for 2018 and 2019, from the published Downtown San Diego Partnership statistics
+  * **[monthly_totals](<https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-dowtown_homeless-2.1.1/data/monthly_totals.csv>)**. Monthly totals since 2012, from the published Downtown San Diego Partnership statistics
+  * **[homeless_counts](<https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-dowtown_homeless-2.1.1/data/homeless_counts.csv>)**. Counts of homeless sleepers in Downtown San Diego, 2014 to mid 2018.
+  * **[imputed_counts](<https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-dowtown_homeless-2.1.1/data/imputed_counts.csv>)**. The homeless_counts file with missing months probablistically imputed
+  * **[downtown_blocks](<https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-dowtown_homeless-2.1.1/data/downtown_blocks.csv>)**. Census TIGER geographic regions for the blocks that have one or more homeless sleepers in this dataset.
 
 
 ## Documentation
@@ -108,7 +108,7 @@ new-vs-official.png)](</uploads/6/2019/10/homeless
 
 ### Documentation Links
 
-  * [Documentation Page](<http://library.metatab.org/sandiegodata.org-dowtown_homeless-2.1.1/index.html>)
+  * [Documentation Page](<https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-dowtown_homeless-2.1.1/index.html>)
 
 
 ## Contacts
@@ -194,16 +194,16 @@ geometry| string|
 
 Urls used in the creation of this data package.
 
-  * **metapack+http://library.metatab.org/sandiegodata.org-downtown_homeless-source-6.csv#counts**. Final homeless sleeper counts
-  * **metapack+http://library.metatab.org/sandiegodata.org-downtown_homeless-source-6.csv#files**. Final file annotations, including total counts, temperature and weather.
+  * **metapack+https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-downtown_homeless-source-6.csv#counts**. Final homeless sleeper counts
+  * **metapack+https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-downtown_homeless-source-6.csv#files**. Final file annotations, including total counts, temperature and weather.
   * **shape+https://www2.census.gov/geo/pvs/tiger2010st/06_California/06073/tl_2010_06073_tabblock10.zip**. 2010 Census blocks for San Diego County
 
 
 ## Packages
 
-  * **zip** <http://library.metatab.org/sandiegodata.org-dowtown_homeless-2.1.1.zip>
+  * **zip** <https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-dowtown_homeless-2.1.1.zip>
   * **s3** s3://library.metatab.org/sandiegodata.org-dowtown_homeless-2.1.1.csv
-  * **csv** <http://library.metatab.org/sandiegodata.org-dowtown_homeless-2.1.1.csv>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-dowtown_homeless-2.1.1.csv>
   * **source** <https://github.com/sandiegodata-projects/downtown-partnership.git>
 
 
@@ -212,17 +212,17 @@ Urls used in the creation of this data package.
     import pandas as pd
     
     
-    neighborhood_totals_df =  pd.read_csv('http://library.metatab.org/sandiegodata.org-dowtown_homeless-2.1.1/data/neighborhood_totals.csv')
-    monthly_totals_df =  pd.read_csv('http://library.metatab.org/sandiegodata.org-dowtown_homeless-2.1.1/data/monthly_totals.csv')
-    homeless_counts_df =  pd.read_csv('http://library.metatab.org/sandiegodata.org-dowtown_homeless-2.1.1/data/homeless_counts.csv')
-    imputed_counts_df =  pd.read_csv('http://library.metatab.org/sandiegodata.org-dowtown_homeless-2.1.1/data/imputed_counts.csv')
-    downtown_blocks_df =  pd.read_csv('http://library.metatab.org/sandiegodata.org-dowtown_homeless-2.1.1/data/downtown_blocks.csv')
+    neighborhood_totals_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-dowtown_homeless-2.1.1/data/neighborhood_totals.csv')
+    monthly_totals_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-dowtown_homeless-2.1.1/data/monthly_totals.csv')
+    homeless_counts_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-dowtown_homeless-2.1.1/data/homeless_counts.csv')
+    imputed_counts_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-dowtown_homeless-2.1.1/data/imputed_counts.csv')
+    downtown_blocks_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-dowtown_homeless-2.1.1/data/downtown_blocks.csv')
 [/code]
 
 ### Accessing Package in Metapack
 [code] 
     import metapack as mp
-    pkg = mp.open_package('http://library.metatab.org/sandiegodata.org-dowtown_homeless-2.1.1.zip')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-dowtown_homeless-2.1.1.zip')
     
     # Create Dataframes
     neighborhood_totals_df = pkg.resource('neighborhood_totals').dataframe()

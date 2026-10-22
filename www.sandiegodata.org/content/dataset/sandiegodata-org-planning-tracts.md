@@ -16,8 +16,8 @@ Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
-  * **[planning_db_sd](<http://library.metatab.org/sandiegodata.org-planning-tracts-9/data/planning_db_sd.csv>)**. San Diego county planning database tracts
-  * **[planning_db_la](<http://library.metatab.org/sandiegodata.org-planning-tracts-9/data/planning_db_la.csv>)**. Los Angeles county planning database tracts
+  * **[planning_db_sd](<https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-planning-tracts-9/data/planning_db_sd.csv>)**. San Diego county planning database tracts
+  * **[planning_db_la](<https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-planning-tracts-9/data/planning_db_la.csv>)**. Los Angeles county planning database tracts
 
 
 ## Documentation
@@ -31,7 +31,7 @@ The planning database has about 450 columns. For full definitions of the columns
 In Python, use metapack to open the data package. 
 [code] 
     import metapack as mp
-    pkg = mp.open_package('http://library.metatab.org/sandiegodata.org-planning-tracts-1.zip')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-planning-tracts-2.zip')
     
 [/code]
 
@@ -74,8 +74,8 @@ After linking in the communities, you can also use the [community id columns](<h
 
 ## Packages
 
-  * **zip** <http://library.metatab.org/sandiegodata.org-planning-tracts-9.zip>
-  * **csv** <http://library.metatab.org/sandiegodata.org-planning-tracts-9.csv>
+  * **zip** <https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-planning-tracts-9.zip>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-planning-tracts-9.csv>
   * **source** <https://github.com/sandiegodata/planning-database.git>
 
 
@@ -83,9 +83,9 @@ After linking in the communities, you can also use the [community id columns](<h
 [code] 
     import metapack as mp
     # ZIP Package
-    pkg = mp.open_package('http://library.metatab.org/sandiegodata.org-planning-tracts-9.zip')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-planning-tracts-9.zip')
     # CSV Package
-    pkg = mp.open_package('http://library.metatab.org/sandiegodata.org-planning-tracts-9.csv') 
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-planning-tracts-9.csv') 
     
     resource = pkg.resource('resource_name') # Get a resource
     df = resource.dataframe() # Create a pandas Dataframe
@@ -556,8 +556,8 @@ pct_bilq_mailout_count_cen_2010| string| The percentage of all addresses in a 20
 Urls used in the creation of this data package.
 
   * **[census_planning_database](<https://www.census.gov/research/data/planning_database/2018/docs/pdb2018trv4_us.zip#encoding=latin1>)**. Source file for the planning database.
-  * **metapack+http://library.metatab.org/sandiegodata.org-geography-2018.csv#tract_links**. Links communities to tracts
-  * **metapack+http://library.metatab.org/sandiegodata.org-geography-2018.csv#tracts**. TRACT BOUNDARIES
+  * **metapack+https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-geography-2018.csv#tract_links**. Links communities to tracts
+  * **metapack+https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-geography-2018.csv#tracts**. TRACT BOUNDARIES
 
 
 Last Modified 2019-01-03T22:48:33

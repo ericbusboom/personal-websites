@@ -16,14 +16,14 @@ Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
-  * **[names](<https://library.metatab.org/civicknowledge.com-geonames-2022-1.2.43/data/names.csv>)**. Geographic names
+  * **[names](<https://library-metatab-org.s3.amazonaws.com/civicknowledge.com-geonames-2022-1.2.43/data/names.csv>)**. Geographic names
 
 
 ## Documentation
 
 ### Documentation Links
 
-  * [Documentation Page](<https://library.metatab.org/civicknowledge.com-geonames-2022-1.2.43/index.html>)
+  * [Documentation Page](<https://library-metatab-org.s3.amazonaws.com/civicknowledge.com-geonames-2022-1.2.43/index.html>)
 
 
 ## Contacts
@@ -62,7 +62,7 @@ Urls used in the creation of this data package.
 ## Packages
 
   * **s3** s3://library.metatab.org/civicknowledge.com-geonames-2022-1.2.43.csv
-  * **csv** <https://library.metatab.org/civicknowledge.com-geonames-2022-1.2.43.csv>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/civicknowledge.com-geonames-2022-1.2.43.csv>
   * **source** <https://github.com/metatab-packages/civicknowledge.com-geonames-2022.git>
 
 
@@ -71,13 +71,13 @@ Urls used in the creation of this data package.
     import pandas as pd
     
     
-    names_df =  pd.read_csv('https://library.metatab.org/civicknowledge.com-geonames-2022-1.2.43/data/names.csv')
+    names_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/civicknowledge.com-geonames-2022-1.2.43/data/names.csv')
 [/code]
 
 ### Accessing Package in Metapack
 [code] 
     import metapack as mp
-    pkg = mp.open_package('https://library.metatab.org/civicknowledge.com-geonames-2022-1.2.43.csv')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/civicknowledge.com-geonames-2022-1.2.43.csv')
     
     # Create Dataframes
     names_df = pkg.resource('names').dataframe()

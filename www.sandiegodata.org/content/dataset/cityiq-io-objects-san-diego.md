@@ -16,16 +16,16 @@ Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
-  * **[assets](<http://library.metatab.org/cityiq.io-objects-san_diego-5/data/assets.csv>)**. All assets
-  * **[locations](<http://library.metatab.org/cityiq.io-objects-san_diego-5/data/locations.csv>)**. All locations: walkways, traffic lanes and parking zones
-  * **[walkways](<http://library.metatab.org/cityiq.io-objects-san_diego-5/data/walkways.csv>)**. Walkways
-  * **[traffic_lanes](<http://library.metatab.org/cityiq.io-objects-san_diego-5/data/traffic_lanes.csv>)**. Traffic lanes
-  * **[parking_zones](<http://library.metatab.org/cityiq.io-objects-san_diego-5/data/parking_zones.csv>)**. Parking zones
-  * **[cameras](<http://library.metatab.org/cityiq.io-objects-san_diego-5/data/cameras.csv>)**. Cameras
-  * **[mics](<http://library.metatab.org/cityiq.io-objects-san_diego-5/data/mics.csv>)**. Microphones
-  * **[nodes](<http://library.metatab.org/cityiq.io-objects-san_diego-5/data/nodes.csv>)**. Nodes
-  * **[em_sensors](<http://library.metatab.org/cityiq.io-objects-san_diego-5/data/em_sensors.csv>)**. Electro-magnetic sensors
-  * **[env_sensors](<http://library.metatab.org/cityiq.io-objects-san_diego-5/data/env_sensors.csv>)**. Environmental sensors
+  * **[assets](<https://library-metatab-org.s3.amazonaws.com/cityiq.io-objects-san_diego-5/data/assets.csv>)**. All assets
+  * **[locations](<https://library-metatab-org.s3.amazonaws.com/cityiq.io-objects-san_diego-5/data/locations.csv>)**. All locations: walkways, traffic lanes and parking zones
+  * **[walkways](<https://library-metatab-org.s3.amazonaws.com/cityiq.io-objects-san_diego-5/data/walkways.csv>)**. Walkways
+  * **[traffic_lanes](<https://library-metatab-org.s3.amazonaws.com/cityiq.io-objects-san_diego-5/data/traffic_lanes.csv>)**. Traffic lanes
+  * **[parking_zones](<https://library-metatab-org.s3.amazonaws.com/cityiq.io-objects-san_diego-5/data/parking_zones.csv>)**. Parking zones
+  * **[cameras](<https://library-metatab-org.s3.amazonaws.com/cityiq.io-objects-san_diego-5/data/cameras.csv>)**. Cameras
+  * **[mics](<https://library-metatab-org.s3.amazonaws.com/cityiq.io-objects-san_diego-5/data/mics.csv>)**. Microphones
+  * **[nodes](<https://library-metatab-org.s3.amazonaws.com/cityiq.io-objects-san_diego-5/data/nodes.csv>)**. Nodes
+  * **[em_sensors](<https://library-metatab-org.s3.amazonaws.com/cityiq.io-objects-san_diego-5/data/em_sensors.csv>)**. Electro-magnetic sensors
+  * **[env_sensors](<https://library-metatab-org.s3.amazonaws.com/cityiq.io-objects-san_diego-5/data/env_sensors.csv>)**. Environmental sensors
 
 
 ## Documentation
@@ -51,17 +51,17 @@ These datafile are extracts of the assets and locations from the San Diego CityI
 
 ## Packages
 
-  * **zip** <http://library.metatab.org/cityiq.io-objects-san_diego-5.zip>
-  * **xlsx** <http://library.metatab.org/cityiq.io-objects-san_diego-5.xlsx>
+  * **zip** <https://library-metatab-org.s3.amazonaws.com/cityiq.io-objects-san_diego-5.zip>
+  * **xlsx** <https://library-metatab-org.s3.amazonaws.com/cityiq.io-objects-san_diego-5.xlsx>
   * **s3** s3://library.metatab.org/cityiq.io-objects-san_diego-5.csv
-  * **csv** <http://library.metatab.org/cityiq.io-objects-san_diego-5.csv>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/cityiq.io-objects-san_diego-5.csv>
   * **source** <https://github.com/sandiegodata-projects/cityiq.io.git>
 
 
 ### Accessing Packages in Metapack
 [code] 
     import metapack as mp
-    pkg = mp.open_package('http://library.metatab.org/cityiq.io-objects-san_diego-5.zip')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/cityiq.io-objects-san_diego-5.zip')
     
     # Create Dataframes
     assets_gdf = pkg.resource('assets').geoframe()
@@ -122,24 +122,24 @@ geometry| string|
 
 Urls used in the creation of this data package.
 
-  * **metapack+http://library.metatab.org/sangis.org-roads-sandiego-1.zip#all_roads**. Roads in San Diego
-  * **metapack+http://library.metatab.org/sandiegodata.org-geography-2018.csv#tract_boundaries**. San Diego tracts and communities
-  * **metapack+http://library.metatab.org/sandiegodata.org-geography-2018.csv#sd_community_boundaries**. San Diego tracts and communities
+  * **metapack+https://library-metatab-org.s3.amazonaws.com/sangis.org-roads-sandiego-1.zip#all_roads**. Roads in San Diego
+  * **metapack+https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-geography-2018.csv#tract_boundaries**. San Diego tracts and communities
+  * **metapack+https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-geography-2018.csv#sd_community_boundaries**. San Diego tracts and communities
 
 
 ## Packages
 
-  * **zip** <http://library.metatab.org/cityiq.io-objects-san_diego-5.zip>
-  * **xlsx** <http://library.metatab.org/cityiq.io-objects-san_diego-5.xlsx>
+  * **zip** <https://library-metatab-org.s3.amazonaws.com/cityiq.io-objects-san_diego-5.zip>
+  * **xlsx** <https://library-metatab-org.s3.amazonaws.com/cityiq.io-objects-san_diego-5.xlsx>
   * **s3** s3://library.metatab.org/cityiq.io-objects-san_diego-5.csv
-  * **csv** <http://library.metatab.org/cityiq.io-objects-san_diego-5.csv>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/cityiq.io-objects-san_diego-5.csv>
   * **source** <https://github.com/sandiegodata-projects/cityiq.io.git>
 
 
 ### Accessing Packages in Metapack
 [code] 
     import metapack as mp
-    pkg = mp.open_package('http://library.metatab.org/cityiq.io-objects-san_diego-5.zip')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/cityiq.io-objects-san_diego-5.zip')
     
     # Create Dataframes
     assets_gdf = pkg.resource('assets').geoframe()

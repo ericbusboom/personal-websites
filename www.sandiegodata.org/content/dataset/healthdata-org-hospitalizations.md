@@ -16,7 +16,7 @@ Resources | Packages | Documentation| Contacts| Data Dictionary
 
 ## Resources
 
-  * **[hospitalizations](<http://library.metatab.org/healthdata.org-hospitalizations-1.2.11/data/hospitalizations.csv>)**. All utilization estimates for state and the US from the model.
+  * **[hospitalizations](<https://library-metatab-org.s3.amazonaws.com/healthdata.org-hospitalizations-1.2.11/data/hospitalizations.csv>)**. All utilization estimates for state and the US from the model.
 
 
 ## Documentation
@@ -79,14 +79,14 @@ icuover_upper| number|
 ## Packages
 
   * **s3** s3://library.metatab.org/healthdata.org-hospitalizations-1.2.11.csv
-  * **csv** <http://library.metatab.org/healthdata.org-hospitalizations-1.2.11.csv>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/healthdata.org-hospitalizations-1.2.11.csv>
   * **source** <https://github.com/sandiegodata/covid19.git>
 
 
 ### Accessing Packages in Metapack
 [code] 
     import metapack as mp
-    pkg = mp.open_package('http://library.metatab.org/healthdata.org-hospitalizations-1.2.11.csv')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/healthdata.org-hospitalizations-1.2.11.csv')
     
     # Create Dataframes
     hospitalizations_df = pkg.resource('hospitalizations').dataframe()

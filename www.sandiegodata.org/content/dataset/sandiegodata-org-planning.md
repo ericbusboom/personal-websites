@@ -16,16 +16,16 @@ Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
-  * **[tracts](<http://library.metatab.org/sandiegodata.org-planning-1/data/tracts.csv>)**. Tract information
-  * **[tract_communities](<http://library.metatab.org/sandiegodata.org-planning-1/data/tract_communities.csv>)**. Link tracts to communities and cities
-  * **[tract_boundaries](<http://library.metatab.org/sandiegodata.org-planning-1/data/tract_boundaries.csv>)**. Geographic boundaries for tracts
-  * **[community_boundaries](<http://library.metatab.org/sandiegodata.org-planning-1/data/community_boundaries.csv>)**. Geographic boundaries for communities and cities
-  * **[tract_diabetes](<http://library.metatab.org/sandiegodata.org-planning-1/data/tract_diabetes.csv>)**. 
-  * **[hpi](<http://library.metatab.org/sandiegodata.org-planning-1/data/hpi.csv>)**. Healthy places index
-  * **[business_sites](<http://library.metatab.org/sandiegodata.org-planning-1/data/business_sites.csv>)**. Point locations for businesses
-  * **[business_tract_counts](<http://library.metatab.org/sandiegodata.org-planning-1/data/business_tract_counts.csv>)**. Business counts linked to tracts
-  * **[acs_pdb](<http://library.metatab.org/sandiegodata.org-planning-1/data/acs_pdb.csv>)**. Planning database for tracts in SD County, ACS columns
-  * **[cen10_pdb](<http://library.metatab.org/sandiegodata.org-planning-1/data/cen10_pdb.csv>)**. Planning database for tracts in SD County, Census 2010 columns
+  * **[tracts](<https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-planning-1/data/tracts.csv>)**. Tract information
+  * **[tract_communities](<https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-planning-1/data/tract_communities.csv>)**. Link tracts to communities and cities
+  * **[tract_boundaries](<https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-planning-1/data/tract_boundaries.csv>)**. Geographic boundaries for tracts
+  * **[community_boundaries](<https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-planning-1/data/community_boundaries.csv>)**. Geographic boundaries for communities and cities
+  * **[tract_diabetes](<https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-planning-1/data/tract_diabetes.csv>)**. 
+  * **[hpi](<https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-planning-1/data/hpi.csv>)**. Healthy places index
+  * **[business_sites](<https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-planning-1/data/business_sites.csv>)**. Point locations for businesses
+  * **[business_tract_counts](<https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-planning-1/data/business_tract_counts.csv>)**. Business counts linked to tracts
+  * **[acs_pdb](<https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-planning-1/data/acs_pdb.csv>)**. Planning database for tracts in SD County, ACS columns
+  * **[cen10_pdb](<https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-planning-1/data/cen10_pdb.csv>)**. Planning database for tracts in SD County, Census 2010 columns
 
 
 ## Documentation
@@ -39,8 +39,8 @@ Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Packages
 
-  * **zip** <http://library.metatab.org/sandiegodata.org-planning-1.zip>
-  * **csv** <http://library.metatab.org/sandiegodata.org-planning-1.csv>
+  * **zip** <https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-planning-1.zip>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-planning-1.csv>
   * **source** <https://github.com/sandiegodata/planning-database.git>
 
 
@@ -48,9 +48,9 @@ Resources | Packages | Documentation| Contacts| References| Data Dictionary
 [code] 
     import metapack as mp
     # ZIP Package
-    pkg = mp.open_package('http://library.metatab.org/sandiegodata.org-planning-1.zip')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-planning-1.zip')
     # CSV Package
-    pkg = mp.open_package('http://library.metatab.org/sandiegodata.org-planning-1.csv') 
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-planning-1.csv') 
     
     resource = pkg.resource('resource_name') # Get a resource
     df = resource.dataframe() # Create a pandas Dataframe

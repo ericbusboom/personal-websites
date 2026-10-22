@@ -16,8 +16,8 @@ Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
-  * **[inherit_scf_16_19](<http://library.metatab.org/federalreserve.gov-consumer_finances-2016e2019-inherit-1.2.6/data/inherit_scf_16_19.csv>)**. Extract of the 2016 and 2019 SCF for inheritance and networth,uninflated
-  * **[inherit_scf_16_19_i](<http://library.metatab.org/federalreserve.gov-consumer_finances-2016e2019-inherit-1.2.6/data/inherit_scf_16_19_i.csv>)**. Extract of the 2016 and 2019 SCF for inheritance and networth, inflated to 2020 dollars
+  * **[inherit_scf_16_19](<https://library-metatab-org.s3.amazonaws.com/federalreserve.gov-consumer_finances-2016e2019-inherit-1.2.6/data/inherit_scf_16_19.csv>)**. Extract of the 2016 and 2019 SCF for inheritance and networth,uninflated
+  * **[inherit_scf_16_19_i](<https://library-metatab-org.s3.amazonaws.com/federalreserve.gov-consumer_finances-2016e2019-inherit-1.2.6/data/inherit_scf_16_19_i.csv>)**. Extract of the 2016 and 2019 SCF for inheritance and networth, inflated to 2020 dollars
 
 
 ## Documentation
@@ -26,12 +26,12 @@ This is an extract of the 2016 and 2019 Survey of Consumer Finances, with extrac
 
 ### Documentation Links
 
-  * [Documentation Page](<http://library.metatab.org/federalreserve.gov-consumer_finances-2016e2019-inherit-1.2.6/index.html>)
+  * [Documentation Page](<https://library-metatab-org.s3.amazonaws.com/federalreserve.gov-consumer_finances-2016e2019-inherit-1.2.6/index.html>)
 
 
 ## Images
 
-  * [![](http://library.metatab.org/federalreserve.gov-consumer_finances-2016e2019-inherit-1.2.6/docs/networth_race_inc.png)](<http://library.metatab.org/federalreserve.gov-consumer_finances-2016e2019-inherit-1.2.6/docs/networth_race_inc.png> "networth_race_inc") Net Worth by Income Percentile and Race
+  * [![](https://library-metatab-org.s3.amazonaws.com/federalreserve.gov-consumer_finances-2016e2019-inherit-1.2.6/docs/networth_race_inc.png)](<https://library-metatab-org.s3.amazonaws.com/federalreserve.gov-consumer_finances-2016e2019-inherit-1.2.6/docs/networth_race_inc.png> "networth_race_inc") Net Worth by Income Percentile and Race
 
 
 ## Contacts
@@ -147,14 +147,14 @@ gi_value_cd| number| Sum of transfers, with each transfer inflated to current do
 
 Urls used in the creation of this data package.
 
-  * **metapack+http://library.metatab.org/federalreserve.gov-consumer_finances.csv**. Survey of consumer finances data packages
+  * **metapack+https://library-metatab-org.s3.amazonaws.com/federalreserve.gov-consumer_finances.csv**. Survey of consumer finances data packages
   * **[cpi](<https://fred.stlouisfed.org/graph/fredgraph.csv?&id=CPIAUCSL>)**. Consumer Price Index
 
 
 ## Packages
 
   * **s3** s3://library.metatab.org/federalreserve.gov-consumer_finances-2016e2019-inherit-1.2.6.csv
-  * **csv** <http://library.metatab.org/federalreserve.gov-consumer_finances-2016e2019-inherit-1.2.6.csv>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/federalreserve.gov-consumer_finances-2016e2019-inherit-1.2.6.csv>
   * **source** <https://github.com/insights-civickowledge-com/survey_consumer_finances.git>
 
 
@@ -163,14 +163,14 @@ Urls used in the creation of this data package.
     import pandas as pd
     
     
-    inherit_scf_16_19_df =  pd.read_csv('http://library.metatab.org/federalreserve.gov-consumer_finances-2016e2019-inherit-1.2.6/data/inherit_scf_16_19.csv')
-    inherit_scf_16_19_i_df =  pd.read_csv('http://library.metatab.org/federalreserve.gov-consumer_finances-2016e2019-inherit-1.2.6/data/inherit_scf_16_19_i.csv')
+    inherit_scf_16_19_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/federalreserve.gov-consumer_finances-2016e2019-inherit-1.2.6/data/inherit_scf_16_19.csv')
+    inherit_scf_16_19_i_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/federalreserve.gov-consumer_finances-2016e2019-inherit-1.2.6/data/inherit_scf_16_19_i.csv')
 [/code]
 
 ### Accessing Package in Metapack
 [code] 
     import metapack as mp
-    pkg = mp.open_package('http://library.metatab.org/federalreserve.gov-consumer_finances-2016e2019-inherit-1.2.6.csv')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/federalreserve.gov-consumer_finances-2016e2019-inherit-1.2.6.csv')
     
     # Create Dataframes
     inherit_scf_16_19_df = pkg.resource('inherit_scf_16_19').dataframe()

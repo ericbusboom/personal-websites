@@ -16,10 +16,10 @@ Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
-  * **[subgroup_ids](<http://library.metatab.org/cde.ca.gov-caaspp-2015e-2.1.1/data/subgroup_ids.csv>)**. Subgroup codes and names
-  * **[test_ids](<http://library.metatab.org/cde.ca.gov-caaspp-2015e-2.1.1/data/test_ids.csv>)**. Test codes and names
-  * **[subgroups](<http://library.metatab.org/cde.ca.gov-caaspp-2015e-2.1.1/data/subgroups.csv>)**. Combined subgroups file
-  * **[entities](<http://library.metatab.org/cde.ca.gov-caaspp-2015e-2.1.1/data/entities.csv>)**. Combined entities file
+  * **[subgroup_ids](<https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-caaspp-2015e-2.1.1/data/subgroup_ids.csv>)**. Subgroup codes and names
+  * **[test_ids](<https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-caaspp-2015e-2.1.1/data/test_ids.csv>)**. Test codes and names
+  * **[subgroups](<https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-caaspp-2015e-2.1.1/data/subgroups.csv>)**. Combined subgroups file
+  * **[entities](<https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-caaspp-2015e-2.1.1/data/entities.csv>)**. Combined entities file
 
 
 ## Documentation
@@ -54,7 +54,7 @@ Programs used for data transformation (contained in the `notebooks` directory), 
 
 ### Documentation Links
 
-  * [Documentation Page](<http://library.metatab.org/cde.ca.gov-caaspp-2015e-2.1.1/index.html>)
+  * [Documentation Page](<https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-caaspp-2015e-2.1.1/index.html>)
   * [CAASPP Homepage](<https://caaspp.cde.ca.gov/>)
   * [CAASPP Download page, 2015](<https://caaspp.cde.ca.gov/sb2017/ResearchFileList?ps=true&lstTestType=B&lstCounty=00&lstCntyNam=Select%20County...&lstTestYear=2015>) Dataset page for 2015
   * [CAASPP Download page, 2016](<https://caaspp.cde.ca.gov/sb2017/ResearchFileList?ps=true&lstTestType=B&lstCounty=00&lstCntyNam=Select%20County...&lstTestYear=2016>) Dataset page for 2016
@@ -176,7 +176,7 @@ Urls used in the creation of this data package.
 ## Packages
 
   * **s3** s3://library.metatab.org/cde.ca.gov-caaspp-2015e-2.1.1.csv
-  * **csv** <http://library.metatab.org/cde.ca.gov-caaspp-2015e-2.1.1.csv>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-caaspp-2015e-2.1.1.csv>
   * **source** <https://github.com/metatab-packages/cde.ca.gov-caaspp-2015e.git>
 
 
@@ -185,16 +185,16 @@ Urls used in the creation of this data package.
     import pandas as pd
     
     
-    subgroup_ids_df =  pd.read_csv('http://library.metatab.org/cde.ca.gov-caaspp-2015e-2.1.1/data/subgroup_ids.csv')
-    test_ids_df =  pd.read_csv('http://library.metatab.org/cde.ca.gov-caaspp-2015e-2.1.1/data/test_ids.csv')
-    subgroups_df =  pd.read_csv('http://library.metatab.org/cde.ca.gov-caaspp-2015e-2.1.1/data/subgroups.csv')
-    entities_df =  pd.read_csv('http://library.metatab.org/cde.ca.gov-caaspp-2015e-2.1.1/data/entities.csv')
+    subgroup_ids_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-caaspp-2015e-2.1.1/data/subgroup_ids.csv')
+    test_ids_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-caaspp-2015e-2.1.1/data/test_ids.csv')
+    subgroups_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-caaspp-2015e-2.1.1/data/subgroups.csv')
+    entities_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-caaspp-2015e-2.1.1/data/entities.csv')
 [/code]
 
 ### Accessing Package in Metapack
 [code] 
     import metapack as mp
-    pkg = mp.open_package('http://library.metatab.org/cde.ca.gov-caaspp-2015e-2.1.1.csv')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-caaspp-2015e-2.1.1.csv')
     
     # Create Dataframes
     subgroup_ids_df = pkg.resource('subgroup_ids').dataframe()

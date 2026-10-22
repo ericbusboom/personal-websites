@@ -16,7 +16,7 @@ Resources | Packages | Documentation| Contacts
 
 ## Resources
 
-  * **[lcd-san](<http://library.metatab.org/noaa.gov-localclimate-200808_201807-san-4/data/lcd-san.csv>)**. Local climate data for San Diego
+  * **[lcd-san](<https://library-metatab-org.s3.amazonaws.com/noaa.gov-localclimate-200808_201807-san-4/data/lcd-san.csv>)**. Local climate data for San Diego
 
 
 ## Documentation
@@ -42,8 +42,8 @@ This dataset is an extract from the NOAA's Local Climatological Data, via the on
 
 ## Packages
 
-  * **csv** <http://library.metatab.org/noaa.gov-localclimate-200808_201807-san-4.csv>
-  * **zip** <http://library.metatab.org/noaa.gov-localclimate-200808_201807-san-4.zip>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/noaa.gov-localclimate-200808_201807-san-4.csv>
+  * **zip** <https://library-metatab-org.s3.amazonaws.com/noaa.gov-localclimate-200808_201807-san-4.zip>
   * **source** <https://github.com/san-diego-water-quality/water-datasets.git>
 
 
@@ -51,9 +51,9 @@ This dataset is an extract from the NOAA's Local Climatological Data, via the on
 [code] 
     import metapack as mp
     # ZIP Package
-    pkg = mp.open_package('http://library.metatab.org/noaa.gov-localclimate-200808_201807-san-4.zip')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/noaa.gov-localclimate-200808_201807-san-4.zip')
     # CSV Package
-    pkg = mp.open_package('http://library.metatab.org/noaa.gov-localclimate-200808_201807-san-4.csv') 
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/noaa.gov-localclimate-200808_201807-san-4.csv') 
     
     resource = pkg.resource('resource_name') # Get a resource
     df = resource.dataframe() # Create a pandas Dataframe

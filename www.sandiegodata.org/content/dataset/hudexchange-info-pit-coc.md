@@ -16,7 +16,7 @@ Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
-  * **[pitc_coc](<http://library.metatab.org/hudexchange.info-pit-coc-1/data/pitc_coc.csv>)**. Combined pitc, 2007 to 2018
+  * **[pitc_coc](<https://library-metatab-org.s3.amazonaws.com/hudexchange.info-pit-coc-1/data/pitc_coc.csv>)**. Combined pitc, 2007 to 2018
 
 
 ## Documentation
@@ -63,15 +63,15 @@ On rare occasions, the Point-in-Time estimates published in prior editions of th
 
 ## Packages
 
-  * **zip** <http://library.metatab.org/hudexchange.info-pit-coc-1.zip>
-  * **csv** <http://library.metatab.org/hudexchange.info-pit-coc-1.csv>
+  * **zip** <https://library-metatab-org.s3.amazonaws.com/hudexchange.info-pit-coc-1.zip>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/hudexchange.info-pit-coc-1.csv>
   * **source** <https://github.com/sandiegodata-projects/homelessness.git>
 
 
 ### Accessing Packages in Metapack
 [code] 
     import metapack as mp
-    pkg = mp.open_package('http://library.metatab.org/hudexchange.info-pit-coc-1.zip')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/hudexchange.info-pit-coc-1.zip')
     
     # Create Dataframes
     
@@ -194,15 +194,15 @@ Last Modified 2019-07-12T05:00:57
 
 ## Packages
 
-  * **zip** <http://library.metatab.org/hudexchange.info-pit-coc-1.zip>
-  * **csv** <http://library.metatab.org/hudexchange.info-pit-coc-1.csv>
+  * **zip** <https://library-metatab-org.s3.amazonaws.com/hudexchange.info-pit-coc-1.zip>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/hudexchange.info-pit-coc-1.csv>
   * **source** <https://github.com/sandiegodata-projects/homelessness.git>
 
 
 ### Accessing Packages in Metapack
 [code] 
     import metapack as mp
-    pkg = mp.open_package('http://library.metatab.org/hudexchange.info-pit-coc-1.zip')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/hudexchange.info-pit-coc-1.zip')
     
     # Create Dataframes
     

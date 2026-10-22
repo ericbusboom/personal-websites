@@ -16,7 +16,7 @@ Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
-  * **[ffiec_distressed](<http://library.metatab.org/ffiec.gov-census-tract-1.5.2/data/ffiec_distressed.csv>)**. Distressed tracts
+  * **[ffiec_distressed](<https://library-metatab-org.s3.amazonaws.com/ffiec.gov-census-tract-1.5.2/data/ffiec_distressed.csv>)**. Distressed tracts
 
 
 ## Documentation
@@ -39,8 +39,8 @@ The 2017 file, as distributed by FFIEC, is broken: it includes a ZIP file with i
 
 ### Documentation Links
 
-  * [File information](<http://library.metatab.org/ffiec.gov-census-tract-1.5.2/doc/cen2018.pdf>) Description of the 2018 census file, including all columns. Other years are similar
-  * [Documentation Page](<http://library.metatab.org/ffiec.gov-census-tract-1.5.2/index.html>)
+  * [File information](<https://library-metatab-org.s3.amazonaws.com/ffiec.gov-census-tract-1.5.2/doc/cen2018.pdf>) Description of the 2018 census file, including all columns. Other years are similar
+  * [Documentation Page](<https://library-metatab-org.s3.amazonaws.com/ffiec.gov-census-tract-1.5.2/index.html>)
   * [homepage](<https://www.ffiec.gov/censusapp.htm>)
 
 
@@ -108,7 +108,7 @@ Urls used in the creation of this data package.
 ## Packages
 
   * **s3** s3://library.metatab.org/ffiec.gov-census-tract-1.5.2.csv
-  * **csv** <http://library.metatab.org/ffiec.gov-census-tract-1.5.2.csv>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/ffiec.gov-census-tract-1.5.2.csv>
   * **source** <https://github.com/metatab-packages/ffiec.gov-census-tract.git>
 
 
@@ -117,13 +117,13 @@ Urls used in the creation of this data package.
     import pandas as pd
     
     
-    ffiec_distressed_df =  pd.read_csv('http://library.metatab.org/ffiec.gov-census-tract-1.5.2/data/ffiec_distressed.csv')
+    ffiec_distressed_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/ffiec.gov-census-tract-1.5.2/data/ffiec_distressed.csv')
 [/code]
 
 ### Accessing Package in Metapack
 [code] 
     import metapack as mp
-    pkg = mp.open_package('http://library.metatab.org/ffiec.gov-census-tract-1.5.2.csv')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/ffiec.gov-census-tract-1.5.2.csv')
     
     # Create Dataframes
     ffiec_distressed_df = pkg.resource('ffiec_distressed').dataframe()

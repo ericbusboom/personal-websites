@@ -16,7 +16,7 @@ Resources | Packages | Documentation| Contacts| References
 
 ## Resources
 
-  * **[parking_events](<http://ds.civicknowledge.org/sandiego.gov/cityiq/cityiq-PKIN_PKOUT-20180901-20190201.csv.zip>)**. Parking events
+  * **[parking_events](<https://library-metatab-org.s3.amazonaws.com/ds.civicknowledge.org/sandiego.gov/cityiq/cityiq-PKIN_PKOUT-20180901-20190201.csv.zip>)**. Parking events
 
 
 ## Documentation
@@ -53,7 +53,7 @@ The last step, deduplication and normalization, involves these steps:
 
 The third step is demonstrated in this image:
 
-![rollnorm](http://ds.civicknowledge.org.s3.amazonaws.com/sandiego.gov/cityiq/rolling-renorm.png)
+![rollnorm](https://library-metatab-org.s3.amazonaws.com/ds.civicknowledge.org/sandiego.gov/cityiq/rolling-renorm.png)
 
 The blue line is the original utilization for a single location, showing the larger number of PKIN events than PKOUT events. The red line is the 2-day rolling average, and the green line is after subtracting the 2-dat rolling average.
 
@@ -70,8 +70,8 @@ For most purpuses you should use `cs_norm` and `delta_norm`.
 
 ## Packages
 
-  * **zip** <http://library.metatab.org/sandiego.gov-cityiq_parking-2.zip>
-  * **csv** <http://library.metatab.org/sandiego.gov-cityiq_parking-2.csv>
+  * **zip** <https://library-metatab-org.s3.amazonaws.com/sandiego.gov-cityiq_parking-2.zip>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/sandiego.gov-cityiq_parking-2.csv>
   * **source** <https://github.com/SDRDLAnalysts/data-projects.git>
 
 
@@ -79,9 +79,9 @@ For most purpuses you should use `cs_norm` and `delta_norm`.
 [code] 
     import metapack as mp
     # ZIP Package
-    pkg = mp.open_package('http://library.metatab.org/sandiego.gov-cityiq_parking-2.zip')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiego.gov-cityiq_parking-2.zip')
     # CSV Package
-    pkg = mp.open_package('http://library.metatab.org/sandiego.gov-cityiq_parking-2.csv') 
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiego.gov-cityiq_parking-2.csv') 
     
     resource = pkg.resource('resource_name') # Get a resource
     df = resource.dataframe() # Create a pandas Dataframe
@@ -93,9 +93,9 @@ For most purpuses you should use `cs_norm` and `delta_norm`.
 
 Urls used in the creation of this data package.
 
-  * **[parking_events](<http://ds.civicknowledge.org/sandiego.gov/cityiq/cityiq-PKIN_PKOUT-20180901-20190201.csv.zip>)**. Parking events
-  * **metapack+http://library.metatab.org/sandiego.gov-cityiq_objects.csv#assets**. Data package with metadata about the parking zone locations.
-  * **metapack+http://library.metatab.org/sandiego.gov-cityiq_objects.csv#locations**. Data package with metadata about the parking zone locations.
+  * **[parking_events](<https://library-metatab-org.s3.amazonaws.com/ds.civicknowledge.org/sandiego.gov/cityiq/cityiq-PKIN_PKOUT-20180901-20190201.csv.zip>)**. Parking events
+  * **metapack+https://library-metatab-org.s3.amazonaws.com/sandiego.gov-cityiq_objects.csv#assets**. Data package with metadata about the parking zone locations.
+  * **metapack+https://library-metatab-org.s3.amazonaws.com/sandiego.gov-cityiq_objects.csv#locations**. Data package with metadata about the parking zone locations.
 
 
 Last Modified 2019-02-20T04:27:47

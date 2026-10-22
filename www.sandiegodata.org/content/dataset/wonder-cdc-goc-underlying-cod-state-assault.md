@@ -16,7 +16,7 @@ Resources | Packages | Documentation| Contacts| Data Dictionary
 
 ## Resources
 
-  * **[assaults](<http://library.metatab.org/wonder.cdc.goc-underlying_cod-state-assault-1.1.2/data/assaults.csv>)**. Counts and rates of Assault as a cause of death, from CDC Wonder.
+  * **[assaults](<https://library-metatab-org.s3.amazonaws.com/wonder.cdc.goc-underlying_cod-state-assault-1.1.2/data/assaults.csv>)**. Counts and rates of Assault as a cause of death, from CDC Wonder.
 
 
 ## Documentation
@@ -146,14 +146,14 @@ _of_total_deaths| string|
 ## Packages
 
   * **s3** s3://library.metatab.org/wonder.cdc.goc-underlying_cod-state-assault-1.1.2.csv
-  * **csv** <http://library.metatab.org/wonder.cdc.goc-underlying_cod-state-assault-1.1.2.csv>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/wonder.cdc.goc-underlying_cod-state-assault-1.1.2.csv>
   * **source** <https://github.com/metatab-packages/policedata-collection.git>
 
 
 ### Accessing Packages in Metapack
 [code] 
     import metapack as mp
-    pkg = mp.open_package('http://library.metatab.org/wonder.cdc.goc-underlying_cod-state-assault-1.1.2.csv')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/wonder.cdc.goc-underlying_cod-state-assault-1.1.2.csv')
     
     # Create Dataframes
     assaults_df = pkg.resource('assaults').dataframe()

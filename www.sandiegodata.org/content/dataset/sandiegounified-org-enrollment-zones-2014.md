@@ -16,8 +16,8 @@ Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
-  * **[sdusd_boundaries](<http://library.metatab.org/sandiegounified.org-enrollment_zones-2014-1/data/sdusd_boundaries.csv>)**. Select boundaries of school enrollments areas in San Diego Unified school district.
-  * **[school_tract_xwalk](<http://library.metatab.org/sandiegounified.org-enrollment_zones-2014-1/data/school_tract_xwalk.csv>)**. Porportions of overlap between tracts and school enrollment areas.
+  * **[sdusd_boundaries](<https://library-metatab-org.s3.amazonaws.com/sandiegounified.org-enrollment_zones-2014-1/data/sdusd_boundaries.csv>)**. Select boundaries of school enrollments areas in San Diego Unified school district.
+  * **[school_tract_xwalk](<https://library-metatab-org.s3.amazonaws.com/sandiegounified.org-enrollment_zones-2014-1/data/school_tract_xwalk.csv>)**. Porportions of overlap between tracts and school enrollment areas.
 
 
 ## Documentation
@@ -35,16 +35,16 @@ The `data/sdusd.zip` file is built manually from the three data/*zip files, usin
 
 ## Packages
 
-  * **zip** <http://library.metatab.org/sandiegounified.org-enrollment_zones-2014-1.zip>
+  * **zip** <https://library-metatab-org.s3.amazonaws.com/sandiegounified.org-enrollment_zones-2014-1.zip>
   * **s3** s3://library.metatab.org/sandiegounified.org-enrollment_zones-2014-1.csv
-  * **csv** <http://library.metatab.org/sandiegounified.org-enrollment_zones-2014-1.csv>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/sandiegounified.org-enrollment_zones-2014-1.csv>
   * **source** <https://github.com/metatab-packages/metatab-packages.git>
 
 
 ### Accessing Packages in Metapack
 [code] 
     import metapack as mp
-    pkg = mp.open_package('http://library.metatab.org/sandiegounified.org-enrollment_zones-2014-1.zip')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegounified.org-enrollment_zones-2014-1.zip')
     
     # Create Dataframes
     sdusd_boundaries_gdf = pkg.resource('sdusd_boundaries').geoframe()
@@ -91,23 +91,23 @@ Urls used in the creation of this data package.
   * **shape+file:data/mid1415.zip**. Middle school boundaries
   * **shape+file:data/high1415.zip**. High school boundaries.
   * **notebooks/CombineFiles.ipynb**. This is a manually run notebook that combines the three shapefiles in the data directory
-  * **metapack+http://library.metatab.org/cde.ca.gov-schools.csv#public_schools**. California public schools
+  * **metapack+https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-schools.csv#public_schools**. California public schools
 
 
 Last Modified 2019-08-14T15:37:04
 
 ## Packages
 
-  * **zip** <http://library.metatab.org/sandiegounified.org-enrollment_zones-2014-1.zip>
+  * **zip** <https://library-metatab-org.s3.amazonaws.com/sandiegounified.org-enrollment_zones-2014-1.zip>
   * **s3** s3://library.metatab.org/sandiegounified.org-enrollment_zones-2014-1.csv
-  * **csv** <http://library.metatab.org/sandiegounified.org-enrollment_zones-2014-1.csv>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/sandiegounified.org-enrollment_zones-2014-1.csv>
   * **source** <https://github.com/metatab-packages/metatab-packages.git>
 
 
 ### Accessing Packages in Metapack
 [code] 
     import metapack as mp
-    pkg = mp.open_package('http://library.metatab.org/sandiegounified.org-enrollment_zones-2014-1.zip')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegounified.org-enrollment_zones-2014-1.zip')
     
     # Create Dataframes
     sdusd_boundaries_gdf = pkg.resource('sdusd_boundaries').geoframe()

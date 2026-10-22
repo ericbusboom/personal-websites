@@ -16,8 +16,8 @@ Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
-  * **[unsheltered_2018](<http://library.metatab.org/rtfhsd.org-pitc-2018-4/data/unsheltered_2018.csv>)**. Unsheltered count, by tract
-  * **[sheltered_2018](<http://library.metatab.org/rtfhsd.org-pitc-2018-4/data/sheltered_2018.csv>)**. Housing inventory and sheltered count
+  * **[unsheltered_2018](<https://library-metatab-org.s3.amazonaws.com/rtfhsd.org-pitc-2018-4/data/unsheltered_2018.csv>)**. Unsheltered count, by tract
+  * **[sheltered_2018](<https://library-metatab-org.s3.amazonaws.com/rtfhsd.org-pitc-2018-4/data/sheltered_2018.csv>)**. Housing inventory and sheltered count
 
 
 ## Documentation
@@ -50,15 +50,15 @@ However, the [HUD HIC file](<//data.sandiegodata.org/dataset/hudexchange-info-hi
 
 ## Packages
 
-  * **zip** <http://library.metatab.org/rtfhsd.org-pitc-2018-4.zip>
-  * **csv** <http://library.metatab.org/rtfhsd.org-pitc-2018-4.csv>
+  * **zip** <https://library-metatab-org.s3.amazonaws.com/rtfhsd.org-pitc-2018-4.zip>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/rtfhsd.org-pitc-2018-4.csv>
   * **source** <https://github.com/sandiegodata-projects/homelessness.git>
 
 
 ### Accessing Packages in Metapack
 [code] 
     import metapack as mp
-    pkg = mp.open_package('http://library.metatab.org/rtfhsd.org-pitc-2018-4.zip')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/rtfhsd.org-pitc-2018-4.zip')
     
     # Create Dataframes
     
@@ -171,15 +171,15 @@ Last Modified 2019-07-17T16:32:44
 
 ## Packages
 
-  * **zip** <http://library.metatab.org/rtfhsd.org-pitc-2018-4.zip>
-  * **csv** <http://library.metatab.org/rtfhsd.org-pitc-2018-4.csv>
+  * **zip** <https://library-metatab-org.s3.amazonaws.com/rtfhsd.org-pitc-2018-4.zip>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/rtfhsd.org-pitc-2018-4.csv>
   * **source** <https://github.com/sandiegodata-projects/homelessness.git>
 
 
 ### Accessing Packages in Metapack
 [code] 
     import metapack as mp
-    pkg = mp.open_package('http://library.metatab.org/rtfhsd.org-pitc-2018-4.zip')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/rtfhsd.org-pitc-2018-4.zip')
     
     # Create Dataframes
     

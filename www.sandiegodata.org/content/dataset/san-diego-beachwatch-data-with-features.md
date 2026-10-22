@@ -16,9 +16,9 @@ Resources | Packages | Documentation| Contacts| References
 
 ## Resources
 
-  * **[stations](<http://library.metatab.org/sandiegodata.org-beachwatch-4/data/stations.csv>)**. Measurement stations
-  * **[measure_codes](<http://library.metatab.org/sandiegodata.org-beachwatch-4/data/measure_codes.csv>)**. Measurement group codes
-  * **[beachwatch](<http://library.metatab.org/sandiegodata.org-beachwatch-4/data/beachwatch.csv>)**. Beachwatch data, with features added
+  * **[stations](<https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-beachwatch-4/data/stations.csv>)**. Measurement stations
+  * **[measure_codes](<https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-beachwatch-4/data/measure_codes.csv>)**. Measurement group codes
+  * **[beachwatch](<https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-beachwatch-4/data/beachwatch.csv>)**. Beachwatch data, with features added
 
 
 ## Documentation
@@ -141,8 +141,8 @@ The most prevalent measure code in this dataset is 24 for Enterococcus (analyte)
 
 ## Packages
 
-  * **zip** <http://library.metatab.org/sandiegodata.org-beachwatch-4.zip>
-  * **csv** <http://library.metatab.org/sandiegodata.org-beachwatch-3.csv>
+  * **zip** <https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-beachwatch-4.zip>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-beachwatch-3.csv>
   * **source** <https://github.com/san-diego-water-quality/water-datasets.git>
 
 
@@ -150,9 +150,9 @@ The most prevalent measure code in this dataset is 24 for Enterococcus (analyte)
 [code] 
     import metapack as mp
     # ZIP Package
-    pkg = mp.open_package('http://library.metatab.org/sandiegodata.org-beachwatch-4.zip')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-beachwatch-4.zip')
     # CSV Package
-    pkg = mp.open_package('http://library.metatab.org/sandiegodata.org-beachwatch-3.csv') 
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-beachwatch-3.csv') 
     
     resource = pkg.resource('resource_name') # Get a resource
     df = resource.dataframe() # Create a pandas Dataframe

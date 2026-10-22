@@ -16,7 +16,7 @@ Resources | Packages | Documentation| Contacts
 
 ## Resources
 
-  * **[trolley-ridership-sept-2013](<http://ds.civicknowledge.org.s3.amazonaws.com/sdmts.com/FY2014%20Ridership_Trolley_Sept2013Booking.xlsx>)**. Trolley Ridership Sept 2013
+  * **[trolley-ridership-sept-2013](<https://library-metatab-org.s3.amazonaws.com/ds.civicknowledge.org/sdmts.com/FY2014%20Ridership_Trolley_Sept2013Booking.xlsx>)**. Trolley Ridership Sept 2013
 
 
 ## Documentation

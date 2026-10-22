@@ -16,9 +16,9 @@ Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
-  * **[staff_cred](<http://library.metatab.org/cde.ca.gov-staff-1.1.2/data/staff_cred.csv>)**. Staff credentials
-  * **[staff_demo](<http://library.metatab.org/cde.ca.gov-staff-1.1.2/data/staff_demo.csv>)**. Staff Demographics
-  * **[staff_fte](<http://library.metatab.org/cde.ca.gov-staff-1.1.2/data/staff_fte.csv>)**. Staff FTE teaching load 100=full time.
+  * **[staff_cred](<https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-staff-1.1.2/data/staff_cred.csv>)**. Staff credentials
+  * **[staff_demo](<https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-staff-1.1.2/data/staff_demo.csv>)**. Staff Demographics
+  * **[staff_fte](<https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-staff-1.1.2/data/staff_fte.csv>)**. Staff FTE teaching load 100=full time.
 
 
 ## Documentation
@@ -39,7 +39,7 @@ Programs used for data transformation (contained in the `notebooks` directory), 
   * [Staff Demographics 2015-16 to Current](<https://www.cde.ca.gov/ds/ad/fsstaffdemo15.asp>) File structure for the staff demographics record, which includes demographic and full-time equivalent (FTE) data for K-12 public education certificated teachers, administrators, and pupil services personnel reported as employed on Information Day.
   * [Staff Credentials 2012–13 to Current](<https://www.cde.ca.gov/ds/ad/fsstaffcred12.asp>) File structure for staff credential data, including associated authorizations, for staff employed on Information Day.
   * [Staff School FTE 2012–13 to Current](<https://www.cde.ca.gov/ds/ad/fsstaffschoolfte.asp>) This table contains the structure for the staff school FTE record.
-  * [Documentation Page](<http://library.metatab.org/cde.ca.gov-staff-1.1.2/index.html>)
+  * [Documentation Page](<https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-staff-1.1.2/index.html>)
 
 
 ## Contacts
@@ -131,7 +131,7 @@ Urls used in the creation of this data package.
 ## Packages
 
   * **s3** s3://library.metatab.org/cde.ca.gov-staff-1.1.2.csv
-  * **csv** <http://library.metatab.org/cde.ca.gov-staff-1.1.2.csv>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-staff-1.1.2.csv>
   * **source** <https://github.com/metatab-packages/cde.ca.gov-collection.git>
 
 
@@ -140,15 +140,15 @@ Urls used in the creation of this data package.
     import pandas as pd
     
     
-    staff_cred_df =  pd.read_csv('http://library.metatab.org/cde.ca.gov-staff-1.1.2/data/staff_cred.csv')
-    staff_demo_df =  pd.read_csv('http://library.metatab.org/cde.ca.gov-staff-1.1.2/data/staff_demo.csv')
-    staff_fte_df =  pd.read_csv('http://library.metatab.org/cde.ca.gov-staff-1.1.2/data/staff_fte.csv')
+    staff_cred_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-staff-1.1.2/data/staff_cred.csv')
+    staff_demo_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-staff-1.1.2/data/staff_demo.csv')
+    staff_fte_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-staff-1.1.2/data/staff_fte.csv')
 [/code]
 
 ### Accessing Package in Metapack
 [code] 
     import metapack as mp
-    pkg = mp.open_package('http://library.metatab.org/cde.ca.gov-staff-1.1.2.csv')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-staff-1.1.2.csv')
     
     # Create Dataframes
     staff_cred_df = pkg.resource('staff_cred').dataframe()

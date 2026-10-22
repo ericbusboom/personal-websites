@@ -16,7 +16,7 @@ Resources | Packages | Documentation| Contacts| Data Dictionary
 
 ## Resources
 
-  * **[crime_2007_2013](<http://library.metatab.org/sandag.org-crime-2017e2013-raw-1.1.1/data/crime_2007_2013.csv>)**. San Diego crime incidents, 2007 to 2013
+  * **[crime_2007_2013](<https://library-metatab-org.s3.amazonaws.com/sandag.org-crime-2017e2013-raw-1.1.1/data/crime_2007_2013.csv>)**. San Diego crime incidents, 2007 to 2013
 
 
 ## Documentation
@@ -31,7 +31,7 @@ This a later extract of the same data as in [Revision 1](<http://data.sandiegoda
 
 ### Documentation Links
 
-  * [Documentation Page](<http://library.metatab.org/sandag.org-crime-2017e2013-raw-1.1.1/index.html>)
+  * [Documentation Page](<https://library-metatab-org.s3.amazonaws.com/sandag.org-crime-2017e2013-raw-1.1.1/index.html>)
 
 
 ## Contacts
@@ -62,7 +62,7 @@ zipcode| integer|
 ## Packages
 
   * **s3** s3://library.metatab.org/sandag.org-crime-2017e2013-raw-1.1.1.csv
-  * **csv** <http://library.metatab.org/sandag.org-crime-2017e2013-raw-1.1.1.csv>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/sandag.org-crime-2017e2013-raw-1.1.1.csv>
   * **source** <https://github.com/metatab-packages/sandag.org-crime-2017e2013-raw.git>
 
 
@@ -71,13 +71,13 @@ zipcode| integer|
     import pandas as pd
     
     
-    crime_2007_2013_df =  pd.read_csv('http://library.metatab.org/sandag.org-crime-2017e2013-raw-1.1.1/data/crime_2007_2013.csv')
+    crime_2007_2013_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandag.org-crime-2017e2013-raw-1.1.1/data/crime_2007_2013.csv')
 [/code]
 
 ### Accessing Package in Metapack
 [code] 
     import metapack as mp
-    pkg = mp.open_package('http://library.metatab.org/sandag.org-crime-2017e2013-raw-1.1.1.csv')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandag.org-crime-2017e2013-raw-1.1.1.csv')
     
     # Create Dataframes
     crime_2007_2013_df = pkg.resource('crime_2007_2013').dataframe()

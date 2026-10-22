@@ -16,8 +16,8 @@ Resources | Packages | Documentation| Contacts| Data Dictionary
 
 ## Resources
 
-  * **[pitc](<http://library.metatab.org/rtfhsd.org-pitc-2010-geo-3/data/pitc.csv>)**. Point in time count geo data for 2010
-  * **[tracts](<http://library.metatab.org/rtfhsd.org-pitc-2010-geo-3/data/tracts.csv>)**. Counts per shelter type per tract
+  * **[pitc](<https://library-metatab-org.s3.amazonaws.com/rtfhsd.org-pitc-2010-geo-3/data/pitc.csv>)**. Point in time count geo data for 2010
+  * **[tracts](<https://library-metatab-org.s3.amazonaws.com/rtfhsd.org-pitc-2010-geo-3/data/tracts.csv>)**. Counts per shelter type per tract
 
 
 ## Documentation
@@ -39,15 +39,15 @@ The datapackage also includes counts aggregated to tracts, per type of shelter.
 
 ## Packages
 
-  * **zip** <http://library.metatab.org/rtfhsd.org-pitc-2010-geo-3.zip>
-  * **csv** <http://library.metatab.org/rtfhsd.org-pitc-2010-geo-3.csv>
+  * **zip** <https://library-metatab-org.s3.amazonaws.com/rtfhsd.org-pitc-2010-geo-3.zip>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/rtfhsd.org-pitc-2010-geo-3.csv>
   * **source** <https://github.com/SDRDLAnalysts/data-projects.git>
 
 
 ### Accessing Packages in Metapack
 [code] 
     import metapack as mp
-    pkg = mp.open_package('http://library.metatab.org/rtfhsd.org-pitc-2010-geo-3.zip')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/rtfhsd.org-pitc-2010-geo-3.zip')
     
     # Create Dataframes
     pitc_gdf = pkg.resource('pitc').geoframe()
@@ -85,15 +85,15 @@ Last Modified 2019-07-17T21:30:37
 
 ## Packages
 
-  * **zip** <http://library.metatab.org/rtfhsd.org-pitc-2010-geo-3.zip>
-  * **csv** <http://library.metatab.org/rtfhsd.org-pitc-2010-geo-3.csv>
+  * **zip** <https://library-metatab-org.s3.amazonaws.com/rtfhsd.org-pitc-2010-geo-3.zip>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/rtfhsd.org-pitc-2010-geo-3.csv>
   * **source** <https://github.com/SDRDLAnalysts/data-projects.git>
 
 
 ### Accessing Packages in Metapack
 [code] 
     import metapack as mp
-    pkg = mp.open_package('http://library.metatab.org/rtfhsd.org-pitc-2010-geo-3.zip')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/rtfhsd.org-pitc-2010-geo-3.zip')
     
     # Create Dataframes
     pitc_gdf = pkg.resource('pitc').geoframe()

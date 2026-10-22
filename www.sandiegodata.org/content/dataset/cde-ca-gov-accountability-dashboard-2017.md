@@ -16,14 +16,14 @@ Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
-  * **[ela38](<http://cde.metatab.org/cde.ca.gov-accountability_dashboard-2017-1.2.1/data/ela38.csv>)**. English Language Arts, Grades 3-8
-  * **[ela11](<http://cde.metatab.org/cde.ca.gov-accountability_dashboard-2017-1.2.1/data/ela11.csv>)**. English Language Arts, Grade 11
-  * **[math38](<http://cde.metatab.org/cde.ca.gov-accountability_dashboard-2017-1.2.1/data/math38.csv>)**. Math, Grades 3-8
-  * **[math11](<http://cde.metatab.org/cde.ca.gov-accountability_dashboard-2017-1.2.1/data/math11.csv>)**. Math, Grade 11
-  * **[collegecareer](<http://cde.metatab.org/cde.ca.gov-accountability_dashboard-2017-1.2.1/data/collegecareer.csv>)**. College / Career Indicators
-  * **[susprate](<http://cde.metatab.org/cde.ca.gov-accountability_dashboard-2017-1.2.1/data/susprate.csv>)**. Suspension Rate
-  * **[elaprog](<http://cde.metatab.org/cde.ca.gov-accountability_dashboard-2017-1.2.1/data/elaprog.csv>)**. English Language Arts Progress Indicators
-  * **[gradrate](<http://cde.metatab.org/cde.ca.gov-accountability_dashboard-2017-1.2.1/data/gradrate.csv>)**. 
+  * **[ela38](<https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-accountability_dashboard-2017-1.2.1/data/ela38.csv>)**. English Language Arts, Grades 3-8
+  * **[ela11](<https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-accountability_dashboard-2017-1.2.1/data/ela11.csv>)**. English Language Arts, Grade 11
+  * **[math38](<https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-accountability_dashboard-2017-1.2.1/data/math38.csv>)**. Math, Grades 3-8
+  * **[math11](<https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-accountability_dashboard-2017-1.2.1/data/math11.csv>)**. Math, Grade 11
+  * **[collegecareer](<https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-accountability_dashboard-2017-1.2.1/data/collegecareer.csv>)**. College / Career Indicators
+  * **[susprate](<https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-accountability_dashboard-2017-1.2.1/data/susprate.csv>)**. Suspension Rate
+  * **[elaprog](<https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-accountability_dashboard-2017-1.2.1/data/elaprog.csv>)**. English Language Arts Progress Indicators
+  * **[gradrate](<https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-accountability_dashboard-2017-1.2.1/data/gradrate.csv>)**. 
 
 
 ## Documentation
@@ -32,7 +32,7 @@ Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
   * [California Accountability Model & School Dashboard](<http://www.cde.ca.gov/ta/ac/cm/>) Program page for the dashboard, datasets and reports.
   * [California School Dashboard](<https://www.caschooldashboard.org>) The California School Dashboard website.
-  * [Documentation Page](<http://cde.metatab.org/cde.ca.gov-accountability_dashboard-2017-1.2.1/index.html>)
+  * [Documentation Page](<https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-accountability_dashboard-2017-1.2.1/index.html>)
 
 
 ## Contacts
@@ -262,7 +262,7 @@ Urls used in the creation of this data package.
 ## Packages
 
   * **s3** s3://cde.metatab.org/cde.ca.gov-accountability_dashboard-2017-1.2.1.csv
-  * **csv** <http://cde.metatab.org/cde.ca.gov-accountability_dashboard-2017-1.2.1.csv>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-accountability_dashboard-2017-1.2.1.csv>
   * **source** <https://github.com/metatab-packages/cde.ca.gov.git>
 
 
@@ -271,20 +271,20 @@ Urls used in the creation of this data package.
     import pandas as pd
     
     
-    ela38_df =  pd.read_csv('http://cde.metatab.org/cde.ca.gov-accountability_dashboard-2017-1.2.1/data/ela38.csv')
-    ela11_df =  pd.read_csv('http://cde.metatab.org/cde.ca.gov-accountability_dashboard-2017-1.2.1/data/ela11.csv')
-    math38_df =  pd.read_csv('http://cde.metatab.org/cde.ca.gov-accountability_dashboard-2017-1.2.1/data/math38.csv')
-    math11_df =  pd.read_csv('http://cde.metatab.org/cde.ca.gov-accountability_dashboard-2017-1.2.1/data/math11.csv')
-    collegecareer_df =  pd.read_csv('http://cde.metatab.org/cde.ca.gov-accountability_dashboard-2017-1.2.1/data/collegecareer.csv')
-    susprate_df =  pd.read_csv('http://cde.metatab.org/cde.ca.gov-accountability_dashboard-2017-1.2.1/data/susprate.csv')
-    elaprog_df =  pd.read_csv('http://cde.metatab.org/cde.ca.gov-accountability_dashboard-2017-1.2.1/data/elaprog.csv')
-    gradrate_df =  pd.read_csv('http://cde.metatab.org/cde.ca.gov-accountability_dashboard-2017-1.2.1/data/gradrate.csv')
+    ela38_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-accountability_dashboard-2017-1.2.1/data/ela38.csv')
+    ela11_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-accountability_dashboard-2017-1.2.1/data/ela11.csv')
+    math38_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-accountability_dashboard-2017-1.2.1/data/math38.csv')
+    math11_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-accountability_dashboard-2017-1.2.1/data/math11.csv')
+    collegecareer_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-accountability_dashboard-2017-1.2.1/data/collegecareer.csv')
+    susprate_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-accountability_dashboard-2017-1.2.1/data/susprate.csv')
+    elaprog_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-accountability_dashboard-2017-1.2.1/data/elaprog.csv')
+    gradrate_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-accountability_dashboard-2017-1.2.1/data/gradrate.csv')
 [/code]
 
 ### Accessing Package in Metapack
 [code] 
     import metapack as mp
-    pkg = mp.open_package('http://cde.metatab.org/cde.ca.gov-accountability_dashboard-2017-1.2.1.csv')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-accountability_dashboard-2017-1.2.1.csv')
     
     # Create Dataframes
     ela38_df = pkg.resource('ela38').dataframe()

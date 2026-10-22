@@ -16,7 +16,7 @@ Resources | Packages | Documentation| Contacts
 
 ## Resources
 
-  * **[tracts](<http://library.metatab.org/census.gov-tracts-2017-sandiego-1/data/tracts.csv>)**. 
+  * **[tracts](<https://library-metatab-org.s3.amazonaws.com/census.gov-tracts-2017-sandiego-1/data/tracts.csv>)**. 
 
 
 ## Documentation
@@ -30,8 +30,8 @@ Resources | Packages | Documentation| Contacts
 
 ## Packages
 
-  * **csv** <http://library.metatab.org/census.gov-tracts-2017-sandiego-1.csv>
-  * **zip** <http://library.metatab.org/census.gov-tracts-2017-sandiego-1.zip>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/census.gov-tracts-2017-sandiego-1.csv>
+  * **zip** <https://library-metatab-org.s3.amazonaws.com/census.gov-tracts-2017-sandiego-1.zip>
   * **source** <https://github.com/san-diego-water-quality/water-datasets.git>
 
 
@@ -39,9 +39,9 @@ Resources | Packages | Documentation| Contacts
 [code] 
     import metapack as mp
     # ZIP Package
-    pkg = mp.open_package('http://library.metatab.org/census.gov-tracts-2017-sandiego-1.zip')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/census.gov-tracts-2017-sandiego-1.zip')
     # CSV Package
-    pkg = mp.open_package('http://library.metatab.org/census.gov-tracts-2017-sandiego-1.csv') 
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/census.gov-tracts-2017-sandiego-1.csv') 
     
     resource = pkg.resource('resource_name') # Get a resource
     df = resource.dataframe() # Create a pandas Dataframe

@@ -16,7 +16,7 @@ Resources | Packages | Documentation| Contacts| References
 
 ## Resources
 
-  * **[tides_river_rain](<http://library.metatab.org/sandiegodata.org-tides_rain_river-6/data/tides_river_rain.csv>)**. Combined max, min tides, San Diego river flow and daily precipitation
+  * **[tides_river_rain](<https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-tides_rain_river-6/data/tides_river_rain.csv>)**. Combined max, min tides, San Diego river flow and daily precipitation
 
 
 ## Documentation
@@ -51,8 +51,8 @@ See the [EDA Notebook](<https://github.com/san-diego-water-quality/water-dataset
 
 ## Packages
 
-  * **zip** <http://library.metatab.org/sandiegodata.org-tides_rain_river-6.zip>
-  * **csv** <http://library.metatab.org/sandiegodata.org-tides_rain_river-5.csv>
+  * **zip** <https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-tides_rain_river-6.zip>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-tides_rain_river-5.csv>
   * **source** <https://github.com/san-diego-water-quality/water-datasets.git>
 
 
@@ -60,9 +60,9 @@ See the [EDA Notebook](<https://github.com/san-diego-water-quality/water-dataset
 [code] 
     import metapack as mp
     # ZIP Package
-    pkg = mp.open_package('http://library.metatab.org/sandiegodata.org-tides_rain_river-6.zip')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-tides_rain_river-6.zip')
     # CSV Package
-    pkg = mp.open_package('http://library.metatab.org/sandiegodata.org-tides_rain_river-5.csv') 
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-tides_rain_river-5.csv') 
     
     resource = pkg.resource('resource_name') # Get a resource
     df = resource.dataframe() # Create a pandas Dataframe

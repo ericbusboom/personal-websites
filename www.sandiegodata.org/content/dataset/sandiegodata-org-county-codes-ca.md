@@ -16,7 +16,7 @@ Resources | Packages | Documentation| Contacts| Data Dictionary
 
 ## Resources
 
-  * **[ca_county_codes](<http://library.metatab.org/sandiegodata.org-county_codes-ca-3/data/ca_county_codes.csv>)**. California Notary codes for counties.
+  * **[ca_county_codes](<https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-county_codes-ca-3/data/ca_county_codes.csv>)**. California Notary codes for counties.
 
 
 ## Documentation
@@ -46,16 +46,16 @@ These codes were scraped from a website.
 
 ## Packages
 
-  * **zip** <http://library.metatab.org/sandiegodata.org-county_codes-ca-3.zip>
+  * **zip** <https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-county_codes-ca-3.zip>
   * **s3** s3://library.metatab.org/sandiegodata.org-county_codes-ca-3.csv
-  * **csv** <http://library.metatab.org/sandiegodata.org-county_codes-ca-3.csv>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-county_codes-ca-3.csv>
   * **source** <https://github.com/sandiegodata-projects/planning-database.git>
 
 
 ### Accessing Packages in Metapack
 [code] 
     import metapack as mp
-    pkg = mp.open_package('http://library.metatab.org/sandiegodata.org-county_codes-ca-3.zip')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-county_codes-ca-3.zip')
     
     # Create Dataframes
     
@@ -80,16 +80,16 @@ Last Modified 2019-08-08T20:13:28
 
 ## Packages
 
-  * **zip** <http://library.metatab.org/sandiegodata.org-county_codes-ca-3.zip>
+  * **zip** <https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-county_codes-ca-3.zip>
   * **s3** s3://library.metatab.org/sandiegodata.org-county_codes-ca-3.csv
-  * **csv** <http://library.metatab.org/sandiegodata.org-county_codes-ca-3.csv>
+  * **csv** <https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-county_codes-ca-3.csv>
   * **source** <https://github.com/sandiegodata-projects/planning-database.git>
 
 
 ### Accessing Packages in Metapack
 [code] 
     import metapack as mp
-    pkg = mp.open_package('http://library.metatab.org/sandiegodata.org-county_codes-ca-3.zip')
+    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-county_codes-ca-3.zip')
     
     # Create Dataframes
     
