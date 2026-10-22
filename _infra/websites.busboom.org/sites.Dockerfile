@@ -38,4 +38,4 @@ RUN hugo --quiet -s /src-static -d /out/static/test -b "$TEST_SCHEME://static.$T
 FROM caddy:2.10-alpine
 COPY --from=hugo /out /srv/sites
 COPY _infra/websites.busboom.org/www /srv/index
-COPY _infra/websites.busboom.org/Caddyfile _infra/websites.busboom.org/sandiegodata.caddy /etc/caddy/
+COPY _infra/websites.busboom.org/Caddyfile _infra/websites.busboom.org/sandiegodata.caddy _infra/websites.busboom.org/civicknowledge.caddy /etc/caddy/

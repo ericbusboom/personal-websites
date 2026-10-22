@@ -17,6 +17,7 @@
 }
 
 import sandiegodata.caddy
+import civicknowledge.caddy
 
 (hugo) {
 	root * /srv/sites/{args[0]}/{args[1]}
@@ -55,6 +56,7 @@ http://metatab.{$TEST_HOST} {
 }
 
 http://civicknowledge.{$TEST_HOST} {
+	import civicknowledge_redirects
 	import hugo civicknowledge test
 }
 
@@ -96,6 +98,7 @@ http://www.metatab.org, https://www.metatab.org {
 }
 
 http://www.civicknowledge.com, https://www.civicknowledge.com {
+	import civicknowledge_redirects
 	import prod civicknowledge
 }
 
