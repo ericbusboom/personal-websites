@@ -30,25 +30,29 @@ personal-websites/
 
 These sites were originally a WordPress multisite on DigitalOcean droplet `wp2.do.cnshost.net` (137.184.39.244). The multisite had 17 blogs across multiple domains. In July 2026, the server was compromised with malware; the database content was clean but the PHP files were infected.
 
-7 of the 17 blogs were converted to Hugo static sites and deployed to GitHub Pages:
+The converted sites are served by GitHub Pages; each repo's workflow publishes
+it on every push, and DNS points the domain at GitHub (October 2026).
 
-| Blog ID | Domain | Converted To | Status |
-|---------|--------|---------------|--------|
-| 9 + 12 | eric.busboom.org, ericbusboom.com | `eric.busboom.org` repo | ✅ Live on GitHub Pages |
-| 10 | max.busboom.org | `max.busboom.org` repo | ✅ Live on GitHub Pages |
-| 2 | www.metatab.org | `www.metatab.org` repo | ✅ Live on GitHub Pages |
-| 3 | www.civicknowledge.com | `www.civicknowledge.com` repo | ✅ Live on GitHub Pages |
-| 6 + 7 | www.sandiegodata.org, data.sandiegodata.org | `www.sandiegodata.org` repo | ✅ Live on GitHub Pages |
+| Domain | Served from | Notes |
+|---|---|---|
+| www.sandiegodata.org, sandiegodata.org | `www.sandiegodata.org` repo | WordPress blogs 6 + 7 merged |
+| data.sandiegodata.org | ericbusboom/data.sandiegodata.org | Redirect-only: every path goes to www.sandiegodata.org |
+| eric.busboom.org | `eric.busboom.org` repo | Blogs 9 + 12 merged |
+| ericbusboom.com, www.ericbusboom.com | ericbusboom/ericbusboom.com | Redirect-only: to eric.busboom.org (`/` → `/professional/`) |
+| max.busboom.org | `max.busboom.org` repo | |
+| www.civicknowledge.com, civicknowledge.com | `www.civicknowledge.com` repo | |
+| www.metatab.org, metatab.org | Metatab/www.metatab.org | Not the WordPress conversion; the `www.metatab.org` repo here is unused |
+| www.lajollatroop506.com, lajollatroop506.com | troop506/www.lajollatroop506.com | Hugo rebuild of the troop WordPress site, edited with Sveltia CMS |
 
-**Not yet converted:**
+DNS for lajollatroop506.com and ericbusboom.com is at GoDaddy; the others are
+at DNS Made Easy. Bare domains use GitHub's A records (185.199.108–111.153);
+`www` and subdomains are CNAMEs to `ericbusboom.github.io`, `troop506.github.io`
+or `metatab.github.io`.
 
-| Blog ID | Domain | Notes |
-|---------|--------|-------|
-| 8 | www.lajollatroop506.com | 25 pages, 17 posts, WooCommerce products — needs migration plan |
-| 4 | insights.civicknowledge.com | 8 posts |
-| 5 | tablecloth.civicknowledge.com | 11 posts |
-| 11 | jenni.busboom.org | 1 post |
-| 13-17 | Various small sites | not.evenwrong.com, westerndissident.org, etc. |
+**Still on the old WordPress server** (through the proxy): insights.sandiegodata.org,
+tablecloth.civicknowledge.com, sdcta.civicknowledge.com, jenni.busboom.org,
+www.busboom.org. Other blogs that were never converted: insights.civicknowledge.com
+(blog 4), and blogs 13–17 (not.evenwrong.com, westerndissident.org, etc.).
 
 ## WordPress Server
 
