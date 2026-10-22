@@ -57,6 +57,11 @@ deploy: _check-remote
         --exclude .git --exclude _export --exclude public --exclude resources/_gen \
         --exclude .hugo_build.lock --exclude '/{{troop506_data}}' --exclude .DS_Store \
         ../../ {{remote}}:{{remote_dir}}/
+    # Hugo rebuild of the troop site: a separate repo, next to this one
+    # (build context "troop506static" in compose.yaml)
+    rsync -az --delete --exclude .git --exclude public --exclude resources/_gen \
+        --exclude .hugo_build.lock --exclude .DS_Store --exclude '.env' --exclude '.env.*' \
+        ../../../www.lajollatroop506.com/ {{remote}}:{{remote_dir}}/../www.lajollatroop506.com/
     ssh {{remote}} 'cd {{remote_dir}}/_infra/websites.busboom.org && docker compose up -d --build --wait --remove-orphans'
 
 # One-time: copy troop506 uploads and its clean DB dump. Never overwrites
