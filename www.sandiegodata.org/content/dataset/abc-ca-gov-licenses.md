@@ -12,7 +12,6 @@ _Records of alcohol licenses in california, from the CA ABC daily file, with imp
 
 `abc.ca.gov-licenses-2.1.2`. Modified 2020-11-27T23:20:08
 
-Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
@@ -119,7 +118,7 @@ community_name| string| Community name in San Diego, Cityname otherwise.
 
 Urls used in the creation of this data package.
 
-  * **[abc_licenses_source](</uploads/WeeklyExport_CSV.zip#*.csv&start=2&headers=1>)**. Raw ABC data
+  * **abc_licenses_source (no longer available)**. Raw ABC data
   * **metapack+https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-geography-2018-13.csv**. San Diego geography
   * **metapack+https://library-metatab-org.s3.amazonaws.com/huduser.gov-zip_tract-2016-2.csv**. Zip to Tract mapping
 
@@ -132,21 +131,20 @@ Urls used in the creation of this data package.
 
 
 ### Accessing Data in Vanilla Pandas
-[code] 
-    import pandas as pd
-    
-    
-    ca_abc_licenses_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/abc.ca.gov-licenses-2.1.2/data/ca_abc_licenses.csv')
-    sd_abc_density_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/abc.ca.gov-licenses-2.1.2/data/sd_abc_density.csv')
-[/code]
+```
+import pandas as pd
+
+
+ca_abc_licenses_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/abc.ca.gov-licenses-2.1.2/data/ca_abc_licenses.csv')
+sd_abc_density_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/abc.ca.gov-licenses-2.1.2/data/sd_abc_density.csv')
+```
 
 ### Accessing Package in Metapack
-[code] 
-    import metapack as mp
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/abc.ca.gov-licenses-2.1.2.csv')
-    
-    # Create Dataframes
-    ca_abc_licenses_df = pkg.resource('ca_abc_licenses').dataframe()
-    sd_abc_density_gdf = pkg.resource('sd_abc_density').geoframe()
-    
-[/code]
+```
+import metapack as mp
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/abc.ca.gov-licenses-2.1.2.csv')
+
+# Create Dataframes
+ca_abc_licenses_df = pkg.resource('ca_abc_licenses').dataframe()
+sd_abc_density_gdf = pkg.resource('sd_abc_density').geoframe()
+```

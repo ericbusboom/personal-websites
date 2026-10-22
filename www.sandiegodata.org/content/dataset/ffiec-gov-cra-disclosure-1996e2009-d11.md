@@ -12,7 +12,6 @@ _Multi-year CRA disclosures for small business originations, per county, year an
 
 `ffiec.gov-cra_disclosure-1996e2009-d11-3.1.1`. Modified 2020-10-23T19:30:39
 
-Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
@@ -46,7 +45,7 @@ This data package includes years 1996 through 2009. Another data package include
 
   * **Wrangler**
 
-[Eric Busboom](<mailto:eric@sandiegodata.org>), [San Diego Regional Data Library](<http://www.sandiegodata.org>)
+[Eric Busboom](<mailto:eric@sandiegodata.org>), [San Diego Regional Data Library](</>)
 
 
 ## Data Dictionary
@@ -112,19 +111,18 @@ Urls used in the creation of this data package.
 
 
 ### Accessing Data in Vanilla Pandas
-[code] 
-    import pandas as pd
-    
-    
-    sb_loan_orig_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/ffiec.gov-cra_disclosure-1996e2009-d11-3.1.1/data/sb_loan_orig.csv')
-[/code]
+```
+import pandas as pd
+
+
+sb_loan_orig_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/ffiec.gov-cra_disclosure-1996e2009-d11-3.1.1/data/sb_loan_orig.csv')
+```
 
 ### Accessing Package in Metapack
-[code] 
-    import metapack as mp
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/ffiec.gov-cra_disclosure-1996e2009-d11-3.1.1.csv')
-    
-    # Create Dataframes
-    sb_loan_orig_df = pkg.resource('sb_loan_orig').dataframe()
-    
-[/code]
+```
+import metapack as mp
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/ffiec.gov-cra_disclosure-1996e2009-d11-3.1.1.csv')
+
+# Create Dataframes
+sb_loan_orig_df = pkg.resource('sb_loan_orig').dataframe()
+```

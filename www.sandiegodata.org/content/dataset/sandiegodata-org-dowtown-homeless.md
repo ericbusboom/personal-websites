@@ -12,7 +12,6 @@ _Five years of monthly geographic positions for homeless sleepers in Downtown Sa
 
 `sandiegodata.org-dowtown_homeless-2.1.1`. Modified 2022-04-20T20:32:39
 
-Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
@@ -27,9 +26,7 @@ Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 This dataset provides geographic locations for homeless sleepers in Downtown San Diego, as counted by enumerators from the Downtown San Diego Partnership. These counts have been done monthly since 2012, and this dataset provides counts since 2014. 
 
-[![](/uploads/6/2019/10/Homeless-
-Sleepers.png)](</uploads/6/2019/10/Homeless
--Sleepers.png>)
+[![](/uploads/6/2019/10/Homeless-Sleepers.png)](</uploads/6/2019/10/Homeless-Sleepers.png>)
 
 The count is done on paper maps with handwritten count marks. The San Diego Regional Data Library's [Downton Homelessness project](<http://downtown-homelessness.sandiegodata.org/>) converted these scanned count maps using a [web based image annotation tool](<http://www.robots.ox.ac.uk/~vgg/software/via/>).
 
@@ -88,9 +85,7 @@ However, this dataset does not use the occupancy factors, to allow analysts to a
 
 This plot shows, per month, the offical published counts from San Diego Downtown Partnership versus the total from this dataset. Note the descrepancies dues to issues noted above, including missing months, minor differences in some months, and the divergence after March 2017 due to occupancy multiplers.
 
-[![](/uploads/6/2019/10/homeless-
-new-vs-official.png)](</uploads/6/2019/10/homeless
--new-vs-official.png>)
+[![](/uploads/6/2019/10/homeless-new-vs-official.png)](</uploads/6/2019/10/homeless-new-vs-official.png>)
 
 ## Versions
 
@@ -208,27 +203,26 @@ Urls used in the creation of this data package.
 
 
 ### Accessing Data in Vanilla Pandas
-[code] 
-    import pandas as pd
-    
-    
-    neighborhood_totals_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-dowtown_homeless-2.1.1/data/neighborhood_totals.csv')
-    monthly_totals_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-dowtown_homeless-2.1.1/data/monthly_totals.csv')
-    homeless_counts_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-dowtown_homeless-2.1.1/data/homeless_counts.csv')
-    imputed_counts_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-dowtown_homeless-2.1.1/data/imputed_counts.csv')
-    downtown_blocks_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-dowtown_homeless-2.1.1/data/downtown_blocks.csv')
-[/code]
+```
+import pandas as pd
+
+
+neighborhood_totals_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-dowtown_homeless-2.1.1/data/neighborhood_totals.csv')
+monthly_totals_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-dowtown_homeless-2.1.1/data/monthly_totals.csv')
+homeless_counts_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-dowtown_homeless-2.1.1/data/homeless_counts.csv')
+imputed_counts_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-dowtown_homeless-2.1.1/data/imputed_counts.csv')
+downtown_blocks_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-dowtown_homeless-2.1.1/data/downtown_blocks.csv')
+```
 
 ### Accessing Package in Metapack
-[code] 
-    import metapack as mp
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-dowtown_homeless-2.1.1.zip')
-    
-    # Create Dataframes
-    neighborhood_totals_df = pkg.resource('neighborhood_totals').dataframe()
-    monthly_totals_df = pkg.resource('monthly_totals').dataframe()
-    homeless_counts_gdf = pkg.resource('homeless_counts').geoframe()
-    imputed_counts_gdf = pkg.resource('imputed_counts').geoframe()
-    downtown_blocks_gdf = pkg.resource('downtown_blocks').geoframe()
-    
-[/code]
+```
+import metapack as mp
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-dowtown_homeless-2.1.1.zip')
+
+# Create Dataframes
+neighborhood_totals_df = pkg.resource('neighborhood_totals').dataframe()
+monthly_totals_df = pkg.resource('monthly_totals').dataframe()
+homeless_counts_gdf = pkg.resource('homeless_counts').geoframe()
+imputed_counts_gdf = pkg.resource('imputed_counts').geoframe()
+downtown_blocks_gdf = pkg.resource('downtown_blocks').geoframe()
+```

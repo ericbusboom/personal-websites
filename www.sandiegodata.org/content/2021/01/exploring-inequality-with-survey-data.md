@@ -12,4 +12,4 @@ For tonight's meetup [about working with survey data to study inequality](<https
   * [Basic SCL Descriptive Statistics](<https://colab.research.google.com/drive/1Whg0dO3briyQTRZgvme75bwQruWYWwpL?usp=sharing>)
 
 
-The Data Library [also has an extract file](<http://data.sandiegodata.org/dataset/federalreserve-gov-consumer-finances-2016e2019-inherit/>) of the data used in these notebooks, which you can download to replicate the analyses in a different environment.
+The Data Library [also has an extract file](</dataset/federalreserve-gov-consumer-finances-2016e2019-inherit/>) of the data used in these notebooks, which you can download to replicate the analyses in a different environment.

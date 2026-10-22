@@ -12,7 +12,6 @@ _SANDAG Average Daily Traffic Volumes 2006-2010_
 
 `sandag.org-avg_traffic-2006e2010-1`
 
-Resources | Packages | Documentation| Contacts
 
 ## Resources
 
@@ -29,7 +28,7 @@ The file is likely to be difficult to use, since the volumes are reported per st
 
   * **Wrangler**
 
-[Eric Busboom](<mailto:eric@sandiegodata.org>), [San Diego Regional Data Library](<http://www.sandiegodata.org>)
+[Eric Busboom](<mailto:eric@sandiegodata.org>), [San Diego Regional Data Library](</>)
 
 
 ## Packages

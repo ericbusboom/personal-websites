@@ -23,12 +23,12 @@ Major Concepts
 
 Datasets to load 
   * Census Reporter. [Median Household Income in the Past 12 Months](<https://censusreporter.org/data/table/?table=B19013&geo_ids=05000US06073,140|05000US06073&primary_geo_id=05000US06073>)
-  * [San Diego Tracts and Communities](<http://data.sandiegodata.org/dataset/sandiegodata-org-geography-2018>)
-  * [Healthy Places Index](<http://data.sandiegodata.org/dataset/healthyplacesindex-org-healthy_places_index-san_diego>)
-  * [County Planning Database](<http://data.sandiegodata.org/dataset/sandiegodata-org-planning-tracts>)
-  * [San Diego Crime Incidents](<http://data.sandiegodata.org/dataset/clarinova_com-crime-incidents-casnd-7ba4-extract>)
-  * [Alcohol Permits](<http://data.sandiegodata.org/dataset/clarinova_com-alcohol_licenses-casnd-429e-extract>)
-  * [SANGIS Business Sites](<http://data.sandiegodata.org/dataset/sangis-org-business_sites>)
+  * [San Diego Tracts and Communities](</dataset/sandiegodata-org-geography-2018/>)
+  * [Healthy Places Index](</dataset/healthyplacesindex-org-healthy-places-index-san-diego/>)
+  * [County Planning Database](</dataset/sandiegodata-org-planning-tracts/>)
+  * [San Diego Crime Incidents](</dataset/>)
+  * [Alcohol Permits](</dataset/>)
+  * [SANGIS Business Sites](</dataset/sangis-org-business-sites/>)
   * 
 Agenda 
   * Loading a QGIS basemap

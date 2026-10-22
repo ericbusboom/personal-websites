@@ -19,6 +19,6 @@ These marks will be added to the final dataset, resulting in a detailed dataset 
 
 ![](/uploads/7/2019/08/Downtown-Homelessness-1024x652.png)
 
-When we're finished, we will start doing the analysis to answer questions that [researchers and policy experts have asked that we can answer with this dataset](<http://www.sandiegodata.org/tag/homelessness/>), primarily questions related to how homeless people cluster depending on changes landuse, restrooms, and other services. 
+When we're finished, we will start doing the analysis to answer questions that [researchers and policy experts have asked that we can answer with this dataset](</tags/homelessness/>), primarily questions related to how homeless people cluster depending on changes landuse, restrooms, and other services. 
 
 If you'd like to help,[ join the Meetup event](<https://www.meetup.com/Data-Science-for-Non-Profits/events/mzcnfryznbmb/>), and we'll see you in October.

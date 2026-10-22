@@ -12,7 +12,6 @@ _Pedestrian densities, based on data from San Diego's CityIQ system, aggregated 
 
 `sandiegodata.org-pedestrian-blocks-1`
 
-Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
@@ -48,15 +47,14 @@ Pedestrian densities are in terms of the average of the pedestrians per hour for
 
 
 ### Accessing Packages in Metapack
-[code] 
-    import metapack as mp
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-pedestrian-blocks-1.zip')
-    
-    # Create Dataframes
-    
-    ped_blocks_df = pkg.resource('ped_blocks').dataframe()blocks_gdf = pkg.resource('blocks').geoframe()
-    
-[/code]
+```
+import metapack as mp
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-pedestrian-blocks-1.zip')
+
+# Create Dataframes
+
+ped_blocks_df = pkg.resource('ped_blocks').dataframe()blocks_gdf = pkg.resource('blocks').geoframe()
+```
 
 ## Data Dictionary
 
@@ -100,12 +98,11 @@ Last Modified 2019-10-08T23:05:23
 
 
 ### Accessing Packages in Metapack
-[code] 
-    import metapack as mp
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-pedestrian-blocks-1.zip')
-    
-    # Create Dataframes
-    
-    ped_blocks_df = pkg.resource('ped_blocks').dataframe()blocks_gdf = pkg.resource('blocks').geoframe()
-    
-[/code]
+```
+import metapack as mp
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-pedestrian-blocks-1.zip')
+
+# Create Dataframes
+
+ped_blocks_df = pkg.resource('ped_blocks').dataframe()blocks_gdf = pkg.resource('blocks').geoframe()
+```

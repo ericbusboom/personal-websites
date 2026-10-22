@@ -1,8 +1,9 @@
 ---
 title: "Ask a Data Question"
-date: 2018-09-25T13:44:38+00:00
+date: "2018-09-25T13:44:38+00:00"
 draft: false
 author: "eric"
+url: "/get-data/insights/ask-a-data-question/"
 ---
 
 [dwqa-submit-question-form] 

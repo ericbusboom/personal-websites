@@ -12,7 +12,6 @@ _Student discipline and the use of behavioral restraints and seclusion disaggreg
 
 `cde.org-discipline-1.1.2`. Modified 2022-06-14T17:49:58
 
-Resources | Packages | Documentation| Contacts| References
 
 ## Documentation
 
@@ -94,17 +93,14 @@ Urls used in the creation of this data package.
 
 
 ### Accessing Data in Vanilla Pandas
-[code] 
-    import pandas as pd
-    
-    
-[/code]
+```
+import pandas as pd
+```
 
 ### Accessing Package in Metapack
-[code] 
-    import metapack as mp
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/cde.org-discipline-1.1.2.csv')
-    
-    # Create Dataframes
-    
-[/code]
+```
+import metapack as mp
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/cde.org-discipline-1.1.2.csv')
+
+# Create Dataframes
+```

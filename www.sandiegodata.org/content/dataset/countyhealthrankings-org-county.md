@@ -12,7 +12,6 @@ _The CHR &R program provides data, evidence, guidance, and examples to build awa
 
 `countyhealthrankings.org-county-1.1.3`. Modified 2020-08-12T17:00:43
 
-Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
@@ -849,19 +848,18 @@ Urls used in the creation of this data package.
 
 
 ### Accessing Data in Vanilla Pandas
-[code] 
-    import pandas as pd
-    
-    
-    county_health_rankings_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/countyhealthrankings.org-county-1.1.3/data/county_health_rankings.csv')
-[/code]
+```
+import pandas as pd
+
+
+county_health_rankings_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/countyhealthrankings.org-county-1.1.3/data/county_health_rankings.csv')
+```
 
 ### Accessing Package in Metapack
-[code] 
-    import metapack as mp
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/countyhealthrankings.org-county-1.1.3.csv')
-    
-    # Create Dataframes
-    county_health_rankings_df = pkg.resource('county_health_rankings').dataframe()
-    
-[/code]
+```
+import metapack as mp
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/countyhealthrankings.org-county-1.1.3.csv')
+
+# Create Dataframes
+county_health_rankings_df = pkg.resource('county_health_rankings').dataframe()
+```

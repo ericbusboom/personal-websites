@@ -12,7 +12,6 @@ _Age, Race, Sex and Ethnicity, by tract for San Diego county_
 
 `sandiegodata.org-demographics-tract-1.1.1`. Modified 2020-11-26T02:47:27
 
-Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
@@ -156,25 +155,24 @@ Urls used in the creation of this data package.
 
 
 ### Accessing Data in Vanilla Pandas
-[code] 
-    import pandas as pd
-    
-    
-    tracts_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-demographics-tract-1.1.1/data/tracts.csv')
-    age_sex_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-demographics-tract-1.1.1/data/age_sex.csv')
-    total_populaltion_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-demographics-tract-1.1.1/data/total_populaltion.csv')
-    raceeth_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-demographics-tract-1.1.1/data/raceeth.csv')
-[/code]
+```
+import pandas as pd
+
+
+tracts_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-demographics-tract-1.1.1/data/tracts.csv')
+age_sex_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-demographics-tract-1.1.1/data/age_sex.csv')
+total_populaltion_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-demographics-tract-1.1.1/data/total_populaltion.csv')
+raceeth_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-demographics-tract-1.1.1/data/raceeth.csv')
+```
 
 ### Accessing Package in Metapack
-[code] 
-    import metapack as mp
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-demographics-tract-1.1.1.csv')
-    
-    # Create Dataframes
-    tracts_gdf = pkg.resource('tracts').geoframe()
-    age_sex_df = pkg.resource('age_sex').dataframe()
-    total_populaltion_df = pkg.resource('total_populaltion').dataframe()
-    raceeth_df = pkg.resource('raceeth').dataframe()
-    
-[/code]
+```
+import metapack as mp
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-demographics-tract-1.1.1.csv')
+
+# Create Dataframes
+tracts_gdf = pkg.resource('tracts').geoframe()
+age_sex_df = pkg.resource('age_sex').dataframe()
+total_populaltion_df = pkg.resource('total_populaltion').dataframe()
+raceeth_df = pkg.resource('raceeth').dataframe()
+```

@@ -12,7 +12,6 @@ _BLS employment measures for California_
 
 `bls.gov-laus-ca-1`
 
-Resources | Packages | Documentation| Contacts| References
 
 ## Resources
 
@@ -27,29 +26,27 @@ This file is a conversion of the BLS Local Area Unemployment (LAUS) file for Cal
 ## Measure Codes
 
 The `measure_code` value indicates the type of measure: 
-[code] 
-    measure_code    measure_text
-    03              unemployment rate
-    04              unemployment
-    05              employment
-    06              labor force
-    
-[/code]
+```
+measure_code    measure_text
+03              unemployment rate
+04              unemployment
+05              employment
+06              labor force
+```
 
 ## Local Area Unemployment Statistics Series Identifier
 
 The following is a sample format description of the Local Area Unemployment Statistics' series identifier:
-[code] 
-                          1         2
-                 12345678901234567890
-    Series ID    LAUCN281070000000003
-    Positions    Value            Field Name
-    1-2          LA               Prefix
-    3            U                [Seasonal Adjustment Code](https://www.bls.gov/help/hlpseas.htm)
-    4-18         CN2810700000000  [Area Code](https://www.bls.gov/help/def/la.htm#area)
-    19-20        03               [Measure Code](https://www.bls.gov/help/def/la.htm#measure )
-    
-[/code]
+```
+                      1         2
+             12345678901234567890
+Series ID    LAUCN281070000000003
+Positions    Value            Field Name
+1-2          LA               Prefix
+3            U                [Seasonal Adjustment Code](https://www.bls.gov/help/hlpseas.htm)
+4-18         CN2810700000000  [Area Code](https://www.bls.gov/help/def/la.htm#area)
+19-20        03               [Measure Code](https://www.bls.gov/help/def/la.htm#measure )
+```
 
 ### Documentation Links
 
@@ -71,18 +68,17 @@ The following is a sample format description of the Local Area Unemployment Stat
 
 
 ### Accessing Packages in Metapack
-[code] 
-    import metapack as mp
-    # ZIP Package
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/bls.gov-laus-ca-1.zip')
-    # CSV Package
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/bls.gov-laus-ca-1.csv') 
-    
-    resource = pkg.resource('resource_name') # Get a resource
-    df = resource.dataframe() # Create a pandas Dataframe
-    gdf = resource.geoframe() # Create a GeoPandas GeoDataFrame
-    
-[/code]
+```
+import metapack as mp
+# ZIP Package
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/bls.gov-laus-ca-1.zip')
+# CSV Package
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/bls.gov-laus-ca-1.csv') 
+
+resource = pkg.resource('resource_name') # Get a resource
+df = resource.dataframe() # Create a pandas Dataframe
+gdf = resource.geoframe() # Create a GeoPandas GeoDataFrame
+```
 
 ## References
 

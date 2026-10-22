@@ -1,8 +1,9 @@
 ---
 title: "Data Publication Service"
-date: 2013-07-25T17:36:22+00:00
+date: "2013-07-25T17:36:22+00:00"
 draft: false
 author: "qaadmin"
+url: "/about/programs-services/data-publication-service/"
 ---
 
 The San Diego Regional Data Library's Data Publication Service gives governments and nonprofit organizations in San Diego County an**easy way to store, publish, document, and distribute data to the Internet**. Using a simple Web service, data producers can quickly upload data to share and find data that other organizations have published. The service is secure, reliable, and easy to integrate into an organization's existing website. Organizations will also have free access to data published by other organizations, significantly reducing the cost of data acquisition and the effort required for data analysis projects and data-driven decisions. 
@@ -17,7 +18,7 @@ The San Diego Regional Data Library's Data Publication Service gives governments
 
 # Using The Service
 
-The Data Publication Service is an expanded version of the Data Library's existing data repository, which you can preview at <http://data.sandiegodata.org>. 
+The Data Publication Service is an expanded version of the Data Library's existing data repository, which you can preview at </dataset/>. 
 
   * Register for an account
   * Configure your Organizational Account
@@ -31,7 +32,7 @@ During the beta period, contact [eric@sandiegodata.org](<mailto:eric@sandiegodat
 
 ## Configure Your Organizational Account
 
-Each organization that uses the Publication Service gets an Organizational Account. Administrators of the Organizational Account can add and remove users and set permissions. Organizational users with editor-level permission can upload data files for the organization and can mark them as either public or private. Files marked private are only accessible to other users in the same organization. Upload a logo, write some descriptive text, and your Organizational Account is ready to use. You can preview the existing [Organization Accounts on our data repository](<http://data.sandiegodata.org/organization>). 
+Each organization that uses the Publication Service gets an Organizational Account. Administrators of the Organizational Account can add and remove users and set permissions. Organizational users with editor-level permission can upload data files for the organization and can mark them as either public or private. Files marked private are only accessible to other users in the same organization. Upload a logo, write some descriptive text, and your Organizational Account is ready to use. You can preview the existing [Organization Accounts on our data repository](</dataset/>). 
 
 ## Invite Users
 
@@ -43,4 +44,4 @@ Once you have established an Organizational Account, you can begin creating data
 
 # Get Started
 
-To get started sharing data, [visit our data repository](<http://data.sandiegodata.org>) to explore the datasets that have been uploaded, then contact Eric Busboom at [eric@sandiegodata.org](<mailto:eric@sandiegodata.org>) to get your Organizational Account.
+To get started sharing data, [visit our data repository](</dataset/>) to explore the datasets that have been uploaded, then contact Eric Busboom at [eric@sandiegodata.org](<mailto:eric@sandiegodata.org>) to get your Organizational Account.

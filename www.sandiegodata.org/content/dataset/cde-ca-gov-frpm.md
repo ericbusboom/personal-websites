@@ -12,7 +12,6 @@ _Data files pertaining to students eligible for Free or Reduced Price Meals (FRP
 
 `cde.ca.gov-frpm-1.2.1`. Modified 2021-03-11T00:51:02
 
-Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
@@ -151,19 +150,18 @@ Urls used in the creation of this data package.
 
 
 ### Accessing Data in Vanilla Pandas
-[code] 
-    import pandas as pd
-    
-    
-    frp_meals_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-frpm-1.2.1/data/frp_meals.csv')
-[/code]
+```
+import pandas as pd
+
+
+frp_meals_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-frpm-1.2.1/data/frp_meals.csv')
+```
 
 ### Accessing Package in Metapack
-[code] 
-    import metapack as mp
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-frpm-1.2.1.csv')
-    
-    # Create Dataframes
-    frp_meals_df = pkg.resource('frp_meals').dataframe()
-    
-[/code]
+```
+import metapack as mp
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-frpm-1.2.1.csv')
+
+# Create Dataframes
+frp_meals_df = pkg.resource('frp_meals').dataframe()
+```

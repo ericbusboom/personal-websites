@@ -12,7 +12,6 @@ _Information on special economic zones have been individually collected and rese
 
 `worldbank.org-sez-1.1.1`. Modified 2021-07-12T20:47:42
 
-Resources | Packages | Documentation| Contacts| Data Dictionary
 
 ## Resources
 
@@ -115,19 +114,18 @@ geometry| string|
 
 
 ### Accessing Data in Vanilla Pandas
-[code] 
-    import pandas as pd
-    
-    
-    sez_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/worldbank.org-sez-1.1.1/data/sez.csv')
-[/code]
+```
+import pandas as pd
+
+
+sez_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/worldbank.org-sez-1.1.1/data/sez.csv')
+```
 
 ### Accessing Package in Metapack
-[code] 
-    import metapack as mp
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/worldbank.org-sez-1.1.1.csv')
-    
-    # Create Dataframes
-    sez_gdf = pkg.resource('sez').geoframe()
-    
-[/code]
+```
+import metapack as mp
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/worldbank.org-sez-1.1.1.csv')
+
+# Create Dataframes
+sez_gdf = pkg.resource('sez').geoframe()
+```

@@ -12,7 +12,6 @@ _General Social Survey collects information and keeps a historical record of the
 
 `norc.org-gss-2021-1.1.1`. Modified 2023-03-04T17:10:58
 
-Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
@@ -28,10 +27,9 @@ This package is an extract meant for a specific workflow. For general analysis, 
 ## Using the Data Files
 
 The variables in this package are almost entirely categorical, but the data is stored with codes, with the categorical labels stored seperately in the `_labels` reference. When opening the file with Metapack, the `convert_categorical` argument ( which defaults to `True` ) controls converting the codes to labels. 
-[code] 
-    pkg.resource('gss_2021').dataframe(convert_categorical=True)
-    
-[/code]
+```
+pkg.resource('gss_2021').dataframe(convert_categorical=True)
+```
 
 Because the default is `True` this should happen automatically when using `.dataframe`, but it is good to know what is happening behind the scenes.
 
@@ -811,19 +809,18 @@ Urls used in the creation of this data package.
 
 
 ### Accessing Data in Vanilla Pandas
-[code] 
-    import pandas as pd
-    
-    
-    gss_2021_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/norc.org-gss-2021-1.1.1/data/gss_2021.csv')
-[/code]
+```
+import pandas as pd
+
+
+gss_2021_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/norc.org-gss-2021-1.1.1/data/gss_2021.csv')
+```
 
 ### Accessing Package in Metapack
-[code] 
-    import metapack as mp
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/norc.org-gss-2021-1.1.1.csv')
-    
-    # Create Dataframes
-    gss_2021_df = pkg.resource('gss_2021').dataframe()
-    
-[/code]
+```
+import metapack as mp
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/norc.org-gss-2021-1.1.1.csv')
+
+# Create Dataframes
+gss_2021_df = pkg.resource('gss_2021').dataframe()
+```

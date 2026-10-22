@@ -12,7 +12,6 @@ _The Atlas of Rural and Small-Town America provides statistics by broad categori
 
 `usda.gov-rural_atlas-1.1.1`. Modified 2020-08-12T04:37:06
 
-Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
@@ -383,27 +382,26 @@ Urls used in the creation of this data package.
 
 
 ### Accessing Data in Vanilla Pandas
-[code] 
-    import pandas as pd
-    
-    
-    jobs_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/usda.gov-rural_atlas-1.1.1/data/jobs.csv')
-    people_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/usda.gov-rural_atlas-1.1.1/data/people.csv')
-    vets_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/usda.gov-rural_atlas-1.1.1/data/vets.csv')
-    income_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/usda.gov-rural_atlas-1.1.1/data/income.csv')
-    counties_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/usda.gov-rural_atlas-1.1.1/data/counties.csv')
-[/code]
+```
+import pandas as pd
+
+
+jobs_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/usda.gov-rural_atlas-1.1.1/data/jobs.csv')
+people_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/usda.gov-rural_atlas-1.1.1/data/people.csv')
+vets_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/usda.gov-rural_atlas-1.1.1/data/vets.csv')
+income_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/usda.gov-rural_atlas-1.1.1/data/income.csv')
+counties_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/usda.gov-rural_atlas-1.1.1/data/counties.csv')
+```
 
 ### Accessing Package in Metapack
-[code] 
-    import metapack as mp
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/usda.gov-rural_atlas-1.1.1.csv')
-    
-    # Create Dataframes
-    jobs_df = pkg.resource('jobs').dataframe()
-    people_df = pkg.resource('people').dataframe()
-    vets_df = pkg.resource('vets').dataframe()
-    income_df = pkg.resource('income').dataframe()
-    counties_df = pkg.resource('counties').dataframe()
-    
-[/code]
+```
+import metapack as mp
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/usda.gov-rural_atlas-1.1.1.csv')
+
+# Create Dataframes
+jobs_df = pkg.resource('jobs').dataframe()
+people_df = pkg.resource('people').dataframe()
+vets_df = pkg.resource('vets').dataframe()
+income_df = pkg.resource('income').dataframe()
+counties_df = pkg.resource('counties').dataframe()
+```

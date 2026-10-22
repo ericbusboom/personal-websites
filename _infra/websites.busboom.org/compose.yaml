@@ -28,7 +28,9 @@ services:
       - "${BIND:-0.0.0.0}:${HTTP_PORT:-80}:80"
       - "${BIND:-0.0.0.0}:${HTTPS_PORT:-443}:443"
     environment:
+      TEST_SCHEME: ${TEST_SCHEME:-https}
       TEST_HOST: ${TEST_HOST:-websites.busboom.org}
+      TEST_PORT: ${TEST_PORT:-}
       PROXY_IP: ${PROXY_IP:-137.184.225.100}
     volumes:
       - caddy:/data   # keeps the self-signed CA stable across restarts

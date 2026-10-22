@@ -9,7 +9,7 @@ description: "Hosted Jupyter notebooks ( JupyterLab!) for Library data analysts 
 
 One of the difficult parts of working on a Data Library project is setting up all of the tools, including Python, Jupyter, Metatab, Pandas and several others. To make it easier to get started, I've set up a hosted instance of JupyterHub, which will allow analysts to run Jupyter notebooks in the cloud. And, the instance uses Redmine for authentication, so you won't need to create yet another account.
 
-Once you have [joined a project](<http://www.sandiegodata.org/projects/join/>) and gotten a [Redmine account](<https://redmine.civicknowledge.com/>), you can use your Redmine account username and password to log into [jupyter.civicknowledge.com](<https://jupyter.civicknowledge.com/>). You'll get a new JupyterLab server. JupyterLab is a lot like Jupyter Notebook, but has a spiffier interface.
+Once you have [joined a project](</get-data/projects/join/>) and gotten a [Redmine account](<https://redmine.civicknowledge.com/>), you can use your Redmine account username and password to log into [jupyter.civicknowledge.com](<https://jupyter.civicknowledge.com/>). You'll get a new JupyterLab server. JupyterLab is a lot like Jupyter Notebook, but has a spiffier interface.
 
 If you are an analyst on a Data Library project please try it out and let me know how it works:
 

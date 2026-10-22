@@ -12,7 +12,6 @@ _Current (2012) ADOD and General population data along with projections for 2020
 
 `sdcounty.ca.gov-adod-2012-san-diego-county-1`
 
-Resources | Packages | Documentation| Contacts
 
 ## Resources
 
@@ -43,7 +42,7 @@ sdcounty.ca.gov, [County of San Diego Health and Human Services Agency](<http://
 
   * **Wrangler**
 
-[Rashmi Keshava Iyengar](<mailto:rashmi.k.iyengar@gmail.com>), [San Diego Regional Data Library](<http://www.sandiegodata.org>)
+[Rashmi Keshava Iyengar](<mailto:rashmi.k.iyengar@gmail.com>), [San Diego Regional Data Library](</>)
 
   * **Wrangler**
 
@@ -58,17 +57,16 @@ sdcounty.ca.gov, [County of San Diego Health and Human Services Agency](<http://
 
 
 ### Accessing Packages in Metapack
-[code] 
-    import metapack as mp
-    # ZIP Package
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sdcounty.ca.gov-adod-2012-san-diego-county-1.zip')
-    # CSV Package
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sdcounty.ca.gov-adod-2012-san-diego-county-1.csv') 
-    
-    resource = pkg.resource('resource_name') # Get a resource
-    df = resource.dataframe() # Create a pandas Dataframe
-    gdf = resource.geoframe() # Create a GeoPandas GeoDataFrame
-    
-[/code]
+```
+import metapack as mp
+# ZIP Package
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sdcounty.ca.gov-adod-2012-san-diego-county-1.zip')
+# CSV Package
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sdcounty.ca.gov-adod-2012-san-diego-county-1.csv') 
+
+resource = pkg.resource('resource_name') # Get a resource
+df = resource.dataframe() # Create a pandas Dataframe
+gdf = resource.geoframe() # Create a GeoPandas GeoDataFrame
+```
 
 Last Modified

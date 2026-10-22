@@ -12,7 +12,6 @@ _Forecasts for state and national utilization of hospital beads, ICUs and deaths
 
 `healthdata.org-hospitalizations-1.2.11`. Modified 2020-06-22T00:17:43
 
-Resources | Packages | Documentation| Contacts| Data Dictionary
 
 ## Resources
 
@@ -84,11 +83,10 @@ icuover_upper| number|
 
 
 ### Accessing Packages in Metapack
-[code] 
-    import metapack as mp
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/healthdata.org-hospitalizations-1.2.11.csv')
-    
-    # Create Dataframes
-    hospitalizations_df = pkg.resource('hospitalizations').dataframe()
-    
-[/code]
+```
+import metapack as mp
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/healthdata.org-hospitalizations-1.2.11.csv')
+
+# Create Dataframes
+hospitalizations_df = pkg.resource('hospitalizations').dataframe()
+```

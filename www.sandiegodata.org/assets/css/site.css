@@ -59,10 +59,13 @@ a:hover, a:focus, a:active { color: var(--accent-dark); text-decoration: underli
     min-height: auto;
 }
 
-.site-branding { flex: 0; }
+.site-branding { flex: 0 0 auto; }
 
+/* flex: 0 used to collapse the branding box, and the logo with it */
 .site-logo {
-    max-width: 330px;
+    width: 330px;
+    max-width: 100%;
+    max-height: none;
 }
 
 .site-logo img {
@@ -80,6 +83,7 @@ a:hover, a:focus, a:active { color: var(--accent-dark); text-decoration: underli
     background-color: var(--nav-bg);
     display: block;
     width: 100%;
+    position: relative; /* anchors the mobile drop-down menu */
 }
 
 .nav-menu {
@@ -340,6 +344,14 @@ a:hover, a:focus, a:active { color: var(--accent-dark); text-decoration: underli
         line-height: 60px;
         cursor: pointer;
         font-size: 15px;
+    }
+    /* the base theme draws hamburger bars from spans; this one is a label */
+    .nav-toggle .mobile-menu {
+        display: inline;
+        width: auto;
+        height: auto;
+        background: none;
+        margin: 0;
     }
 
     .nav-menu {

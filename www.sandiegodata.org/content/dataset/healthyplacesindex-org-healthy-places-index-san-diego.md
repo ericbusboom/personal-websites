@@ -12,7 +12,6 @@ _The HPI provides overall scores and more detailed data on specific policy actio
 
 `healthyplacesindex.org-healthy_places_index-san_diego-4`
 
-Resources | Packages | Documentation| Contacts| Data Dictionary
 
 ## Resources
 
@@ -27,7 +26,7 @@ This version of the HPI presents the original file with only one modification: t
 
 ### Documentation Links
 
-  * Main Documentation. </uploads/2018/07/HPI2Documentation2018-07-08-FINAL.pdf>Full technical documentation.
+  * Main Documentation. <https://library-metatab-org.s3.amazonaws.com/healthyplacesindex.org-healthy_places_index-san_diego-4/docs/HPI2Documentation2018-07-08-FINAL.pdf>Full technical documentation.
   * Project homepage. <https://healthyplacesindex.org/>Website for the HPI project
 
 
@@ -50,18 +49,17 @@ This version of the HPI presents the original file with only one modification: t
 
 
 ### Accessing Packages in Metapack
-[code] 
-    import metapack as mp
-    # ZIP Package
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/healthyplacesindex.org-healthy_places_index-san_diego-4.zip')
-    # CSV Package
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/healthyplacesindex.org-healthy_places_index-san_diego-4.csv') 
-    
-    resource = pkg.resource('resource_name') # Get a resource
-    df = resource.dataframe() # Create a pandas Dataframe
-    gdf = resource.geoframe() # Create a GeoPandas GeoDataFrame
-    
-[/code]
+```
+import metapack as mp
+# ZIP Package
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/healthyplacesindex.org-healthy_places_index-san_diego-4.zip')
+# CSV Package
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/healthyplacesindex.org-healthy_places_index-san_diego-4.csv') 
+
+resource = pkg.resource('resource_name') # Get a resource
+df = resource.dataframe() # Create a pandas Dataframe
+gdf = resource.geoframe() # Create a GeoPandas GeoDataFrame
+```
 
 ## Data Dictionary
 

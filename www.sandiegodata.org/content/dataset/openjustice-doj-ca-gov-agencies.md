@@ -12,7 +12,6 @@ _California's county and agency level context data_
 
 `openjustice.doj.ca.gov-agencies-1.1.1`. Modified 2020-06-17T21:37:32
 
-Resources | Packages | Documentation| Contacts| Data Dictionary
 
 ## Resources
 
@@ -70,12 +69,11 @@ end| date|
 
 
 ### Accessing Packages in Metapack
-[code] 
-    import metapack as mp
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/openjustice.doj.ca.gov-agencies-1.1.1.csv')
-    
-    # Create Dataframes
-    ca_lea_demo_df = pkg.resource('ca_lea_demo').dataframe()
-    ca_lea_ncic_df = pkg.resource('ca_lea_ncic').dataframe()
-    
-[/code]
+```
+import metapack as mp
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/openjustice.doj.ca.gov-agencies-1.1.1.csv')
+
+# Create Dataframes
+ca_lea_demo_df = pkg.resource('ca_lea_demo').dataframe()
+ca_lea_ncic_df = pkg.resource('ca_lea_ncic').dataframe()
+```

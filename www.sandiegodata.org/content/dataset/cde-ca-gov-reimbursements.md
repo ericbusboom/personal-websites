@@ -12,7 +12,6 @@ _Child Nutrition Program meal program reimbursement rates._
 
 `cde.ca.gov-reimbursements-1.1.1`. Modified 2021-03-11T00:14:44
 
-Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
@@ -141,27 +140,26 @@ Urls used in the creation of this data package.
 
 
 ### Accessing Data in Vanilla Pandas
-[code] 
-    import pandas as pd
-    
-    
-    cacfpreimburse_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-reimbursements-1.1.1/data/cacfpreimburse.csv')
-    nslpreimburse_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-reimbursements-1.1.1/data/nslpreimburse.csv')
-    sbpreimburse_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-reimbursements-1.1.1/data/sbpreimburse.csv')
-    snackreimburse_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-reimbursements-1.1.1/data/snackreimburse.csv')
-    summerreimburse_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-reimbursements-1.1.1/data/summerreimburse.csv')
-[/code]
+```
+import pandas as pd
+
+
+cacfpreimburse_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-reimbursements-1.1.1/data/cacfpreimburse.csv')
+nslpreimburse_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-reimbursements-1.1.1/data/nslpreimburse.csv')
+sbpreimburse_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-reimbursements-1.1.1/data/sbpreimburse.csv')
+snackreimburse_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-reimbursements-1.1.1/data/snackreimburse.csv')
+summerreimburse_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-reimbursements-1.1.1/data/summerreimburse.csv')
+```
 
 ### Accessing Package in Metapack
-[code] 
-    import metapack as mp
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-reimbursements-1.1.1.csv')
-    
-    # Create Dataframes
-    cacfpreimburse_df = pkg.resource('cacfpreimburse').dataframe()
-    nslpreimburse_df = pkg.resource('nslpreimburse').dataframe()
-    sbpreimburse_df = pkg.resource('sbpreimburse').dataframe()
-    snackreimburse_df = pkg.resource('snackreimburse').dataframe()
-    summerreimburse_df = pkg.resource('summerreimburse').dataframe()
-    
-[/code]
+```
+import metapack as mp
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-reimbursements-1.1.1.csv')
+
+# Create Dataframes
+cacfpreimburse_df = pkg.resource('cacfpreimburse').dataframe()
+nslpreimburse_df = pkg.resource('nslpreimburse').dataframe()
+sbpreimburse_df = pkg.resource('sbpreimburse').dataframe()
+snackreimburse_df = pkg.resource('snackreimburse').dataframe()
+summerreimburse_df = pkg.resource('summerreimburse').dataframe()
+```

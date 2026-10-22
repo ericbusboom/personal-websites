@@ -12,7 +12,6 @@ _Boundary shapes for San Diego neighborhoods, beats and divisions, with ACS 2019
 
 `sandiego.gov-police_regions-2.1.2`. Modified 2021-02-25T19:08:44
 
-Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
@@ -107,25 +106,24 @@ Urls used in the creation of this data package.
 
 
 ### Accessing Data in Vanilla Pandas
-[code] 
-    import pandas as pd
-    
-    
-    pd_beats_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiego.gov-police_regions-2.1.2/data/pd_beats.csv')
-    pd_divisions_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiego.gov-police_regions-2.1.2/data/pd_divisions.csv')
-    pd_neighborhoods_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiego.gov-police_regions-2.1.2/data/pd_neighborhoods.csv')
-    beat_demographics_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiego.gov-police_regions-2.1.2/data/beat_demographics.csv')
-[/code]
+```
+import pandas as pd
+
+
+pd_beats_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiego.gov-police_regions-2.1.2/data/pd_beats.csv')
+pd_divisions_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiego.gov-police_regions-2.1.2/data/pd_divisions.csv')
+pd_neighborhoods_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiego.gov-police_regions-2.1.2/data/pd_neighborhoods.csv')
+beat_demographics_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiego.gov-police_regions-2.1.2/data/beat_demographics.csv')
+```
 
 ### Accessing Package in Metapack
-[code] 
-    import metapack as mp
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiego.gov-police_regions-2.1.2.csv')
-    
-    # Create Dataframes
-    pd_beats_gdf = pkg.resource('pd_beats').geoframe()
-    pd_divisions_gdf = pkg.resource('pd_divisions').geoframe()
-    pd_neighborhoods_gdf = pkg.resource('pd_neighborhoods').geoframe()
-    beat_demographics_df = pkg.resource('beat_demographics').dataframe()
-    
-[/code]
+```
+import metapack as mp
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiego.gov-police_regions-2.1.2.csv')
+
+# Create Dataframes
+pd_beats_gdf = pkg.resource('pd_beats').geoframe()
+pd_divisions_gdf = pkg.resource('pd_divisions').geoframe()
+pd_neighborhoods_gdf = pkg.resource('pd_neighborhoods').geoframe()
+beat_demographics_df = pkg.resource('beat_demographics').dataframe()
+```

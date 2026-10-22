@@ -1,8 +1,9 @@
 ---
 title: "Volunteer"
-date: 2012-12-30T01:31:56+00:00
+date: "2012-12-30T01:31:56+00:00"
 draft: false
 author: "qaadmin"
+url: "/volunteer/"
 ---
 
 Getting San Diego County citizens involved in data is a major part of our mission, so there are a lot of ways to volunteer. You don't need to be a statistician; we're looking for people with a number of different skills, including: [one_half] 
@@ -23,4 +24,4 @@ Getting San Diego County citizens involved in data is a major part of our missio
   * Moderating the forum.
   * Finding data and cataloging it in the repository.
 
-[/one_half_last] If you'd like to contribute, like [our Facebook page](<http://www.sandiegodata.org/about/contact/> "Contact") or [join our email list](<http://www.sandiegodata.org/about/contact/> "Contact"), and we'll announce specific opportunities as they arise.
+[/one_half_last] If you'd like to contribute, like [our Facebook page](</about/contact/> "Contact") or [join our email list](</about/contact/> "Contact"), and we'll announce specific opportunities as they arise.

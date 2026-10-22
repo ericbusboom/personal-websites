@@ -12,7 +12,6 @@ _A collection of files from other data packages, from the California Department 
 
 `sandiegohungercoalition.org-meal_programs-1`
 
-Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
@@ -36,12 +35,12 @@ Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ### Documentation Links
 
-  * [http://data.sandiegodata.org/dataset/cde-ca-gov-reimbursements](<Reimbursements data  package>)
-  * [http://data.sandiegodata.org/dataset/cde-ca-gov-caaspp-2015e](<CAASPP Test Results data package>)
-  * [http://data.sandiegodata.org/dataset/cde-ca-gov-absenteeism](<Absenteeism data package>)
-  * [http://data.sandiegodata.org/dataset/cde-ca-gov-frpm](<Student Poverty FRPM data package>)
-  * [http://data.sandiegodata.org/dataset/cde-ca-gov-calpads_upc](<Unduplicated Pupil Counts data package>)
-  * [http://data.sandiegodata.org/dataset/cde-ca-gov-current-expense-source/](<Current Expense data package>)
+  * [/dataset/cde-ca-gov-reimbursements/](<Reimbursements data  package>)
+  * [/dataset/cde-ca-gov-caaspp-2015e/](<CAASPP Test Results data package>)
+  * [/dataset/cde-ca-gov-absenteeism/](<Absenteeism data package>)
+  * [/dataset/cde-ca-gov-frpm/](<Student Poverty FRPM data package>)
+  * [/dataset/cde-ca-gov-calpads-upc/](<Unduplicated Pupil Counts data package>)
+  * [/dataset/](<Current Expense data package>)
 
 
 ## Contacts
@@ -59,18 +58,17 @@ Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 
 ### Accessing Packages in Metapack
-[code] 
-    import metapack as mp
-    # ZIP Package
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegohungercoalition.org-meal_programs-1.zip')
-    # CSV Package
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegohungercoalition.org-meal_programs-1.csv') 
-    
-    resource = pkg.resource('resource_name') # Get a resource
-    df = resource.dataframe() # Create a pandas Dataframe
-    gdf = resource.geoframe() # Create a GeoPandas GeoDataFrame
-    
-[/code]
+```
+import metapack as mp
+# ZIP Package
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegohungercoalition.org-meal_programs-1.zip')
+# CSV Package
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegohungercoalition.org-meal_programs-1.csv') 
+
+resource = pkg.resource('resource_name') # Get a resource
+df = resource.dataframe() # Create a pandas Dataframe
+gdf = resource.geoframe() # Create a GeoPandas GeoDataFrame
+```
 
 ## Data Dictionary
 

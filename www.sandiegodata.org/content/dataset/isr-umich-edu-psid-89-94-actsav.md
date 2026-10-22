@@ -12,7 +12,6 @@ _Measurements of money flows into savings, housing and annuities._
 
 `isr.umich.edu-psid-89_94-actsav-1.1.1`. Modified 2023-06-06T23:18:39
 
-Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
@@ -98,21 +97,20 @@ Urls used in the creation of this data package.
 
 
 ### Accessing Data in Vanilla Pandas
-[code] 
-    import pandas as pd
-    
-    
-    act94_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/isr.umich.edu-psid-89_94-actsav-1.1.1/data/act94.csv')
-    act89_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/isr.umich.edu-psid-89_94-actsav-1.1.1/data/act89.csv')
-[/code]
+```
+import pandas as pd
+
+
+act94_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/isr.umich.edu-psid-89_94-actsav-1.1.1/data/act94.csv')
+act89_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/isr.umich.edu-psid-89_94-actsav-1.1.1/data/act89.csv')
+```
 
 ### Accessing Package in Metapack
-[code] 
-    import metapack as mp
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/isr.umich.edu-psid-89_94-actsav-1.1.1.csv')
-    
-    # Create Dataframes
-    act94_df = pkg.resource('act94').dataframe()
-    act89_df = pkg.resource('act89').dataframe()
-    
-[/code]
+```
+import metapack as mp
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/isr.umich.edu-psid-89_94-actsav-1.1.1.csv')
+
+# Create Dataframes
+act94_df = pkg.resource('act94').dataframe()
+act89_df = pkg.resource('act89').dataframe()
+```

@@ -12,7 +12,6 @@ _Homicides reported to the California DOJ by local law enforcement._
 
 `openjustice.doj.ca.gov-homicide-1.1.1`. Modified 2020-06-18T00:08:12
 
-Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
@@ -158,19 +157,18 @@ Urls used in the creation of this data package.
 
 
 ### Accessing Packages in Metapack
-[code] 
-    import metapack as mp
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/openjustice.doj.ca.gov-homicide-1.1.1.csv')
-    
-    # Create Dataframes
-    homicides_df = pkg.resource('homicides').dataframe()
-    homicide_justifiable_df = pkg.resource('homicide_justifiable').dataframe()
-    homicide_manslaughter_df = pkg.resource('homicide_manslaughter').dataframe()
-    precipitating_event_labels_df = pkg.resource('precipitating_event_labels').dataframe()
-    means_of_death_labels_df = pkg.resource('means_of_death_labels').dataframe()
-    location_labels_df = pkg.resource('location_labels').dataframe()
-    gender_labels_df = pkg.resource('gender_labels').dataframe()
-    relationship_labels_df = pkg.resource('relationship_labels').dataframe()
-    race_ethnicity_labels_df = pkg.resource('race_ethnicity_labels').dataframe()
-    
-[/code]
+```
+import metapack as mp
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/openjustice.doj.ca.gov-homicide-1.1.1.csv')
+
+# Create Dataframes
+homicides_df = pkg.resource('homicides').dataframe()
+homicide_justifiable_df = pkg.resource('homicide_justifiable').dataframe()
+homicide_manslaughter_df = pkg.resource('homicide_manslaughter').dataframe()
+precipitating_event_labels_df = pkg.resource('precipitating_event_labels').dataframe()
+means_of_death_labels_df = pkg.resource('means_of_death_labels').dataframe()
+location_labels_df = pkg.resource('location_labels').dataframe()
+gender_labels_df = pkg.resource('gender_labels').dataframe()
+relationship_labels_df = pkg.resource('relationship_labels').dataframe()
+race_ethnicity_labels_df = pkg.resource('race_ethnicity_labels').dataframe()
+```

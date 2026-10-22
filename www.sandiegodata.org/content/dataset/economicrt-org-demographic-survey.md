@@ -12,7 +12,6 @@ _Standardized Records from the Demographic Survey of Unsheltered Individuals_
 
 `economicrt.org-demographic_survey-1`
 
-Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
@@ -44,17 +43,17 @@ Both files have some additional processing
 
 ### Documentation Links
 
-  * [2011 Codebook](</uploads/2018/08/2011_Unsheltered_Codebook.docx>)2011 Codebook for Standardized Records from the Demographic Survey of Unsheltered Individuals
-  * [2011 Methodology White Paper](</uploads/2018/08/2011_Methodology.pdf>)
-  * [2013 Codebook](</uploads/2018/08/2013_Unsheltered_Codebook.docx>)2013 Codebook for Standardized Records from the Demographic Survey of Unsheltered Individuals
-  * [2013 Methodology White Paper](</uploads/2018/08/2013_Methodology.pdf>)
-  * [2015 Codebook](</uploads/2018/08/2015_Unsheltered_Codebook.docx>)2015 Codebook for Standardized Records from the Demographic Survey of Unsheltered Individuals
-  * [2015 Methodology White Paper](</uploads/2018/08/2015_Methodology.pdf>)
-  * [2016 Codebook](</uploads/2018/08/2016-Unsheltered-Codebook.docx>)2016 Codebook for Standardized Records from the Demographic Survey of Unsheltered Individuals
-  * [2016 Methodology White Paper](</uploads/2018/08/2016_Methodology.pdf>)
-  * [2017 Codebook](</uploads/2018/08/2017_Sheltered_Codebook.docx>)2017 Codebook for Standardized HMIS Records of Sheltered Individuals
-  * [2017 Methodology White Paper](</uploads/2018/08/2017_Methodology.pdf>)
-  * [Codebook](</uploads/2018/08/Multi_Year_Codebook_2011_2017.docx>)Codebook for Multi-Year Data Set
+  * [2011 Codebook](<https://library-metatab-org.s3.amazonaws.com/economicrt.org-demographic_survey-1/docs/2011_Unsheltered_Codebook.docx>)2011 Codebook for Standardized Records from the Demographic Survey of Unsheltered Individuals
+  * [2011 Methodology White Paper](<https://library-metatab-org.s3.amazonaws.com/economicrt.org-demographic_survey-1/docs/2011_Methodology.pdf>)
+  * [2013 Codebook](<https://library-metatab-org.s3.amazonaws.com/economicrt.org-demographic_survey-1/docs/2013_Unsheltered_Codebook.docx>)2013 Codebook for Standardized Records from the Demographic Survey of Unsheltered Individuals
+  * [2013 Methodology White Paper](<https://library-metatab-org.s3.amazonaws.com/economicrt.org-demographic_survey-1/docs/2013_Methodology.pdf>)
+  * [2015 Codebook](<https://library-metatab-org.s3.amazonaws.com/economicrt.org-demographic_survey-1/docs/2015_Unsheltered_Codebook.docx>)2015 Codebook for Standardized Records from the Demographic Survey of Unsheltered Individuals
+  * [2015 Methodology White Paper](<https://library-metatab-org.s3.amazonaws.com/economicrt.org-demographic_survey-1/docs/2015_Methodology.pdf>)
+  * [2016 Codebook](<https://library-metatab-org.s3.amazonaws.com/economicrt.org-demographic_survey-1/docs/2016-Unsheltered-Codebook.docx>)2016 Codebook for Standardized Records from the Demographic Survey of Unsheltered Individuals
+  * [2016 Methodology White Paper](<https://library-metatab-org.s3.amazonaws.com/economicrt.org-demographic_survey-1/docs/2016_Methodology.pdf>)
+  * [2017 Codebook](<https://library-metatab-org.s3.amazonaws.com/economicrt.org-demographic_survey-1/docs/2017_Sheltered_Codebook.docx>)2017 Codebook for Standardized HMIS Records of Sheltered Individuals
+  * [2017 Methodology White Paper](<https://library-metatab-org.s3.amazonaws.com/economicrt.org-demographic_survey-1/docs/2017_Methodology.pdf>)
+  * [Codebook](<https://library-metatab-org.s3.amazonaws.com/economicrt.org-demographic_survey-1/docs/Multi_Year_Codebook_2011_2017.docx>)Codebook for Multi-Year Data Set
   * [Download Page](<https://economicrt.org/publication/los-angeles-county-homeless-count-data-library/>)
 
 
@@ -81,15 +80,15 @@ Both files have some additional processing
 
 
 ### Accessing Packages in Metapack
-[code] 
-    import metapack as mp
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/economicrt.org-demographic_survey-1.zip')
-    
-    # Create Dataframes
-    
-    combined_survey_df = pkg.resource('combined_survey').dataframe()
-    multiyear_survey_df = pkg.resource('multiyear_survey').dataframe()
-[/code]
+```
+import metapack as mp
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/economicrt.org-demographic_survey-1.zip')
+
+# Create Dataframes
+
+combined_survey_df = pkg.resource('combined_survey').dataframe()
+multiyear_survey_df = pkg.resource('multiyear_survey').dataframe()
+```
 
 ## Data Dictionary
 
@@ -309,12 +308,12 @@ unemployed_not_looking| integer|
 
 Urls used in the creation of this data package.
 
-  * **[demo_survey_2011](</uploads/2018/08/Demographic_Survey_2011_Final.csv>)**. 2011 Homeless Count Unsheltered Adult and Youth Demographic Survey - Individuals - Standardized Records
-  * **[demo_survey_2013](</uploads/2018/08/Demographic_Survey_2013_Final.csv>)**. 2013 Homeless Count Unsheltered Adult and Youth Demographic Survey - Individuals - Standardized Records
-  * **[demo_survey_2015](</uploads/2018/08/Demographic_Survey_2015_Final.csv>)**. 2015 Homeless Count Unsheltered Adult and Youth Demographic Survey - Individuals - Standardized Records
-  * **[demo_survey_2016](</uploads/2018/08/Demographic_Survey_2016_Final.csv>)**. 2016 Homeless Count Unsheltered Adult and Youth Demographic Survey - Individuals - Standardized Records
-  * **[demo_survey_2017](</uploads/2018/09/Demographic_Survey_2017_v3.csv>)**. 2017 Homeless Count Unsheltered Adults and Youth Demographic Survey - Individuals - Standardized Records
-  * **[demo_survey_2011_2017](</uploads/2018/08/Homelessness_Multi_Year_2011_2017.csv>)**. Data from Demographic Surveys and HMIS Records 2011 to 2017
+  * **demo_survey_2011 (no longer available)**. 2011 Homeless Count Unsheltered Adult and Youth Demographic Survey - Individuals - Standardized Records
+  * **demo_survey_2013 (no longer available)**. 2013 Homeless Count Unsheltered Adult and Youth Demographic Survey - Individuals - Standardized Records
+  * **demo_survey_2015 (no longer available)**. 2015 Homeless Count Unsheltered Adult and Youth Demographic Survey - Individuals - Standardized Records
+  * **demo_survey_2016 (no longer available)**. 2016 Homeless Count Unsheltered Adult and Youth Demographic Survey - Individuals - Standardized Records
+  * **demo_survey_2017 (no longer available)**. 2017 Homeless Count Unsheltered Adults and Youth Demographic Survey - Individuals - Standardized Records
+  * **demo_survey_2011_2017 (no longer available)**. Data from Demographic Surveys and HMIS Records 2011 to 2017
 
 
 Last Modified 2019-07-17T00:48:21
@@ -327,12 +326,12 @@ Last Modified 2019-07-17T00:48:21
 
 
 ### Accessing Packages in Metapack
-[code] 
-    import metapack as mp
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/economicrt.org-demographic_survey-1.zip')
-    
-    # Create Dataframes
-    
-    combined_survey_df = pkg.resource('combined_survey').dataframe()
-    multiyear_survey_df = pkg.resource('multiyear_survey').dataframe()
-[/code]
+```
+import metapack as mp
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/economicrt.org-demographic_survey-1.zip')
+
+# Create Dataframes
+
+combined_survey_df = pkg.resource('combined_survey').dataframe()
+multiyear_survey_df = pkg.resource('multiyear_survey').dataframe()
+```

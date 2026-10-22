@@ -12,7 +12,6 @@ __
 
 `noaa.gov-localclimate-200808_201807-san-4`
 
-Resources | Packages | Documentation| Contacts
 
 ## Resources
 
@@ -48,17 +47,16 @@ This dataset is an extract from the NOAA's Local Climatological Data, via the on
 
 
 ### Accessing Packages in Metapack
-[code] 
-    import metapack as mp
-    # ZIP Package
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/noaa.gov-localclimate-200808_201807-san-4.zip')
-    # CSV Package
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/noaa.gov-localclimate-200808_201807-san-4.csv') 
-    
-    resource = pkg.resource('resource_name') # Get a resource
-    df = resource.dataframe() # Create a pandas Dataframe
-    gdf = resource.geoframe() # Create a GeoPandas GeoDataFrame
-    
-[/code]
+```
+import metapack as mp
+# ZIP Package
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/noaa.gov-localclimate-200808_201807-san-4.zip')
+# CSV Package
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/noaa.gov-localclimate-200808_201807-san-4.csv') 
+
+resource = pkg.resource('resource_name') # Get a resource
+df = resource.dataframe() # Create a pandas Dataframe
+gdf = resource.geoframe() # Create a GeoPandas GeoDataFrame
+```
 
 Last Modified 2018-08-09T14:59:58

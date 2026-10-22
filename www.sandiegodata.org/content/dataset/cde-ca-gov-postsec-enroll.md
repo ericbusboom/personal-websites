@@ -12,7 +12,6 @@ _Downloadable data about the College-Going Rate (CGR) for California high school
 
 `cde.ca.gov-postsec_enroll-1.2.3`. Modified 2022-06-17T17:07:51
 
-Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
@@ -115,19 +114,18 @@ Urls used in the creation of this data package.
 
 
 ### Accessing Data in Vanilla Pandas
-[code] 
-    import pandas as pd
-    
-    
-    cgr_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-postsec_enroll-1.2.3/data/cgr.csv')
-[/code]
+```
+import pandas as pd
+
+
+cgr_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-postsec_enroll-1.2.3/data/cgr.csv')
+```
 
 ### Accessing Package in Metapack
-[code] 
-    import metapack as mp
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-postsec_enroll-1.2.3.csv')
-    
-    # Create Dataframes
-    cgr_df = pkg.resource('cgr').dataframe()
-    
-[/code]
+```
+import metapack as mp
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-postsec_enroll-1.2.3.csv')
+
+# Create Dataframes
+cgr_df = pkg.resource('cgr').dataframe()
+```

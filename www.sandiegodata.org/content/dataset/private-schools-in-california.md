@@ -12,7 +12,6 @@ _Private Schools in California_
 
 `cde.ca.gov-private_schools-1`
 
-Resources | Packages | Documentation| Contacts
 
 ## Resources
 
@@ -40,7 +39,7 @@ Conversions to CSV of the lists of private schools for the state of California, 
 
   * **Wrangler**
 
-[Eric Busboom](<mailto:eric@sandiegodata.org>), [San Diego Regional Data Library](<http://www.sandiegodata.org>)
+[Eric Busboom](<mailto:eric@sandiegodata.org>), [San Diego Regional Data Library](</>)
 
 
 ## Packages

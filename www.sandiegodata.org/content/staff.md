@@ -1,8 +1,9 @@
 ---
 title: "Staff"
-date: 2012-12-30T13:25:18+00:00
+date: "2012-12-30T13:25:18+00:00"
 draft: false
 author: "eric"
+url: "/about/programs-services/staff/"
 ---
 
 ![avatar](/uploads/7/2018/04/Cap-and-Sweater.jpg)

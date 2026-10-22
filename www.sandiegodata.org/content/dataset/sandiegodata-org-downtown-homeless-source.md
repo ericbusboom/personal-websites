@@ -12,7 +12,6 @@ _Source files for San Diego Downtown homeless sleeper counts_
 
 `sandiegodata.org-downtown_homeless-source-7.2.3`. Modified 2024-11-26T06:18:18
 
-Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
@@ -30,7 +29,7 @@ Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 This dataset provides geographic locations for homeless sleepers in Downtown San Diego, as counted by enumerators from the Downtown San Diego Partnership. These counts have been done monthly since 2012, and this dataset provides counts since 2014. 
 
-This is the source package, use to generate analysis packages. Analysts should probably use one of the analysis packages. See the [Data Library's Homelessness Collection](<https://data.sandiegodata.org/collections/homelessness/>) for all of the available datasets. 
+This is the source package, use to generate analysis packages. Analysts should probably use one of the analysis packages. See the [Data Library's Homelessness Collection](</collections/homelessness/>) for all of the available datasets. 
 
 The count is done on paper maps with handwritten count marks. The San Diego Regional Data Library's [Downton Homelessness project](<http://downtown-homelessness.sandiegodata.org/>) converted these scanned count maps using a [web based image annotation tool, VIA](<http://www.robots.ox.ac.uk/~vgg/software/via/>). These data are extracted from the JSON output from VIA. 
 
@@ -229,33 +228,32 @@ Urls used in the creation of this data package.
 
 
 ### Accessing Data in Vanilla Pandas
-[code] 
-    import pandas as pd
-    
-    
-    intersections_2019_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-downtown_homeless-source-7.2.3/data/intersections_2019.csv')
-    intersections_2023_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-downtown_homeless-source-7.2.3/data/intersections_2023.csv')
-    counts_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-downtown_homeless-source-7.2.3/data/counts.csv')
-    files_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-downtown_homeless-source-7.2.3/data/files.csv')
-    gcp_transforms_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-downtown_homeless-source-7.2.3/data/gcp_transforms.csv')
-    raw_count_annotations_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-downtown_homeless-source-7.2.3/data/raw_count_annotations.csv')
-    raw_file_annotations_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-downtown_homeless-source-7.2.3/data/raw_file_annotations.csv')
-    raw_gcp_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-downtown_homeless-source-7.2.3/data/raw_gcp.csv')
-[/code]
+```
+import pandas as pd
+
+
+intersections_2019_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-downtown_homeless-source-7.2.3/data/intersections_2019.csv')
+intersections_2023_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-downtown_homeless-source-7.2.3/data/intersections_2023.csv')
+counts_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-downtown_homeless-source-7.2.3/data/counts.csv')
+files_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-downtown_homeless-source-7.2.3/data/files.csv')
+gcp_transforms_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-downtown_homeless-source-7.2.3/data/gcp_transforms.csv')
+raw_count_annotations_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-downtown_homeless-source-7.2.3/data/raw_count_annotations.csv')
+raw_file_annotations_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-downtown_homeless-source-7.2.3/data/raw_file_annotations.csv')
+raw_gcp_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-downtown_homeless-source-7.2.3/data/raw_gcp.csv')
+```
 
 ### Accessing Package in Metapack
-[code] 
-    import metapack as mp
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-downtown_homeless-source-7.2.3.csv')
-    
-    # Create Dataframes
-    intersections_2019_gdf = pkg.resource('intersections_2019').geoframe()
-    intersections_2023_gdf = pkg.resource('intersections_2023').geoframe()
-    counts_df = pkg.resource('counts').dataframe()
-    files_df = pkg.resource('files').dataframe()
-    gcp_transforms_df = pkg.resource('gcp_transforms').dataframe()
-    raw_count_annotations_df = pkg.resource('raw_count_annotations').dataframe()
-    raw_file_annotations_df = pkg.resource('raw_file_annotations').dataframe()
-    raw_gcp_df = pkg.resource('raw_gcp').dataframe()
-    
-[/code]
+```
+import metapack as mp
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-downtown_homeless-source-7.2.3.csv')
+
+# Create Dataframes
+intersections_2019_gdf = pkg.resource('intersections_2019').geoframe()
+intersections_2023_gdf = pkg.resource('intersections_2023').geoframe()
+counts_df = pkg.resource('counts').dataframe()
+files_df = pkg.resource('files').dataframe()
+gcp_transforms_df = pkg.resource('gcp_transforms').dataframe()
+raw_count_annotations_df = pkg.resource('raw_count_annotations').dataframe()
+raw_file_annotations_df = pkg.resource('raw_file_annotations').dataframe()
+raw_gcp_df = pkg.resource('raw_gcp').dataframe()
+```

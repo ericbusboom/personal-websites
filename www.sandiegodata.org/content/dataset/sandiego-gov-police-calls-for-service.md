@@ -12,7 +12,6 @@ _San Diego Police Calls for Service, linked to related datasets_
 
 `sandiego.gov-police_calls_for_service-1.1.1`. Modified 2020-06-17T23:58:13
 
-Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
@@ -119,15 +118,14 @@ Urls used in the creation of this data package.
 
 
 ### Accessing Packages in Metapack
-[code] 
-    import metapack as mp
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiego.gov-police_calls_for_service-1.1.1.csv')
-    
-    # Create Dataframes
-    sdpd_calls_dispositions_df = pkg.resource('sdpd_calls_dispositions').dataframe()
-    sdpd_beats_df = pkg.resource('sdpd_beats').dataframe()
-    sdpd_call_type_df = pkg.resource('sdpd_call_type').dataframe()
-    sdpd_calls_for_service_df = pkg.resource('sdpd_calls_for_service').dataframe()
-    ct_map_df = pkg.resource('ct_map').dataframe()
-    
-[/code]
+```
+import metapack as mp
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiego.gov-police_calls_for_service-1.1.1.csv')
+
+# Create Dataframes
+sdpd_calls_dispositions_df = pkg.resource('sdpd_calls_dispositions').dataframe()
+sdpd_beats_df = pkg.resource('sdpd_beats').dataframe()
+sdpd_call_type_df = pkg.resource('sdpd_call_type').dataframe()
+sdpd_calls_for_service_df = pkg.resource('sdpd_calls_for_service').dataframe()
+ct_map_df = pkg.resource('ct_map').dataframe()
+```

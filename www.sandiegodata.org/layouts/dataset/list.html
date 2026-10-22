@@ -1,0 +1,14 @@
+{{ define "main" }}
+<article class="page">
+    <header class="entry-header"><h1 class="entry-title">{{ .Title }}</h1></header>
+    <div class="entry-content">
+        {{ .Content }}
+        <h2>All datasets</h2>
+        <ul class="post-list">
+        {{ range sort .RegularPages "Title" }}
+            <li><a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ with .Description }}<br><span class="post-list-excerpt">{{ . }}</span>{{ end }}</li>
+        {{ end }}
+        </ul>
+    </div>
+</article>
+{{ end }}

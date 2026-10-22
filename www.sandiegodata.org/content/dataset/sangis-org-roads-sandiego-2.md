@@ -12,7 +12,6 @@ _Extract from the Sangis Roads_all file, for roads in San Diego city_
 
 `sangis.org-roads-sandiego-1`
 
-Resources | Packages | Documentation| Contacts| Data Dictionary
 
 ## Resources
 
@@ -36,18 +35,17 @@ Resources | Packages | Documentation| Contacts| Data Dictionary
 
 
 ### Accessing Packages in Metapack
-[code] 
-    import metapack as mp
-    # ZIP Package
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sangis.org-roads-sandiego-1.zip')
-    # CSV Package
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sangis.org-roads-sandiego-1.csv') 
-    
-    resource = pkg.resource('resource_name') # Get a resource
-    df = resource.dataframe() # Create a pandas Dataframe
-    gdf = resource.geoframe() # Create a GeoPandas GeoDataFrame
-    
-[/code]
+```
+import metapack as mp
+# ZIP Package
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sangis.org-roads-sandiego-1.zip')
+# CSV Package
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sangis.org-roads-sandiego-1.csv') 
+
+resource = pkg.resource('resource_name') # Get a resource
+df = resource.dataframe() # Create a pandas Dataframe
+gdf = resource.geoframe() # Create a GeoPandas GeoDataFrame
+```
 
 ## Data Dictionary
 

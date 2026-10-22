@@ -12,7 +12,6 @@ _Processed crime incidents for San Diego county, 2007-2013. Of our crime dataset
 
 `sandag.gov-crime-2007e2013-2.1.4`. Modified 2020-11-26T06:39:42
 
-Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
@@ -35,22 +34,21 @@ This dataset includes geocoded crime incidents from 1 Jan 2007 to 31 March 2013 
 # Asr_zone Codes
 
 The integer values in the asr_zone field are taken directly from the [SANGIS parcel data](<http://rdw.sandag.org/file_store/Parcel/Parcels.pdf>). These values are: 
-[code] 
-    ╔════╦═════════════════════════════════╗
-    ║ -1 ║ Unset                           ║
-    ║  0 ║ Unzoned                         ║
-    ║  1 ║ Single family residential (R-1) ║
-    ║  2 ║ Minor multiple (R-2)            ║
-    ║  3 ║ Restricted multiple (R-3)       ║
-    ║  4 ║ Multiple residential (R-4)      ║
-    ║  5 ║ Restricted commercial           ║
-    ║  6 ║ Commercial                      ║
-    ║  7 ║ Industrial (M zone)             ║
-    ║  8 ║ Agricultural                    ║
-    ║  9 ║ Special and/or misc.            ║
-    ╚════╩═════════════════════════════════╝
-    
-[/code]
+```
+╔════╦═════════════════════════════════╗
+║ -1 ║ Unset                           ║
+║  0 ║ Unzoned                         ║
+║  1 ║ Single family residential (R-1) ║
+║  2 ║ Minor multiple (R-2)            ║
+║  3 ║ Restricted multiple (R-3)       ║
+║  4 ║ Multiple residential (R-4)      ║
+║  5 ║ Restricted commercial           ║
+║  6 ║ Commercial                      ║
+║  7 ║ Industrial (M zone)             ║
+║  8 ║ Agricultural                    ║
+║  9 ║ Special and/or misc.            ║
+╚════╩═════════════════════════════════╝
+```
 
 # Addresses and Geocoding
 
@@ -96,75 +94,72 @@ _Locations may be unreliable_. Crimes that involve pursuits or violations commit
 # Dataset Statistics
 
 Number of incidents by year:
-[code] 
-    year        count     
-    ----------  ----------
-    2007        186014    
-    2008        178445    
-    2009        163646    
-    2010        160133    
-    2011        147270    
-    2012        141318    
-    2013        31699
-    
-[/code]
+```
+year        count     
+----------  ----------
+2007        186014    
+2008        178445    
+2009        163646    
+2010        160133    
+2011        147270    
+2012        141318    
+2013        31699
+```
 
 Crime types, from the "type" field, and the number of that type
-[code] 
-    type                      count     
-    ------------------------  ----------
-    DRUGS/ALCOHOL VIOLATIONS  230462    
-    THEFT/LARCENY             138030    
-    VEHICLE BREAK-IN/THEFT    123955    
-    MOTOR VEHICLE THEFT       97498     
-    BURGLARY                  91695     
-    VANDALISM                 83912     
-    ASSAULT                   70687     
-    DUI                       58311     
-    FRAUD                     55219     
-    ROBBERY                   22685     
-    SEX CRIMES                22281     
-    WEAPONS                   11117     
-    ARSON                     2145      
-    HOMICIDE                  528
-    
-[/code]
+```
+type                      count     
+------------------------  ----------
+DRUGS/ALCOHOL VIOLATIONS  230462    
+THEFT/LARCENY             138030    
+VEHICLE BREAK-IN/THEFT    123955    
+MOTOR VEHICLE THEFT       97498     
+BURGLARY                  91695     
+VANDALISM                 83912     
+ASSAULT                   70687     
+DUI                       58311     
+FRAUD                     55219     
+ROBBERY                   22685     
+SEX CRIMES                22281     
+WEAPONS                   11117     
+ARSON                     2145      
+HOMICIDE                  528
+```
 
 Incidents by city:
-[code] 
-    name                       code        count     
-    -------------------------  ----------  ----------
-    San Diego                  SndSAN      401787    
-    S.D. County                SndSDO      342282    
-    Oceanside                  SndOCN      44022     
-    Chula Vista                SndCHU      38387     
-    Escondido                  SndESC      26079     
-    Vista                      SndVIS      20044     
-    Carlsbad                   SndCAR      18330     
-    La Mesa                    SndLAM      17871     
-    El Cajon                   SndELC      16548     
-    National City              SndNAT      16509     
-    San Marcos                 SndSNM      14230     
-    Santee                     SndSNT      12328     
-    Encinitas                  SndENC      12302     
-    Poway                      SndPOW      8565      
-    Imperial Beach             SndIMP      5442      
-    Del Mar                    SndDEL      4876      
-    Lemon Grove                SndLEM      4198      
-    Coronado                   SndCOR      2466      
-    Solana Beach               SndSOL      2259
-    
-[/code]
+```
+name                       code        count     
+-------------------------  ----------  ----------
+San Diego                  SndSAN      401787    
+S.D. County                SndSDO      342282    
+Oceanside                  SndOCN      44022     
+Chula Vista                SndCHU      38387     
+Escondido                  SndESC      26079     
+Vista                      SndVIS      20044     
+Carlsbad                   SndCAR      18330     
+La Mesa                    SndLAM      17871     
+El Cajon                   SndELC      16548     
+National City              SndNAT      16509     
+San Marcos                 SndSNM      14230     
+Santee                     SndSNT      12328     
+Encinitas                  SndENC      12302     
+Poway                      SndPOW      8565      
+Imperial Beach             SndIMP      5442      
+Del Mar                    SndDEL      4876      
+Lemon Grove                SndLEM      4198      
+Coronado                   SndCOR      2466      
+Solana Beach               SndSOL      2259
+```
 
 # Citation
 
-_Name of file_ , extracted from clarinova.com-crime-incidents-casnd-7ba4. San Diego Regional Data Library. 2013-08-07 http://www.sandiegodata.org
+_Name of file_ , extracted from clarinova.com-crime-incidents-casnd-7ba4. San Diego Regional Data Library. 2013-08-07 /
 
 # Terms
 
 This data is released under the following terms and conditions. 
 
-Clarinova and the San Diego Regional Data Library disclaim any warranty for this data shall not be liable for loss or harm. [See the SDRDL Disclaimers and Limitations web page for complete details.](<http://www.sandiegodata.org/get-data/data-disclaimers-and-limitations/>)
+Clarinova and the San Diego Regional Data Library disclaim any warranty for this data shall not be liable for loss or harm. [See the SDRDL Disclaimers and Limitations web page for complete details.](</get-data/data-disclaimers-and-limitations/>)
 
 This data is based on data from SANGIS, which is subject to its own terms and conditions. See the [SANGIS Legal Notice for details](<http://www.sangis.org/Legal_Notice.htm>). 
 
@@ -179,7 +174,7 @@ This data is based on data from SANDAG, which is subject to its own terms and co
 
   * **Wrangler**
 
-[Eric Busboom](<mailto:eric@sandiegodata.org>), [San Diego Regional Data Library](<http://www.sandiegodata.org>)
+[Eric Busboom](<mailto:eric@sandiegodata.org>), [San Diego Regional Data Library](</>)
 
 
 ## Data Dictionary
@@ -241,21 +236,20 @@ Urls used in the creation of this data package.
 
 
 ### Accessing Data in Vanilla Pandas
-[code] 
-    import pandas as pd
-    
-    
-    incidents_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandag.gov-crime-2007e2013-2.1.4/data/incidents.csv')
-    i5y_sample_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandag.gov-crime-2007e2013-2.1.4/data/i5y_sample.csv')
-[/code]
+```
+import pandas as pd
+
+
+incidents_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandag.gov-crime-2007e2013-2.1.4/data/incidents.csv')
+i5y_sample_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandag.gov-crime-2007e2013-2.1.4/data/i5y_sample.csv')
+```
 
 ### Accessing Package in Metapack
-[code] 
-    import metapack as mp
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandag.gov-crime-2007e2013-2.1.4.csv')
-    
-    # Create Dataframes
-    incidents_gdf = pkg.resource('incidents').geoframe()
-    i5y_sample_gdf = pkg.resource('i5y_sample').geoframe()
-    
-[/code]
+```
+import metapack as mp
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandag.gov-crime-2007e2013-2.1.4.csv')
+
+# Create Dataframes
+incidents_gdf = pkg.resource('incidents').geoframe()
+i5y_sample_gdf = pkg.resource('i5y_sample').geoframe()
+```

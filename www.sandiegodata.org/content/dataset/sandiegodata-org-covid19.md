@@ -12,7 +12,6 @@ _Cases, deaths, hospitalizations and other data scraped from the San Diego COunt
 
 `sandiegodata.org-covid19-1.2.43`. Modified 2020-04-27T05:49:38
 
-Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
@@ -46,14 +45,14 @@ im3fNd9yrfM1-0Ys/edit?usp=sharing>), and this dataset extracts the Summary tab o
 
 
 ### Accessing Packages in Metapack
-[code] 
-    import metapack as mp
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-covid19-1.2.43.csv')
-    
-    # Create Dataframes
-    
-    sd_covid_cases_df = pkg.resource('sd_covid_cases').dataframe()
-[/code]
+```
+import metapack as mp
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-covid19-1.2.43.csv')
+
+# Create Dataframes
+
+sd_covid_cases_df = pkg.resource('sd_covid_cases').dataframe()
+```
 
 ## Data Dictionary
 
@@ -89,11 +88,11 @@ Urls used in the creation of this data package.
 
 
 ### Accessing Packages in Metapack
-[code] 
-    import metapack as mp
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-covid19-1.2.43.csv')
-    
-    # Create Dataframes
-    
-    sd_covid_cases_df = pkg.resource('sd_covid_cases').dataframe()
-[/code]
+```
+import metapack as mp
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-covid19-1.2.43.csv')
+
+# Create Dataframes
+
+sd_covid_cases_df = pkg.resource('sd_covid_cases').dataframe()
+```

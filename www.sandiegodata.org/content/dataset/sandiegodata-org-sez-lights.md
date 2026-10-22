@@ -12,7 +12,6 @@ _Sums of pixel values representing nighttime light intensit, for buffers and rin
 
 `sandiegodata.org-sez_lights-1.1.2`. Modified 2021-09-13T20:27:23
 
-Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
@@ -21,7 +20,7 @@ Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Documentation
 
-This dataset provides sums of the pixel values in the [nighttime lights data](<http://data.sandiegodata.org/dataset/figshare-com-harmonized-ntl/>) in regions around the SEZs from the [World Bank's SEZ dataset](<http://data.sandiegodata.org/dataset/worldbank-org-sez/>). The buffers are a circle for a specified radius around each SEZ, and the rings have a minimum radius of the specific radius, and a maximum radius of (1+sqrt(2)) times larger, so the area of the ring for a radius is equal to the area of the buffer circle.
+This dataset provides sums of the pixel values in the [nighttime lights data](</dataset/figshare-com-harmonized-ntl/>) in regions around the SEZs from the [World Bank's SEZ dataset](</dataset/worldbank-org-sez/>). The buffers are a circle for a specified radius around each SEZ, and the rings have a minimum radius of the specific radius, and a maximum radius of (1+sqrt(2)) times larger, so the area of the ring for a radius is equal to the area of the buffer circle.
 
 Here is an example of the buffer and ring for an SEZ in South Korea:
 
@@ -85,19 +84,18 @@ Urls used in the creation of this data package.
 
 
 ### Accessing Data in Vanilla Pandas
-[code] 
-    import pandas as pd
-    
-    
-    mean_lights_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-sez_lights-1.1.2/data/mean_lights.csv')
-[/code]
+```
+import pandas as pd
+
+
+mean_lights_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-sez_lights-1.1.2/data/mean_lights.csv')
+```
 
 ### Accessing Package in Metapack
-[code] 
-    import metapack as mp
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-sez_lights-1.1.2.csv')
-    
-    # Create Dataframes
-    mean_lights_df = pkg.resource('mean_lights').dataframe()
-    
-[/code]
+```
+import metapack as mp
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-sez_lights-1.1.2.csv')
+
+# Create Dataframes
+mean_lights_df = pkg.resource('mean_lights').dataframe()
+```

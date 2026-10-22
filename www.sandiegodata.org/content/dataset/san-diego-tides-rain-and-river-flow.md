@@ -12,7 +12,6 @@ _A combined dataset of NOAA weather reports, USGS flow rates for the Sn Diego Ri
 
 `sandiegodata.org-tides_rain_river-6`
 
-Resources | Packages | Documentation| Contacts| References
 
 ## Resources
 
@@ -22,12 +21,11 @@ Resources | Packages | Documentation| Contacts| References
 ## Documentation
 
 This package combines three other datasets for use in the water quality data ptoject:
-[code] 
-    * waterservices.usgs.gov-stream_discharge-fashion_valley_sd
-    * tidesandcurrents.noaa.gov-water_levels-la_jolla#water_levels
-    * noaa.gov-localclimate-200808_201807-san#lcd-san
-    
-[/code]
+```
+* waterservices.usgs.gov-stream_discharge-fashion_valley_sd
+* tidesandcurrents.noaa.gov-water_levels-la_jolla#water_levels
+* noaa.gov-localclimate-200808_201807-san#lcd-san
+```
 
 The resulting dataset has daily values for rainfall, flow rate for the San Diego river, and the max and min tide level at La Jolla.
 
@@ -57,18 +55,17 @@ See the [EDA Notebook](<https://github.com/san-diego-water-quality/water-dataset
 
 
 ### Accessing Packages in Metapack
-[code] 
-    import metapack as mp
-    # ZIP Package
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-tides_rain_river-6.zip')
-    # CSV Package
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-tides_rain_river-5.csv') 
-    
-    resource = pkg.resource('resource_name') # Get a resource
-    df = resource.dataframe() # Create a pandas Dataframe
-    gdf = resource.geoframe() # Create a GeoPandas GeoDataFrame
-    
-[/code]
+```
+import metapack as mp
+# ZIP Package
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-tides_rain_river-6.zip')
+# CSV Package
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-tides_rain_river-5.csv') 
+
+resource = pkg.resource('resource_name') # Get a resource
+df = resource.dataframe() # Create a pandas Dataframe
+gdf = resource.geoframe() # Create a GeoPandas GeoDataFrame
+```
 
 ## References
 

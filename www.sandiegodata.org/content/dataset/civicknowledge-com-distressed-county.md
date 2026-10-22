@@ -12,7 +12,6 @@ _Counts of FFEIC distressed tracts, by county._
 
 `civicknowledge.com-distressed-county-1.1.5`. Modified 2020-08-12T04:36:30
 
-Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
@@ -99,19 +98,18 @@ Urls used in the creation of this data package.
 
 
 ### Accessing Data in Vanilla Pandas
-[code] 
-    import pandas as pd
-    
-    
-    distressed_counties_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/civicknowledge.com-distressed-county-1.1.5/data/distressed_counties.csv')
-[/code]
+```
+import pandas as pd
+
+
+distressed_counties_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/civicknowledge.com-distressed-county-1.1.5/data/distressed_counties.csv')
+```
 
 ### Accessing Package in Metapack
-[code] 
-    import metapack as mp
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/civicknowledge.com-distressed-county-1.1.5.csv')
-    
-    # Create Dataframes
-    distressed_counties_df = pkg.resource('distressed_counties').dataframe()
-    
-[/code]
+```
+import metapack as mp
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/civicknowledge.com-distressed-county-1.1.5.csv')
+
+# Create Dataframes
+distressed_counties_df = pkg.resource('distressed_counties').dataframe()
+```

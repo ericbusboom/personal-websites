@@ -1,8 +1,9 @@
 ---
 title: "Data Services"
-date: 2014-12-18T11:29:09+00:00
+date: "2014-12-18T11:29:09+00:00"
 draft: false
 author: "qaadmin"
+url: "/get-data/data-services/"
 ---
 
 The San Diego Regional Data Library provides data acquisition, extracts and analysis services to nonprofits, news organizations and government agencies. 
@@ -44,7 +45,7 @@ After a project is complete, you will have full rights to use the deliverables f
 
 ## Disclaimers and Limitations
 
-We do our best to ensure that the data we release is complete, accurate and useful. However, because we do not create the data, and because the processing required to make the data useful is complex, we cannot be liable for omissions or inaccuracies. Therefore, we release all of our data “as is”, without warranty of any kind. Please see our website for the full [Disclaimer of Warranty and Limitation of Liability](<http://www.sandiegodata.org/get-data/data-disclaimers-and-limitations/>).
+We do our best to ensure that the data we release is complete, accurate and useful. However, because we do not create the data, and because the processing required to make the data useful is complex, we cannot be liable for omissions or inaccuracies. Therefore, we release all of our data “as is”, without warranty of any kind. Please see our website for the full [Disclaimer of Warranty and Limitation of Liability](</get-data/data-disclaimers-and-limitations/>).
 
 ## Rates
 

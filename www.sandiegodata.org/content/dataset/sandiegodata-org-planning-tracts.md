@@ -12,7 +12,6 @@ _A collection of data for demographics and housing from the Census planning data
 
 `sandiegodata.org-planning-tracts-9`
 
-Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
@@ -29,27 +28,24 @@ The planning database has about 450 columns. For full definitions of the columns
 ## Use patterns
 
 In Python, use metapack to open the data package. 
-[code] 
-    import metapack as mp
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-planning-tracts-2.zip')
-    
-[/code]
+```
+import metapack as mp
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-planning-tracts-2.zip')
+```
 
 To display a simple map, link in the tract boundaries from the communities dataset and use the Geopandas .plot() function. The `column` argument names the column to use for coloring regions. Note that the column name is copied from the documentation with mixed case, then lowercased to index the dataset.
-[code] 
-    tracts = pkg.reference('communities').geoframe().set_index('geoid').fillna('')
-    df = tracts.join(cpdb)
-    
-    fig, ax = plt.subplots(1, figsize=(15,10))
-    df.plot(ax=ax, column='pct_MLT_U10p_ACS_12_16'.lower())
-    
-[/code]
+```
+tracts = pkg.reference('communities').geoframe().set_index('geoid').fillna('')
+df = tracts.join(cpdb)
 
-After linking in the communities, you can also use the [community id columns](<http://data.sandiegodata.org/dataset/sangis-org-communities-2018/resource/668d9a6a-a7a7-4c01-9fb9-a5121c1a622f>) to group by city or community: 
-[code] 
-    seniors = dfg.df.groupby('city_name').pop_65plus_acs_12_16.sum()
-    
-[/code]
+fig, ax = plt.subplots(1, figsize=(15,10))
+df.plot(ax=ax, column='pct_MLT_U10p_ACS_12_16'.lower())
+```
+
+After linking in the communities, you can also use the [community id columns](</dataset/>) to group by city or community: 
+```
+seniors = dfg.df.groupby('city_name').pop_65plus_acs_12_16.sum()
+```
 
 # Versions
 
@@ -80,18 +76,17 @@ After linking in the communities, you can also use the [community id columns](<h
 
 
 ### Accessing Packages in Metapack
-[code] 
-    import metapack as mp
-    # ZIP Package
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-planning-tracts-9.zip')
-    # CSV Package
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-planning-tracts-9.csv') 
-    
-    resource = pkg.resource('resource_name') # Get a resource
-    df = resource.dataframe() # Create a pandas Dataframe
-    gdf = resource.geoframe() # Create a GeoPandas GeoDataFrame
-    
-[/code]
+```
+import metapack as mp
+# ZIP Package
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-planning-tracts-9.zip')
+# CSV Package
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-planning-tracts-9.csv') 
+
+resource = pkg.resource('resource_name') # Get a resource
+df = resource.dataframe() # Create a pandas Dataframe
+gdf = resource.geoframe() # Create a GeoPandas GeoDataFrame
+```
 
 ## Data Dictionary
 

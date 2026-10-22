@@ -12,11 +12,11 @@ description: "A map of the density of On-Sale alcohol permits, the permits requi
 
 _A map of the density of On-Sale alcohol permits, the permits required for serving alcohol at a bar or restaurant._
 
-[ `[icon name="github" class="icon-2x"]` Full notebook on github  
+[ `` Full notebook on github  
 ](<https://github.com/metatab-packages/abc.ca.gov-licenses/blob/master/notebooks/OnSaleDensity.ipynb>)
 
-One of the [recent datasets in our data repository](<http://data.sandiegodata.org/dataset/abc-ca-gov-licenses/>) is for alcohol permit from the California Alcoholic Beverage Control Board. This analysis presents a map of the tracts with the higest density of On-Sale permits, in permits per square kilometer. On-sale permits are for alcohol sales that will be consumed on premises, primarily bars and restaurants
+One of the [recent datasets in our data repository](</dataset/abc-ca-gov-licenses/>) is for alcohol permit from the California Alcoholic Beverage Control Board. This analysis presents a map of the tracts with the higest density of On-Sale permits, in permits per square kilometer. On-sale permits are for alcohol sales that will be consumed on premises, primarily bars and restaurants
 
 ![](/uploads/7/2020/11/2f70e7b5-c0de-484d-a6d4-47c15f5d4976-output_5_0-1.png)
 
-To anyone who has lived in San Diego, this map isn't a surprise: the highest densities are in Pacific Beach, Ocean Beach, Downtown, and North Park. We will be using this data to explore crime and its associatino to alcohol in our upcomming [Crime Analysis Meetup](<http://www.sandiegodata.org/2020/11/getting-started-with-crime-analysis/>)
+To anyone who has lived in San Diego, this map isn't a surprise: the highest densities are in Pacific Beach, Ocean Beach, Downtown, and North Park. We will be using this data to explore crime and its associatino to alcohol in our upcomming [Crime Analysis Meetup](</2020/11/getting-started-with-crime-analysis/>)

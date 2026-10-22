@@ -12,7 +12,6 @@ _API scores for California schools_
 
 `cde.ca.gov-api_scores-1`
 
-Resources | Packages | Documentation| Contacts
 
 ## Resources
 
@@ -46,7 +45,7 @@ This file and the attached **schema.csv** and **documentation.html** files descr
 
   * **Wrangler**
 
-[Eric Busboom](<mailto:eric@sandiegodata.org>), [San Diego Regional Data Library](<http://www.sandiegodata.org>)
+[Eric Busboom](<mailto:eric@sandiegodata.org>), [San Diego Regional Data Library](</>)
 
 
 ## Packages

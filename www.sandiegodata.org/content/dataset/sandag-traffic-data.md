@@ -12,7 +12,6 @@ _A collection of shapefiles use as inputs to the SANDAG traffic model, for a var
 
 `sandag.org-traffic_geo-1`
 
-Resources | Packages | Documentation| Contacts
 
 ## Resources
 
@@ -27,7 +26,7 @@ A collection of traffic data submitted to the Library through links to internal 
 
   * **Wrangler**
 
-[Eric Busboom](<mailto:eric@sandiegodata.org>), [San Diego Regional Data Library](<http://www.sandiegodata.org>)
+[Eric Busboom](<mailto:eric@sandiegodata.org>), [San Diego Regional Data Library](</>)
 
 
 ## Packages

@@ -12,7 +12,6 @@ _Data related to homelessness from an ArcGIS tutorial_
 
 `arcgis.com-risk-3`
 
-Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
@@ -53,18 +52,17 @@ The files are interesting, but poorly documented and of unknown provenance, so p
 
 
 ### Accessing Packages in Metapack
-[code] 
-    import metapack as mp
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/arcgis.com-risk-3.zip')
-    
-    # Create Dataframes
-    resources_gdf = pkg.resource('resources').geoframe()
-    county_outline_gdf = pkg.resource('county_outline').geoframe()
-    shelters_services_gdf = pkg.resource('shelters_services').geoframe()
-    homeless_population_gdf = pkg.resource('homeless_population').geoframe()
-    risk_factors_gdf = pkg.resource('risk_factors').geoframe()
-    
-[/code]
+```
+import metapack as mp
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/arcgis.com-risk-3.zip')
+
+# Create Dataframes
+resources_gdf = pkg.resource('resources').geoframe()
+county_outline_gdf = pkg.resource('county_outline').geoframe()
+shelters_services_gdf = pkg.resource('shelters_services').geoframe()
+homeless_population_gdf = pkg.resource('homeless_population').geoframe()
+risk_factors_gdf = pkg.resource('risk_factors').geoframe()
+```
 
 ## Data Dictionary
 
@@ -235,15 +233,14 @@ Last Modified 2019-07-17T00:49:01
 
 
 ### Accessing Packages in Metapack
-[code] 
-    import metapack as mp
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/arcgis.com-risk-3.zip')
-    
-    # Create Dataframes
-    resources_gdf = pkg.resource('resources').geoframe()
-    county_outline_gdf = pkg.resource('county_outline').geoframe()
-    shelters_services_gdf = pkg.resource('shelters_services').geoframe()
-    homeless_population_gdf = pkg.resource('homeless_population').geoframe()
-    risk_factors_gdf = pkg.resource('risk_factors').geoframe()
-    
-[/code]
+```
+import metapack as mp
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/arcgis.com-risk-3.zip')
+
+# Create Dataframes
+resources_gdf = pkg.resource('resources').geoframe()
+county_outline_gdf = pkg.resource('county_outline').geoframe()
+shelters_services_gdf = pkg.resource('shelters_services').geoframe()
+homeless_population_gdf = pkg.resource('homeless_population').geoframe()
+risk_factors_gdf = pkg.resource('risk_factors').geoframe()
+```

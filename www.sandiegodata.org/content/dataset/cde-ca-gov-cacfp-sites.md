@@ -12,7 +12,6 @@ _The Child and Adult Care Food Program (CACFP) provides federal funding to parti
 
 `cde.ca.gov-cacfp_sites-1.2.1`. Modified 2022-06-15T17:58:35
 
-Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
@@ -42,15 +41,14 @@ There are 5 different methods for matching sites to schools in the schools file,
 The matching method code is included in the `match_type` columns. For many of the matching types there can be more than one CDS code associated with the matching string, particularly the strings based on addresses. The `match_qc` value is the inverse of the number of values with the same matching code, so if the algorithm selected the first of 5 CDS codes, the `match_qc` value is .2
 
 Only about of the 35% of the 5076 sites are matched. The number matched for each type of matching tecchnique is: 
-[code] 
-    Not Matched    3292
-    fhs            1602
-    name_city       161
-    name_county      19
-    mp_name           1
-    fhs_nz            1
-    
-[/code]
+```
+Not Matched    3292
+fhs            1602
+name_city       161
+name_county      19
+mp_name           1
+fhs_nz            1
+```
 
 ## Versions
 
@@ -132,19 +130,18 @@ Urls used in the creation of this data package.
 
 
 ### Accessing Data in Vanilla Pandas
-[code] 
-    import pandas as pd
-    
-    
-    cacfp_sites_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-cacfp_sites-1.2.1/data/cacfp_sites.csv')
-[/code]
+```
+import pandas as pd
+
+
+cacfp_sites_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-cacfp_sites-1.2.1/data/cacfp_sites.csv')
+```
 
 ### Accessing Package in Metapack
-[code] 
-    import metapack as mp
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-cacfp_sites-1.2.1.csv')
-    
-    # Create Dataframes
-    cacfp_sites_df = pkg.resource('cacfp_sites').dataframe()
-    
-[/code]
+```
+import metapack as mp
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-cacfp_sites-1.2.1.csv')
+
+# Create Dataframes
+cacfp_sites_df = pkg.resource('cacfp_sites').dataframe()
+```

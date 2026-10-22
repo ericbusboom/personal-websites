@@ -12,7 +12,6 @@ _Reports of non-emergency problems submitted by users of Get It Done_
 
 `sandiego.gov-get_it_done-1.1.2`. Modified 2022-05-20T21:17:32
 
-Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
@@ -105,21 +104,20 @@ Urls used in the creation of this data package.
 
 
 ### Accessing Data in Vanilla Pandas
-[code] 
-    import pandas as pd
-    
-    
-    gid_requests_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiego.gov-get_it_done-1.1.2/data/gid_requests.csv')
-    gid_rast_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiego.gov-get_it_done-1.1.2/data/gid_rast.csv')
-[/code]
+```
+import pandas as pd
+
+
+gid_requests_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiego.gov-get_it_done-1.1.2/data/gid_requests.csv')
+gid_rast_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiego.gov-get_it_done-1.1.2/data/gid_rast.csv')
+```
 
 ### Accessing Package in Metapack
-[code] 
-    import metapack as mp
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiego.gov-get_it_done-1.1.2.zip')
-    
-    # Create Dataframes
-    gid_requests_gdf = pkg.resource('gid_requests').geoframe()
-    gid_rast_gdf = pkg.resource('gid_rast').geoframe()
-    
-[/code]
+```
+import metapack as mp
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiego.gov-get_it_done-1.1.2.zip')
+
+# Create Dataframes
+gid_requests_gdf = pkg.resource('gid_requests').geoframe()
+gid_rast_gdf = pkg.resource('gid_rast').geoframe()
+```

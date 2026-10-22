@@ -6,7 +6,7 @@ categories: ["Analysis"]
 author: "qaadmin"
 ---
 
-We completed the 2015 SDSU Data Contest on Saturday, with a fantastic collection of excellent submissions. The Judges are reviewing them now, but until you learn the winners at the [Awards Ceremony on Tuesday](<http://www.sandiegodata.org/contest/awards>), you can see all of the submissions here. Everyone is welcome at the [Awards Ceremony](<http://www.sandiegodata.org/contest/awards>), so follow the link to register. 
+We completed the 2015 SDSU Data Contest on Saturday, with a fantastic collection of excellent submissions. The Judges are reviewing them now, but until you learn the winners at the [Awards Ceremony on Tuesday](<http://www.eventbrite.com/e/sdsu-data-contest-awards-ceremony-tickets-15859650642?ref=ebtn>), you can see all of the submissions here. Everyone is welcome at the [Awards Ceremony](<http://www.eventbrite.com/e/sdsu-data-contest-awards-ceremony-tickets-15859650642?ref=ebtn>), so follow the link to register. 
 
 ### UCSD MAS Data Science
 

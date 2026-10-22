@@ -12,7 +12,6 @@ _US county boundaries 500k resolution._
 
 `census.gov-counties-2017-2`
 
-Resources | Packages | Documentation| Contacts
 
 ## Resources
 
@@ -36,17 +35,16 @@ Resources | Packages | Documentation| Contacts
 
 
 ### Accessing Packages in Metapack
-[code] 
-    import metapack as mp
-    # ZIP Package
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/census.gov-counties-2017-2.zip')
-    # CSV Package
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/census.gov-counties-2017-2.csv') 
-    
-    resource = pkg.resource('resource_name') # Get a resource
-    df = resource.dataframe() # Create a pandas Dataframe
-    gdf = resource.geoframe() # Create a GeoPandas GeoDataFrame
-    
-[/code]
+```
+import metapack as mp
+# ZIP Package
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/census.gov-counties-2017-2.zip')
+# CSV Package
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/census.gov-counties-2017-2.csv') 
+
+resource = pkg.resource('resource_name') # Get a resource
+df = resource.dataframe() # Create a pandas Dataframe
+gdf = resource.geoframe() # Create a GeoPandas GeoDataFrame
+```
 
 Last Modified 2018-08-09T14:59:28

@@ -1,8 +1,9 @@
 ---
 title: "Contact"
-date: 2013-01-02T07:44:20+00:00
+date: "2013-01-02T07:44:20+00:00"
 draft: false
 author: "eric"
+url: "/about/contact/"
 ---
 
 ## Staff

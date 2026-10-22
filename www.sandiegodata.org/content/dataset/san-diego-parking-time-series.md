@@ -12,7 +12,6 @@ _15 minute interval parking utilization for 1600 parking zones in San Diego city
 
 `sandiego.gov-cityiq_parking-2`
 
-Resources | Packages | Documentation| Contacts| References
 
 ## Resources
 
@@ -26,23 +25,22 @@ This datasets is compiled from parking events scraped from the San Diego CityIQ 
 The dataset is heavily processed to eliminate duplicate events because there are many spurious events, but an excess of PKIN events. When computing the number of cars parked in all parking zones, the excess of PKIN events results in about 60,000 extra cars per month. These issues are explored in an [Jupyter Notebook](<https://github.com/sandiegodata/cityiq/blob/master/notebooks/CityIQ%20
 Leaking%20PKIN%20Events.ipynb>)
 
-The records in this dataset referece parking zones. More information, including geographic positions, are avialble in the [CityIQ Objects dataset.](<http://data.sandiegodata.org/dataset/sandiego-gov-cityiq_objects>)
+The records in this dataset referece parking zones. More information, including geographic positions, are avialble in the [CityIQ Objects dataset.](</dataset/>)
 
 ## Processing
 
 These data were produced with these programs: 
-[code] 
-    $ pip install cityiq
-    $ ciq_config -w
-    $ # Edit .cityiq-config.yaml with client-id and secret
-    # Scrape PKIN and PKOUT from Sept 2018 to present
-    $ $ ciq_events -s -e PKIN -e PKOUT -t 20190901
-    # Split event dump in to event-location csv files
-    $ ciq_events -S
-    # Deduplicate and normalize
-    $ ciq_events -n
-    
-[/code]
+```
+$ pip install cityiq
+$ ciq_config -w
+$ # Edit .cityiq-config.yaml with client-id and secret
+# Scrape PKIN and PKOUT from Sept 2018 to present
+$ $ ciq_events -s -e PKIN -e PKOUT -t 20190901
+# Split event dump in to event-location csv files
+$ ciq_events -S
+# Deduplicate and normalize
+$ ciq_events -n
+```
 
 The last step, deduplication and normalization, involves these steps: 
 
@@ -76,18 +74,17 @@ For most purpuses you should use `cs_norm` and `delta_norm`.
 
 
 ### Accessing Packages in Metapack
-[code] 
-    import metapack as mp
-    # ZIP Package
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiego.gov-cityiq_parking-2.zip')
-    # CSV Package
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiego.gov-cityiq_parking-2.csv') 
-    
-    resource = pkg.resource('resource_name') # Get a resource
-    df = resource.dataframe() # Create a pandas Dataframe
-    gdf = resource.geoframe() # Create a GeoPandas GeoDataFrame
-    
-[/code]
+```
+import metapack as mp
+# ZIP Package
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiego.gov-cityiq_parking-2.zip')
+# CSV Package
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiego.gov-cityiq_parking-2.csv') 
+
+resource = pkg.resource('resource_name') # Get a resource
+df = resource.dataframe() # Create a pandas Dataframe
+gdf = resource.geoframe() # Create a GeoPandas GeoDataFrame
+```
 
 ## References
 

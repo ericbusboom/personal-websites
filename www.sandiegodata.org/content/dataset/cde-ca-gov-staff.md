@@ -12,7 +12,6 @@ _Data files pertaining to staff demographics, credentials and teaching load._
 
 `cde.ca.gov-staff-1.1.2`. Modified 2022-06-27T23:03:03
 
-Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
@@ -136,23 +135,22 @@ Urls used in the creation of this data package.
 
 
 ### Accessing Data in Vanilla Pandas
-[code] 
-    import pandas as pd
-    
-    
-    staff_cred_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-staff-1.1.2/data/staff_cred.csv')
-    staff_demo_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-staff-1.1.2/data/staff_demo.csv')
-    staff_fte_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-staff-1.1.2/data/staff_fte.csv')
-[/code]
+```
+import pandas as pd
+
+
+staff_cred_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-staff-1.1.2/data/staff_cred.csv')
+staff_demo_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-staff-1.1.2/data/staff_demo.csv')
+staff_fte_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-staff-1.1.2/data/staff_fte.csv')
+```
 
 ### Accessing Package in Metapack
-[code] 
-    import metapack as mp
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-staff-1.1.2.csv')
-    
-    # Create Dataframes
-    staff_cred_df = pkg.resource('staff_cred').dataframe()
-    staff_demo_df = pkg.resource('staff_demo').dataframe()
-    staff_fte_df = pkg.resource('staff_fte').dataframe()
-    
-[/code]
+```
+import metapack as mp
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-staff-1.1.2.csv')
+
+# Create Dataframes
+staff_cred_df = pkg.resource('staff_cred').dataframe()
+staff_demo_df = pkg.resource('staff_demo').dataframe()
+staff_fte_df = pkg.resource('staff_fte').dataframe()
+```

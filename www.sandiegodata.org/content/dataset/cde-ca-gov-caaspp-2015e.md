@@ -12,7 +12,6 @@ _California Assessment of Student Performance and Progress_
 
 `cde.ca.gov-caaspp-2015e-2.1.1`. Modified 2022-08-09T20:25:49
 
-Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
@@ -181,25 +180,24 @@ Urls used in the creation of this data package.
 
 
 ### Accessing Data in Vanilla Pandas
-[code] 
-    import pandas as pd
-    
-    
-    subgroup_ids_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-caaspp-2015e-2.1.1/data/subgroup_ids.csv')
-    test_ids_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-caaspp-2015e-2.1.1/data/test_ids.csv')
-    subgroups_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-caaspp-2015e-2.1.1/data/subgroups.csv')
-    entities_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-caaspp-2015e-2.1.1/data/entities.csv')
-[/code]
+```
+import pandas as pd
+
+
+subgroup_ids_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-caaspp-2015e-2.1.1/data/subgroup_ids.csv')
+test_ids_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-caaspp-2015e-2.1.1/data/test_ids.csv')
+subgroups_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-caaspp-2015e-2.1.1/data/subgroups.csv')
+entities_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-caaspp-2015e-2.1.1/data/entities.csv')
+```
 
 ### Accessing Package in Metapack
-[code] 
-    import metapack as mp
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-caaspp-2015e-2.1.1.csv')
-    
-    # Create Dataframes
-    subgroup_ids_df = pkg.resource('subgroup_ids').dataframe()
-    test_ids_df = pkg.resource('test_ids').dataframe()
-    subgroups_df = pkg.resource('subgroups').dataframe()
-    entities_df = pkg.resource('entities').dataframe()
-    
-[/code]
+```
+import metapack as mp
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-caaspp-2015e-2.1.1.csv')
+
+# Create Dataframes
+subgroup_ids_df = pkg.resource('subgroup_ids').dataframe()
+test_ids_df = pkg.resource('test_ids').dataframe()
+subgroups_df = pkg.resource('subgroups').dataframe()
+entities_df = pkg.resource('entities').dataframe()
+```

@@ -23,4 +23,4 @@ We will be starting with [a list of potential datasets](<https://docs.google.com
 
 ## How To Participate
 
-Register for an account at our [Redmine Project Site](<http://redmine.sandiegodata.org/account/register>), and I'll add you to the [Health Food Access Data Library](<http://redmine.sandiegodata.org/projects/hfad>). Team meetings will be posted to [our Meetup.com site](<http://www.meetup.com/San-Diego-Regional-Data-Library/>), our [Google Calendar](<http://www.sandiegodata.org/meetingsevents/>), and to mailing lists. We'll have our first meetings to get started in mid December.
+Register for an account at our [Redmine Project Site](<http://redmine.sandiegodata.org/account/register>), and I'll add you to the [Health Food Access Data Library](<http://redmine.sandiegodata.org/projects/hfad>). Team meetings will be posted to [our Meetup.com site](<http://www.meetup.com/San-Diego-Regional-Data-Library/>), our [Google Calendar](</meetingsevents/>), and to mailing lists. We'll have our first meetings to get started in mid December.

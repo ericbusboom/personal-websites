@@ -42,4 +42,4 @@ Project sponsors may offer a side prize for their project to encourage more cont
 
 ## Participating in the Contest
 
-If you are interested in being involved in the contest, as a project sponsor, mentor or contestant, contact Eric Busboom at [eric@sandiegodata.org](<mailto:eric@sandiegodata.org>), or (619) 363-2607. Or, subscribe to [our email list for future announcements](<http://www.sandiegodata.org/about/contact/>).
+If you are interested in being involved in the contest, as a project sponsor, mentor or contestant, contact Eric Busboom at [eric@sandiegodata.org](<mailto:eric@sandiegodata.org>), or (619) 363-2607. Or, subscribe to [our email list for future announcements](</about/contact/>).

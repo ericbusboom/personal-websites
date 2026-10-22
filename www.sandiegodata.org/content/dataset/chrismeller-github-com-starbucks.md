@@ -12,7 +12,6 @@ _A list of Starbucks locations, scraped from the web in 2017_
 
 `chrismeller.github.com-starbucks-2.1.1`. Modified 2021-04-02T14:52:09
 
-Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
@@ -23,18 +22,17 @@ Resources | Packages | Documentation| Contacts| References| Data Dictionary
 ## Documentation
 
 Starbucks locations scraped from the Starbucks website by Chris Meller. From the original README:
-[code] 
-    Contains a single commit for each day that batches up all changes to the
-    Starbucks dataset as a CSV file.
-    
-    Deletes will obviously be stores that seem to have closed and adds are new
-    stores that have opened.
-    
-    This is a work in progress. There is additional data that needs to be
-    included in this dataset and it needs to get properly automated so we hav e
-    a regular commit daily at a particular time.
-    
-[/code]
+```
+Contains a single commit for each day that batches up all changes to the
+Starbucks dataset as a CSV file.
+
+Deletes will obviously be stores that seem to have closed and adds are new
+stores that have opened.
+
+This is a work in progress. There is additional data that needs to be
+included in this dataset and it needs to get properly automated so we hav e
+a regular commit daily at a particular time.
+```
 
 This dataset release re-geocodes all of the addresses, for the `us_starbucks` dataset. The original datafile has lat and lon values truncated to 2 decimal places, about 1km in North America. The re-geocoded addressss are much more precise.
 
@@ -129,21 +127,20 @@ Urls used in the creation of this data package.
 
 
 ### Accessing Data in Vanilla Pandas
-[code] 
-    import pandas as pd
-    
-    
-    all_starbucks_df =  pd.read_csv('http://s3.amazonaws.com/radius.civicknowledge.com/chrismeller.github.com-starbucks-2.1.1/data/all_starbucks.csv')
-    us_starbucks_df =  pd.read_csv('http://s3.amazonaws.com/radius.civicknowledge.com/chrismeller.github.com-starbucks-2.1.1/data/us_starbucks.csv')
-[/code]
+```
+import pandas as pd
+
+
+all_starbucks_df =  pd.read_csv('http://s3.amazonaws.com/radius.civicknowledge.com/chrismeller.github.com-starbucks-2.1.1/data/all_starbucks.csv')
+us_starbucks_df =  pd.read_csv('http://s3.amazonaws.com/radius.civicknowledge.com/chrismeller.github.com-starbucks-2.1.1/data/us_starbucks.csv')
+```
 
 ### Accessing Package in Metapack
-[code] 
-    import metapack as mp
-    pkg = mp.open_package('http://s3.amazonaws.com/radius.civicknowledge.com/chrismeller.github.com-starbucks-2.1.1.csv')
-    
-    # Create Dataframes
-    all_starbucks_df = pkg.resource('all_starbucks').dataframe()
-    us_starbucks_gdf = pkg.resource('us_starbucks').geoframe()
-    
-[/code]
+```
+import metapack as mp
+pkg = mp.open_package('http://s3.amazonaws.com/radius.civicknowledge.com/chrismeller.github.com-starbucks-2.1.1.csv')
+
+# Create Dataframes
+all_starbucks_df = pkg.resource('all_starbucks').dataframe()
+us_starbucks_gdf = pkg.resource('us_starbucks').geoframe()
+```

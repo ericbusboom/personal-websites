@@ -12,7 +12,6 @@ _Geographic boundaries of second-level administrative regions for countries that
 
 `berkeley.edu-administrative_boundaries-1.1.1`. Modified 2021-07-12T20:47:26
 
-Resources | Packages | Documentation| Contacts| Data Dictionary
 
 ## Resources
 
@@ -249,35 +248,34 @@ geometry| string|
 
 
 ### Accessing Data in Vanilla Pandas
-[code] 
-    import pandas as pd
-    
-    
-    vietnam_political_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/berkeley.edu-administrative_boundaries-1.1.1/data/vietnam_political.csv')
-    china_city_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/berkeley.edu-administrative_boundaries-1.1.1/data/china_city.csv')
-    skorea_admin2_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/berkeley.edu-administrative_boundaries-1.1.1/data/skorea_admin2.csv')
-    china_admin2_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/berkeley.edu-administrative_boundaries-1.1.1/data/china_admin2.csv')
-    vietnam_admin2_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/berkeley.edu-administrative_boundaries-1.1.1/data/vietnam_admin2.csv')
-    turkey_admin2_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/berkeley.edu-administrative_boundaries-1.1.1/data/turkey_admin2.csv')
-    philippines_admin2_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/berkeley.edu-administrative_boundaries-1.1.1/data/philippines_admin2.csv')
-    indonesia_admin2_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/berkeley.edu-administrative_boundaries-1.1.1/data/indonesia_admin2.csv')
-    colombia_admin2_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/berkeley.edu-administrative_boundaries-1.1.1/data/colombia_admin2.csv')
-[/code]
+```
+import pandas as pd
+
+
+vietnam_political_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/berkeley.edu-administrative_boundaries-1.1.1/data/vietnam_political.csv')
+china_city_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/berkeley.edu-administrative_boundaries-1.1.1/data/china_city.csv')
+skorea_admin2_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/berkeley.edu-administrative_boundaries-1.1.1/data/skorea_admin2.csv')
+china_admin2_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/berkeley.edu-administrative_boundaries-1.1.1/data/china_admin2.csv')
+vietnam_admin2_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/berkeley.edu-administrative_boundaries-1.1.1/data/vietnam_admin2.csv')
+turkey_admin2_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/berkeley.edu-administrative_boundaries-1.1.1/data/turkey_admin2.csv')
+philippines_admin2_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/berkeley.edu-administrative_boundaries-1.1.1/data/philippines_admin2.csv')
+indonesia_admin2_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/berkeley.edu-administrative_boundaries-1.1.1/data/indonesia_admin2.csv')
+colombia_admin2_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/berkeley.edu-administrative_boundaries-1.1.1/data/colombia_admin2.csv')
+```
 
 ### Accessing Package in Metapack
-[code] 
-    import metapack as mp
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/berkeley.edu-administrative_boundaries-1.1.1.csv')
-    
-    # Create Dataframes
-    vietnam_political_gdf = pkg.resource('vietnam_political').geoframe()
-    china_city_gdf = pkg.resource('china_city').geoframe()
-    skorea_admin2_gdf = pkg.resource('skorea_admin2').geoframe()
-    china_admin2_gdf = pkg.resource('china_admin2').geoframe()
-    vietnam_admin2_gdf = pkg.resource('vietnam_admin2').geoframe()
-    turkey_admin2_gdf = pkg.resource('turkey_admin2').geoframe()
-    philippines_admin2_gdf = pkg.resource('philippines_admin2').geoframe()
-    indonesia_admin2_gdf = pkg.resource('indonesia_admin2').geoframe()
-    colombia_admin2_gdf = pkg.resource('colombia_admin2').geoframe()
-    
-[/code]
+```
+import metapack as mp
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/berkeley.edu-administrative_boundaries-1.1.1.csv')
+
+# Create Dataframes
+vietnam_political_gdf = pkg.resource('vietnam_political').geoframe()
+china_city_gdf = pkg.resource('china_city').geoframe()
+skorea_admin2_gdf = pkg.resource('skorea_admin2').geoframe()
+china_admin2_gdf = pkg.resource('china_admin2').geoframe()
+vietnam_admin2_gdf = pkg.resource('vietnam_admin2').geoframe()
+turkey_admin2_gdf = pkg.resource('turkey_admin2').geoframe()
+philippines_admin2_gdf = pkg.resource('philippines_admin2').geoframe()
+indonesia_admin2_gdf = pkg.resource('indonesia_admin2').geoframe()
+colombia_admin2_gdf = pkg.resource('colombia_admin2').geoframe()
+```

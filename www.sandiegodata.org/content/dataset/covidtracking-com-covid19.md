@@ -12,7 +12,6 @@ _State and country observations from the Covid Tracking Project_
 
 `covidtracking.com-covid19-3.1.51`. Modified 2020-07-08T04:54:16
 
-Resources | Packages | Documentation| Contacts| Data Dictionary
 
 ## Resources
 
@@ -91,19 +90,18 @@ totaltestresultsincrease| integer|
 
 
 ### Accessing Data in Vanilla Pandas
-[code] 
-    import pandas as pd
-    
-    
-    states_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/covidtracking.com-covid19-3.1.51/data/states.csv')
-[/code]
+```
+import pandas as pd
+
+
+states_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/covidtracking.com-covid19-3.1.51/data/states.csv')
+```
 
 ### Accessing Package in Metapack
-[code] 
-    import metapack as mp
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/covidtracking.com-covid19-3.1.51.csv')
-    
-    # Create Dataframes
-    states_df = pkg.resource('states').dataframe()
-    
-[/code]
+```
+import metapack as mp
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/covidtracking.com-covid19-3.1.51.csv')
+
+# Create Dataframes
+states_df = pkg.resource('states').dataframe()
+```

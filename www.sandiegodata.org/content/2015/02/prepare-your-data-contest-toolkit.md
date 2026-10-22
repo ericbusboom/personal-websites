@@ -6,7 +6,7 @@ categories: ["News"]
 author: "qaadmin"
 ---
 
-[To get ready for the Data Contest](<http://www.sandiegodata.org/projects/sdsu-datathon/> "SDSU Datathon"), you'll want to ensure that your laptop already has installed on it all of the tools you'll need. There is a set of tools that we use in most of our programs, and it will serve as a good base for your contest toolkit. These tools are: 
+[To get ready for the Data Contest](</2015/01/sdsu-datathon/> "SDSU Datathon"), you'll want to ensure that your laptop already has installed on it all of the tools you'll need. There is a set of tools that we use in most of our programs, and it will serve as a good base for your contest toolkit. These tools are: 
 
   * [Tableau Public](<http://www.tableau.com/public/community>), for quick yet attractive visualizations.
   * [QGIS](<http://www2.qgis.org/en/site/>), for open source Geographic analysis and maps.

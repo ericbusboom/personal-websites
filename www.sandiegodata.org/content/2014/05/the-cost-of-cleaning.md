@@ -10,4 +10,4 @@ We've frequently mentioned that people who work on data projects tell us that fr
 
 > (2) How long is a typical project? When working with a top 0.5% data scientist, projects take just eight to 40 hours ($3k to $12k). Projects are finished in closer to eight hours for clean data and closer to 40 hours when the data requires cleaning.
 
-So, in this anecdote, with some squinty-eyed interpretation, data cleaning requires 32 out of 40 hours. Dead on. And, by the way, that's 32 hours at $300 per hour. Fortunately, the library has a plan to [reduce the cost of data cleaning and preparation](<http://www.sandiegodata.org/reports/a-vision-for-shared-data-infrastructure/> "A Vision for a Shared Data Infrastructure").
+So, in this anecdote, with some squinty-eyed interpretation, data cleaning requires 32 out of 40 hours. Dead on. And, by the way, that's 32 hours at $300 per hour. Fortunately, the library has a plan to [reduce the cost of data cleaning and preparation](</about/reports/a-vision-for-a-shared-data-infrastructure/a-vision-for-shared-data-infrastructure/> "A Vision for a Shared Data Infrastructure").

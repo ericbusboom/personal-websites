@@ -12,7 +12,6 @@ _Project-level housing inventory for 2012 to 2018._
 
 `hudexchange.info-hic-project-1`
 
-Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
@@ -44,14 +43,14 @@ There is no formal data dictionary, so the dataset is lighly documented; the mea
 
 
 ### Accessing Packages in Metapack
-[code] 
-    import metapack as mp
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/hudexchange.info-hic-project-1.zip')
-    
-    # Create Dataframes
-    
-    hic_df = pkg.resource('hic').dataframe()
-[/code]
+```
+import metapack as mp
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/hudexchange.info-hic-project-1.zip')
+
+# Create Dataframes
+
+hic_df = pkg.resource('hic').dataframe()
+```
 
 ## Data Dictionary
 
@@ -195,11 +194,11 @@ Last Modified 2019-07-12T05:03:50
 
 
 ### Accessing Packages in Metapack
-[code] 
-    import metapack as mp
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/hudexchange.info-hic-project-1.zip')
-    
-    # Create Dataframes
-    
-    hic_df = pkg.resource('hic').dataframe()
-[/code]
+```
+import metapack as mp
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/hudexchange.info-hic-project-1.zip')
+
+# Create Dataframes
+
+hic_df = pkg.resource('hic').dataframe()
+```

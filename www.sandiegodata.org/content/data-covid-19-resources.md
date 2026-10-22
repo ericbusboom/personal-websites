@@ -1,13 +1,14 @@
 ---
 title: "COVID-19 Resources"
-date: 2020-03-22T14:54:46+00:00
+date: "2020-03-22T14:54:46+00:00"
 draft: false
 author: "eric"
+url: "/collections/covid-19-resources/"
 ---
 
 ## Data Library Datasets
 
-> **Note:** This was a dynamic WordPress post list. 
+{{< post-list section="dataset" tags="covid19" excerpt="true" >}} 
 
 ## Other Datasets
 

@@ -12,7 +12,6 @@ _Select tables of census data for California school districts, 2020_
 
 `census.gov-district_demo-ca-1.2.2`. Modified 2022-06-17T19:07:41
 
-Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
@@ -509,19 +508,18 @@ Urls used in the creation of this data package.
 
 
 ### Accessing Data in Vanilla Pandas
-[code] 
-    import pandas as pd
-    
-    
-    ca_sd_demo_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/census.gov-district_demo-ca-1.2.2/data/ca_sd_demo.csv')
-[/code]
+```
+import pandas as pd
+
+
+ca_sd_demo_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/census.gov-district_demo-ca-1.2.2/data/ca_sd_demo.csv')
+```
 
 ### Accessing Package in Metapack
-[code] 
-    import metapack as mp
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/census.gov-district_demo-ca-1.2.2.csv')
-    
-    # Create Dataframes
-    ca_sd_demo_df = pkg.resource('ca_sd_demo').dataframe()
-    
-[/code]
+```
+import metapack as mp
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/census.gov-district_demo-ca-1.2.2.csv')
+
+# Create Dataframes
+ca_sd_demo_df = pkg.resource('ca_sd_demo').dataframe()
+```

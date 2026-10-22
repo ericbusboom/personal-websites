@@ -12,7 +12,6 @@ _Geographic boundaries for schools in the San Diego Unified school district_
 
 `sandiegounified.org-enrollment_zones-2014-1`
 
-Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
@@ -42,15 +41,15 @@ The `data/sdusd.zip` file is built manually from the three data/*zip files, usin
 
 
 ### Accessing Packages in Metapack
-[code] 
-    import metapack as mp
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegounified.org-enrollment_zones-2014-1.zip')
-    
-    # Create Dataframes
-    sdusd_boundaries_gdf = pkg.resource('sdusd_boundaries').geoframe()
-    
-    school_tract_xwalk_df = pkg.resource('school_tract_xwalk').dataframe()
-[/code]
+```
+import metapack as mp
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegounified.org-enrollment_zones-2014-1.zip')
+
+# Create Dataframes
+sdusd_boundaries_gdf = pkg.resource('sdusd_boundaries').geoframe()
+
+school_tract_xwalk_df = pkg.resource('school_tract_xwalk').dataframe()
+```
 
 ## Data Dictionary
 
@@ -66,8 +65,8 @@ school| string| School name
 cdscode| integer| SDUSD CDS code for school  
 ncesdist| integer| National Center for Educational Statistics ( NCES) district code  
 ncesschool| integer| NCES School code  
-soctype| string| The School Ownership Code is a numeric code used to identify the type of school. See http://data.sandiegodata.org/dataset/cde-ca-gov-schools/#data_dictionary_public_schools for details.  
-eilcode| string| The Educational Instruction Level Code is a short text description of the institution’s type relative to the grade range served. See http://data.sandiegodata.org/dataset/cde-ca-gov-schools/#data_dictionary_public_schools for details.  
+soctype| string| The School Ownership Code is a numeric code used to identify the type of school. See /dataset/cde-ca-gov-schools/#data_dictionary_public_schools for details.  
+eilcode| string| The Educational Instruction Level Code is a short text description of the institution’s type relative to the grade range served. See /dataset/cde-ca-gov-schools/#data_dictionary_public_schools for details.  
 eilname| string| Name associated with eilcode  
 group| string| Code for source of record among three original files: ELEM, MID or HIGH  
 latitude| number| Geographic position of school  
@@ -105,12 +104,12 @@ Last Modified 2019-08-14T15:37:04
 
 
 ### Accessing Packages in Metapack
-[code] 
-    import metapack as mp
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegounified.org-enrollment_zones-2014-1.zip')
-    
-    # Create Dataframes
-    sdusd_boundaries_gdf = pkg.resource('sdusd_boundaries').geoframe()
-    
-    school_tract_xwalk_df = pkg.resource('school_tract_xwalk').dataframe()
-[/code]
+```
+import metapack as mp
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegounified.org-enrollment_zones-2014-1.zip')
+
+# Create Dataframes
+sdusd_boundaries_gdf = pkg.resource('sdusd_boundaries').geoframe()
+
+school_tract_xwalk_df = pkg.resource('school_tract_xwalk').dataframe()
+```

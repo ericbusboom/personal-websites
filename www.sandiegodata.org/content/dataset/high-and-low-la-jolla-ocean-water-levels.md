@@ -12,7 +12,6 @@ _High and Low ocean water levels, at the La Jolla station, from year 2000 to pre
 
 `tidesandcurrents.noaa.gov-water_levels-la_jolla-1`
 
-Resources | Packages | Documentation| Contacts| References
 
 ## Resources
 
@@ -47,17 +46,17 @@ To get the access URLs, visit the [web tool page](<https://tidesandcurrents.noaa
     * **source** <https://github.com/san-diego-water-quality/water-datasets.git>
 
 ### Accessing Packages in Metapack
-[code] import metapack as mp
-    # ZIP Package
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/tidesandcurrents.noaa.gov-water_levels-la_jolla-1.zip')
-    # CSV Package
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/tidesandcurrents.noaa.gov-water_levels-la_jolla-1.csv') 
-    
-    resource = pkg.resource('resource_name') # Get a resource
-    df = resource.dataframe() # Create a pandas Dataframe
-    gdf = resource.geoframe() # Create a GeoPandas GeoDataFrame
-    
-[/code]
+```
+import metapack as mp
+# ZIP Package
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/tidesandcurrents.noaa.gov-water_levels-la_jolla-1.zip')
+# CSV Package
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/tidesandcurrents.noaa.gov-water_levels-la_jolla-1.csv') 
+
+resource = pkg.resource('resource_name') # Get a resource
+df = resource.dataframe() # Create a pandas Dataframe
+gdf = resource.geoframe() # Create a GeoPandas GeoDataFrame
+```
 
 ## References
 

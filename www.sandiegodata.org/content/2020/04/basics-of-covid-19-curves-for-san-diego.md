@@ -10,7 +10,7 @@ description: "Know your S curves from your bell curves: A short primer on the ma
 
 We're about a month in to a crash course on data visualization; nearly every day you are seeing graphs of COVID-19 cases, hospitalizations and deaths, and there has never been a time when so many people know what a logarithmic axis is, or wish they did. Yet, there are some interesting features of the most common graphs that you may not be familiar with 
 
-This post will describe the shape of the most common curves, and explain how they are related and what they mean. Note that all of the plots in this post are based on data published by the County of San Diego, which the San Diego Regional [Data Library has collected and packaged](<http://data.sandiegodata.org/dataset/sandiegodata-org-covid19-1-2-0/>). 
+This post will describe the shape of the most common curves, and explain how they are related and what they mean. Note that all of the plots in this post are based on data published by the County of San Diego, which the San Diego Regional [Data Library has collected and packaged](</dataset/sandiegodata-org-covid19/>). 
 
 The most basic plot of the coronavirus crisis is the cumulative number of cases, hospitalizations and deaths. Here are these curves for San Diego county: 
 

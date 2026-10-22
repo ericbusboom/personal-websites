@@ -12,7 +12,6 @@ _San Diego county Tracts, MSAs and SRAs, based on 2010 Census boundaries, as ext
 
 `OrderedDict([('dataset', 'census-regions'), ('time', '2010'), ('version', '4'), ('space', 'sandiego'), ('origin', 'sangis.org'), ('@value', 'sangis.org-census_regions-2010-sandiego-4')])`
 
-Resources | Packages | Documentation| Contacts
 
 ## Resources
 
@@ -49,17 +48,16 @@ Resources | Packages | Documentation| Contacts
 
 
 ### Accessing Packages in Metapack
-[code] 
-    import metapack as mp
-    # ZIP Package
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sangis.org-census_regions-2010-sandiego-4.zip')
-    # CSV Package
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sangis.org-census_regions-2010-sandiego-4.csv') 
-    
-    resource = pkg.resource('resource_name') # Get a resource
-    df = resource.dataframe() # Create a pandas Dataframe
-    gdf = resource.geoframe() # Create a GeoPandas GeoDataFrame
-    
-[/code]
+```
+import metapack as mp
+# ZIP Package
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sangis.org-census_regions-2010-sandiego-4.zip')
+# CSV Package
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sangis.org-census_regions-2010-sandiego-4.csv') 
+
+resource = pkg.resource('resource_name') # Get a resource
+df = resource.dataframe() # Create a pandas Dataframe
+gdf = resource.geoframe() # Create a GeoPandas GeoDataFrame
+```
 
 Last Modified 2017-04-03T20:16:31

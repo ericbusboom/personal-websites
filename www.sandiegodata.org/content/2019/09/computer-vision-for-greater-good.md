@@ -9,7 +9,7 @@ author: "eric"
 
 Use your Computer Vision skills to tackle homelessness. 
 
-The Data Library is currently running a data project to convert [5 years of monthly homelessness person locations](<http://www.sandiegodata.org/2019/08/downtown-homelessness-dataset-progress/>) from scanned paper maps to a geographic dataset. The bulk of the work involves volunteers manually digitizing 350 scanned paper maps in two jobs, but we have enough data to build a computer vision solution. 
+The Data Library is currently running a data project to convert [5 years of monthly homelessness person locations](</2019/08/downtown-homelessness-dataset-progress/>) from scanned paper maps to a geographic dataset. The bulk of the work involves volunteers manually digitizing 350 scanned paper maps in two jobs, but we have enough data to build a computer vision solution. 
 
 If you have skills, or motivated interest, in programming [OpenCV](<https://opencv.org/>) in Python, you can put your talents to service for humanity, by working on the computer vision portion of this project. 
 

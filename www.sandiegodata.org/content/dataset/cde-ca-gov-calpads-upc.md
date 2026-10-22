@@ -12,7 +12,6 @@ _Downloadable files for the Unduplicated Pupil Count (UPC) of free or reduced pr
 
 `cde.ca.gov-calpads_upc-1.1.1`. Modified 2021-03-11T00:51:50
 
-Resources | Packages | Documentation| Contacts| Data Dictionary
 
 ## Resources
 
@@ -156,41 +155,40 @@ certification_status| string| A "Y" or "N" value indicating whether data were su
 
 
 ### Accessing Data in Vanilla Pandas
-[code] 
-    import pandas as pd
-    
-    
-    upc_13_lea_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-calpads_upc-1.1.1/data/upc_13_lea.csv')
-    upc_13_school_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-calpads_upc-1.1.1/data/upc_13_school.csv')
-    upc_14_lea_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-calpads_upc-1.1.1/data/upc_14_lea.csv')
-    upc_14_school_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-calpads_upc-1.1.1/data/upc_14_school.csv')
-    upc_15_lea_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-calpads_upc-1.1.1/data/upc_15_lea.csv')
-    upc_15_school_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-calpads_upc-1.1.1/data/upc_15_school.csv')
-    upc_16_lea_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-calpads_upc-1.1.1/data/upc_16_lea.csv')
-    upc_16_school_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-calpads_upc-1.1.1/data/upc_16_school.csv')
-    upc_17_lea_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-calpads_upc-1.1.1/data/upc_17_lea.csv')
-    upc_17_school_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-calpads_upc-1.1.1/data/upc_17_school.csv')
-    upc_combined_lea_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-calpads_upc-1.1.1/data/upc_combined_lea.csv')
-    upc_combined_school_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-calpads_upc-1.1.1/data/upc_combined_school.csv')
-[/code]
+```
+import pandas as pd
+
+
+upc_13_lea_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-calpads_upc-1.1.1/data/upc_13_lea.csv')
+upc_13_school_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-calpads_upc-1.1.1/data/upc_13_school.csv')
+upc_14_lea_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-calpads_upc-1.1.1/data/upc_14_lea.csv')
+upc_14_school_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-calpads_upc-1.1.1/data/upc_14_school.csv')
+upc_15_lea_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-calpads_upc-1.1.1/data/upc_15_lea.csv')
+upc_15_school_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-calpads_upc-1.1.1/data/upc_15_school.csv')
+upc_16_lea_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-calpads_upc-1.1.1/data/upc_16_lea.csv')
+upc_16_school_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-calpads_upc-1.1.1/data/upc_16_school.csv')
+upc_17_lea_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-calpads_upc-1.1.1/data/upc_17_lea.csv')
+upc_17_school_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-calpads_upc-1.1.1/data/upc_17_school.csv')
+upc_combined_lea_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-calpads_upc-1.1.1/data/upc_combined_lea.csv')
+upc_combined_school_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-calpads_upc-1.1.1/data/upc_combined_school.csv')
+```
 
 ### Accessing Package in Metapack
-[code] 
-    import metapack as mp
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-calpads_upc-1.1.1.csv')
-    
-    # Create Dataframes
-    upc_13_lea_df = pkg.resource('upc_13_lea').dataframe()
-    upc_13_school_df = pkg.resource('upc_13_school').dataframe()
-    upc_14_lea_df = pkg.resource('upc_14_lea').dataframe()
-    upc_14_school_df = pkg.resource('upc_14_school').dataframe()
-    upc_15_lea_df = pkg.resource('upc_15_lea').dataframe()
-    upc_15_school_df = pkg.resource('upc_15_school').dataframe()
-    upc_16_lea_df = pkg.resource('upc_16_lea').dataframe()
-    upc_16_school_df = pkg.resource('upc_16_school').dataframe()
-    upc_17_lea_df = pkg.resource('upc_17_lea').dataframe()
-    upc_17_school_df = pkg.resource('upc_17_school').dataframe()
-    upc_combined_lea_df = pkg.resource('upc_combined_lea').dataframe()
-    upc_combined_school_df = pkg.resource('upc_combined_school').dataframe()
-    
-[/code]
+```
+import metapack as mp
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-calpads_upc-1.1.1.csv')
+
+# Create Dataframes
+upc_13_lea_df = pkg.resource('upc_13_lea').dataframe()
+upc_13_school_df = pkg.resource('upc_13_school').dataframe()
+upc_14_lea_df = pkg.resource('upc_14_lea').dataframe()
+upc_14_school_df = pkg.resource('upc_14_school').dataframe()
+upc_15_lea_df = pkg.resource('upc_15_lea').dataframe()
+upc_15_school_df = pkg.resource('upc_15_school').dataframe()
+upc_16_lea_df = pkg.resource('upc_16_lea').dataframe()
+upc_16_school_df = pkg.resource('upc_16_school').dataframe()
+upc_17_lea_df = pkg.resource('upc_17_lea').dataframe()
+upc_17_school_df = pkg.resource('upc_17_school').dataframe()
+upc_combined_lea_df = pkg.resource('upc_combined_lea').dataframe()
+upc_combined_school_df = pkg.resource('upc_combined_school').dataframe()
+```

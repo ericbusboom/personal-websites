@@ -12,7 +12,6 @@ _Business in San Diego linked to entertainment clusters and population density._
 
 `sandiegodata.org-business_clusters-1.1.5`. Modified 2021-03-21T19:41:52
 
-Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
@@ -25,7 +24,7 @@ Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Documentation
 
-This dataset processes the City of San Diego Master Business file to add geocoded addresses and links to business clusters. San Diego publishes two lists of businesses, which are based on payment of the San Diego City business tax: the Master Business File, and a [SANGIS file that includes geographic information. ](<http://data.sandiegodata.org/dataset/sangis-org-business-sites/>) Unfortunatel y, these files are quite different and cannot be linked. The SANGIS file is oriented toward the tax assessors parcel that the business occupies, and the Master Business List has account numbers and addresses, but there is no common key between the files.
+This dataset processes the City of San Diego Master Business file to add geocoded addresses and links to business clusters. San Diego publishes two lists of businesses, which are based on payment of the San Diego City business tax: the Master Business File, and a [SANGIS file that includes geographic information. ](</dataset/sangis-org-business-sites/>) Unfortunatel y, these files are quite different and cannot be linked. The SANGIS file is oriented toward the tax assessors parcel that the business occupies, and the Master Business List has account numbers and addresses, but there is no common key between the files.
 
 The files in this package add address geocodes to the Master Business List, and links the businesses to clusters of businesses. The Clusters are created by collecting nearby businesses from Open Street Map data. The cluster types are:
 
@@ -174,27 +173,26 @@ Urls used in the creation of this data package.
 
 
 ### Accessing Data in Vanilla Pandas
-[code] 
-    import pandas as pd
-    
-    
-    sb_mbl_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-business_clusters-1.1.5/data/sb_mbl.csv')
-    sd_business_clusters_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-business_clusters-1.1.5/data/sd_business_clusters.csv')
-    sd_businesses_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-business_clusters-1.1.5/data/sd_businesses.csv')
-    sd_custered_businesses_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-business_clusters-1.1.5/data/sd_custered_businesses.csv')
-    naics_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-business_clusters-1.1.5/data/naics.csv')
-[/code]
+```
+import pandas as pd
+
+
+sb_mbl_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-business_clusters-1.1.5/data/sb_mbl.csv')
+sd_business_clusters_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-business_clusters-1.1.5/data/sd_business_clusters.csv')
+sd_businesses_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-business_clusters-1.1.5/data/sd_businesses.csv')
+sd_custered_businesses_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-business_clusters-1.1.5/data/sd_custered_businesses.csv')
+naics_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-business_clusters-1.1.5/data/naics.csv')
+```
 
 ### Accessing Package in Metapack
-[code] 
-    import metapack as mp
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-business_clusters-1.1.5.csv')
-    
-    # Create Dataframes
-    sb_mbl_df = pkg.resource('sb_mbl').dataframe()
-    sd_business_clusters_gdf = pkg.resource('sd_business_clusters').geoframe()
-    sd_businesses_gdf = pkg.resource('sd_businesses').geoframe()
-    sd_custered_businesses_gdf = pkg.resource('sd_custered_businesses').geoframe()
-    naics_df = pkg.resource('naics').dataframe()
-    
-[/code]
+```
+import metapack as mp
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-business_clusters-1.1.5.csv')
+
+# Create Dataframes
+sb_mbl_df = pkg.resource('sb_mbl').dataframe()
+sd_business_clusters_gdf = pkg.resource('sd_business_clusters').geoframe()
+sd_businesses_gdf = pkg.resource('sd_businesses').geoframe()
+sd_custered_businesses_gdf = pkg.resource('sd_custered_businesses').geoframe()
+naics_df = pkg.resource('naics').dataframe()
+```

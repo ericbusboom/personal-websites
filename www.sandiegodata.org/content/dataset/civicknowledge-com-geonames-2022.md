@@ -12,7 +12,6 @@ _Country names, and names for US countries, metros, cities and states._
 
 `civicknowledge.com-geonames-2022-1.2.43`. Modified 2023-02-23T18:37:42
 
-Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
@@ -67,19 +66,18 @@ Urls used in the creation of this data package.
 
 
 ### Accessing Data in Vanilla Pandas
-[code] 
-    import pandas as pd
-    
-    
-    names_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/civicknowledge.com-geonames-2022-1.2.43/data/names.csv')
-[/code]
+```
+import pandas as pd
+
+
+names_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/civicknowledge.com-geonames-2022-1.2.43/data/names.csv')
+```
 
 ### Accessing Package in Metapack
-[code] 
-    import metapack as mp
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/civicknowledge.com-geonames-2022-1.2.43.csv')
-    
-    # Create Dataframes
-    names_df = pkg.resource('names').dataframe()
-    
-[/code]
+```
+import metapack as mp
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/civicknowledge.com-geonames-2022-1.2.43.csv')
+
+# Create Dataframes
+names_df = pkg.resource('names').dataframe()
+```

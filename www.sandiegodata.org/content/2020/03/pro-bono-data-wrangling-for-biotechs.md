@@ -7,7 +7,7 @@ tags: ["covid-19"]
 author: "eric"
 ---
 
-Do you know Biotech companies, non profits, or other organizations who are working on the front lines of the pandemic who need professional help with managing, cleaning or publishing data? The[ San Diego Regional Data Library](<http://www.sandiegodata.org>) and [Civic Knowledge](<https://www.civicknowledge.com>) are offering pro-bono and low-cost help with pandemic-related small data projects. Some examples of the work that our professionals and volunteers can do include: 
+Do you know Biotech companies, non profits, or other organizations who are working on the front lines of the pandemic who need professional help with managing, cleaning or publishing data? The[ San Diego Regional Data Library](</>) and [Civic Knowledge](<https://www.civicknowledge.com>) are offering pro-bono and low-cost help with pandemic-related small data projects. Some examples of the work that our professionals and volunteers can do include: 
 
   * Data wrangling, cleaning and analysis. 
   * Preparing and publishing data for sharing, public or private
@@ -15,7 +15,7 @@ Do you know Biotech companies, non profits, or other organizations who are worki
   * Linking to other public datasets, such as demographics
 
 
-For an example of the kind of work we do, see the[ Data Library website](<http://www.sandiegodata.org/>) and our [data repository](<http://www.sandiegodata.org/>)
+For an example of the kind of work we do, see the[ Data Library website](</>) and our [data repository](</>)
 
 If you are fighting the virus and need to free up your technical staff from data gruntwork, please contact us: 
 

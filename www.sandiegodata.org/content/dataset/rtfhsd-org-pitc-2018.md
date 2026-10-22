@@ -12,7 +12,6 @@ _Unsheltered counts per tract and sheltered counts per facility, for 2018 San Di
 
 `rtfhsd.org-pitc-2018-4`
 
-Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
@@ -26,7 +25,7 @@ This dataset includes the sheltered and unsheltered homeless counts from the San
 
 ## Caveats
 
-The sheltered count, `sheltered_2018`, is based on a data extract from HUD, and is similar, although not exactly, the same as the 2018 records for CA-601 from the official HUD HIC dataset, which [has been packaged to combine multiple years. ](<http://data.sandiegodata.org/dataset/hudexchange-info-hic-project/>). The `sheltered_2018` resource in this dataset differs from the HUD dataset in two rows ( 336790, 347741 ) which appear to have been removed in an update made after source file for `sheltered_2018` was extracted. However, the PITC beds for the removed rows appear to have been re-allocated, because both datasets have the same value for the sum of the `pit_count` variable. For many analytical uses, these datasets will be identical.
+The sheltered count, `sheltered_2018`, is based on a data extract from HUD, and is similar, although not exactly, the same as the 2018 records for CA-601 from the official HUD HIC dataset, which [has been packaged to combine multiple years. ](</dataset/hudexchange-info-hic-project/>). The `sheltered_2018` resource in this dataset differs from the HUD dataset in two rows ( 336790, 347741 ) which appear to have been removed in an update made after source file for `sheltered_2018` was extracted. However, the PITC beds for the removed rows appear to have been re-allocated, because both datasets have the same value for the sum of the `pit_count` variable. For many analytical uses, these datasets will be identical.
 
 However, the [HUD HIC file](<//data.sandiegodata.org/dataset/hudexchange-info-hic-project/\)>) has many columns that the `sheltered_2018` file does not, including street addresses for the facilities
 
@@ -38,7 +37,7 @@ However, the [HUD HIC file](<//data.sandiegodata.org/dataset/hudexchange-info-hi
 
 ### Documentation Links
 
-  * [WeAllCount 2018 Annual Report](</uploads/2017/06/2018-WPoint-in-Time-Count-Annual-Report.pdf>)
+  * [WeAllCount 2018 Annual Report](<https://library-metatab-org.s3.amazonaws.com/rtfhsd.org-pitc-2018-4/docs/2018-WPoint-in-Time-Count-Annual-Report.pdf>)
 
 
 ## Contacts
@@ -56,15 +55,15 @@ However, the [HUD HIC file](<//data.sandiegodata.org/dataset/hudexchange-info-hi
 
 
 ### Accessing Packages in Metapack
-[code] 
-    import metapack as mp
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/rtfhsd.org-pitc-2018-4.zip')
-    
-    # Create Dataframes
-    
-    unsheltered_2018_df = pkg.resource('unsheltered_2018').dataframe()
-    sheltered_2018_df = pkg.resource('sheltered_2018').dataframe()
-[/code]
+```
+import metapack as mp
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/rtfhsd.org-pitc-2018-4.zip')
+
+# Create Dataframes
+
+unsheltered_2018_df = pkg.resource('unsheltered_2018').dataframe()
+sheltered_2018_df = pkg.resource('sheltered_2018').dataframe()
+```
 
 ## Data Dictionary
 
@@ -164,7 +163,7 @@ last_update_on| number| Last Update On
 Urls used in the creation of this data package.
 
   * **file:data/pitc-2018.csv# &encoding=ascii**. 
-  * **[pitc_2018_pdf](</uploads/2017/06/2018-Point-in-Time-Count-Census-Tract-Data.pdf>)**. PDF document from which pitc_2018_source data were scraped
+  * **pitc_2018_pdf (no longer available)**. PDF document from which pitc_2018_source data were scraped
 
 
 Last Modified 2019-07-17T16:32:44
@@ -177,12 +176,12 @@ Last Modified 2019-07-17T16:32:44
 
 
 ### Accessing Packages in Metapack
-[code] 
-    import metapack as mp
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/rtfhsd.org-pitc-2018-4.zip')
-    
-    # Create Dataframes
-    
-    unsheltered_2018_df = pkg.resource('unsheltered_2018').dataframe()
-    sheltered_2018_df = pkg.resource('sheltered_2018').dataframe()
-[/code]
+```
+import metapack as mp
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/rtfhsd.org-pitc-2018-4.zip')
+
+# Create Dataframes
+
+unsheltered_2018_df = pkg.resource('unsheltered_2018').dataframe()
+sheltered_2018_df = pkg.resource('sheltered_2018').dataframe()
+```

@@ -12,7 +12,6 @@ _References to the Survey of Consumer Finances_
 
 `federalreserve.gov-consumer_finances-1.2.4`. Modified 2020-12-22T22:08:50
 
-Resources | Packages | Documentation| Contacts| References
 
 ## Documentation
 
@@ -78,17 +77,14 @@ Urls used in the creation of this data package.
 
 
 ### Accessing Data in Vanilla Pandas
-[code] 
-    import pandas as pd
-    
-    
-[/code]
+```
+import pandas as pd
+```
 
 ### Accessing Package in Metapack
-[code] 
-    import metapack as mp
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/federalreserve.gov-consumer_finances-1.2.4.csv')
-    
-    # Create Dataframes
-    
-[/code]
+```
+import metapack as mp
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/federalreserve.gov-consumer_finances-1.2.4.csv')
+
+# Create Dataframes
+```

@@ -6,7 +6,7 @@ categories: ["News"]
 author: "qaadmin"
 ---
 
-Tonight we'll be [meeting to talk about two important collections of survey data](<https://www.meetup.com/preview/San-Diego-Regional-Data-Library/events/243393069>), The General Social Survey (GSS) and a broad collection of integrated survey datasets, IPUMS.org. Additionally, we'll be meeting with David Lynn, founder of [Mission Driven Finance,](<http://missiondrivenfinance.com/>) to talk about his [volunteer data project to analyze business lending to minorities in San Diego county](<http://www.sandiegodata.org/2017/08/mission-driven-credit-analysis/>). In the main meeting, I'll show how to use the web-analysis tools for the GSS and IPUMS. You can visit those sites now to explore a bit, and it would be worthwhile for you to create an account before the meeting. Here are the important URLs: 
+Tonight we'll be [meeting to talk about two important collections of survey data](<https://www.meetup.com/preview/San-Diego-Regional-Data-Library/events/243393069>), The General Social Survey (GSS) and a broad collection of integrated survey datasets, IPUMS.org. Additionally, we'll be meeting with David Lynn, founder of [Mission Driven Finance,](<http://missiondrivenfinance.com/>) to talk about his [volunteer data project to analyze business lending to minorities in San Diego county](</2017/08/mission-driven-credit-analysis/>). In the main meeting, I'll show how to use the web-analysis tools for the GSS and IPUMS. You can visit those sites now to explore a bit, and it would be worthwhile for you to create an account before the meeting. Here are the important URLs: 
 
   * [General Social Survey](<http://gss.norc.org/>)
   * [IPUMS](<https://www.ipums.org/>)

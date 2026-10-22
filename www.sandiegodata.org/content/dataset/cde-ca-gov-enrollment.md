@@ -12,7 +12,6 @@ _School-level enrollment by racial/ethnic designation, gender, and grade._
 
 `cde.ca.gov-enrollment-1.2.2`. Modified 2022-06-17T17:38:10
 
-Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
@@ -27,12 +26,11 @@ Enrollment by school and demographic group for the years 2007 to 2018. The upstr
 ## Caveats
 
 The download page includes this note: 
-[code] 
-    Note these data files contain enrollment data for primary enrollments only. 
-    It does not include short-term enrollments. For data on short-term enrollments, 
-    please refer to the Primary and Short-term Enrollment by School data files.
-    
-[/code]
+```
+Note these data files contain enrollment data for primary enrollments only. 
+It does not include short-term enrollments. For data on short-term enrollments, 
+please refer to the Primary and Short-term Enrollment by School data files.
+```
 
 Some of the annual files have a Race/Ethincity code of '8', which corresponds to "Multiple or No Response" in he 1998 to 2006 file structure, but is not defined for this set of files. 
 
@@ -160,21 +158,20 @@ Urls used in the creation of this data package.
 
 
 ### Accessing Data in Vanilla Pandas
-[code] 
-    import pandas as pd
-    
-    
-    enrollment_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-enrollment-1.2.2/data/enrollment.csv')
-    race_eth_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-enrollment-1.2.2/data/race_eth.csv')
-[/code]
+```
+import pandas as pd
+
+
+enrollment_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-enrollment-1.2.2/data/enrollment.csv')
+race_eth_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-enrollment-1.2.2/data/race_eth.csv')
+```
 
 ### Accessing Package in Metapack
-[code] 
-    import metapack as mp
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-enrollment-1.2.2.csv')
-    
-    # Create Dataframes
-    enrollment_df = pkg.resource('enrollment').dataframe()
-    race_eth_df = pkg.resource('race_eth').dataframe()
-    
-[/code]
+```
+import metapack as mp
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-enrollment-1.2.2.csv')
+
+# Create Dataframes
+enrollment_df = pkg.resource('enrollment').dataframe()
+race_eth_df = pkg.resource('race_eth').dataframe()
+```

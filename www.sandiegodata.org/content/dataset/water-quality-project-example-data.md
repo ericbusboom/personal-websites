@@ -12,7 +12,6 @@ _Collection of example data for the Water Project_
 
 `sandiegodata.org-water_project_data-1`
 
-Resources | Packages | Documentation| Contacts
 
 ## Resources
 
@@ -30,7 +29,7 @@ Data from a variety of sources for the Data Library's [summer water quality proj
 
   * **Wrangler**
 
-[Eric Busboom](<mailto:eric@sandiegodata.org>), [San Diego Regional Data Library](<http://www.sandiegodata.org>)
+[Eric Busboom](<mailto:eric@sandiegodata.org>), [San Diego Regional Data Library](</>)
 
 
 ## Packages

@@ -12,7 +12,6 @@ _Geocoded addresses for housing facilities in the San Diego CoC._
 
 `sandiegodata.org-hic_geocode-1`
 
-Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
@@ -21,7 +20,7 @@ Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Documentation
 
-This dataset has geocoded addresses from the [HUD Housing Inventory Count](<http://data.sandiegodata.org/dataset/hudexchange-info-hic-project/>). The addressess are geocoded with the [US Census geocoder.](<https://geocoding.geo.census.gov/geocoder/geographies/addressbatch?fo
+This dataset has geocoded addresses from the [HUD Housing Inventory Count](</dataset/hudexchange-info-hic-project/>). The addressess are geocoded with the [US Census geocoder.](<https://geocoding.geo.census.gov/geocoder/geographies/addressbatch?fo
 rm>)
 
 ## Caveats
@@ -43,14 +42,13 @@ Fairly few of the facilities in the inventory dataset have addresses, about 14K 
 
 
 ### Accessing Packages in Metapack
-[code] 
-    import metapack as mp
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-hic_geocode-1.zip')
-    
-    # Create Dataframes
-    hic_geocode_gdf = pkg.resource('hic_geocode').geoframe()
-    
-[/code]
+```
+import metapack as mp
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-hic_geocode-1.zip')
+
+# Create Dataframes
+hic_geocode_gdf = pkg.resource('hic_geocode').geoframe()
+```
 
 ## Data Dictionary
 
@@ -94,11 +92,10 @@ Last Modified 2019-07-17T00:49:19
 
 
 ### Accessing Packages in Metapack
-[code] 
-    import metapack as mp
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-hic_geocode-1.zip')
-    
-    # Create Dataframes
-    hic_geocode_gdf = pkg.resource('hic_geocode').geoframe()
-    
-[/code]
+```
+import metapack as mp
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-hic_geocode-1.zip')
+
+# Create Dataframes
+hic_geocode_gdf = pkg.resource('hic_geocode').geoframe()
+```

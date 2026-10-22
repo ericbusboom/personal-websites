@@ -1,8 +1,9 @@
 ---
 title: "How to Join a Project"
-date: 2016-12-13T14:07:42+00:00
+date: "2016-12-13T14:07:42+00:00"
 draft: false
 author: "eric"
+url: "/get-data/projects/join/"
 ---
 
 Here are a few things you’ll need to do to join one of the Data Library’s projects

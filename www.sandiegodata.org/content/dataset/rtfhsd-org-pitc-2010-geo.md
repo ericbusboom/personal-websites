@@ -12,7 +12,6 @@ _Point data for locations of homeless for the 2010 PiTC count in San Diego count
 
 `rtfhsd.org-pitc-2010-geo-3`
 
-Resources | Packages | Documentation| Contacts| Data Dictionary
 
 ## Resources
 
@@ -45,15 +44,15 @@ The datapackage also includes counts aggregated to tracts, per type of shelter.
 
 
 ### Accessing Packages in Metapack
-[code] 
-    import metapack as mp
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/rtfhsd.org-pitc-2010-geo-3.zip')
-    
-    # Create Dataframes
-    pitc_gdf = pkg.resource('pitc').geoframe()
-    
-    tracts_df = pkg.resource('tracts').dataframe()
-[/code]
+```
+import metapack as mp
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/rtfhsd.org-pitc-2010-geo-3.zip')
+
+# Create Dataframes
+pitc_gdf = pkg.resource('pitc').geoframe()
+
+tracts_df = pkg.resource('tracts').dataframe()
+```
 
 ## Data Dictionary
 
@@ -91,12 +90,12 @@ Last Modified 2019-07-17T21:30:37
 
 
 ### Accessing Packages in Metapack
-[code] 
-    import metapack as mp
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/rtfhsd.org-pitc-2010-geo-3.zip')
-    
-    # Create Dataframes
-    pitc_gdf = pkg.resource('pitc').geoframe()
-    
-    tracts_df = pkg.resource('tracts').dataframe()
-[/code]
+```
+import metapack as mp
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/rtfhsd.org-pitc-2010-geo-3.zip')
+
+# Create Dataframes
+pitc_gdf = pkg.resource('pitc').geoframe()
+
+tracts_df = pkg.resource('tracts').dataframe()
+```

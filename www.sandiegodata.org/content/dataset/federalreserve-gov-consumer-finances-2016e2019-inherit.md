@@ -12,7 +12,6 @@ _An Extract from the survey of consumer finances for studying networth and ineri
 
 `federalreserve.gov-consumer_finances-2016e2019-inherit-1.2.6`. Modified 2020-12-23T22:43:08
 
-Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
@@ -159,21 +158,20 @@ Urls used in the creation of this data package.
 
 
 ### Accessing Data in Vanilla Pandas
-[code] 
-    import pandas as pd
-    
-    
-    inherit_scf_16_19_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/federalreserve.gov-consumer_finances-2016e2019-inherit-1.2.6/data/inherit_scf_16_19.csv')
-    inherit_scf_16_19_i_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/federalreserve.gov-consumer_finances-2016e2019-inherit-1.2.6/data/inherit_scf_16_19_i.csv')
-[/code]
+```
+import pandas as pd
+
+
+inherit_scf_16_19_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/federalreserve.gov-consumer_finances-2016e2019-inherit-1.2.6/data/inherit_scf_16_19.csv')
+inherit_scf_16_19_i_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/federalreserve.gov-consumer_finances-2016e2019-inherit-1.2.6/data/inherit_scf_16_19_i.csv')
+```
 
 ### Accessing Package in Metapack
-[code] 
-    import metapack as mp
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/federalreserve.gov-consumer_finances-2016e2019-inherit-1.2.6.csv')
-    
-    # Create Dataframes
-    inherit_scf_16_19_df = pkg.resource('inherit_scf_16_19').dataframe()
-    inherit_scf_16_19_i_df = pkg.resource('inherit_scf_16_19_i').dataframe()
-    
-[/code]
+```
+import metapack as mp
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/federalreserve.gov-consumer_finances-2016e2019-inherit-1.2.6.csv')
+
+# Create Dataframes
+inherit_scf_16_19_df = pkg.resource('inherit_scf_16_19').dataframe()
+inherit_scf_16_19_i_df = pkg.resource('inherit_scf_16_19_i').dataframe()
+```

@@ -12,7 +12,6 @@ _Collection of mulltiple, simpler datasets from OpenJustice that don't require s
 
 `openjustice.doj.ca.gov-datasets-1.1.1`. Modified 2020-06-18T00:07:36
 
-Resources | Packages | Documentation| Contacts| Data Dictionary
 
 ## Resources
 
@@ -681,18 +680,17 @@ c15pm_f| integer|
 
 
 ### Accessing Packages in Metapack
-[code] 
-    import metapack as mp
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/openjustice.doj.ca.gov-datasets-1.1.1.csv')
-    
-    # Create Dataframes
-    arrests_df = pkg.resource('arrests').dataframe()
-    arrest_dispositions_df = pkg.resource('arrest_dispositions').dataframe()
-    complaints_df = pkg.resource('complaints').dataframe()
-    crimes_clearances_df = pkg.resource('crimes_clearances').dataframe()
-    ripa_stop_df = pkg.resource('ripa_stop').dataframe()
-    lea_cjp_df = pkg.resource('lea_cjp').dataframe()
-    leap_df = pkg.resource('leap').dataframe()
-    leoka_df = pkg.resource('leoka').dataframe()
-    
-[/code]
+```
+import metapack as mp
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/openjustice.doj.ca.gov-datasets-1.1.1.csv')
+
+# Create Dataframes
+arrests_df = pkg.resource('arrests').dataframe()
+arrest_dispositions_df = pkg.resource('arrest_dispositions').dataframe()
+complaints_df = pkg.resource('complaints').dataframe()
+crimes_clearances_df = pkg.resource('crimes_clearances').dataframe()
+ripa_stop_df = pkg.resource('ripa_stop').dataframe()
+lea_cjp_df = pkg.resource('lea_cjp').dataframe()
+leap_df = pkg.resource('leap').dataframe()
+leoka_df = pkg.resource('leoka').dataframe()
+```

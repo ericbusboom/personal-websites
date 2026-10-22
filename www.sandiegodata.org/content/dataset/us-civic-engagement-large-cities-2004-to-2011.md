@@ -12,12 +12,11 @@ _Per-capital volunteer hours. The values appear to be the number of hours volunt
 
 `volunteeringinamerica.gov-civic_engagement-1`
 
-Resources | Packages | Documentation| Contacts
 
 ## Resources
 
   * **[httpwww.volunteeringinamerica.gov-data-extraction](<http://www.volunteeringinamerica.gov/export.cfm>)**. A Web tool for extracting mesures of civic engagement from http://www.volunteeringinamerica.gov/
-  * **[us-volunteer-hours-per-resident-large-cities-2004-to-2011](<http://data.sandiegodata.org/storage/f/2013-01-25T173508/volunteerhours-04-11.csv>)**. Per-capital volunteer hours. The values appear to be the number of hours volunteered in a year, per resident.
+  * **us-volunteer-hours-per-resident-large-cities-2004-to-2011 (no longer available)**. Per-capital volunteer hours. The values appear to be the number of hours volunteered in a year, per resident.
   * **[technical-notes](<http://www.volunteeringinamerica.gov/about/technical.cfm>)**. Technical notes for the data in this dataset.
 
 
@@ -29,7 +28,7 @@ Civic Engagement data for large US cities, from 2004 to 2011, extracted from htt
 
   * **Wrangler**
 
-[Eric Busboom](<mailto:eric@sandiegodata.org>), [San Diego Regional Data Library](<http://www.sandiegodata.org>)
+[Eric Busboom](<mailto:eric@sandiegodata.org>), [San Diego Regional Data Library](</>)
 
 
 ## Packages

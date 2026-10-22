@@ -12,7 +12,6 @@ _CBA FY15 Online Project Submittals_
 
 `sandiego.gov-cba-1`
 
-Resources | Packages | Documentation| Contacts
 
 ## Resources
 
@@ -27,7 +26,7 @@ Proposed projects submitted via online forms and sms survey by CBA members.
 
   * **Wrangler**
 
-[Eric Busboom](<mailto:eric@sandiegodata.org>), [San Diego Regional Data Library](<http://www.sandiegodata.org>)
+[Eric Busboom](<mailto:eric@sandiegodata.org>), [San Diego Regional Data Library](</>)
 
 
 ## Packages

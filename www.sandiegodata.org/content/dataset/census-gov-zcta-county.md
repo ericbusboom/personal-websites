@@ -12,7 +12,6 @@ _Maps Cenus zip-code tabulation areas to Counties_
 
 `census.gov-zcta_county-2.1.2`. Modified 2022-04-25T18:11:42
 
-Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
@@ -73,19 +72,18 @@ Urls used in the creation of this data package.
 
 
 ### Accessing Data in Vanilla Pandas
-[code] 
-    import pandas as pd
-    
-    
-    county_zcta_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/census.gov-zcta_county-2.1.2/data/county_zcta.csv')
-[/code]
+```
+import pandas as pd
+
+
+county_zcta_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/census.gov-zcta_county-2.1.2/data/county_zcta.csv')
+```
 
 ### Accessing Package in Metapack
-[code] 
-    import metapack as mp
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/census.gov-zcta_county-2.1.2.zip')
-    
-    # Create Dataframes
-    county_zcta_df = pkg.resource('county_zcta').dataframe()
-    
-[/code]
+```
+import metapack as mp
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/census.gov-zcta_county-2.1.2.zip')
+
+# Create Dataframes
+county_zcta_df = pkg.resource('county_zcta').dataframe()
+```

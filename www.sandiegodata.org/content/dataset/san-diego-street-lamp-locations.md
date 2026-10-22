@@ -12,7 +12,6 @@ _Maps and geo data for the locations of San Diego streetlamps_
 
 `sandiegodata.org-street_lamps-1`
 
-Resources | Packages | Documentation| Contacts
 
 ## Resources
 
@@ -33,7 +32,7 @@ So, this data should be used as a rough-guide to the locations of lamps, rather 
 
 This data is released under the following terms and conditions. 
 
-Clarinova and the San Diego Regional Data Library disclaim any warranty for this data shall not be liable for loss or harm. [See the SDRDL Disclaimers and Limitations web page for complete details.](<http://www.sandiegodata.org/get-data/data-disclaimers-and-limitations/>)
+Clarinova and the San Diego Regional Data Library disclaim any warranty for this data shall not be liable for loss or harm. [See the SDRDL Disclaimers and Limitations web page for complete details.](</get-data/data-disclaimers-and-limitations/>)
 
 This data is based on data from SANGIS, which is subject to its own terms and conditions. See the [SANGIS Legal Notice for details](<http://www.sangis.org/Legal_Notice.htm>).
 
@@ -41,7 +40,7 @@ This data is based on data from SANGIS, which is subject to its own terms and co
 
   * **Wrangler**
 
-[Eric Busboom](<mailto:eric@sandiegodata.org>), [San Diego Regional Data Library](<http://www.sandiegodata.org>)
+[Eric Busboom](<mailto:eric@sandiegodata.org>), [San Diego Regional Data Library](</>)
 
 
 ## Packages

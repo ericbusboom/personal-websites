@@ -12,7 +12,6 @@ _Numeric county codes used by California government._
 
 `sandiegodata.org-county_codes-ca-3`
 
-Resources | Packages | Documentation| Contacts| Data Dictionary
 
 ## Resources
 
@@ -53,14 +52,14 @@ These codes were scraped from a website.
 
 
 ### Accessing Packages in Metapack
-[code] 
-    import metapack as mp
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-county_codes-ca-3.zip')
-    
-    # Create Dataframes
-    
-    ca_county_codes_df = pkg.resource('ca_county_codes').dataframe()
-[/code]
+```
+import metapack as mp
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-county_codes-ca-3.zip')
+
+# Create Dataframes
+
+ca_county_codes_df = pkg.resource('ca_county_codes').dataframe()
+```
 
 ## Data Dictionary
 
@@ -87,11 +86,11 @@ Last Modified 2019-08-08T20:13:28
 
 
 ### Accessing Packages in Metapack
-[code] 
-    import metapack as mp
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-county_codes-ca-3.zip')
-    
-    # Create Dataframes
-    
-    ca_county_codes_df = pkg.resource('ca_county_codes').dataframe()
-[/code]
+```
+import metapack as mp
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-county_codes-ca-3.zip')
+
+# Create Dataframes
+
+ca_county_codes_df = pkg.resource('ca_county_codes').dataframe()
+```

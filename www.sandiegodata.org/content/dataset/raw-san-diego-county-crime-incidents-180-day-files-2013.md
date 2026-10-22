@@ -12,7 +12,6 @@ _Unprocessed crime incident files from SANDAG_
 
 `sangis.org-crime-2013e-raw-1`
 
-Resources | Packages | Documentation| Contacts
 
 ## Resources
 
@@ -32,7 +31,7 @@ ARJIS publishes an extract of the data they collect from San Diego county police
 
   * **Wrangler**
 
-[Eric Busboom](<mailto:eric@sandiegodata.org>), [San Diego Regional Data Library](<http://www.sandiegodata.org>)
+[Eric Busboom](<mailto:eric@sandiegodata.org>), [San Diego Regional Data Library](</>)
 
 
 ## Packages

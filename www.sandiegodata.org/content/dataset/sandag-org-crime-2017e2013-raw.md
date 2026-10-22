@@ -12,7 +12,6 @@ _Unprocessed crime incident files from SANDAG_
 
 `sandag.org-crime-2017e2013-raw-1.1.1`. Modified 2020-11-22T22:18:08
 
-Resources | Packages | Documentation| Contacts| Data Dictionary
 
 ## Resources
 
@@ -21,13 +20,13 @@ Resources | Packages | Documentation| Contacts| Data Dictionary
 
 ## Documentation
 
-**NOTE: These are original files from SANDAG. You probably want to work with the[cleaned version](<http://data.sandiegodata.org/dataset/clarinova_com-crime-incidents-casnd-7ba4-extract>).**
+**NOTE: These are original files from SANDAG. You probably want to work with the[cleaned version](</dataset/>).**
 
 Crime incidents obtained from SANDAG through PRA request 12-075, presented as zipped CSV files. The request was for 1.5M incident records, and was delivered in April of 2013. Records start on Jan 1, 2007 and end on 31 March, 2013, for about 1008525 records.
 
 These records are not cleaned, processed or geocoded. As is, they will only be useful for either further cleaning, or for time-series analysis.
 
-This a later extract of the same data as in [Revision 1](<http://data.sandiegodata.org/dataset/raw-san-diego-county-crime-incidents-2007-2013-rev-1>). Revision one is being kept for historical comparisons; this data set is probably the one you want.
+This a later extract of the same data as in [Revision 1](</dataset/>). Revision one is being kept for historical comparisons; this data set is probably the one you want.
 
 ### Documentation Links
 
@@ -38,7 +37,7 @@ This a later extract of the same data as in [Revision 1](<http://data.sandiegoda
 
   * **Wrangler**
 
-[Eric Busboom](<mailto:eric@sandiegodata.org>), [San Diego Regional Data Library](<http://www.sandiegodata.org>)
+[Eric Busboom](<mailto:eric@sandiegodata.org>), [San Diego Regional Data Library](</>)
 
 
 ## Data Dictionary
@@ -67,19 +66,18 @@ zipcode| integer|
 
 
 ### Accessing Data in Vanilla Pandas
-[code] 
-    import pandas as pd
-    
-    
-    crime_2007_2013_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandag.org-crime-2017e2013-raw-1.1.1/data/crime_2007_2013.csv')
-[/code]
+```
+import pandas as pd
+
+
+crime_2007_2013_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandag.org-crime-2017e2013-raw-1.1.1/data/crime_2007_2013.csv')
+```
 
 ### Accessing Package in Metapack
-[code] 
-    import metapack as mp
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandag.org-crime-2017e2013-raw-1.1.1.csv')
-    
-    # Create Dataframes
-    crime_2007_2013_df = pkg.resource('crime_2007_2013').dataframe()
-    
-[/code]
+```
+import metapack as mp
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandag.org-crime-2017e2013-raw-1.1.1.csv')
+
+# Create Dataframes
+crime_2007_2013_df = pkg.resource('crime_2007_2013').dataframe()
+```

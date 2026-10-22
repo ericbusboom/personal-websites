@@ -12,7 +12,6 @@ _Data files linking ZIP codes to 2010 Census tracts._
 
 `OrderedDict([('time', '2016'), ('origin', 'huduser.gov'), ('dataset', 'zip-tract'), ('version', '2'), ('@value', 'huduser.gov-zip_tract-2016-2')])`
 
-Resources | Packages | Documentation| Contacts
 
 ## Resources
 
@@ -51,17 +50,16 @@ Resources | Packages | Documentation| Contacts
 
 
 ### Accessing Packages in Metapack
-[code] 
-    import metapack as mp
-    # ZIP Package
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/huduser.gov-zip_tract-2016-2.zip')
-    # CSV Package
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/huduser.gov-zip_tract-2016-2.csv') 
-    
-    resource = pkg.resource('resource_name') # Get a resource
-    df = resource.dataframe() # Create a pandas Dataframe
-    gdf = resource.geoframe() # Create a GeoPandas GeoDataFrame
-    
-[/code]
+```
+import metapack as mp
+# ZIP Package
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/huduser.gov-zip_tract-2016-2.zip')
+# CSV Package
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/huduser.gov-zip_tract-2016-2.csv') 
+
+resource = pkg.resource('resource_name') # Get a resource
+df = resource.dataframe() # Create a pandas Dataframe
+gdf = resource.geoframe() # Create a GeoPandas GeoDataFrame
+```
 
 Last Modified 2017-04-03T19:58:57

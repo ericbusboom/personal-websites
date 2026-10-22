@@ -1,8 +1,9 @@
 ---
 title: "Data Driven Coronavirus Recovery"
-date: 2020-04-22T08:47:07+00:00
+date: "2020-04-22T08:47:07+00:00"
 draft: false
 author: "eric"
+url: "/get-data/projects/data-driven-coronavirus-recovery/"
 ---
 
 Six weeks into the coronavirus epidemic in San Diego and we are increasingly concerned about recovery, but still lack good data to make decisions. The San Diego Regional Data Library is working with non profits and governments to identify what information we need to make plans for recovery and to collect and process data for analysts and planners across the county. 

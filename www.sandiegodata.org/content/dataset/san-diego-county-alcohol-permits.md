@@ -12,7 +12,6 @@ _San Diego County Alcohol Permits_
 
 `sandiegodata.org-alcohol_permits-1`
 
-Resources | Packages | Documentation| Contacts
 
 ## Resources
 
@@ -31,7 +30,7 @@ This dataset is derived from the [California Alcohol Beverage Control data extra
 
 This data is released under the following terms and conditions. 
 
-Clarinova and the San Diego Regional Data Library disclaim any warranty for this data shall not be liable for loss or harm. [See the SDRDL Disclaimers and Limitations web page for complete details.](<http://www.sandiegodata.org/get-data/data-disclaimers-and-limitations/>)
+Clarinova and the San Diego Regional Data Library disclaim any warranty for this data shall not be liable for loss or harm. [See the SDRDL Disclaimers and Limitations web page for complete details.](</get-data/data-disclaimers-and-limitations/>)
 
 This data is based on data from the California Department of Alcohol Beverage Control, which is subject to its own terms and conditions. See their [Conditions of Use](<http://www.abc.ca.gov/use.html>).
 
@@ -39,7 +38,7 @@ This data is based on data from the California Department of Alcohol Beverage Co
 
   * **Wrangler**
 
-[Eric Busboom](<mailto:eric@sandiegodata.org>), [San Diego Regional Data Library](<http://www.sandiegodata.org>)
+[Eric Busboom](<mailto:eric@sandiegodata.org>), [San Diego Regional Data Library](</>)
 
 
 ## Packages

@@ -7,4 +7,4 @@ tags: ["covid-19"]
 author: "eric"
 ---
 
-We are scraping the San Diego County coronavirus cases page to generate a historical dataset. [See the data repository for a link to the file](<http://data.sandiegodata.org/datasets/covid19>).
+We are scraping the San Diego County coronavirus cases page to generate a historical dataset. [See the data repository for a link to the file](</tags/covid19/>).

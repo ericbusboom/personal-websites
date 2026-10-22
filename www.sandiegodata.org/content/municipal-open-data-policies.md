@@ -1,11 +1,12 @@
 ---
 title: "Municipal Open Data Policies"
-date: 2013-04-03T20:04:24+00:00
+date: "2013-04-03T20:04:24+00:00"
 draft: false
 author: "qaadmin"
+url: "/about/reports/municipal-open-data-policies/"
 ---
 
-_Since 2006, an accelerating number of US cities have made a formal commitment to transparency by requiring publication of government data. This analysis studies ten documents cities have created to publicize and formalize Open Data policies, and includes recommendations for San Diego area governments to create their own policies._ [Also available in PDF.](</uploads/12/2013/04/Municipal-Open-Data-Policies.pdf> "Also available in PDF. ") This report studies eight cities that have taken public action on developing Open Data programs, from the earliest program in Washington DC to Chicago’s ordinance of late last year. The study also includes the White House Open Data Directive, which is very similar to other documents. These documents take a variety of forms, from City Council resolutions to changes to municipal laws. The cities, their type of action, and how much detail is in their statements is summarized in Table 1.  **City** | **Link** | **Form** | **Date** | **Definition & Detail**  
+_Since 2006, an accelerating number of US cities have made a formal commitment to transparency by requiring publication of government data. This analysis studies ten documents cities have created to publicize and formalize Open Data policies, and includes recommendations for San Diego area governments to create their own policies._ [Also available in PDF.](</uploads/7/2013/04/Municipal-Open-Data-Policies.pdf> "Also available in PDF. ") This report studies eight cities that have taken public action on developing Open Data programs, from the earliest program in Washington DC to Chicago’s ordinance of late last year. The study also includes the White House Open Data Directive, which is very similar to other documents. These documents take a variety of forms, from City Council resolutions to changes to municipal laws. The cities, their type of action, and how much detail is in their statements is summarized in Table 1.  **City** | **Link** | **Form** | **Date** | **Definition & Detail**  
 ---|---|---|---|---  
 **Washington DC** | <http://bit.ly/YMJvEp> | DCStat Policy | June 1, 2006 | High  
 **Vancouver** | <http://bit.ly/171n1pK> | Resolution | May 1, 2009 | Low  

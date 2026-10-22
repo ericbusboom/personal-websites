@@ -16,6 +16,8 @@
 	}
 }
 
+import sandiegodata.caddy
+
 (hugo) {
 	root * /srv/sites/{args[0]}/{args[1]}
 	encode zstd gzip
@@ -57,7 +59,13 @@ http://civicknowledge.{$TEST_HOST} {
 }
 
 http://sandiegodata.{$TEST_HOST} {
+	import sandiegodata_redirects
 	import hugo sandiegodata test
+}
+
+# data.sandiegodata.org, as it will redirect into the test site
+http://sandiegodata-data.{$TEST_HOST} {
+	import data_sandiegodata {$TEST_SCHEME}://sandiegodata.{$TEST_HOST}{$TEST_PORT}
 }
 
 http://explainers.{$TEST_HOST} {
@@ -92,7 +100,14 @@ http://www.civicknowledge.com, https://www.civicknowledge.com {
 }
 
 http://www.sandiegodata.org, https://www.sandiegodata.org {
+	import sandiegodata_redirects
 	import prod sandiegodata
+}
+
+# The old data repository is part of www.sandiegodata.org now.
+http://data.sandiegodata.org, https://data.sandiegodata.org {
+	tls internal
+	import data_sandiegodata https://www.sandiegodata.org
 }
 
 http://www.lajollatroop506.com, https://www.lajollatroop506.com {

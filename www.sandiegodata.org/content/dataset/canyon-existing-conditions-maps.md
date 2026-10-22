@@ -12,7 +12,6 @@ _Geographic packages for conditions of canyons in San Diego county_
 
 `sdcanyonlands.org-canyon_conditions-1`
 
-Resources | Packages | Documentation| Contacts
 
 ## Resources
 
@@ -35,7 +34,7 @@ Existing conditions data used in Canyons Enhancement Planning. See [the Canyons 
 
   * **Wrangler**
 
-[Eric Busboom](<mailto:eric@sandiegodata.org>), [San Diego Regional Data Library](<http://www.sandiegodata.org>)
+[Eric Busboom](<mailto:eric@sandiegodata.org>), [San Diego Regional Data Library](</>)
 
 
 ## Packages

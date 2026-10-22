@@ -1,8 +1,9 @@
 ---
 title: "Capstone Exchange"
-date: 2020-12-03T13:29:28+00:00
+date: "2020-12-03T13:29:28+00:00"
 draft: false
 author: "eric"
+url: "/capstone-exchange/"
 ---
 
 _Capstone Exchange connects nonprofits and government agencies who need help with projects with civic technologists and students who want to donate their skills. It has the potential to increase in-kind donations in the US by $10M per year.  _
@@ -35,5 +36,5 @@ The pro-bono technologist are a very diverse group that includes:
 
   * Software and Data Science students with capstone requirements
   * Local Code for America Brigades, such as [Open San Diego](<https://opensandiego.org/>)
-  * Data For Good organizations such as [DataKind](<https://www.datakind.org/>) or [The San Diego Regional Data Library](<http://www.sandiegodata.org/>)
+  * Data For Good organizations such as [DataKind](<https://www.datakind.org/>) or [The San Diego Regional Data Library](</>)
   * Independent organizations such as UCSD's [Triton Software Engineering](<https://tse.ucsd.edu/>)

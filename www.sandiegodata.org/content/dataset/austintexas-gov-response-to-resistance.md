@@ -12,7 +12,6 @@ _Austin Police Department response to police resistance incidents._
 
 `austintexas.gov-response_to_resistance-1.1.4`. Modified 2020-06-17T23:53:20
 
-Resources | Packages | Documentation| Contacts| Data Dictionary
 
 ## Resources
 
@@ -274,15 +273,14 @@ sr_empty_hand_active_aggression| string|
 
 
 ### Accessing Packages in Metapack
-[code] 
-    import metapack as mp
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/austintexas.gov-response_to_resistance-1.1.4.csv')
-    
-    # Create Dataframes
-    r2r_2015_df = pkg.resource('r2r_2015').dataframe()
-    r2r_2016_df = pkg.resource('r2r_2016').dataframe()
-    r2r_2017_df = pkg.resource('r2r_2017').dataframe()
-    r2r_2018_df = pkg.resource('r2r_2018').dataframe()
-    r2r_2015_2018_df = pkg.resource('r2r_2015_2018').dataframe()
-    
-[/code]
+```
+import metapack as mp
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/austintexas.gov-response_to_resistance-1.1.4.csv')
+
+# Create Dataframes
+r2r_2015_df = pkg.resource('r2r_2015').dataframe()
+r2r_2016_df = pkg.resource('r2r_2016').dataframe()
+r2r_2017_df = pkg.resource('r2r_2017').dataframe()
+r2r_2018_df = pkg.resource('r2r_2018').dataframe()
+r2r_2015_2018_df = pkg.resource('r2r_2015_2018').dataframe()
+```

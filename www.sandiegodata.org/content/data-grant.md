@@ -1,8 +1,9 @@
 ---
 title: "Data Grant 2021"
-date: 2019-01-15T13:48:30+00:00
+date: "2019-01-15T13:48:30+00:00"
 draft: false
 author: "eric"
+url: "/get-data/data-grant/"
 ---
 
 **Submission deadline: January 8, 2021**

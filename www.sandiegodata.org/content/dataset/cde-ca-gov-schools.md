@@ -12,7 +12,6 @@ _California public schools, private schools and districts._
 
 `cde.ca.gov-schools-2.1.1`. Modified 2022-06-17T15:44:42
 
-Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
@@ -220,23 +219,22 @@ Urls used in the creation of this data package.
 
 
 ### Accessing Data in Vanilla Pandas
-[code] 
-    import pandas as pd
-    
-    
-    public_schools_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-schools-2.1.1/data/public_schools.csv')
-    school_districts_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-schools-2.1.1/data/school_districts.csv')
-    private_schools_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-schools-2.1.1/data/private_schools.csv')
-[/code]
+```
+import pandas as pd
+
+
+public_schools_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-schools-2.1.1/data/public_schools.csv')
+school_districts_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-schools-2.1.1/data/school_districts.csv')
+private_schools_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-schools-2.1.1/data/private_schools.csv')
+```
 
 ### Accessing Package in Metapack
-[code] 
-    import metapack as mp
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-schools-2.1.1.csv')
-    
-    # Create Dataframes
-    public_schools_df = pkg.resource('public_schools').dataframe()
-    school_districts_df = pkg.resource('school_districts').dataframe()
-    private_schools_df = pkg.resource('private_schools').dataframe()
-    
-[/code]
+```
+import metapack as mp
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-schools-2.1.1.csv')
+
+# Create Dataframes
+public_schools_df = pkg.resource('public_schools').dataframe()
+school_districts_df = pkg.resource('school_districts').dataframe()
+private_schools_df = pkg.resource('private_schools').dataframe()
+```

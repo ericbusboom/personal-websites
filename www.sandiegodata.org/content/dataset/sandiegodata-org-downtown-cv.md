@@ -12,7 +12,6 @@ _Files and code for analyzing San Diego downtown homelessness data with computer
 
 `sandiegodata.org-downtown_cv-5`
 
-Resources | Packages | Documentation| Contacts| Data Dictionary
 
 ## Resources
 
@@ -36,7 +35,7 @@ These datasets link to map urls and annotations, for three kinds of annotations:
 
 ## More Information:
 
-  * [Blog Post](<http://www.sandiegodata.org/2019/09/computer-vision-for-greater-good/>). For more discussion about the GCP and handwritten marks, and the tasks in volved in developing computer vision algorithms for these data, see our recent blog post on the subject.
+  * [Blog Post](</2019/09/computer-vision-for-greater-good/>). For more discussion about the GCP and handwritten marks, and the tasks in volved in developing computer vision algorithms for these data, see our recent blog post on the subject.
   * [Clustering Notebook](<https://nbviewer.jupyter.org/github/sandiegodata-projects/downtown-partnership/blob/master/datasets/sandiegodata.org-downtown_cv/notebooks/Template%20Matching%20Clusters.ipynb>). For some examples of using OpenCV to extract and match templates, to georeference maps, see the Templates and Clustering Jupyter Notebook].
   * [Extract Marks Notebook](<https://nbviewer.jupyter.org/github/sandiegodata-projects/downtown-partnership/blob/master/datasets/sandiegodata.org-downtown_cv/notebooks/Extract%20Marks.ipynb>). For examples of extracting ( but not recognizing ) handwritten marks, see this notebook. 
 
@@ -44,10 +43,9 @@ These datasets link to map urls and annotations, for three kinds of annotations:
 ## Developer notes
 
 After anotation JSON files are copied into S#, the list of S# urls must be updated. To refresh the list of urls run
-[code] 
-    $  bin/update_s3.sh <s3-profile>
-    
-[/code]
+```
+$  bin/update_s3.sh <s3-profile>
+```
 
 ## Contacts
 
@@ -65,18 +63,18 @@ After anotation JSON files are copied into S#, the list of S# urls must be updat
 
 
 ### Accessing Packages in Metapack
-[code] 
-    import metapack as mp
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-downtown_cv-5.zip')
-    
-    # Create Dataframes
-    
-    gcp_df = pkg.resource('gcp').dataframe()
-    intersection_regions_df = pkg.resource('intersection_regions').dataframe()intersections_gdf = pkg.resource('intersections').geoframe()
-    
-    file_annotations_df = pkg.resource('file_annotations').dataframe()
-    counts_df = pkg.resource('counts').dataframe()
-[/code]
+```
+import metapack as mp
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-downtown_cv-5.zip')
+
+# Create Dataframes
+
+gcp_df = pkg.resource('gcp').dataframe()
+intersection_regions_df = pkg.resource('intersection_regions').dataframe()intersections_gdf = pkg.resource('intersections').geoframe()
+
+file_annotations_df = pkg.resource('file_annotations').dataframe()
+counts_df = pkg.resource('counts').dataframe()
+```
 
 ## Data Dictionary
 
@@ -158,15 +156,15 @@ Last Modified 2019-09-13T04:52:40
 
 
 ### Accessing Packages in Metapack
-[code] 
-    import metapack as mp
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-downtown_cv-5.zip')
-    
-    # Create Dataframes
-    
-    gcp_df = pkg.resource('gcp').dataframe()
-    intersection_regions_df = pkg.resource('intersection_regions').dataframe()intersections_gdf = pkg.resource('intersections').geoframe()
-    
-    file_annotations_df = pkg.resource('file_annotations').dataframe()
-    counts_df = pkg.resource('counts').dataframe()
-[/code]
+```
+import metapack as mp
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-downtown_cv-5.zip')
+
+# Create Dataframes
+
+gcp_df = pkg.resource('gcp').dataframe()
+intersection_regions_df = pkg.resource('intersection_regions').dataframe()intersections_gdf = pkg.resource('intersections').geoframe()
+
+file_annotations_df = pkg.resource('file_annotations').dataframe()
+counts_df = pkg.resource('counts').dataframe()
+```

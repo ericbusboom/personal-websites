@@ -12,7 +12,6 @@ _A very conprehensive collection of automatically scraped data._
 
 `coronadatascraper.com-covid19-1.2.24`. Modified 2020-07-08T15:54:25
 
-Resources | Packages | Documentation| Contacts| Data Dictionary
 
 ## Resources
 
@@ -205,23 +204,22 @@ tz| string|
 
 
 ### Accessing Data in Vanilla Pandas
-[code] 
-    import pandas as pd
-    
-    
-    source_tidy_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/coronadatascraper.com-covid19-1.2.24/data/source_tidy.csv')
-    source_jhu_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/coronadatascraper.com-covid19-1.2.24/data/source_jhu.csv')
-    source_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/coronadatascraper.com-covid19-1.2.24/data/source.csv')
-[/code]
+```
+import pandas as pd
+
+
+source_tidy_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/coronadatascraper.com-covid19-1.2.24/data/source_tidy.csv')
+source_jhu_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/coronadatascraper.com-covid19-1.2.24/data/source_jhu.csv')
+source_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/coronadatascraper.com-covid19-1.2.24/data/source.csv')
+```
 
 ### Accessing Package in Metapack
-[code] 
-    import metapack as mp
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/coronadatascraper.com-covid19-1.2.24.csv')
-    
-    # Create Dataframes
-    source_tidy_df = pkg.resource('source_tidy').dataframe()
-    source_jhu_df = pkg.resource('source_jhu').dataframe()
-    source_df = pkg.resource('source').dataframe()
-    
-[/code]
+```
+import metapack as mp
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/coronadatascraper.com-covid19-1.2.24.csv')
+
+# Create Dataframes
+source_tidy_df = pkg.resource('source_tidy').dataframe()
+source_jhu_df = pkg.resource('source_jhu').dataframe()
+source_df = pkg.resource('source').dataframe()
+```

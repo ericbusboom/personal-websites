@@ -1,8 +1,9 @@
 ---
 title: "Data Disclaimers and Limitations"
-date: 2013-05-13T12:41:49+00:00
+date: "2013-05-13T12:41:49+00:00"
 draft: false
 author: "eric"
+url: "/get-data/data-disclaimers-and-limitations/"
 ---
 
 We do our best to ensure that the data we release is complete, accurate and useful. However, because we do not create the data, and because the processing required to make the data useful is complex, we cannot be liable for omissions or inaccuracies. Therefore, we release all of our data with the following Disclaimer of Warranty and Limitation of Liability. 

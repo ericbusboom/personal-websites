@@ -12,7 +12,6 @@ _An extract of a subset of columns from the FFIEC Census Flat File, including fl
 
 `ffiec.gov-census-tract-1.5.2`. Modified 2020-06-24T21:57:54
 
-Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
@@ -113,19 +112,18 @@ Urls used in the creation of this data package.
 
 
 ### Accessing Data in Vanilla Pandas
-[code] 
-    import pandas as pd
-    
-    
-    ffiec_distressed_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/ffiec.gov-census-tract-1.5.2/data/ffiec_distressed.csv')
-[/code]
+```
+import pandas as pd
+
+
+ffiec_distressed_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/ffiec.gov-census-tract-1.5.2/data/ffiec_distressed.csv')
+```
 
 ### Accessing Package in Metapack
-[code] 
-    import metapack as mp
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/ffiec.gov-census-tract-1.5.2.csv')
-    
-    # Create Dataframes
-    ffiec_distressed_df = pkg.resource('ffiec_distressed').dataframe()
-    
-[/code]
+```
+import metapack as mp
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/ffiec.gov-census-tract-1.5.2.csv')
+
+# Create Dataframes
+ffiec_distressed_df = pkg.resource('ffiec_distressed').dataframe()
+```

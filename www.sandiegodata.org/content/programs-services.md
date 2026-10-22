@@ -1,9 +1,9 @@
 ---
 title: "Programs and Services"
-date: 2012-12-30T10:47:04+00:00
+date: "2012-12-30T10:47:04+00:00"
 draft: false
 author: "qaadmin"
-description: "The San Diego Regional Data Library acquires data for use in civic and social improvements and links data-savvy volunteers with organization that need help."
+url: "/about/programs-services/"
 ---
 
 The San Diego Regional Data Library **organizes volunteers to help San Diego civic and social groups answer questions about their communities using data.**
@@ -30,16 +30,16 @@ Library staff uses our software to perform its services in support of our two pr
 
 ## Acquisition
 
-Acquisition involves locating data to answer a particular data question. Our internal acquisition activities are driven by questions posted to the forum and interviews with local nonprofits, planning groups, and city agencies. We can also acquire data under contract for your specific problems. [Contact us](<http://www.sandiegodata.org/about/contact/>) for more information.
+Acquisition involves locating data to answer a particular data question. Our internal acquisition activities are driven by questions posted to the forum and interviews with local nonprofits, planning groups, and city agencies. We can also acquire data under contract for your specific problems. [Contact us](</about/contact/>) for more information.
 
 ## Cataloging
 
-Cataloging follows acquisition. After data is acquired, we could just send out a file, but it is better for everyone to have a record of the data in our repository. We can also perform this service for your organization by creating a custom catalog for the data that your staff produces or we acquire for you. [Let us know](<http://www.sandiegodata.org/about/contact/>) if you are interested in cataloging services.
+Cataloging follows acquisition. After data is acquired, we could just send out a file, but it is better for everyone to have a record of the data in our repository. We can also perform this service for your organization by creating a custom catalog for the data that your staff produces or we acquire for you. [Let us know](</about/contact/>) if you are interested in cataloging services.
 
 ## Analysis Projects
 
-Data isn't useful on its own, and the Library can help you answer specific data-driven questions. We can help you find professional analysts to work on your projects, but our focus is on community-driven analysis. By involving data-savvy volunteers, you not only get the analysis you need, but you are also introducing skilled, civic-minded San Diegans to  your organization and the problems you are solving, building a volunteer analysis capacity that will be valuable for future projects. [Call or write ](<http://www.sandiegodata.org/about/contact/>)us if you are interested in starting an analysis project.
+Data isn't useful on its own, and the Library can help you answer specific data-driven questions. We can help you find professional analysts to work on your projects, but our focus is on community-driven analysis. By involving data-savvy volunteers, you not only get the analysis you need, but you are also introducing skilled, civic-minded San Diegans to  your organization and the problems you are solving, building a volunteer analysis capacity that will be valuable for future projects. [Call or write ](</about/contact/>)us if you are interested in starting an analysis project.
 
 ## Data Events
 
-Data Events are the drive-through version of analysis projects. Over an afternoon or a weekend, a group of volunteer programers, statisticians, Excel jockeys, and database experts will learn about the issues your organization addresses and dive into data to find insights and answers to guide your operations. These events can be tailored  to the problems your organization is solving and the data you have or need to find. The events can result in answers to important questions, new datasets, or innovative visualizations. Beyond the value of the data, your organization will build volunteer capacity with skilled, experienced technologists.  [We'd be happy to help ](<http://www.sandiegodata.org/about/contact/>)you set up one of these unique events.
+Data Events are the drive-through version of analysis projects. Over an afternoon or a weekend, a group of volunteer programers, statisticians, Excel jockeys, and database experts will learn about the issues your organization addresses and dive into data to find insights and answers to guide your operations. These events can be tailored  to the problems your organization is solving and the data you have or need to find. The events can result in answers to important questions, new datasets, or innovative visualizations. Beyond the value of the data, your organization will build volunteer capacity with skilled, experienced technologists.  [We'd be happy to help ](</about/contact/>)you set up one of these unique events.

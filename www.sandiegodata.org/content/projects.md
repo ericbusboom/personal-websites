@@ -1,11 +1,12 @@
 ---
 title: "Projects"
-date: 2013-10-01T09:01:04+00:00
+date: "2013-10-01T09:01:04+00:00"
 draft: false
 author: "eric"
+url: "/get-data/projects/"
 ---
 
-Visit this page for the steps required to [join a project](<http://www.sandiegodata.org/projects/join/>).
+Visit this page for the steps required to [join a project](</get-data/projects/join/>).
 
 ## Current Projects
 
@@ -21,7 +22,7 @@ Visit this page for the steps required to [join a project](<http://www.sandiegod
   * [Downtown Homelessness Counts](<http://downtown-homelesness.sandiegodata.org/>). Digitize and analyze 5 years of monthly counts of the homeless in Downtown San Diego.
   * [Reality Changers Challenge Assembly.](<https://redmine.civicknowledge.com/projects/reality-changers-challenge-assembly>) Collecting, cleaning and analyzing data for the Reality Changers grade improvement program.
   * [San Diego Hunger Coalition Free Meals Database. ](<https://redmine.civicknowledge.com/projects/san-diego-hunger-coalition-meal-programs>)Build a collection of cleaned, linked data related to California Free and Reduced Meal programs.
-  * [Insights Q&A Forum. ](<http://www.sandiegodata.org/get-data/insights/>)A Forum for the public to ask data questions.
+  * [Insights Q&A Forum. ](</get-data/insights/>)A Forum for the public to ask data questions.
 
 
-> **Note:** This was a dynamic WordPress post list.
+{{< post-list section="post" category="Old Projects" >}}

@@ -12,7 +12,6 @@ _Retail and Food Service sales volume, by months, since 1992_
 
 `census.gov-monthly_retail-1.2.1`. Modified 2020-05-19T20:08:06
 
-Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
@@ -36,19 +35,18 @@ The `flags` column describes the type of observation:
 
 
 Other notes from the bottom of the Excel file worksheets: 
-[code] 
-    (p) Preliminary estimate
-    (S) Suppressed - Estimate does not meet publication standards because of high sampling variability (coefficient of variation is greater than 30%), poor response quality (total quantity response rate
-    is less than 50%), or other concerns about the estimate's quality.
-    
-    (1) GAFO represents stores classified in the following NAICS codes:  442, 443, 448, 451, 452, and 4532. NAICS code 4532 includes office supplies, stationery, and gift stores.
-    (2) Estimates are adjusted for seasonal variations and holiday and trading-day differences, but not for price changes. Cumulative seasonally adjusted sales estimates are not tabulated.
-    
-    Note: Estimates are not adjusted for price changes. Retail and food services total and other subsector totals may include data for kinds of business not shown.
-    For surveyed Retail companies, approximately 45.7% provided data for this reporting period, resulting in a total quantity response rate of 60.8% for sales.
-    Information on sample design, estimation procedures, and measures of sampling variability can be found on the internet at http://www.census.gov/retail/mrts/how_surveys_are_collected.html.
-    
-[/code]
+```
+(p) Preliminary estimate
+(S) Suppressed - Estimate does not meet publication standards because of high sampling variability (coefficient of variation is greater than 30%), poor response quality (total quantity response rate
+is less than 50%), or other concerns about the estimate's quality.
+
+(1) GAFO represents stores classified in the following NAICS codes:  442, 443, 448, 451, 452, and 4532. NAICS code 4532 includes office supplies, stationery, and gift stores.
+(2) Estimates are adjusted for seasonal variations and holiday and trading-day differences, but not for price changes. Cumulative seasonally adjusted sales estimates are not tabulated.
+
+Note: Estimates are not adjusted for price changes. Retail and food services total and other subsector totals may include data for kinds of business not shown.
+For surveyed Retail companies, approximately 45.7% provided data for this reporting period, resulting in a total quantity response rate of 60.8% for sales.
+Information on sample design, estimation procedures, and measures of sampling variability can be found on the internet at http://www.census.gov/retail/mrts/how_surveys_are_collected.html.
+```
 
 ### Documentation Links
 
@@ -70,16 +68,15 @@ Other notes from the bottom of the Excel file worksheets:
 
 
 ### Accessing Packages in Metapack
-[code] 
-    import metapack as mp
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/census.gov-monthly_retail-1.2.1.csv')
-    
-    # Create Dataframes
-    mrts_adjusted_df = pkg.resource('mrts_adjusted').dataframe()
-    mrts_non_adjusted_df = pkg.resource('mrts_non_adjusted').dataframe()
-    mrts_combined_df = pkg.resource('mrts_combined').dataframe()
-    
-[/code]
+```
+import metapack as mp
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/census.gov-monthly_retail-1.2.1.csv')
+
+# Create Dataframes
+mrts_adjusted_df = pkg.resource('mrts_adjusted').dataframe()
+mrts_non_adjusted_df = pkg.resource('mrts_non_adjusted').dataframe()
+mrts_combined_df = pkg.resource('mrts_combined').dataframe()
+```
 
 ## Data Dictionary
 
@@ -138,13 +135,12 @@ Urls used in the creation of this data package.
 
 
 ### Accessing Packages in Metapack
-[code] 
-    import metapack as mp
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/census.gov-monthly_retail-1.2.1.csv')
-    
-    # Create Dataframes
-    mrts_adjusted_df = pkg.resource('mrts_adjusted').dataframe()
-    mrts_non_adjusted_df = pkg.resource('mrts_non_adjusted').dataframe()
-    mrts_combined_df = pkg.resource('mrts_combined').dataframe()
-    
-[/code]
+```
+import metapack as mp
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/census.gov-monthly_retail-1.2.1.csv')
+
+# Create Dataframes
+mrts_adjusted_df = pkg.resource('mrts_adjusted').dataframe()
+mrts_non_adjusted_df = pkg.resource('mrts_non_adjusted').dataframe()
+mrts_combined_df = pkg.resource('mrts_combined').dataframe()
+```

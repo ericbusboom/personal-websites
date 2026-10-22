@@ -12,7 +12,6 @@ _SIPP collects data and measures change for many topics including: economic well
 
 `census.gov-sipp-1.1.1`. Modified 2020-12-28T19:45:33
 
-Resources | Packages | Documentation| Contacts| References
 
 ## Documentation
 
@@ -59,17 +58,14 @@ Urls used in the creation of this data package.
 
 
 ### Accessing Data in Vanilla Pandas
-[code] 
-    import pandas as pd
-    
-    
-[/code]
+```
+import pandas as pd
+```
 
 ### Accessing Package in Metapack
-[code] 
-    import metapack as mp
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/census.gov-sipp-1.1.1.csv')
-    
-    # Create Dataframes
-    
-[/code]
+```
+import metapack as mp
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/census.gov-sipp-1.1.1.csv')
+
+# Create Dataframes
+```

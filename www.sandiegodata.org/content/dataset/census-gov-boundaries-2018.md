@@ -12,7 +12,6 @@ _The cartographic boundary files are simplified representations of selected geog
 
 `census.gov-boundaries-2018-1.2.8`. Modified 2020-08-12T04:35:14
 
-Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
@@ -91,35 +90,34 @@ Urls used in the creation of this data package.
 
 
 ### Accessing Data in Vanilla Pandas
-[code] 
-    import pandas as pd
-    
-    
-    state_500k_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/census.gov-boundaries-2018-1.2.8/data/state_500k.csv')
-    state_5m_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/census.gov-boundaries-2018-1.2.8/data/state_5m.csv')
-    state_20m_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/census.gov-boundaries-2018-1.2.8/data/state_20m.csv')
-    county_500k_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/census.gov-boundaries-2018-1.2.8/data/county_500k.csv')
-    county_5m_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/census.gov-boundaries-2018-1.2.8/data/county_5m.csv')
-    county_20m_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/census.gov-boundaries-2018-1.2.8/data/county_20m.csv')
-    nation_5m_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/census.gov-boundaries-2018-1.2.8/data/nation_5m.csv')
-    nation_20m_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/census.gov-boundaries-2018-1.2.8/data/nation_20m.csv')
-    zcta_500k_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/census.gov-boundaries-2018-1.2.8/data/zcta_500k.csv')
-[/code]
+```
+import pandas as pd
+
+
+state_500k_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/census.gov-boundaries-2018-1.2.8/data/state_500k.csv')
+state_5m_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/census.gov-boundaries-2018-1.2.8/data/state_5m.csv')
+state_20m_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/census.gov-boundaries-2018-1.2.8/data/state_20m.csv')
+county_500k_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/census.gov-boundaries-2018-1.2.8/data/county_500k.csv')
+county_5m_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/census.gov-boundaries-2018-1.2.8/data/county_5m.csv')
+county_20m_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/census.gov-boundaries-2018-1.2.8/data/county_20m.csv')
+nation_5m_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/census.gov-boundaries-2018-1.2.8/data/nation_5m.csv')
+nation_20m_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/census.gov-boundaries-2018-1.2.8/data/nation_20m.csv')
+zcta_500k_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/census.gov-boundaries-2018-1.2.8/data/zcta_500k.csv')
+```
 
 ### Accessing Package in Metapack
-[code] 
-    import metapack as mp
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/census.gov-boundaries-2018-1.2.8.csv')
-    
-    # Create Dataframes
-    state_500k_gdf = pkg.resource('state_500k').geoframe()
-    state_5m_gdf = pkg.resource('state_5m').geoframe()
-    state_20m_gdf = pkg.resource('state_20m').geoframe()
-    county_500k_gdf = pkg.resource('county_500k').geoframe()
-    county_5m_gdf = pkg.resource('county_5m').geoframe()
-    county_20m_gdf = pkg.resource('county_20m').geoframe()
-    nation_5m_gdf = pkg.resource('nation_5m').geoframe()
-    nation_20m_gdf = pkg.resource('nation_20m').geoframe()
-    zcta_500k_gdf = pkg.resource('zcta_500k').geoframe()
-    
-[/code]
+```
+import metapack as mp
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/census.gov-boundaries-2018-1.2.8.csv')
+
+# Create Dataframes
+state_500k_gdf = pkg.resource('state_500k').geoframe()
+state_5m_gdf = pkg.resource('state_5m').geoframe()
+state_20m_gdf = pkg.resource('state_20m').geoframe()
+county_500k_gdf = pkg.resource('county_500k').geoframe()
+county_5m_gdf = pkg.resource('county_5m').geoframe()
+county_20m_gdf = pkg.resource('county_20m').geoframe()
+nation_5m_gdf = pkg.resource('nation_5m').geoframe()
+nation_20m_gdf = pkg.resource('nation_20m').geoframe()
+zcta_500k_gdf = pkg.resource('zcta_500k').geoframe()
+```

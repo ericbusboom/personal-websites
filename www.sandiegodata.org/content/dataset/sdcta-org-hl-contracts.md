@@ -12,7 +12,6 @@ _Processed TagTog annotations for homelessness contracts collected by the_
 
 `sdcta.org-hl_contracts-1.1.1`. Modified 2021-08-12T19:25:41
 
-Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
@@ -87,21 +86,20 @@ Urls used in the creation of this data package.
 
 
 ### Accessing Data in Vanilla Pandas
-[code] 
-    import pandas as pd
-    
-    
-    annotations_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sdcta.org-hl_contracts-1.1.1/data/annotations.csv')
-    contexts_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sdcta.org-hl_contracts-1.1.1/data/contexts.csv')
-[/code]
+```
+import pandas as pd
+
+
+annotations_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sdcta.org-hl_contracts-1.1.1/data/annotations.csv')
+contexts_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sdcta.org-hl_contracts-1.1.1/data/contexts.csv')
+```
 
 ### Accessing Package in Metapack
-[code] 
-    import metapack as mp
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sdcta.org-hl_contracts-1.1.1.zip')
-    
-    # Create Dataframes
-    annotations_df = pkg.resource('annotations').dataframe()
-    contexts_df = pkg.resource('contexts').dataframe()
-    
-[/code]
+```
+import metapack as mp
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sdcta.org-hl_contracts-1.1.1.zip')
+
+# Create Dataframes
+annotations_df = pkg.resource('annotations').dataframe()
+contexts_df = pkg.resource('contexts').dataframe()
+```

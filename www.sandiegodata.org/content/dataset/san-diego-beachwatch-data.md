@@ -12,7 +12,6 @@ _Water quality data for San Diego county beaches._
 
 `ceden.waterboards.ca.gov-beachwatch-sandiego-2`
 
-Resources | Packages | Documentation| Contacts
 
 ## Resources
 
@@ -36,21 +35,20 @@ There are two units for the measurements:
 
 
 From [Cascade Analytical](<http://www.cascadeanalytical.com/resources-downloads/faqs>):
-[code] 
-    What does CFU and MPN mean? A: CFU stands for 'Colony Forming Units' and
-    refers to the number of viable bacterial cells in a sample per unit of
-    volume. For example: 50 CFU/100 mL means 50 Colony Forming Units per 100 mL
-    of sample. It is different from the direct microscopic counts that include
-    both dead and living cells.
-    
-    MPN stands for 'Most Probable Number' and refers to a method that uses
-    dilution cultures and a probability calculation to determine the
-    approximate number of viable cells in a given volume of sample. It is
-    useful when samples contain too few organisms for agar plates to be used or
-    when organisms will not grow on agar. For example: 50 MPN/100 mL means that
-    the Most Probable Number of viable cells in 100 mL of sample is 50.
-    
-[/code]
+```
+What does CFU and MPN mean? A: CFU stands for 'Colony Forming Units' and
+refers to the number of viable bacterial cells in a sample per unit of
+volume. For example: 50 CFU/100 mL means 50 Colony Forming Units per 100 mL
+of sample. It is different from the direct microscopic counts that include
+both dead and living cells.
+
+MPN stands for 'Most Probable Number' and refers to a method that uses
+dilution cultures and a probability calculation to determine the
+approximate number of viable cells in a given volume of sample. It is
+useful when samples contain too few organisms for agar plates to be used or
+when organisms will not grow on agar. For example: 50 MPN/100 mL means that
+the Most Probable Number of viable cells in 100 mL of sample is 50.
+```
 
 I haven't found traditional data dictionary documentation, [but there are controlled vocabulary lists](<http://ceden.org/CEDEN_checker/Checker/LookUpLists.php>) online for data submitters, which explain a lot of the columns.
 
@@ -80,17 +78,16 @@ I haven't found traditional data dictionary documentation, [but there are contro
 
 
 ### Accessing Packages in Metapack
-[code] 
-    import metapack as mp
-    # ZIP Package
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/ceden.waterboards.ca.gov-beachwatch-sandiego-2.zip')
-    # CSV Package
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/ceden.waterboards.ca.gov-beachwatch-sandiego-2.csv') 
-    
-    resource = pkg.resource('resource_name') # Get a resource
-    df = resource.dataframe() # Create a pandas Dataframe
-    gdf = resource.geoframe() # Create a GeoPandas GeoDataFrame
-    
-[/code]
+```
+import metapack as mp
+# ZIP Package
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/ceden.waterboards.ca.gov-beachwatch-sandiego-2.zip')
+# CSV Package
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/ceden.waterboards.ca.gov-beachwatch-sandiego-2.csv') 
+
+resource = pkg.resource('resource_name') # Get a resource
+df = resource.dataframe() # Create a pandas Dataframe
+gdf = resource.geoframe() # Create a GeoPandas GeoDataFrame
+```
 
 Last Modified 2018-08-09T14:59:01

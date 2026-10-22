@@ -12,7 +12,6 @@ _The Atlas presents spatial data about supermarket accessibility and provides ce
 
 `usda.gov-food_access-1`
 
-Resources | Packages | Documentation| Contacts| References
 
 ## Resources
 
@@ -74,17 +73,16 @@ While the URL for the source file is available online, this data package is prod
 
 
 ### Accessing Packages in Metapack
-[code] 
-    import metapack as mp
-    # ZIP Package
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/usda.gov-food_access-1.zip')
-    
-    
-    resource = pkg.resource('resource_name') # Get a resource
-    df = resource.dataframe() # Create a pandas Dataframe
-    gdf = resource.geoframe() # Create a GeoPandas GeoDataFrame
-    
-[/code]
+```
+import metapack as mp
+# ZIP Package
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/usda.gov-food_access-1.zip')
+
+
+resource = pkg.resource('resource_name') # Get a resource
+df = resource.dataframe() # Create a pandas Dataframe
+gdf = resource.geoframe() # Create a GeoPandas GeoDataFrame
+```
 
 ## References
 

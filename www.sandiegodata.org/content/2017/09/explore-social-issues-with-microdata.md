@@ -10,10 +10,10 @@ In this [Hands-On presentation,](<https://www.meetup.com/preview/San-Diego-Regio
 
 For instance, here is an analysis of the relationship between Occupational Prestige and Personal Income, using the IPUMS online analysis tool, with data from the ACS 2010-2015:
 
-[![](/uploads/12/2017/09/SDA-Prestige-vs-Income.png)](</uploads/12/2017/09/SDA-Prestige-vs-Income.png>)
+[![](/uploads/7/2017/09/SDA-Prestige-vs-Income.png)](</uploads/7/2017/09/SDA-Prestige-vs-Income.png>)
 
 The Red color means that the intersection between the prestige group and the income group is more frequent than would be predicted by chance. The red diagonal shows a correlation between prestige and income, with higher prestige being associated with higher income. Since income is a a component of job prestige, this is exactly what you would expect. We'll be demonstrating how to construct analyses like this, as well as analyses using Jupyter notebooks. The meeting will consist of both a presentation and a demonstration. Bring a laptop, and you can explore some of the data during the meeting.
 
-Also, we will spend about 30 minutes for updates and discussion about the ongoing [Mission Driven Credit Analysis](<http://www.sandiegodata.org/2017/08/mission-driven-credit-analysis/>) project, including an overview of the FFIEC data sources for studying lending patterns. 
+Also, we will spend about 30 minutes for updates and discussion about the ongoing [Mission Driven Credit Analysis](</2017/08/mission-driven-credit-analysis/>) project, including an overview of the FFIEC data sources for studying lending patterns. 
 
 [Please visit our Meetup.com page for the meeting to RSVP. ](<https://www.meetup.com/preview/San-Diego-Regional-Data-Library/events/243393069?_cookie-check=ty1QnH-OO-xy8MIE>)

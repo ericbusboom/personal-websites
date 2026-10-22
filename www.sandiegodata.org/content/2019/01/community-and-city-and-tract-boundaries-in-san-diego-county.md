@@ -12,7 +12,6 @@ _Combines geographic boundary files for communities, cities and tracts in San Di
 
 `sandiegodata.org-geography-2018-12`
 
-Resources | Packages | Documentation| Contacts| References
 
 ## Resources
 
@@ -42,18 +41,17 @@ Collections of all files in the dataset. ZIP packages have all files and documen
 
 
 ### Accessing Packages in Metapack
-[code] 
-    import metapack as mp
-    # ZIP Package
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-geography-2018-12.zip')
-    # CSV Package
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-geography-2018-12.csv')
-    
-    resource = pkg.resource('resource_name') # Get a resource
-    df = resource.dataframe() # Create a pandas Dataframe
-    gdf = resource.geoframe() # Create a GeoPandas GeoDataFrame
-    
-[/code]
+```
+import metapack as mp
+# ZIP Package
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-geography-2018-12.zip')
+# CSV Package
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-geography-2018-12.csv')
+
+resource = pkg.resource('resource_name') # Get a resource
+df = resource.dataframe() # Create a pandas Dataframe
+gdf = resource.geoframe() # Create a GeoPandas GeoDataFrame
+```
 
 ## Documentation
 

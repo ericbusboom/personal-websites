@@ -8,7 +8,7 @@ author: "qaadmin"
 
 Here is some eye candy, a population density map of Pacific Beach and surrounding neighborhoods. 
 
-[![population-density-map](/uploads/12/2013/04/population-density-map-1024x931.jpg)](</uploads/12/2013/04/population-density-map.jpg>)
+[![population-density-map](/uploads/7/2013/04/population-density-map-1024x931.jpg)](</uploads/7/2013/04/population-density-map.jpg>)
 
 This map was created with a lot of Python code, using the 2010 census shapefiles for census blocks, setting a value for each block as the population of the block divided by the area of the block, and rasterizing all of the blocks to an image. Red indicates areas of higher population density. You can clearly pick out the areas in Pacific Beach that are zoned for apartments vs single family homes, the UTC high-rise apartment area, and many other variations in land use.
 

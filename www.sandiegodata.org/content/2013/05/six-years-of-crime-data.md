@@ -6,7 +6,7 @@ categories: ["New Data"]
 author: "qaadmin"
 ---
 
-Today we are releasing the processed version of six years of San Diego County crime data. We received this data last month from SANDAG, and have augmented the source data with city and and neighborhood codes. The data is released as both CSV and ESRI Shape files with one file per year. To download the data, [visit our data repository](<http://data.sandiegodata.org/dataset/clarinova_com-crime-incidents-casnd-7ba4-extract>). Be sure to read the documentation by expanding the pull-down bar at the top of the page. The improvements of this dataset over [the original SANDAG data release ](<http://data.sandiegodata.org/dataset/raw-san-diego-county-crime-incidents-2007-2013>)include: 
+Today we are releasing the processed version of six years of San Diego County crime data. We received this data last month from SANDAG, and have augmented the source data with city and and neighborhood codes. The data is released as both CSV and ESRI Shape files with one file per year. To download the data, [visit our data repository](</dataset/>). Be sure to read the documentation by expanding the pull-down bar at the top of the page. The improvements of this dataset over [the original SANDAG data release ](</dataset/>)include: 
 
   * The crime incidents are geocoded.
   * Incidents are marked with the city, based on SANGIS municipal boundaries.

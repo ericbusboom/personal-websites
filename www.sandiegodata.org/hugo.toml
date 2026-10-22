@@ -2,7 +2,9 @@ baseURL = "https://www.sandiegodata.org/"
 languageCode = "en-us"
 title = "San Diego Regional Data Library"
 theme = "wp-static"
-paginate = 10
+
+[pagination]
+pagerSize = 10
 
 [markup.goldmark.renderer]
 unsafe = true
@@ -12,30 +14,113 @@ style = "friendly"
 
 [params]
 description = "Providing Data For Civic and Social Development"
-blogHomepage = true
 sidebar = true
 showCategories = true
 logo = "/header-logo.png"
 
+# Blog posts live in year folders (/2019/05/...), so their type would be the
+# year. Give them all type "post" for the post lists.
+[[cascade]]
+type = "post"
+[cascade.target]
+path = "{/20*/**}"
+
+# Menus follow the WordPress menus of www.sandiegodata.org, with the data
+# repository's own menu folded under "Data Repository".
 [[menu.main]]
+identifier = "about"
 name = "About"
 url = "/about/"
 weight = 1
 
 [[menu.main]]
+parent = "about"
+name = "Overview"
+url = "/about/programs-services/why/"
+weight = 1
+
+[[menu.main]]
+parent = "about"
+name = "Programs and Services"
+url = "/about/programs-services/"
+weight = 2
+
+[[menu.main]]
+parent = "about"
+name = "Contact & Social Media"
+url = "/about/contact/"
+weight = 3
+
+[[menu.main]]
+parent = "about"
+name = "Office Hours"
+url = "/about/office-hours/"
+weight = 4
+
+[[menu.main]]
+parent = "about"
+name = "Staff"
+url = "/about/programs-services/staff/"
+weight = 5
+
+[[menu.main]]
+parent = "about"
+name = "Reports"
+url = "/about/reports/"
+weight = 6
+
+[[menu.main]]
+identifier = "data"
 name = "Data Repository"
 url = "/dataset/"
 weight = 2
 
 [[menu.main]]
-name = "Meetings and Events"
-url = "/meetings-and-events/"
+parent = "data"
+name = "All Datasets"
+url = "/dataset/"
+weight = 1
+
+[[menu.main]]
+parent = "data"
+name = "Collections"
+url = "/collections/"
+weight = 2
+
+[[menu.main]]
+parent = "data"
+name = "Analysis"
+url = "/analysis/"
 weight = 3
 
 [[menu.main]]
-name = "Data and Services"
-url = "/data-and-services/"
+parent = "data"
+name = "About the Repository"
+url = "/dataset/about/"
 weight = 4
+
+[[menu.main]]
+name = "Meetings and Events"
+url = "https://www.meetup.com/San-Diego-Regional-Data-Library/"
+weight = 3
+
+[[menu.main]]
+identifier = "services"
+name = "Data and Services"
+url = "/get-data/"
+weight = 4
+
+[[menu.main]]
+parent = "services"
+name = "Data Services"
+url = "/get-data/data-services/"
+weight = 1
+
+[[menu.main]]
+parent = "services"
+name = "Projects"
+url = "/get-data/projects/"
+weight = 2
 
 [[menu.main]]
 name = "Blog"

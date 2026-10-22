@@ -1,8 +1,9 @@
 ---
 title: "Building A California Health Data Infrastructure"
-date: 2014-06-10T09:39:57+00:00
+date: "2014-06-10T09:39:57+00:00"
 draft: false
 author: "qaadmin"
+url: "/about/reports/a-vision-for-a-shared-data-infrastructure/building-a-california-health-data-infrastructure/"
 ---
 
 How long would it take you to create a chart of the rate of the teenage smoking over the last 20 years in your county, compared to similar counties? If the data is already on your computer, maybe a few minutes. But for most nonprofits, journalists or government staff, this simple question might take days to answer. The reason is that data acquisition and preparation is time consuming and difficult. Even when things are going well, 80% of a data project's effort can be consumed with acquisition and preparation. Because of this cost, there is a wide gap between what we are doing with data and what we could be doing with data. By solving the problems of data acquisition and preparation, we have a substantial opportunity to advance the pace of civic and social development. We propose to build a health data infrastructure for California, an effort that is guided by a simple vision: 
@@ -78,7 +79,7 @@ For simple files, particularly ones that don't have documentation or don't requi
   * The spreadsheet user emails the spreadsheet to a special address, once a month.
   * The spreadsheet user saves the file to a shared drive, and an external program copies the file into Ambry.
   * Users store their files in a file sharing service, such as, Box, Dropbox, Google Drive, and Ambry loads the file directly.
-  * Users upload their files to a dedicated data repository, similar to the one we host at <http://data.sandiegodata.org>.
+  * Users upload their files to a dedicated data repository, similar to the one we host at </dataset/>.
 
 The goal of automatic importing is to ensure the process of contributing data does not require any changes to people's daily process. 
 

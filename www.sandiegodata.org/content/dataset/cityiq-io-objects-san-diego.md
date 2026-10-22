@@ -12,7 +12,6 @@ _All assets types extracted form the San Diego City Iq system_
 
 `cityiq.io-objects-san_diego-5`. Modified 2020-04-12T16:44:03
 
-Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
@@ -59,23 +58,22 @@ These datafile are extracts of the assets and locations from the San Diego CityI
 
 
 ### Accessing Packages in Metapack
-[code] 
-    import metapack as mp
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/cityiq.io-objects-san_diego-5.zip')
-    
-    # Create Dataframes
-    assets_gdf = pkg.resource('assets').geoframe()
-    locations_gdf = pkg.resource('locations').geoframe()
-    walkways_gdf = pkg.resource('walkways').geoframe()
-    traffic_lanes_gdf = pkg.resource('traffic_lanes').geoframe()
-    parking_zones_gdf = pkg.resource('parking_zones').geoframe()
-    cameras_gdf = pkg.resource('cameras').geoframe()
-    mics_gdf = pkg.resource('mics').geoframe()
-    nodes_gdf = pkg.resource('nodes').geoframe()
-    em_sensors_gdf = pkg.resource('em_sensors').geoframe()
-    env_sensors_gdf = pkg.resource('env_sensors').geoframe()
-    
-[/code]
+```
+import metapack as mp
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/cityiq.io-objects-san_diego-5.zip')
+
+# Create Dataframes
+assets_gdf = pkg.resource('assets').geoframe()
+locations_gdf = pkg.resource('locations').geoframe()
+walkways_gdf = pkg.resource('walkways').geoframe()
+traffic_lanes_gdf = pkg.resource('traffic_lanes').geoframe()
+parking_zones_gdf = pkg.resource('parking_zones').geoframe()
+cameras_gdf = pkg.resource('cameras').geoframe()
+mics_gdf = pkg.resource('mics').geoframe()
+nodes_gdf = pkg.resource('nodes').geoframe()
+em_sensors_gdf = pkg.resource('em_sensors').geoframe()
+env_sensors_gdf = pkg.resource('env_sensors').geoframe()
+```
 
 ## Data Dictionary
 
@@ -137,20 +135,19 @@ Urls used in the creation of this data package.
 
 
 ### Accessing Packages in Metapack
-[code] 
-    import metapack as mp
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/cityiq.io-objects-san_diego-5.zip')
-    
-    # Create Dataframes
-    assets_gdf = pkg.resource('assets').geoframe()
-    locations_gdf = pkg.resource('locations').geoframe()
-    walkways_gdf = pkg.resource('walkways').geoframe()
-    traffic_lanes_gdf = pkg.resource('traffic_lanes').geoframe()
-    parking_zones_gdf = pkg.resource('parking_zones').geoframe()
-    cameras_gdf = pkg.resource('cameras').geoframe()
-    mics_gdf = pkg.resource('mics').geoframe()
-    nodes_gdf = pkg.resource('nodes').geoframe()
-    em_sensors_gdf = pkg.resource('em_sensors').geoframe()
-    env_sensors_gdf = pkg.resource('env_sensors').geoframe()
-    
-[/code]
+```
+import metapack as mp
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/cityiq.io-objects-san_diego-5.zip')
+
+# Create Dataframes
+assets_gdf = pkg.resource('assets').geoframe()
+locations_gdf = pkg.resource('locations').geoframe()
+walkways_gdf = pkg.resource('walkways').geoframe()
+traffic_lanes_gdf = pkg.resource('traffic_lanes').geoframe()
+parking_zones_gdf = pkg.resource('parking_zones').geoframe()
+cameras_gdf = pkg.resource('cameras').geoframe()
+mics_gdf = pkg.resource('mics').geoframe()
+nodes_gdf = pkg.resource('nodes').geoframe()
+em_sensors_gdf = pkg.resource('em_sensors').geoframe()
+env_sensors_gdf = pkg.resource('env_sensors').geoframe()
+```

@@ -13,4 +13,4 @@ I'm in training this afternoon for using the API for [San Diego's CityIQ Smart s
   * Pedestrian counts, speed and direction
   * Environmental measurements: temperature, humidity
 
-I'll be working on extracting some of this data into an analysis package, so[ let me know](<http://www.sandiegodata.org/about/contact/>) if you'd like to work on a data project using the data.
+I'll be working on extracting some of this data into an analysis package, so[ let me know](</about/contact/>) if you'd like to work on a data project using the data.

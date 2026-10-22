@@ -10,4 +10,4 @@ author: "qaadmin"
 
 ## Joining The Project
 
-If you'd like to join the project, see the list of items under "Joining a Project" [on the main project list page](<http://www.sandiegodata.org/projects/#join>).
+If you'd like to join the project, see the list of items under "Joining a Project" [on the main project list page](</get-data/projects/#join>).

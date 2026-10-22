@@ -12,7 +12,6 @@ _Combined years of sheltered and unsheltered homeless counts, by CoC._
 
 `hudexchange.info-pit-coc-1`
 
-Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
@@ -69,14 +68,14 @@ On rare occasions, the Point-in-Time estimates published in prior editions of th
 
 
 ### Accessing Packages in Metapack
-[code] 
-    import metapack as mp
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/hudexchange.info-pit-coc-1.zip')
-    
-    # Create Dataframes
-    
-    pitc_coc_df = pkg.resource('pitc_coc').dataframe()
-[/code]
+```
+import metapack as mp
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/hudexchange.info-pit-coc-1.zip')
+
+# Create Dataframes
+
+pitc_coc_df = pkg.resource('pitc_coc').dataframe()
+```
 
 ## Data Dictionary
 
@@ -200,11 +199,11 @@ Last Modified 2019-07-12T05:00:57
 
 
 ### Accessing Packages in Metapack
-[code] 
-    import metapack as mp
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/hudexchange.info-pit-coc-1.zip')
-    
-    # Create Dataframes
-    
-    pitc_coc_df = pkg.resource('pitc_coc').dataframe()
-[/code]
+```
+import metapack as mp
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/hudexchange.info-pit-coc-1.zip')
+
+# Create Dataframes
+
+pitc_coc_df = pkg.resource('pitc_coc').dataframe()
+```

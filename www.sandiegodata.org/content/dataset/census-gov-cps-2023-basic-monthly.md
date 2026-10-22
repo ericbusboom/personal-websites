@@ -12,7 +12,6 @@ _The Current Population Survey (CPS) is the primary source of labor force statis
 
 `census.gov-cps-2023-basic_monthly-1.1.2`. Modified 2023-03-02T18:24:15
 
-Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
@@ -469,23 +468,22 @@ Urls used in the creation of this data package.
 
 
 ### Accessing Data in Vanilla Pandas
-[code] 
-    import pandas as pd
-    
-    
-    variable_descriptions_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/census.gov-cps-2023-basic_monthly-1.1.2/data/variable_descriptions.csv')
-    variable_values_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/census.gov-cps-2023-basic_monthly-1.1.2/data/variable_values.csv')
-    cps202301_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/census.gov-cps-2023-basic_monthly-1.1.2/data/cps202301.csv')
-[/code]
+```
+import pandas as pd
+
+
+variable_descriptions_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/census.gov-cps-2023-basic_monthly-1.1.2/data/variable_descriptions.csv')
+variable_values_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/census.gov-cps-2023-basic_monthly-1.1.2/data/variable_values.csv')
+cps202301_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/census.gov-cps-2023-basic_monthly-1.1.2/data/cps202301.csv')
+```
 
 ### Accessing Package in Metapack
-[code] 
-    import metapack as mp
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/census.gov-cps-2023-basic_monthly-1.1.2.csv')
-    
-    # Create Dataframes
-    variable_descriptions_df = pkg.resource('variable_descriptions').dataframe()
-    variable_values_df = pkg.resource('variable_values').dataframe()
-    cps202301_df = pkg.resource('cps202301').dataframe()
-    
-[/code]
+```
+import metapack as mp
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/census.gov-cps-2023-basic_monthly-1.1.2.csv')
+
+# Create Dataframes
+variable_descriptions_df = pkg.resource('variable_descriptions').dataframe()
+variable_values_df = pkg.resource('variable_values').dataframe()
+cps202301_df = pkg.resource('cps202301').dataframe()
+```

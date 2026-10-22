@@ -23,4 +23,4 @@ Over all, this chart should inspire hope. Most of the states are on a good trend
 
 For states with a strong downward trend, like California, the predicted day number when the growth rate is zero is about day 30, which for California is in about two weeks. 
 
-This data is from Johns Hopkins, process by the Data Library, and [published here. ](<http://data.sandiegodata.org/dataset/jhu-edu-covid19-1-4-0/>)
+This data is from Johns Hopkins, process by the Data Library, and [published here. ](</dataset/jhu-edu-covid19/>)

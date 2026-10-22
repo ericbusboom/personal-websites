@@ -12,7 +12,6 @@ _Datasets for the California school dashboard at https://www.caschooldashboard.o
 
 `cde.ca.gov-accountability_dashboard-2017-1.2.1`. Modified 2021-03-11T00:52:26
 
-Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
@@ -267,33 +266,32 @@ Urls used in the creation of this data package.
 
 
 ### Accessing Data in Vanilla Pandas
-[code] 
-    import pandas as pd
-    
-    
-    ela38_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-accountability_dashboard-2017-1.2.1/data/ela38.csv')
-    ela11_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-accountability_dashboard-2017-1.2.1/data/ela11.csv')
-    math38_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-accountability_dashboard-2017-1.2.1/data/math38.csv')
-    math11_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-accountability_dashboard-2017-1.2.1/data/math11.csv')
-    collegecareer_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-accountability_dashboard-2017-1.2.1/data/collegecareer.csv')
-    susprate_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-accountability_dashboard-2017-1.2.1/data/susprate.csv')
-    elaprog_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-accountability_dashboard-2017-1.2.1/data/elaprog.csv')
-    gradrate_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-accountability_dashboard-2017-1.2.1/data/gradrate.csv')
-[/code]
+```
+import pandas as pd
+
+
+ela38_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-accountability_dashboard-2017-1.2.1/data/ela38.csv')
+ela11_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-accountability_dashboard-2017-1.2.1/data/ela11.csv')
+math38_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-accountability_dashboard-2017-1.2.1/data/math38.csv')
+math11_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-accountability_dashboard-2017-1.2.1/data/math11.csv')
+collegecareer_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-accountability_dashboard-2017-1.2.1/data/collegecareer.csv')
+susprate_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-accountability_dashboard-2017-1.2.1/data/susprate.csv')
+elaprog_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-accountability_dashboard-2017-1.2.1/data/elaprog.csv')
+gradrate_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-accountability_dashboard-2017-1.2.1/data/gradrate.csv')
+```
 
 ### Accessing Package in Metapack
-[code] 
-    import metapack as mp
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-accountability_dashboard-2017-1.2.1.csv')
-    
-    # Create Dataframes
-    ela38_df = pkg.resource('ela38').dataframe()
-    ela11_df = pkg.resource('ela11').dataframe()
-    math38_df = pkg.resource('math38').dataframe()
-    math11_df = pkg.resource('math11').dataframe()
-    collegecareer_df = pkg.resource('collegecareer').dataframe()
-    susprate_df = pkg.resource('susprate').dataframe()
-    elaprog_df = pkg.resource('elaprog').dataframe()
-    gradrate_df = pkg.resource('gradrate').dataframe()
-    
-[/code]
+```
+import metapack as mp
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/cde.metatab.org/cde.ca.gov-accountability_dashboard-2017-1.2.1.csv')
+
+# Create Dataframes
+ela38_df = pkg.resource('ela38').dataframe()
+ela11_df = pkg.resource('ela11').dataframe()
+math38_df = pkg.resource('math38').dataframe()
+math11_df = pkg.resource('math11').dataframe()
+collegecareer_df = pkg.resource('collegecareer').dataframe()
+susprate_df = pkg.resource('susprate').dataframe()
+elaprog_df = pkg.resource('elaprog').dataframe()
+gradrate_df = pkg.resource('gradrate').dataframe()
+```

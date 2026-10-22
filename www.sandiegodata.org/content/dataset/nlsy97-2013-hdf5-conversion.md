@@ -12,7 +12,6 @@ _The NLSY97 as an HDF5 file_
 
 `nlsinfo.org-nlsy97-2013-1`
 
-Resources | Packages | Documentation| Contacts| References
 
 ## Documentation
 
@@ -21,13 +20,12 @@ This datapackage links to a HDF5 conversion of the NLSY97, with responses to 201
 Because the HDF file is very large and complex to produce, this package links to the file on the web. The file was produces external to the package. 
 
 This is much more complicated to use than other files. The `publicdata` python package must be installed to get the Nlsy classes that can read the HDF5 file. Typical useage is: 
-[code] 
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/nlsinfo.org-nlsy97-2013.csv')
-    nlsy = pkg.reference('nlsy97').resolved_url.get_resource().get_target().nlsy
-    homeless = nlsy.question_dataframe('YHEA-2600A',  replacena=True, rmeta=True)
-    homeless.head()
-    
-[/code]
+```
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/nlsinfo.org-nlsy97-2013.csv')
+nlsy = pkg.reference('nlsy97').resolved_url.get_resource().get_target().nlsy
+homeless = nlsy.question_dataframe('YHEA-2600A',  replacena=True, rmeta=True)
+homeless.head()
+```
 
 ## Contacts
 
@@ -43,17 +41,16 @@ This is much more complicated to use than other files. The `publicdata` python p
 
 
 ### Accessing Packages in Metapack
-[code] 
-    import metapack as mp
-    
-    # CSV Package
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/nlsinfo.org-nlsy97-2013-1.csv') 
-    
-    resource = pkg.resource('resource_name') # Get a resource
-    df = resource.dataframe() # Create a pandas Dataframe
-    gdf = resource.geoframe() # Create a GeoPandas GeoDataFrame
-    
-[/code]
+```
+import metapack as mp
+
+# CSV Package
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/nlsinfo.org-nlsy97-2013-1.csv') 
+
+resource = pkg.resource('resource_name') # Get a resource
+df = resource.dataframe() # Create a pandas Dataframe
+gdf = resource.geoframe() # Create a GeoPandas GeoDataFrame
+```
 
 ## References
 

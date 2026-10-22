@@ -12,7 +12,6 @@ _City of San Diego Capital Improvement Projects_
 
 `sandiego.gov-cip-1`
 
-Resources | Packages | Documentation| Contacts
 
 ## Resources
 
@@ -27,7 +26,7 @@ San Diego's [Capital Improvement Projects](<http://www.sandiego.gov/cip/>) are u
 
   * **Wrangler**
 
-[Eric Busboom](<mailto:eric@sandiegodata.org>), [San Diego Regional Data Library](<http://www.sandiegodata.org>)
+[Eric Busboom](<mailto:eric@sandiegodata.org>), [San Diego Regional Data Library](</>)
 
 
 ## Packages

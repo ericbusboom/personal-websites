@@ -7,4 +7,4 @@ author: "eric"
 description: "Advance your nonprofit mission using data with this $6,000 data services grant."
 ---
 
-The Data Library is offering a grant for $6,000 of data services, which nonprofits might use site planning, donor segmentation, analyzing client retention, data storytelling and other operational improvements. If you are looking for data help for your organization, visit the [Data Grant web page](<http://www.sandiegodata.org/grant>) for application guidelines and deadlines.
+The Data Library is offering a grant for $6,000 of data services, which nonprofits might use site planning, donor segmentation, analyzing client retention, data storytelling and other operational improvements. If you are looking for data help for your organization, visit the [Data Grant web page](</get-data/data-grant/>) for application guidelines and deadlines.

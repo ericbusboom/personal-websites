@@ -1,8 +1,9 @@
 ---
 title: "A Data Resource for San Diego"
-date: 2013-01-02T07:59:39+00:00
+date: "2013-01-02T07:59:39+00:00"
 draft: false
 author: "qaadmin"
+url: "/about/programs-services/why/"
 ---
 
 _Social progress depends on data, but San Diego lacks a comprehensive source for data about our region and individual communities. We propose to create a nonprofit Data Intermediary to collect, store, distribute, and analyze a wide range of data about the San Diego region and the individual neighborhoods within the region. This regional data resource will will ensure that San Diego’s civic, social, and government organizations have the data they need to manage their operations and pursue their civic and social missions._ The more nonprofits, civic organizations, and government agencies know about their communities, the better they can target their services, demonstrate need for grants, and develop innovative solutions. In many other cities, this need for data has encouraged the creation of nonprofit organizations specifically dedicated to collecting, analyzing, and distributing data. Working in partnership with but separate from universities and governments, these Data Intermediaries, operating in hundreds of communities nationwide, ensure that data flows from data producers to the organizations that need it most. They also provide training in GIS and data analysis and produce dedicated information systems, such as Neighborhood Information Systems and Community Indicator websites. Some examples of these organizations include: 

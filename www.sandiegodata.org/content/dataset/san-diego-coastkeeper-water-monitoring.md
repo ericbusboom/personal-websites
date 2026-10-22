@@ -12,7 +12,6 @@ _Monitoring measurements for San Diego creeks. Temperature, pH, conductivity, ba
 
 `ceden.waterboards.ca.gov-sdck_monitoring-2`
 
-Resources | Packages | Documentation| Contacts
 
 ## Resources
 
@@ -45,17 +44,16 @@ See the [Water project's station map](<http://water.sandiegodata.org/maps/statio
 
 
 ### Accessing Packages in Metapack
-[code] 
-    import metapack as mp
-    # ZIP Package
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/ceden.waterboards.ca.gov-sdck_monitoring-2.zip')
-    # CSV Package
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/ceden.waterboards.ca.gov-sdck_monitoring-1.csv') 
-    
-    resource = pkg.resource('resource_name') # Get a resource
-    df = resource.dataframe() # Create a pandas Dataframe
-    gdf = resource.geoframe() # Create a GeoPandas GeoDataFrame
-    
-[/code]
+```
+import metapack as mp
+# ZIP Package
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/ceden.waterboards.ca.gov-sdck_monitoring-2.zip')
+# CSV Package
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/ceden.waterboards.ca.gov-sdck_monitoring-1.csv') 
+
+resource = pkg.resource('resource_name') # Get a resource
+df = resource.dataframe() # Create a pandas Dataframe
+gdf = resource.geoframe() # Create a GeoPandas GeoDataFrame
+```
 
 Last Modified 2018-08-22T20:15:00

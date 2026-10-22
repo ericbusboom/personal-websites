@@ -12,7 +12,6 @@ _COVID 19 cases data from Johns Hopkins, augmented and reformtted_
 
 `jhu.edu-covid19-2.4.38`. Modified 2020-07-08T04:59:37
 
-Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
@@ -177,27 +176,26 @@ Urls used in the creation of this data package.
 
 
 ### Accessing Data in Vanilla Pandas
-[code] 
-    import pandas as pd
-    
-    
-    confirmed_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/jhu.edu-covid19-2.4.38/data/confirmed.csv')
-    deaths_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/jhu.edu-covid19-2.4.38/data/deaths.csv')
-    recovered_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/jhu.edu-covid19-2.4.38/data/recovered.csv')
-    confirmed_us_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/jhu.edu-covid19-2.4.38/data/confirmed_us.csv')
-    deaths_us_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/jhu.edu-covid19-2.4.38/data/deaths_us.csv')
-[/code]
+```
+import pandas as pd
+
+
+confirmed_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/jhu.edu-covid19-2.4.38/data/confirmed.csv')
+deaths_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/jhu.edu-covid19-2.4.38/data/deaths.csv')
+recovered_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/jhu.edu-covid19-2.4.38/data/recovered.csv')
+confirmed_us_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/jhu.edu-covid19-2.4.38/data/confirmed_us.csv')
+deaths_us_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/jhu.edu-covid19-2.4.38/data/deaths_us.csv')
+```
 
 ### Accessing Package in Metapack
-[code] 
-    import metapack as mp
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/jhu.edu-covid19-2.4.38.csv')
-    
-    # Create Dataframes
-    confirmed_df = pkg.resource('confirmed').dataframe()
-    deaths_df = pkg.resource('deaths').dataframe()
-    recovered_df = pkg.resource('recovered').dataframe()
-    confirmed_us_df = pkg.resource('confirmed_us').dataframe()
-    deaths_us_df = pkg.resource('deaths_us').dataframe()
-    
-[/code]
+```
+import metapack as mp
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/jhu.edu-covid19-2.4.38.csv')
+
+# Create Dataframes
+confirmed_df = pkg.resource('confirmed').dataframe()
+deaths_df = pkg.resource('deaths').dataframe()
+recovered_df = pkg.resource('recovered').dataframe()
+confirmed_us_df = pkg.resource('confirmed_us').dataframe()
+deaths_us_df = pkg.resource('deaths_us').dataframe()
+```

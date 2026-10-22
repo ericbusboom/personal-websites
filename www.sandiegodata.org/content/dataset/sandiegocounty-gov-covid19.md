@@ -12,7 +12,6 @@ _Official COVID-19 statistics for San Diego County._
 
 `sandiegocounty.gov-covid19-1.1.40`. Modified 2020-08-14T18:09:29
 
-Resources | Packages | Documentation| Contacts| Data Dictionary
 
 ## Resources
 
@@ -145,27 +144,26 @@ geometry| string|
 
 
 ### Accessing Data in Vanilla Pandas
-[code] 
-    import pandas as pd
-    
-    
-    covid_stats_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiegocounty.gov-covid19-1.1.40/data/covid_stats.csv')
-    covid_jurisdiction_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiegocounty.gov-covid19-1.1.40/data/covid_jurisdiction.csv')
-    covid_jurisdiction_geo_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiegocounty.gov-covid19-1.1.40/data/covid_jurisdiction_geo.csv')
-    covid_zip_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiegocounty.gov-covid19-1.1.40/data/covid_zip.csv')
-    covid_zip_geo_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiegocounty.gov-covid19-1.1.40/data/covid_zip_geo.csv')
-[/code]
+```
+import pandas as pd
+
+
+covid_stats_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiegocounty.gov-covid19-1.1.40/data/covid_stats.csv')
+covid_jurisdiction_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiegocounty.gov-covid19-1.1.40/data/covid_jurisdiction.csv')
+covid_jurisdiction_geo_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiegocounty.gov-covid19-1.1.40/data/covid_jurisdiction_geo.csv')
+covid_zip_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiegocounty.gov-covid19-1.1.40/data/covid_zip.csv')
+covid_zip_geo_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiegocounty.gov-covid19-1.1.40/data/covid_zip_geo.csv')
+```
 
 ### Accessing Package in Metapack
-[code] 
-    import metapack as mp
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegocounty.gov-covid19-1.1.40.csv')
-    
-    # Create Dataframes
-    covid_stats_df = pkg.resource('covid_stats').dataframe()
-    covid_jurisdiction_df = pkg.resource('covid_jurisdiction').dataframe()
-    covid_jurisdiction_geo_gdf = pkg.resource('covid_jurisdiction_geo').geoframe()
-    covid_zip_df = pkg.resource('covid_zip').dataframe()
-    covid_zip_geo_gdf = pkg.resource('covid_zip_geo').geoframe()
-    
-[/code]
+```
+import metapack as mp
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegocounty.gov-covid19-1.1.40.csv')
+
+# Create Dataframes
+covid_stats_df = pkg.resource('covid_stats').dataframe()
+covid_jurisdiction_df = pkg.resource('covid_jurisdiction').dataframe()
+covid_jurisdiction_geo_gdf = pkg.resource('covid_jurisdiction_geo').geoframe()
+covid_zip_df = pkg.resource('covid_zip').dataframe()
+covid_zip_geo_gdf = pkg.resource('covid_zip_geo').geoframe()
+```

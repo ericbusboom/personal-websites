@@ -12,7 +12,6 @@ _Trolley Ridership for Sept 2013_
 
 `sandiego.gov-trolley_ridership-1`
 
-Resources | Packages | Documentation| Contacts
 
 ## Resources
 
@@ -37,7 +36,7 @@ Provided via email by Rob Schupp, Director of Marketing and Communications, Metr
 
   * **Wrangler**
 
-[Eric Busboom](<mailto:eric@sandiegodata.org>), [San Diego Regional Data Library](<http://www.sandiegodata.org>)
+[Eric Busboom](<mailto:eric@sandiegodata.org>), [San Diego Regional Data Library](</>)
 
 
 ## Packages

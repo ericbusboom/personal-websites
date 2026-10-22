@@ -12,7 +12,6 @@ _San Diego Hourly Precipitation 2004-2014_
 
 `noaa.gov-sd_rain-1`
 
-Resources | Packages | Documentation| Contacts
 
 ## Resources
 
@@ -30,7 +29,7 @@ Dataset Precipitation Hourly Order Start Date 2004-01-01 00:00 Order End Date 20
 
   * **Wrangler**
 
-[Eric Busboom](<mailto:eric@sandiegodata.org>), [San Diego Regional Data Library](<http://www.sandiegodata.org>)
+[Eric Busboom](<mailto:eric@sandiegodata.org>), [San Diego Regional Data Library](</>)
 
 
 ## Packages

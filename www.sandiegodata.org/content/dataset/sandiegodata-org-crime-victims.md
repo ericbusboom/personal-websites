@@ -12,7 +12,6 @@ _Crime incidents in San Diego, from 2016 though July 2020 inclusive, with UCR co
 
 `sandiegodata.org-crime_victims-1.1.3`. Modified 2020-11-22T23:31:33
 
-Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
@@ -24,7 +23,7 @@ Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 This dataset describes crime incidents from 2016 to 2020, with demographic information for both the victims and suspects. The file has multiple rows per incident, one for each suspect or victim. The primary key `pk` links records together into a single crime incident. The dataset is derived from data acquired for a PRA request and is processed to standardize geographic identifiers and racial categories. 
 
-Refer to the [source dataset](<http://data.sandiegodata.org/dataset/arjis-org-crime-victims-pra/>) for the original data and the PRA request used to acquire it. 
+Refer to the [source dataset](</dataset/arjis-org-crime-victims-pra/>) for the original data and the PRA request used to acquire it. 
 
 ## Processing
 
@@ -159,21 +158,20 @@ Urls used in the creation of this data package.
 
 
 ### Accessing Data in Vanilla Pandas
-[code] 
-    import pandas as pd
-    
-    
-    sdcrime_16_20_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-crime_victims-1.1.3/data/sdcrime_16_20.csv')
-    ucrcodes_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-crime_victims-1.1.3/data/ucrcodes.csv')
-[/code]
+```
+import pandas as pd
+
+
+sdcrime_16_20_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-crime_victims-1.1.3/data/sdcrime_16_20.csv')
+ucrcodes_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-crime_victims-1.1.3/data/ucrcodes.csv')
+```
 
 ### Accessing Package in Metapack
-[code] 
-    import metapack as mp
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-crime_victims-1.1.3.csv')
-    
-    # Create Dataframes
-    sdcrime_16_20_gdf = pkg.resource('sdcrime_16_20').geoframe()
-    ucrcodes_df = pkg.resource('ucrcodes').dataframe()
-    
-[/code]
+```
+import metapack as mp
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-crime_victims-1.1.3.csv')
+
+# Create Dataframes
+sdcrime_16_20_gdf = pkg.resource('sdcrime_16_20').geoframe()
+ucrcodes_df = pkg.resource('ucrcodes').dataframe()
+```

@@ -7,7 +7,7 @@ tags: ["sdsu"]
 author: "qaadmin"
 ---
 
-For the last few months, a team of geography students at SDSU have been working with the [crime data provided by the Library](<http://data.sandiegodata.org/dataset/clarinova_com-crime-incidents-casnd-7ba4-extract>), producing analyses and visualizations of the data. Elias Issa has been looking at Drugs and Alcohol violations in Downtown San Diego and East Village. He writes: 
+For the last few months, a team of geography students at SDSU have been working with the [crime data provided by the Library](</dataset/>), producing analyses and visualizations of the data. Elias Issa has been looking at Drugs and Alcohol violations in Downtown San Diego and East Village. He writes: 
 
 > The Hot Spot tool calculates the Gi* statistic for each feature in a dataset. The resultant z-scores and p-values tell you where features with either high or low values cluster spatially. To have a statistically significant hot spot, a feature will have a high value and be surrounded by other features with high values as well. My animated maps illustrate 2 hot spots from 2007 to 2012. the most significant hot spot is located close to St. Vincent Paul homeless shelter ( Imperial Ave) on the South Eastern part of East Village. The second hot spot is located North of Gaslamp Quarter between Broadway And Market which most of the famous and popular bars are found. In addition to those map,and based on those hot spots, I did some statistical analysis to show the average of Drugs/ Alcohol violation monthly (Above/ Below Avg) and yearly. My study reveals that there is a slight increase within 2011 and 2012 in the average of Drugs/ Alcohol violations.
 

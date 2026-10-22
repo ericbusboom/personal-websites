@@ -12,7 +12,6 @@ _Education finance data include revenues, expenditures, debt, and assets (cash a
 
 `census.gov-school_finance-1.1.3`. Modified 2022-07-17T13:01:02
 
-Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
@@ -221,19 +220,18 @@ Urls used in the creation of this data package.
 
 
 ### Accessing Data in Vanilla Pandas
-[code] 
-    import pandas as pd
-    
-    
-    school_finance_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/census.gov-school_finance-1.1.3/data/school_finance.csv')
-[/code]
+```
+import pandas as pd
+
+
+school_finance_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/census.gov-school_finance-1.1.3/data/school_finance.csv')
+```
 
 ### Accessing Package in Metapack
-[code] 
-    import metapack as mp
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/census.gov-school_finance-1.1.3.csv')
-    
-    # Create Dataframes
-    school_finance_df = pkg.resource('school_finance').dataframe()
-    
-[/code]
+```
+import metapack as mp
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/census.gov-school_finance-1.1.3.csv')
+
+# Create Dataframes
+school_finance_df = pkg.resource('school_finance').dataframe()
+```

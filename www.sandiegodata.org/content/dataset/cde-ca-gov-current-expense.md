@@ -12,7 +12,6 @@ _Calculation of current expense (cost) of education per average daily attendance
 
 `cde.ca.gov-current_expense-1.2.2`. Modified 2022-08-09T16:57:45
 
-Resources | Packages | Documentation| Contacts| Data Dictionary
 
 ## Resources
 
@@ -141,65 +140,64 @@ lea_type| string| Type of district: High school Elementary or Unified
 
 
 ### Accessing Data in Vanilla Pandas
-[code] 
-    import pandas as pd
-    
-    
-    current_expense_98_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-current_expense-1.2.2/data/current_expense_98.csv')
-    current_expense_99_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-current_expense-1.2.2/data/current_expense_99.csv')
-    current_expense_00_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-current_expense-1.2.2/data/current_expense_00.csv')
-    current_expense_01_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-current_expense-1.2.2/data/current_expense_01.csv')
-    current_expense_02_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-current_expense-1.2.2/data/current_expense_02.csv')
-    current_expense_03_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-current_expense-1.2.2/data/current_expense_03.csv')
-    current_expense_04_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-current_expense-1.2.2/data/current_expense_04.csv')
-    current_expense_05_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-current_expense-1.2.2/data/current_expense_05.csv')
-    current_expense_06_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-current_expense-1.2.2/data/current_expense_06.csv')
-    current_expense_07_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-current_expense-1.2.2/data/current_expense_07.csv')
-    current_expense_08_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-current_expense-1.2.2/data/current_expense_08.csv')
-    current_expense_09_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-current_expense-1.2.2/data/current_expense_09.csv')
-    current_expense_10_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-current_expense-1.2.2/data/current_expense_10.csv')
-    current_expense_11_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-current_expense-1.2.2/data/current_expense_11.csv')
-    current_expense_12_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-current_expense-1.2.2/data/current_expense_12.csv')
-    current_expense_13_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-current_expense-1.2.2/data/current_expense_13.csv')
-    current_expense_14_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-current_expense-1.2.2/data/current_expense_14.csv')
-    current_expense_15_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-current_expense-1.2.2/data/current_expense_15.csv')
-    current_expense_16_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-current_expense-1.2.2/data/current_expense_16.csv')
-    current_expense_17_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-current_expense-1.2.2/data/current_expense_17.csv')
-    current_expense_18_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-current_expense-1.2.2/data/current_expense_18.csv')
-    current_expense_19_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-current_expense-1.2.2/data/current_expense_19.csv')
-    current_expense_20_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-current_expense-1.2.2/data/current_expense_20.csv')
-    combined_current_expense_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-current_expense-1.2.2/data/combined_current_expense.csv')
-[/code]
+```
+import pandas as pd
+
+
+current_expense_98_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-current_expense-1.2.2/data/current_expense_98.csv')
+current_expense_99_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-current_expense-1.2.2/data/current_expense_99.csv')
+current_expense_00_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-current_expense-1.2.2/data/current_expense_00.csv')
+current_expense_01_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-current_expense-1.2.2/data/current_expense_01.csv')
+current_expense_02_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-current_expense-1.2.2/data/current_expense_02.csv')
+current_expense_03_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-current_expense-1.2.2/data/current_expense_03.csv')
+current_expense_04_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-current_expense-1.2.2/data/current_expense_04.csv')
+current_expense_05_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-current_expense-1.2.2/data/current_expense_05.csv')
+current_expense_06_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-current_expense-1.2.2/data/current_expense_06.csv')
+current_expense_07_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-current_expense-1.2.2/data/current_expense_07.csv')
+current_expense_08_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-current_expense-1.2.2/data/current_expense_08.csv')
+current_expense_09_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-current_expense-1.2.2/data/current_expense_09.csv')
+current_expense_10_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-current_expense-1.2.2/data/current_expense_10.csv')
+current_expense_11_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-current_expense-1.2.2/data/current_expense_11.csv')
+current_expense_12_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-current_expense-1.2.2/data/current_expense_12.csv')
+current_expense_13_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-current_expense-1.2.2/data/current_expense_13.csv')
+current_expense_14_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-current_expense-1.2.2/data/current_expense_14.csv')
+current_expense_15_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-current_expense-1.2.2/data/current_expense_15.csv')
+current_expense_16_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-current_expense-1.2.2/data/current_expense_16.csv')
+current_expense_17_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-current_expense-1.2.2/data/current_expense_17.csv')
+current_expense_18_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-current_expense-1.2.2/data/current_expense_18.csv')
+current_expense_19_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-current_expense-1.2.2/data/current_expense_19.csv')
+current_expense_20_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-current_expense-1.2.2/data/current_expense_20.csv')
+combined_current_expense_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-current_expense-1.2.2/data/combined_current_expense.csv')
+```
 
 ### Accessing Package in Metapack
-[code] 
-    import metapack as mp
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-current_expense-1.2.2.csv')
-    
-    # Create Dataframes
-    current_expense_98_df = pkg.resource('current_expense_98').dataframe()
-    current_expense_99_df = pkg.resource('current_expense_99').dataframe()
-    current_expense_00_df = pkg.resource('current_expense_00').dataframe()
-    current_expense_01_df = pkg.resource('current_expense_01').dataframe()
-    current_expense_02_df = pkg.resource('current_expense_02').dataframe()
-    current_expense_03_df = pkg.resource('current_expense_03').dataframe()
-    current_expense_04_df = pkg.resource('current_expense_04').dataframe()
-    current_expense_05_df = pkg.resource('current_expense_05').dataframe()
-    current_expense_06_df = pkg.resource('current_expense_06').dataframe()
-    current_expense_07_df = pkg.resource('current_expense_07').dataframe()
-    current_expense_08_df = pkg.resource('current_expense_08').dataframe()
-    current_expense_09_df = pkg.resource('current_expense_09').dataframe()
-    current_expense_10_df = pkg.resource('current_expense_10').dataframe()
-    current_expense_11_df = pkg.resource('current_expense_11').dataframe()
-    current_expense_12_df = pkg.resource('current_expense_12').dataframe()
-    current_expense_13_df = pkg.resource('current_expense_13').dataframe()
-    current_expense_14_df = pkg.resource('current_expense_14').dataframe()
-    current_expense_15_df = pkg.resource('current_expense_15').dataframe()
-    current_expense_16_df = pkg.resource('current_expense_16').dataframe()
-    current_expense_17_df = pkg.resource('current_expense_17').dataframe()
-    current_expense_18_df = pkg.resource('current_expense_18').dataframe()
-    current_expense_19_df = pkg.resource('current_expense_19').dataframe()
-    current_expense_20_df = pkg.resource('current_expense_20').dataframe()
-    combined_current_expense_df = pkg.resource('combined_current_expense').dataframe()
-    
-[/code]
+```
+import metapack as mp
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/cde.ca.gov-current_expense-1.2.2.csv')
+
+# Create Dataframes
+current_expense_98_df = pkg.resource('current_expense_98').dataframe()
+current_expense_99_df = pkg.resource('current_expense_99').dataframe()
+current_expense_00_df = pkg.resource('current_expense_00').dataframe()
+current_expense_01_df = pkg.resource('current_expense_01').dataframe()
+current_expense_02_df = pkg.resource('current_expense_02').dataframe()
+current_expense_03_df = pkg.resource('current_expense_03').dataframe()
+current_expense_04_df = pkg.resource('current_expense_04').dataframe()
+current_expense_05_df = pkg.resource('current_expense_05').dataframe()
+current_expense_06_df = pkg.resource('current_expense_06').dataframe()
+current_expense_07_df = pkg.resource('current_expense_07').dataframe()
+current_expense_08_df = pkg.resource('current_expense_08').dataframe()
+current_expense_09_df = pkg.resource('current_expense_09').dataframe()
+current_expense_10_df = pkg.resource('current_expense_10').dataframe()
+current_expense_11_df = pkg.resource('current_expense_11').dataframe()
+current_expense_12_df = pkg.resource('current_expense_12').dataframe()
+current_expense_13_df = pkg.resource('current_expense_13').dataframe()
+current_expense_14_df = pkg.resource('current_expense_14').dataframe()
+current_expense_15_df = pkg.resource('current_expense_15').dataframe()
+current_expense_16_df = pkg.resource('current_expense_16').dataframe()
+current_expense_17_df = pkg.resource('current_expense_17').dataframe()
+current_expense_18_df = pkg.resource('current_expense_18').dataframe()
+current_expense_19_df = pkg.resource('current_expense_19').dataframe()
+current_expense_20_df = pkg.resource('current_expense_20').dataframe()
+combined_current_expense_df = pkg.resource('combined_current_expense').dataframe()
+```

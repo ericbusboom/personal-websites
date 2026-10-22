@@ -12,7 +12,6 @@ _Raster maps of Assessor's tax zone, from the azr_zone field of the original dat
 
 `sangis.org-parcels-1`
 
-Resources | Packages | Documentation| Contacts
 
 ## Resources
 
@@ -43,11 +42,11 @@ These fields use [Clarinova Place Codes](<https://sandiegodata.atlassian.net/wik
 
 # Citation
 
-_Name of file_ , extracted from clarinova.com-parcels-casd-7ba4. San Diego Regional Data Library. 2013-07-18 http://www.sandiegodata.org
+_Name of file_ , extracted from clarinova.com-parcels-casd-7ba4. San Diego Regional Data Library. 2013-07-18 /
 
 # Terms
 
-This data is released under the following terms and conditions. [See the SDRDL Disclaimers and Limitations web page for complete details.](<http://www.sandiegodata.org/get-data/data-disclaimers-and-limitations/>)
+This data is released under the following terms and conditions. [See the SDRDL Disclaimers and Limitations web page for complete details.](</get-data/data-disclaimers-and-limitations/>)
 
 This data is based on data from SANGIS, which is subject to its own terms and conditions. See the [SANGIS Legal Notice for details](<http://www.sangis.org/Legal_Notice.htm>). 
 
@@ -57,7 +56,7 @@ This data is based on data from SANDAG, which is subject to its own terms and co
 
   * **Wrangler**
 
-[Eric Busboom](<mailto:eric@sandiegodata.org>), [San Diego Regional Data Library](<http://www.sandiegodata.org>)
+[Eric Busboom](<mailto:eric@sandiegodata.org>), [San Diego Regional Data Library](</>)
 
 
 ## Packages

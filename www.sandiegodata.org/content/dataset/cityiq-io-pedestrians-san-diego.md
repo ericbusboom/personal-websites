@@ -12,7 +12,6 @@ _Counts of pedestrian traffic from the San Diego CityIQ system_
 
 `cityiq.io-pedestrians-san_diego-1`
 
-Resources | Packages | Documentation| Contacts| Data Dictionary
 
 ## Resources
 
@@ -26,11 +25,10 @@ This dataset is pedestrian directions and counts for walkwaks in the San Diego C
 ## Building the Source Package
 
 Before generating this package, you must have scraped all of the events to be included in the package. After creating a `.city-iq.yaml` configuration file, run:
-[code] 
-    $ ciq_events -s ped # Scrape the events
-    $ ciq_aggregate ped # Convert JSON to CSV
-    
-[/code]
+```
+$ ciq_events -s ped # Scrape the events
+$ ciq_aggregate ped # Convert JSON to CSV
+```
 
 The first process `ciq_events` may run for several days and consume up to 300G of disk space. The second process, `ciq_aggregate` may run for a few hours and consume a few more gigabytes of disk space.
 
@@ -49,18 +47,17 @@ The first process `ciq_events` may run for several days and consume up to 300G o
 
 
 ### Accessing Packages in Metapack
-[code] 
-    import metapack as mp
-    # ZIP Package
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/cityiq.io-pedestrians-san_diego-1.zip')
-    # CSV Package
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/cityiq.io-pedestrians-san_diego-1.csv') 
-    
-    resource = pkg.resource('resource_name') # Get a resource
-    df = resource.dataframe() # Create a pandas Dataframe
-    gdf = resource.geoframe() # Create a GeoPandas GeoDataFrame
-    
-[/code]
+```
+import metapack as mp
+# ZIP Package
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/cityiq.io-pedestrians-san_diego-1.zip')
+# CSV Package
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/cityiq.io-pedestrians-san_diego-1.csv') 
+
+resource = pkg.resource('resource_name') # Get a resource
+df = resource.dataframe() # Create a pandas Dataframe
+gdf = resource.geoframe() # Create a GeoPandas GeoDataFrame
+```
 
 ## Data Dictionary
 

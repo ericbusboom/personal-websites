@@ -8,5 +8,5 @@ author: "qaadmin"
 
 Here are the files for my presentation to the San Diego Crime Analysts Association: 
 
-  * [PDF File](</uploads/12/2014/04/SDCIAA-Rhythm-Maps.pdf>)
-  * [PPT File](</uploads/12/2014/04/SDCIAA-Rhythm-Maps.ppt>)
+  * [PDF File](</uploads/7/2014/04/SDCIAA-Rhythm-Maps.pdf>)
+  * [PPT File](</uploads/7/2014/04/SDCIAA-Rhythm-Maps.ppt>)

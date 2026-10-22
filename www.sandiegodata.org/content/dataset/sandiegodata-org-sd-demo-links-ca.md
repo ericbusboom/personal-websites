@@ -12,7 +12,6 @@ _Links between CDS codes, NCES codes and school district geoids in the US census
 
 `sandiegodata.org-sd_demo_links-ca-4`
 
-Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
@@ -54,14 +53,14 @@ This linkage file can be used to connect data fiels from the California Departme
 
 
 ### Accessing Packages in Metapack
-[code] 
-    import metapack as mp
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-sd_demo_links-ca-4.zip')
-    
-    # Create Dataframes
-    
-    ca_sd_links_df = pkg.resource('ca_sd_links').dataframe()
-[/code]
+```
+import metapack as mp
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-sd_demo_links-ca-4.zip')
+
+# Create Dataframes
+
+ca_sd_links_df = pkg.resource('ca_sd_links').dataframe()
+```
 
 ## Data Dictionary
 
@@ -103,11 +102,11 @@ Last Modified 2019-08-08T20:18:28
 
 
 ### Accessing Packages in Metapack
-[code] 
-    import metapack as mp
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-sd_demo_links-ca-4.zip')
-    
-    # Create Dataframes
-    
-    ca_sd_links_df = pkg.resource('ca_sd_links').dataframe()
-[/code]
+```
+import metapack as mp
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/sandiegodata.org-sd_demo_links-ca-4.zip')
+
+# Create Dataframes
+
+ca_sd_links_df = pkg.resource('ca_sd_links').dataframe()
+```

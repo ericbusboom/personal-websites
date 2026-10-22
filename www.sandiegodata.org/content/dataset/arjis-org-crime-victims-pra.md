@@ -12,7 +12,6 @@ _Crime Victims in San Diego, from 2016 though July 2020, with UCR codes for the 
 
 `arjis.org-crime_victims-pra-1.1.1`. Modified 2020-09-30T16:40:33
 
-Resources | Packages | Documentation| Contacts| References| Data Dictionary
 
 ## Resources
 
@@ -183,25 +182,24 @@ Urls used in the creation of this data package.
 
 
 ### Accessing Data in Vanilla Pandas
-[code] 
-    import pandas as pd
-    
-    
-    sdcrime_16_20_allyears_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/arjis.org-crime_victims-pra-1.1.1/data/sdcrime_16_20_allyears.csv')
-    sdcrime_16_20_nosusp_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/arjis.org-crime_victims-pra-1.1.1/data/sdcrime_16_20_nosusp.csv')
-    sdcrime_16_20_uniquecase_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/arjis.org-crime_victims-pra-1.1.1/data/sdcrime_16_20_uniquecase.csv')
-    ucrcodes_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/arjis.org-crime_victims-pra-1.1.1/data/ucrcodes.csv')
-[/code]
+```
+import pandas as pd
+
+
+sdcrime_16_20_allyears_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/arjis.org-crime_victims-pra-1.1.1/data/sdcrime_16_20_allyears.csv')
+sdcrime_16_20_nosusp_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/arjis.org-crime_victims-pra-1.1.1/data/sdcrime_16_20_nosusp.csv')
+sdcrime_16_20_uniquecase_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/arjis.org-crime_victims-pra-1.1.1/data/sdcrime_16_20_uniquecase.csv')
+ucrcodes_df =  pd.read_csv('https://library-metatab-org.s3.amazonaws.com/arjis.org-crime_victims-pra-1.1.1/data/ucrcodes.csv')
+```
 
 ### Accessing Package in Metapack
-[code] 
-    import metapack as mp
-    pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/arjis.org-crime_victims-pra-1.1.1.csv')
-    
-    # Create Dataframes
-    sdcrime_16_20_allyears_df = pkg.resource('sdcrime_16_20_allyears').dataframe()
-    sdcrime_16_20_nosusp_df = pkg.resource('sdcrime_16_20_nosusp').dataframe()
-    sdcrime_16_20_uniquecase_df = pkg.resource('sdcrime_16_20_uniquecase').dataframe()
-    ucrcodes_df = pkg.resource('ucrcodes').dataframe()
-    
-[/code]
+```
+import metapack as mp
+pkg = mp.open_package('https://library-metatab-org.s3.amazonaws.com/arjis.org-crime_victims-pra-1.1.1.csv')
+
+# Create Dataframes
+sdcrime_16_20_allyears_df = pkg.resource('sdcrime_16_20_allyears').dataframe()
+sdcrime_16_20_nosusp_df = pkg.resource('sdcrime_16_20_nosusp').dataframe()
+sdcrime_16_20_uniquecase_df = pkg.resource('sdcrime_16_20_uniquecase').dataframe()
+ucrcodes_df = pkg.resource('ucrcodes').dataframe()
+```
