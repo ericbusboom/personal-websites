@@ -2,10 +2,6 @@
 	path = _infra/docker-do
 	url = https://github.com/ericbusboom/docker-do
 	branch = main
-[submodule "_infra/proxy.do.cnshost.net"]
-	path = _infra/proxy.do.cnshost.net
-	url = https://github.com/ericbusboom/proxy-do-cnshost-net
-	branch = master
 [submodule "eric.busboom.org"]
 	path = eric.busboom.org
 	url = https://github.com/ericbusboom/eric.busboom.org
