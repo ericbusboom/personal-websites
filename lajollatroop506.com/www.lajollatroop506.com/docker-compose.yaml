@@ -1,7 +1,7 @@
 # Troop 506 WordPress — production stack.
 #
 # TLS and the public hostname are handled by the Caddy reverse proxy in front
-# of this host (see _infra/proxy.do.cnshost.net), which forwards to WP_PORT.
+# of this host (see busboom-external-network/digitalocean/proxy.do.cnshost.net), which forwards to WP_PORT.
 # Settings and secrets live in .env (copy .env.example).
 
 services:

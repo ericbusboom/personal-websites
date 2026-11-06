@@ -18,8 +18,8 @@ personal-websites/
 │   └── google-connector/         # G Suite integration scripts
 ├── localhost/                 # Local dev stack: Caddy proxy + every site in its own container (`just up`)
 ├── _infra/
-│   ├── proxy.do.cnshost.net/ # Caddy reverse proxy config
 │   └── docker-do/             # Docker hosting config
+│   (the proxy.do.cnshost.net Caddyfile is in busboom-external-network)
 ├── _tools/
 │   ├── wp2hugo.py             # WordPress WXR → Hugo Markdown converter
 │   └── wp-static-theme/       # Custom Hugo theme approximating original WordPress designs
@@ -56,7 +56,7 @@ www.busboom.org. Other blogs that were never converted: insights.civicknowledge.
 
 ## WordPress Server
 
-The original WordPress multisite is still running at `wp2.do.cnshost.net` (137.184.39.244), proxied through `proxy.do.cnshost.net` (137.184.225.100) via Caddy.
+The original WordPress multisite is still running at `wp2.do.cnshost.net` (137.184.39.244), proxied through `proxy.do.cnshost.net` (137.184.225.100) via Caddy. The proxy's Caddyfile and deploy script are in `busboom-external-network/digitalocean/proxy.do.cnshost.net`; change it there, not on the droplet.
 
 ## Running everything locally
 
@@ -77,7 +77,6 @@ is where the site's content lives. Clone with `git clone --recursive`, or run
 | Directory | Repo |
 |---|---|
 | `_infra/docker-do` | [ericbusboom/docker-do](https://github.com/ericbusboom/docker-do) |
-| `_infra/proxy.do.cnshost.net` | [ericbusboom/proxy-do-cnshost-net](https://github.com/ericbusboom/proxy-do-cnshost-net) |
 | `eric.busboom.org` | [ericbusboom/eric.busboom.org](https://github.com/ericbusboom/eric.busboom.org) |
 | `explainers` | [ericbusboom/explainers](https://github.com/ericbusboom/explainers) |
 | `lajollatroop506.com/google-connector` | [troop506/google-connector](https://github.com/troop506/google-connector) |
